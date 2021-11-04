@@ -70,8 +70,6 @@ void AMyMainCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	EquipWeapon();
-	
-	GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, "Github");
 }
 
 void AMyMainCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
