@@ -52,12 +52,12 @@ AMyMainCharacter::AMyMainCharacter()
 
 	GetCharacterMovement()->MaxWalkSpeed = RunningSpeed;
 
-	/********************  Class LifeEntity Á¤ÀÇ  */
+	/********************  Class LifeEntity ì •ì˜  */
 	LifeEntityinitialize();
 
 	Health = 100.f;
 	MaxHealth = 100.f;
-	Damage = 0.f; // °ø°İ·ÂÀº ¹«±â¿¡ ÀÖ´Ù.
+	Damage = 0.f; // ê³µê²©ë ¥ì€ ë¬´ê¸°ì— ìˆë‹¤.
 
 	NextComboOnOffTrigger = false;
 	AttackCount = 0;
@@ -70,6 +70,8 @@ void AMyMainCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	EquipWeapon();
+	
+	GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, "Github");
 }
 
 void AMyMainCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -265,21 +267,21 @@ void AMyMainCharacter::MoveRight(float Value)
 void AMyMainCharacter::EquipWeapon()
 {
 
-	//***************************** ÃÊ±â ¼³Á¤a
+	//***************************** ì´ˆê¸° ì„¤ì •a
 	//*****************************
 	//*****************************
-	//1. ±âº»ÀûÀ¸·Î ´ë°ËÀ» µé°í ÀÖÀ» °Í.
-	//2. ÀÌÈÄ ºó¼Õ »óÅÂµµ Á¦ÀÛÇÒ ¿¹Á¤ (¹«±â ¼³Á¤ ¾ÈµÇ¾îÀÖ´Â °æ¿ì -> ºó¼Õ »óÅÂ)
+	//1. ê¸°ë³¸ì ìœ¼ë¡œ ëŒ€ê²€ì„ ë“¤ê³  ìˆì„ ê²ƒ.
+	//2. ì´í›„ ë¹ˆì† ìƒíƒœë„ ì œì‘í•  ì˜ˆì • (ë¬´ê¸° ì„¤ì • ì•ˆë˜ì–´ìˆëŠ” ê²½ìš° -> ë¹ˆì† ìƒíƒœ)
 
-	//´ë°Ë»óÅÂ ( ÃÊ±â¼³Á¤ - 1 )
+	//ëŒ€ê²€ìƒíƒœ ( ì´ˆê¸°ì„¤ì • - 1 )
 	if (EquippedWeapon != NULL)
 	{
-		//»ı¼ºÈÄ ÀåÂø
+		//ìƒì„±í›„ ì¥ì°©
 		weapon = GetWorld()->SpawnActor<AWeapon>(EquippedWeapon);
 		weapon->EquipWeapon(this);
 	}
 
-	//ºó¼Û»óÅÂ ( ÃÊ±â¼³Á¤ - 2 )
+	//ë¹ˆì†¡ìƒíƒœ ( ì´ˆê¸°ì„¤ì • - 2 )
 	else
 	{
 		//GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, "Empty Hand");
@@ -315,7 +317,7 @@ void AMyMainCharacter::NextComboOff()
 	NextComboOnOffTrigger = false;
 	AttackCount = 0;
 	
-	//Ä³¸¯ÅÍ ¾Ö´Ï¸ŞÀÌ¼Ç ¹ö±×¸¦ °­Á¦ Á¶Á¤(È¸Àü ¹ö±× ¼öÁ¤)
+	//ìºë¦­í„° ì• ë‹ˆë©”ì´ì…˜ ë²„ê·¸ë¥¼ ê°•ì œ ì¡°ì •(íšŒì „ ë²„ê·¸ ìˆ˜ì •)
 	FRotator CharacterRotation = GetActorRotation();
 	CharacterRotation.Pitch = 0.f;
 	CharacterRotation.Roll = 0.f;
