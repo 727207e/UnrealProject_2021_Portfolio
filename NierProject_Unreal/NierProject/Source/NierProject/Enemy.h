@@ -2,6 +2,7 @@
 
 #pragma once
 
+// Çï·Î¿ùµå
 #include "CoreMinimal.h"
 #include "LifeEntity.h"
 #include "Enemy.generated.h"
