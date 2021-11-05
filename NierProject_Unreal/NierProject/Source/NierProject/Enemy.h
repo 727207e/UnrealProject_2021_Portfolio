@@ -2,7 +2,7 @@
 
 #pragma once
 
-// Çï·Î¿ùµå
+//Hello Yumin
 #include "CoreMinimal.h"
 #include "LifeEntity.h"
 #include "Enemy.generated.h"
