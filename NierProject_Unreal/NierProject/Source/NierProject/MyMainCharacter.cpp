@@ -1,7 +1,50 @@
+//<21.11.06 _ 최유민>
+/*
+
+SetupPlayerInputComponent 함수 안에있는 PlayerInputComponent->BindAction 에서 
+Lock과 Map의 오타 수정
+
+수정내용 :
+	Down -> up
+	up -> Down
+
+
+
+LockDown 함수 구현
+	-> SphereTrace를 활용
+	-> Hit 오브젝트를 모두 가져와서 Enemy인 오브젝트를 타겟으로 지정
+
+
+
+LookattheLockOnTarget 함수 구현
+	-> Tick 추가
+	-> Tick 내부에서 theTarget이 존재할경우 활성화
+	-> 적군을 처다보는 기능
+
+	-> LockOn 상태일시 카메라 잠금을 위해
+		->LookUp함수 직접 구현
+		->Turn 함수 직접 구현
+
+
+
+
+수정되지 않은 버그
+
+-> 캐릭터 이동 버그
+	-> 이유는 모르겠는데 캐릭터 상하좌우 이동키가 변경됨
+
+-> 캐릭터 공격
+	-> 카메라가 바라보는 대상을 공격해야 함
+
+
+*/
+
+
+
+
+//GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Red, "Enemy : Im hit!");
+
 // Fill out your copyright notice in the Description page of Project Settings.
-
-
-		//GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, "Empty Hand");
 
 #include "MyMainCharacter.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
@@ -12,6 +55,10 @@
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Weapon.h"
+#include "Enemy.h"
+#include "Kismet/KismetSystemLibrary.h"
+#include "Kismet/KismetMathLibrary.h"
+#include "Math/Vector.h"
 
 //////////////////////////////////////////////////////////////////////////
 // ANierProjectCharacter
@@ -72,6 +119,24 @@ void AMyMainCharacter::BeginPlay()
 	EquipWeapon();
 }
 
+// Called every frame
+void AMyMainCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	//LockOn이 된 상태
+	if (theTarget != nullptr)
+	{
+		LookattheLockOnTarget(DeltaTime);
+	}
+
+	//theTarget이 죽었거나, LockOff 인 상태
+	if (theTarget == nullptr)
+	{
+		FollowCamera->SetWorldRotation(UKismetMathLibrary::FindLookAtRotation(FollowCamera->GetComponentLocation(), GetActorLocation()));
+	}
+}
+
 void AMyMainCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	// Set up gameplay key bindings
@@ -97,11 +162,11 @@ void AMyMainCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 	PlayerInputComponent->BindAction("UseItem", IE_Pressed, this, &AMyMainCharacter::UseItemDown);
 	PlayerInputComponent->BindAction("UseItem", IE_Released, this, &AMyMainCharacter::UseItemUp);
 
-	PlayerInputComponent->BindAction("LockOn", IE_Pressed, this, &AMyMainCharacter::LockUp);
-	PlayerInputComponent->BindAction("LockOn", IE_Released, this, &AMyMainCharacter::LockDown);
+	PlayerInputComponent->BindAction("LockOn", IE_Pressed, this, &AMyMainCharacter::LockDown); //오타 수정 LockUp -> LockDown
+	PlayerInputComponent->BindAction("LockOn", IE_Released, this, &AMyMainCharacter::LockUp); //오타 수정 LockDown -> LockUp
 
-	PlayerInputComponent->BindAction("Map", IE_Pressed, this, &AMyMainCharacter::MapUp);
-	PlayerInputComponent->BindAction("Map", IE_Released, this, &AMyMainCharacter::MapDown);
+	PlayerInputComponent->BindAction("Map", IE_Pressed, this, &AMyMainCharacter::MapDown); //오타 수정 MapUp -> MapDown
+	PlayerInputComponent->BindAction("Map", IE_Released, this, &AMyMainCharacter::MapUp);  //오타 수정 MapDown -> MapUp
 
 
 	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
@@ -109,9 +174,11 @@ void AMyMainCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
 	PlayerInputComponent->BindAxis("MoveForward", this, &AMyMainCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AMyMainCharacter::MoveRight);
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
+	PlayerInputComponent->BindAxis("Turn", this, &AMyMainCharacter::Turn);
+	//PlayerInputComponent->BindAxis("Turn", this, &Pawn::AddControllerYawInput); 변경
 	PlayerInputComponent->BindAxis("TurnRate", this, &AMyMainCharacter::TurnAtRate);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
+	PlayerInputComponent->BindAxis("LookUp", this, &AMyMainCharacter::LookUp);
+	//PlayerInputComponent->BindAxis("LookUp", this, &Pawn::AddControllerPitchInput); 변경
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AMyMainCharacter::LookUpAtRate);
 
 }
@@ -200,12 +267,100 @@ void AMyMainCharacter::UseItemUp()
 
 }
 
+void AMyMainCharacter::LockDown()
+{
+	if (theTarget != nullptr) //락온이 된 상태일 경우 락온 해제
+	{
+		theTarget = nullptr;
+	}
+
+	else //락온이 안되어있는 경우
+	{
+		////////SphereTraceMulitForObjects를 위한 변수 선언
+		FVector StartLoc = FollowCamera->GetComponentLocation();
+		FVector EndLoc = StartLoc + FollowCamera->GetComponentRotation().Vector() * 5000.f;
+
+		TArray<AActor*> IngoreActors;
+		IngoreActors.Add(this);
+
+		TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;
+		ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECC_WorldStatic));
+		ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECC_Pawn));
+
+		TArray<FHitResult> HitResArray;
+
+
+		//HitResult 정의
+		bool HitResult = UKismetSystemLibrary::SphereTraceMultiForObjects(
+			GetWorld(),
+			StartLoc,
+			EndLoc,
+			100.f,
+			ObjectTypes,
+			false,
+			IngoreActors,
+			EDrawDebugTrace::ForDuration,
+			HitResArray,
+			true);
+
+
+		//Trace를 맞은 대상이 존재할 경우
+		if (HitResult)
+		{
+			//맞은 대상중 가장 가까이 있는 대상을 Target으로 지정후 For문 탈출.
+			for (auto i : HitResArray)
+			{
+				theTarget = Cast<AEnemy>(i.Actor);
+				if (theTarget)
+				{
+					break;
+				}
+			}
+		}
+	}
+}
+
+void AMyMainCharacter::LookattheLockOnTarget(float _DeltaTime)
+{
+	FVector PlayerLocation = GetActorLocation();
+	FVector TargetLocation = theTarget->GetActorLocation();
+	FVector CameraLocation = FollowCamera->GetComponentLocation();
+	FRotator CameraRotation = FollowCamera->GetComponentRotation();
+
+
+
+	/////////////  카메라 회전 : Target을 바라보게  ///////////// 
+	FRotator Rot = UKismetMathLibrary::FindLookAtRotation(CameraLocation, TargetLocation);
+
+	FRotator Rinterp = UKismetMathLibrary::RInterpTo(CameraRotation, Rot,_DeltaTime,5.0f);
+
+	CameraRotation.Pitch = Rinterp.Pitch;
+	CameraRotation.Yaw = Rinterp.Yaw;
+
+	FollowCamera->SetWorldRotation(CameraRotation);
+
+
+
+	/////////////  카메라 이동 : Player도 보이게  ///////////// 
+	FVector PlayerToTargetNormal = (TargetLocation - PlayerLocation);
+	PlayerToTargetNormal.Normalize();
+
+	FVector Vec = PlayerLocation - PlayerToTargetNormal * 300.0f;
+
+	FVector VInterpTo = UKismetMathLibrary::VInterpTo(CameraLocation, Vec, _DeltaTime, 5.0f);
+	float FInterpTo = UKismetMathLibrary::FInterpTo(CameraLocation.Z, PlayerLocation.Z + 50.0f, _DeltaTime, 5.0f);
+
+	VInterpTo.Z = FInterpTo;
+
+	FollowCamera->SetWorldLocation(VInterpTo);
+}
+
 void AMyMainCharacter::LockUp()
 {
 
 }
 
-void AMyMainCharacter::LockDown()
+void AMyMainCharacter::MapDown()
 {
 
 }
@@ -215,10 +370,6 @@ void AMyMainCharacter::MapUp()
 
 }
 
-void AMyMainCharacter::MapDown()
-{
-
-}
 
 
 void AMyMainCharacter::TurnAtRate(float Rate)
@@ -232,6 +383,23 @@ void AMyMainCharacter::LookUpAtRate(float Rate)
 	// calculate delta for this frame from the rate information
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
+
+void AMyMainCharacter::Turn(float Value)
+{
+	if(theTarget == nullptr) //락온 기능이 사용중이 아닐때
+	{
+		AddControllerYawInput(Value);
+	}
+}
+
+void AMyMainCharacter::LookUp(float Value)
+{
+	if (theTarget == nullptr) //락온 기능이 사용중이 아닐때
+	{
+		AddControllerPitchInput(Value);
+	}
+}
+
 
 void AMyMainCharacter::MoveForward(float Value)
 {

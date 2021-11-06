@@ -1,32 +1,10 @@
-﻿  Creating makefile for NierProjectEditor (game project files are newer)
-  Parsing headers for NierProjectEditor
-    Running UnrealHeaderTool "D:\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\NierProject.uproject" "D:\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\NierProjectEditor\Development\NierProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\potap\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  Reflection code generated for NierProjectEditor in 43.7720143 seconds
-  Building NierProjectEditor...
+﻿  Building NierProjectEditor...
   Using Visual Studio 2017 14.16.27045 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 21 actions with 24 processes...
-    [1/21] Default.rc2
-    [2/21] SharedPCH.Engine.ShadowErrors.cpp
-    [3/21] NierProject.init.gen.cpp
-    [4/21] NierProject.cpp
-    [5/21] Enemy.cpp
-    [6/21] NierProjectGameMode.cpp
-    [7/21] Weapon.gen.cpp
-    [8/21] MyMainCharacter.gen.cpp
-    [9/21] MyGameMode.cpp
-    [10/21] MainCharAnimInstance.gen.cpp
-    [11/21] NierProjectGameMode.gen.cpp
-    [12/21] MyGameMode.gen.cpp
-    [13/21] LifeEntity.gen.cpp
-    [14/21] LifeEntity.cpp
-    [15/21] Enemy.gen.cpp
-    [16/21] MainCharAnimInstance.cpp
-    [17/21] MyMainCharacter.cpp
-    [18/21] Weapon.cpp
-    [19/21] UE4Editor-NierProject-0040.lib
-       D:\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject-0040.lib 라이브러리 및 D:\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject-0040.exp 개체를 생성하고 있습니다.
-    [20/21] UE4Editor-NierProject-0040.dll
-       D:\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject-0040.suppressed.lib 라이브러리 및 D:\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject-0040.suppressed.exp 개체를 생성하고 있습니다.
-    [21/21] NierProjectEditor.target
-  Total time in Parallel executor: 45.08 seconds
-  Total execution time: 92.63 seconds
+  Building 3 actions with 24 processes...
+    [1/3] UE4Editor-NierProject-0047.lib
+       D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject-0047.lib 라이브러리 및 D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject-0047.exp 개체를 생성하고 있습니다.
+    [2/3] UE4Editor-NierProject-0047.dll
+       D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject-0047.suppressed.lib 라이브러리 및 D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject-0047.suppressed.exp 개체를 생성하고 있습니다.
+    [3/3] NierProjectEditor.target
+  Total time in Parallel executor: 1.04 seconds
+  Total execution time: 1.41 seconds

@@ -1,3 +1,30 @@
+//<21.11.06 _ 최유민>
+/*
+
+변수
+
+추가 내용:
+	theTarget 추가 // LockOn 기능에 활용할 공격할 타겟 변수
+
+
+
+함수
+
+추가 내용:
+	LookattheLockOnTarget 추가
+	Tick 함수 추가
+	LookUp 함수 추가
+	Turn 함수 추가
+
+*/
+
+
+
+
+
+
+
+
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
@@ -65,6 +92,9 @@ protected:
 	void TurnAtRate(float Rate);
 	void LookUpAtRate(float Rate);
 
+	void Turn(float Value);
+	void LookUp(float Value);
+
 	/** Action Keys*/
 	void AvoidDown();
 	void AvoidUp();
@@ -97,6 +127,11 @@ protected:
 	// End of APawn interface
 
 public:
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	UFUNCTION(BlueprintCallable)
+	void LookattheLockOnTarget(float DeltaTime);
 
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
@@ -127,6 +162,11 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void NextComboOff();
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Target")
+	class AEnemy* theTarget; // 현재 사용중인 무기
+
+	FORCEINLINE AEnemy* GettheTarget() { return theTarget; }
+	FORCEINLINE void SettheTarget(AEnemy* enemy) { theTarget = enemy; }
 
 
 };
