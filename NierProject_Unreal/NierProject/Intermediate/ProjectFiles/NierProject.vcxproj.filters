@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\NierProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{4F08069A-E39B-44A2-B476-53038207A36D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\NierProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\NierProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{4D5FE285-2975-46D9-B503-2371544CFAB2}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\NierProject">
+      <UniqueIdentifier>{3A0FF7BE-397A-4637-913A-E5900A403290}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\NierProject\Enemy.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\Enemy.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NierProject\LifeEntity.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\LifeEntity.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NierProject\MainCharAnimInstance.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\MainCharAnimInstance.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NierProject\MyGameMode.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\MyGameMode.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NierProject\MyMainCharacter.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\MyMainCharacter.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\NierProject\NierProject.Build.cs">
+      <Filter>Source\NierProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\NierProject\NierProject.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\NierProject.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NierProject\NierProjectGameMode.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\NierProjectGameMode.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NierProject\Weapon.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\Weapon.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
