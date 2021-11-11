@@ -56,6 +56,11 @@ class NIERPROJECT_API AMyMainCharacter : public ALifeEntity
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
 
+	/** Follow camera ³¡ À§Ä¡ **/
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	class UStaticMeshComponent* FollowCameraEndPoint;
+
+
 
 public:
 	AMyMainCharacter();
@@ -132,6 +137,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void LookattheLockOnTarget(float DeltaTime);
+	void LookattheLockOnTargetOff();
 
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }

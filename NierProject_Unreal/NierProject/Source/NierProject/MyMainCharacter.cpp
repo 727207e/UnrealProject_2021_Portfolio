@@ -59,6 +59,7 @@ LookattheLockOnTarget 함수 구현
 #include "Kismet/KismetSystemLibrary.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Math/Vector.h"
+#include "Components/MeshComponent.h"
 
 //////////////////////////////////////////////////////////////////////////
 // ANierProjectCharacter
@@ -92,6 +93,11 @@ AMyMainCharacter::AMyMainCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
+	// CameraBoom point 지정
+	FollowCameraEndPoint = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("FollowCameraEndPoint"));
+	FollowCameraEndPoint->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
+
+
 	MovementStatus = EMovementStatus::EMS_Normal;
 
 	RunningSpeed = 300.f;
@@ -109,6 +115,7 @@ AMyMainCharacter::AMyMainCharacter()
 	NextComboOnOffTrigger = false;
 	AttackCount = 0;
 	AttackComboNumber = {"Attack_1", "Attack_2"};
+
 }
 
 // Called when the game starts or when spawned
@@ -130,11 +137,6 @@ void AMyMainCharacter::Tick(float DeltaTime)
 		LookattheLockOnTarget(DeltaTime);
 	}
 
-	//theTarget이 죽었거나, LockOff 인 상태
-	if (theTarget == nullptr)
-	{
-		FollowCamera->SetWorldRotation(UKismetMathLibrary::FindLookAtRotation(FollowCamera->GetComponentLocation(), GetActorLocation()));
-	}
 }
 
 void AMyMainCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -271,7 +273,7 @@ void AMyMainCharacter::LockDown()
 {
 	if (theTarget != nullptr) //락온이 된 상태일 경우 락온 해제
 	{
-		theTarget = nullptr;
+		LookattheLockOnTargetOff();
 	}
 
 	else //락온이 안되어있는 경우
@@ -325,6 +327,7 @@ void AMyMainCharacter::LookattheLockOnTarget(float _DeltaTime)
 	FVector PlayerLocation = GetActorLocation();
 	FVector TargetLocation = theTarget->GetActorLocation();
 	FVector CameraLocation = FollowCamera->GetComponentLocation();
+	FVector CameraBoomLocation = FollowCameraEndPoint->GetComponentLocation();
 	FRotator CameraRotation = FollowCamera->GetComponentRotation();
 
 
@@ -347,12 +350,31 @@ void AMyMainCharacter::LookattheLockOnTarget(float _DeltaTime)
 
 	FVector Vec = PlayerLocation - PlayerToTargetNormal * 300.0f;
 
+	//FVector VInterpTo = UKismetMathLibrary::VInterpTo(CameraBoomLocation, Vec, _DeltaTime, 5.0f);
+	//float FInterpTo = UKismetMathLibrary::FInterpTo(CameraBoomLocation.Z, PlayerLocation.Z + 50.0f, _DeltaTime, 5.0f);
+	
 	FVector VInterpTo = UKismetMathLibrary::VInterpTo(CameraLocation, Vec, _DeltaTime, 5.0f);
 	float FInterpTo = UKismetMathLibrary::FInterpTo(CameraLocation.Z, PlayerLocation.Z + 50.0f, _DeltaTime, 5.0f);
 
 	VInterpTo.Z = FInterpTo;
 
+	//FVector resultOffset = VInterpTo-CameraBoomLocation;
+
+	//CameraBoom->TargetOffset = resultOffset;
+
 	FollowCamera->SetWorldLocation(VInterpTo);
+
+
+	//UE_LOG(LogTemp, Warning, TEXT("%f , %f, %f"), resultOffset.X, resultOffset.Y, resultOffset.Z);
+
+}
+
+void AMyMainCharacter::LookattheLockOnTargetOff()
+{
+	theTarget = nullptr;
+	CameraBoom->TargetArmLength = 300.0f; // The camera follows at this distance behind the character	
+
+	FollowCamera->SetWorldRotation(UKismetMathLibrary::FindLookAtRotation(FollowCamera->GetComponentLocation(), GetActorLocation()));
 }
 
 void AMyMainCharacter::LockUp()
@@ -409,8 +431,6 @@ void AMyMainCharacter::MoveForward(float Value)
 		//const FRotator Rotation = Controller->GetControlRotation(); 변경
 		const FRotator Rotation = FollowCamera->GetComponentRotation();
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
-
-		UE_LOG(LogTemp, Warning, TEXT("%f"), Rotation.Yaw);
 
 
 
