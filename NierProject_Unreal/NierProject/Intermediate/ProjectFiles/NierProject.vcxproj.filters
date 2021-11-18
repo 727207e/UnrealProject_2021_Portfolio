@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\NierProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{3F0EE5E2-AB45-4F8C-AABB-078243A66D66}</UniqueIdentifier>
+      <UniqueIdentifier>{1959865B-FA94-4C04-A670-C270CDECB37E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\NierProject.Target.cs">
       <Filter>Source</Filter>
@@ -11,26 +11,8 @@
     <None Include="..\..\Source\NierProjectEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
-    <Filter Include="Config">
-      <UniqueIdentifier>{0559DD28-A77E-4E19-B13C-94B93F9A7376}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Config\DefaultEditor.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEngine.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultGame.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultInput.ini">
-      <Filter>Config</Filter>
-    </None>
     <Filter Include="Source\NierProject">
-      <UniqueIdentifier>{5445733A-91E6-48CE-AFCA-7E1E084ACC28}</UniqueIdentifier>
+      <UniqueIdentifier>{A190A8FB-7053-4716-B379-769C23C392B9}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\NierProject\Enemy.cpp">
       <Filter>Source\NierProject</Filter>

@@ -1,47 +1,3 @@
-//<21.11.06 _ 최유민>
-/*
-
-SetupPlayerInputComponent 함수 안에있는 PlayerInputComponent->BindAction 에서 
-Lock과 Map의 오타 수정
-
-수정내용 :
-	Down -> up
-	up -> Down
-
-
-
-LockDown 함수 구현
-	-> SphereTrace를 활용
-	-> Hit 오브젝트를 모두 가져와서 Enemy인 오브젝트를 타겟으로 지정
-
-
-
-LookattheLockOnTarget 함수 구현
-	-> Tick 추가
-	-> Tick 내부에서 theTarget이 존재할경우 활성화
-	-> 적군을 처다보는 기능
-
-	-> LockOn 상태일시 카메라 잠금을 위해
-		->LookUp함수 직접 구현
-		->Turn 함수 직접 구현
-
-
-
-
-수정되지 않은 버그
-
--> 캐릭터 이동 버그
-	-> 이유는 모르겠는데 캐릭터 상하좌우 이동키가 변경됨
-
--> 캐릭터 공격
-	-> 카메라가 바라보는 대상을 공격해야 함
-
-
-*/
-
-
-
-
 //GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Red, "Enemy : Im hit!");
 
 // Fill out your copyright notice in the Description page of Project Settings.
@@ -85,7 +41,7 @@ AMyMainCharacter::AMyMainCharacter()
 	// Create a camera boom (pulls in towards the player if there is a collision)
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
-	CameraBoom->TargetArmLength = 300.0f; // The camera follows at this distance behind the character	
+	CameraBoom->TargetArmLength = 500.0f; // The camera follows at this distance behind the character	
 	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
 
 	// Create a follow camera
@@ -116,6 +72,9 @@ AMyMainCharacter::AMyMainCharacter()
 	AttackCount = 0;
 	AttackComboNumber = {"Attack_1", "Attack_2"};
 
+	LookSpeed_TargetAttacking = 15.0f;
+	LookAtDeltaCountLimit = 1.f;
+	//theTarget_Position = FVector.ZeroVector;
 }
 
 // Called when the game starts or when spawned
@@ -135,8 +94,13 @@ void AMyMainCharacter::Tick(float DeltaTime)
 	if (theTarget != nullptr)
 	{
 		LookattheLockOnTarget(DeltaTime);
-	}
 
+		//공격을 처음으로 시작하는 순간(콤보 카운트 x)
+		if(MovementStatus == EMovementStatus::EMS_Attacking && !NextComboOnOffTrigger && AttackCount == 0)
+		{
+			LookAtTargetWhenAttacking(DeltaTime);
+		}
+	}
 }
 
 void AMyMainCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -208,12 +172,13 @@ void AMyMainCharacter::RunUp()
 
 void AMyMainCharacter::AttackDown()
 {
+	//공격중이 아닐때만 공격가능
 	if (MovementStatus == EMovementStatus::EMS_Normal)
 	{
 		Attack();
-		MovementStatus = EMovementStatus::EMS_Attacking;
 	}
 
+	//공격중일 때라도 "다음 공격 콤보 타이밍" 이라면 다음 콤보 공격 가능
 	else if (MovementStatus == EMovementStatus::EMS_Attacking)
 	{
 		if (NextComboOnOffTrigger && AttackCount < AttackComboNumber.Num() - 1)
@@ -324,55 +289,20 @@ void AMyMainCharacter::LockDown()
 
 void AMyMainCharacter::LookattheLockOnTarget(float _DeltaTime)
 {
-	FVector PlayerLocation = GetActorLocation();
 	FVector TargetLocation = theTarget->GetActorLocation();
 	FVector CameraLocation = FollowCamera->GetComponentLocation();
-	FVector CameraBoomLocation = FollowCameraEndPoint->GetComponentLocation();
-	FRotator CameraRotation = FollowCamera->GetComponentRotation();
 
+	FRotator findLookatRot = UKismetMathLibrary::FindLookAtRotation(CameraLocation,TargetLocation);
+	FRotator ControlRot = Controller->GetControlRotation();
+	FRotator Rinterp = UKismetMathLibrary::RInterpTo(ControlRot, findLookatRot, _DeltaTime, 7.0f);
 
-
-	/////////////  카메라 회전 : Target을 바라보게  ///////////// 
-	FRotator Rot = UKismetMathLibrary::FindLookAtRotation(CameraLocation, TargetLocation);
-
-	FRotator Rinterp = UKismetMathLibrary::RInterpTo(CameraRotation, Rot,_DeltaTime,5.0f);
-
-	CameraRotation.Pitch = Rinterp.Pitch;
-	CameraRotation.Yaw = Rinterp.Yaw;
-
-	FollowCamera->SetWorldRotation(CameraRotation);
-
-
-
-	/////////////  카메라 이동 : Player도 보이게  ///////////// 
-	FVector PlayerToTargetNormal = (TargetLocation - PlayerLocation);
-	PlayerToTargetNormal.Normalize();
-
-	FVector Vec = PlayerLocation - PlayerToTargetNormal * 300.0f;
-
-	//FVector VInterpTo = UKismetMathLibrary::VInterpTo(CameraBoomLocation, Vec, _DeltaTime, 5.0f);
-	//float FInterpTo = UKismetMathLibrary::FInterpTo(CameraBoomLocation.Z, PlayerLocation.Z + 50.0f, _DeltaTime, 5.0f);
-	
-	FVector VInterpTo = UKismetMathLibrary::VInterpTo(CameraLocation, Vec, _DeltaTime, 5.0f);
-	float FInterpTo = UKismetMathLibrary::FInterpTo(CameraLocation.Z, PlayerLocation.Z + 50.0f, _DeltaTime, 5.0f);
-
-	VInterpTo.Z = FInterpTo;
-
-	//FVector resultOffset = VInterpTo-CameraBoomLocation;
-
-	//CameraBoom->TargetOffset = resultOffset;
-
-	FollowCamera->SetWorldLocation(VInterpTo);
-
-
-	//UE_LOG(LogTemp, Warning, TEXT("%f , %f, %f"), resultOffset.X, resultOffset.Y, resultOffset.Z);
-
+	Controller->SetControlRotation(Rinterp);
 }
 
 void AMyMainCharacter::LookattheLockOnTargetOff()
 {
 	theTarget = nullptr;
-	CameraBoom->TargetArmLength = 300.0f; // The camera follows at this distance behind the character	
+	CameraBoom->TargetArmLength = 500.0f; // The camera follows at this distance behind the character	
 
 	FollowCamera->SetWorldRotation(UKismetMathLibrary::FindLookAtRotation(FollowCamera->GetComponentLocation(), GetActorLocation()));
 }
@@ -428,8 +358,7 @@ void AMyMainCharacter::MoveForward(float Value)
 	if ((Controller != nullptr) && (Value != 0.0f))
 	{
 		// find out which way is forward
-		//const FRotator Rotation = Controller->GetControlRotation(); 변경
-		const FRotator Rotation = FollowCamera->GetComponentRotation();
+		const FRotator Rotation = Controller->GetControlRotation(); 
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
 
 
@@ -445,8 +374,7 @@ void AMyMainCharacter::MoveRight(float Value)
 	if ((Controller != nullptr) && (Value != 0.0f))
 	{
 		// find out which way is right
-		//const FRotator Rotation = Controller->GetControlRotation(); 변경
-		const FRotator Rotation = FollowCamera->GetComponentRotation();
+		const FRotator Rotation = Controller->GetControlRotation(); 
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
 
 		// get right vector 
@@ -482,25 +410,51 @@ void AMyMainCharacter::EquipWeapon()
 
 void AMyMainCharacter::Attack()
 {
+	//이후, Status를 Normal로 변경해주는 부분은 
+	//AttackMong 에서 전투 끝나는 부분의 
+	//EndAttack 노티파이에서 Normal로 변경되도록 정의함 (BP내용)
+
 	if (CombatMontage)
 	{
 		UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
 
 		if (AnimInstance)
 		{
+			MovementStatus = EMovementStatus::EMS_Attacking;
+
 			NextComboOnOffTrigger = false;
 			
 			AnimInstance->Montage_Play(CombatMontage, 1.5f);
 			AnimInstance->Montage_JumpToSection(AttackComboNumber[AttackCount], CombatMontage);
-			//AnimInstance->Montage_JumpToSection(FName("Attack_1"), CombatMontage);
 
 		}
+	}
+}
+
+void AMyMainCharacter::LookAtTargetWhenAttacking(float _DeltaTime)
+{
+	//회전시간 일부를 허용(애니메이션 버그, 과한 Following 등등의 이유)
+	//초기화는 NextComboOn 함수안에서
+	if (LookAtDeltaCount <= LookAtDeltaCountLimit)
+	{
+		LookAtDeltaCount += _DeltaTime;
+
+		FVector MyActorLocation = GetActorLocation();
+		FVector theTargetLoc = theTarget->GetActorLocation();
+		theTargetLoc.Z = MyActorLocation.Z; // Target이 위나 아래에 있어도 정면을 공격한다
+
+		FRotator LookAt = UKismetMathLibrary::FindLookAtRotation(MyActorLocation, theTargetLoc);
+
+		FRotator InterpRotation = UKismetMathLibrary::RInterpTo(GetActorRotation(), LookAt, GetWorld()->GetDeltaSeconds(), LookSpeed_TargetAttacking);
+
+		SetActorRotation(InterpRotation);
 	}
 }
 
 void AMyMainCharacter::NextComboOn()
 {
 	NextComboOnOffTrigger = true;
+	LookAtDeltaCount = 0.f;
 }
 
 void AMyMainCharacter::NextComboOff()
@@ -509,11 +463,39 @@ void AMyMainCharacter::NextComboOff()
 	NextComboOnOffTrigger = false;
 	AttackCount = 0;
 	
-	//캐릭터 애니메이션 버그를 강제 조정(회전 버그 수정)
-	FRotator CharacterRotation = GetActorRotation();
-	CharacterRotation.Pitch = 0.f;
-	CharacterRotation.Roll = 0.f;
-
-	SetActorRotation(CharacterRotation);
-
 }
+
+void AMyMainCharacter::FixAnimation()
+{
+	//BP의 Delay 원리
+	float WaitTime = GetWorld()->GetDeltaSeconds();
+
+
+	GetWorld()->GetTimerManager().SetTimer(waitHandle, FTimerDelegate::CreateLambda([&]()
+	{
+		WaitTime = GetWorld()->GetDeltaSeconds();
+
+		if (WaitTime < 0.01)
+		{
+			deltaCount += WaitTime;
+
+			//캐릭터 애니메이션 버그를 강제 조정(회전 애니메이션 자체 버그 수정)
+			FRotator CharacterRotation = GetActorRotation();
+			CharacterRotation.Pitch = 0.f;
+			CharacterRotation.Roll = 0.f;
+
+			FRotator RInterp = UKismetMathLibrary::RInterpTo(GetActorRotation(), CharacterRotation, WaitTime, 5.f);
+
+			SetActorRotation(RInterp);
+		}
+
+		//1초 뒤 삭제
+		if (deltaCount >= 1.0f)
+		{
+			deltaCount = 0.f;
+			GetWorld()->GetTimerManager().ClearTimer(waitHandle);
+		}
+
+	}), WaitTime, true, 0.f);
+}
+

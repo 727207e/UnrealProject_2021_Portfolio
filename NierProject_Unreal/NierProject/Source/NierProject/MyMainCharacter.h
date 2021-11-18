@@ -1,30 +1,3 @@
-//<21.11.06 _ 최유민>
-/*
-
-변수
-
-추가 내용:
-	theTarget 추가 // LockOn 기능에 활용할 공격할 타겟 변수
-
-
-
-함수
-
-추가 내용:
-	LookattheLockOnTarget 추가
-	Tick 함수 추가
-	LookUp 함수 추가
-	Turn 함수 추가
-
-*/
-
-
-
-
-
-
-
-
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
@@ -144,6 +117,11 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
+
+
+
+	///////////////// 무기 ////////////////////
+
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon")
 	TSubclassOf<class AWeapon> EquippedWeapon;	// 들고있는 무기 정보
 
@@ -154,6 +132,12 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void EquipWeapon();
+
+	///////////////////////////////////////////
+
+
+
+	///////////////// 공격 ////////////////////
 
 	void Attack();
 
@@ -169,10 +153,27 @@ public:
 	void NextComboOff();
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Target")
-	class AEnemy* theTarget; // 현재 사용중인 무기
+	class AEnemy* theTarget;
+
+	float LookAtDeltaCount = 0.f;
+	float LookAtDeltaCountLimit = 0.f;
+
+	float deltaCount = 0.f; //캐릭터 Attack Rotation 초기화 시간
+	FTimerHandle waitHandle; //Rotation 타이머 핸들러
+
+	UFUNCTION(BlueprintCallable)
+	void LookAtTargetWhenAttacking(float _DeltaTime); // 공격하는 순간 적을 처다봄
 
 	FORCEINLINE AEnemy* GettheTarget() { return theTarget; }
 	FORCEINLINE void SettheTarget(AEnemy* enemy) { theTarget = enemy; }
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Attack")
+	float LookSpeed_TargetAttacking;
+
+	UFUNCTION(BlueprintCallable)
+	void FixAnimation();
+	///////////////////////////////////////////
+
 
 
 };

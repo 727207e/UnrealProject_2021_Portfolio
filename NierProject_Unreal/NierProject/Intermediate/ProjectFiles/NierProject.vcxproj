@@ -51,7 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{6DA273B7-47B9-4A97-B6C4-4A46C6BE88FF}</ProjectGuid>
+    <ProjectGuid>{E1957EBA-3621-455B-8328-D92864642C98}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>NierProject</RootNamespace>
     <PlatformToolset>v141</PlatformToolset>
@@ -275,11 +275,6 @@
     <None Include="..\..\NierProject.uproject"/>
     <None Include="..\..\Source\NierProject.Target.cs"/>
     <None Include="..\..\Source\NierProjectEditor.Target.cs"/>
-    <None Include="..\..\Config\DefaultEditor.ini"/>
-    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
-    <None Include="..\..\Config\DefaultEngine.ini"/>
-    <None Include="..\..\Config\DefaultGame.ini"/>
-    <None Include="..\..\Config\DefaultInput.ini"/>
     <ClCompile Include="..\..\Source\NierProject\Enemy.cpp">
       <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\PxShared\include;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\PxShared\include\cudamanager;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\PxShared\include\filebuf;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\PxShared\include\foundation;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\PxShared\include\pvd;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\PxShared\include\task;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\cooking;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\common;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\extensions;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\geometry;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\clothing;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\nvparameterized;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\legacy;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\PhysX3;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include\autogen;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include\autogen;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include;D:\UE_4.26\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\internal\include;</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(NMakeForcedIncludes);$(SolutionDir)Intermediate\Build\Win64\UE4Editor\Development\NierProject\Definitions.NierProject.h;$(SolutionDir)Intermediate\Build\Win64\NierProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h</ForcedIncludeFiles>
