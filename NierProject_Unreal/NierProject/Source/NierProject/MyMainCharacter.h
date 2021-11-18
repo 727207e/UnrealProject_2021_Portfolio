@@ -29,6 +29,11 @@ class NIERPROJECT_API AMyMainCharacter : public ALifeEntity
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
 
+	/** Follow camera 끝 위치 **/
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	class UStaticMeshComponent* FollowCameraEndPoint;
+
+
 
 public:
 	AMyMainCharacter();
@@ -65,6 +70,9 @@ protected:
 	void TurnAtRate(float Rate);
 	void LookUpAtRate(float Rate);
 
+	void Turn(float Value);
+	void LookUp(float Value);
+
 	/** Action Keys*/
 	void AvoidDown();
 	void AvoidUp();
@@ -97,11 +105,22 @@ protected:
 	// End of APawn interface
 
 public:
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	UFUNCTION(BlueprintCallable)
+	void LookattheLockOnTarget(float DeltaTime);
+	void LookattheLockOnTargetOff();
 
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+
+
+
+	///////////////// 무기 ////////////////////
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon")
 	TSubclassOf<class AWeapon> EquippedWeapon;	// 들고있는 무기 정보
@@ -113,6 +132,12 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void EquipWeapon();
+
+	///////////////////////////////////////////
+
+
+
+	///////////////// 공격 ////////////////////
 
 	void Attack();
 
@@ -126,6 +151,28 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void NextComboOff();
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Target")
+	class AEnemy* theTarget;
+
+	float LookAtDeltaCount = 0.f;
+	float LookAtDeltaCountLimit = 0.f;
+
+	float deltaCount = 0.f; //캐릭터 Attack Rotation 초기화 시간
+	FTimerHandle waitHandle; //Rotation 타이머 핸들러
+
+	UFUNCTION(BlueprintCallable)
+	void LookAtTargetWhenAttacking(float _DeltaTime); // 공격하는 순간 적을 처다봄
+
+	FORCEINLINE AEnemy* GettheTarget() { return theTarget; }
+	FORCEINLINE void SettheTarget(AEnemy* enemy) { theTarget = enemy; }
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Attack")
+	float LookSpeed_TargetAttacking;
+
+	UFUNCTION(BlueprintCallable)
+	void FixAnimation();
+	///////////////////////////////////////////
 
 
 

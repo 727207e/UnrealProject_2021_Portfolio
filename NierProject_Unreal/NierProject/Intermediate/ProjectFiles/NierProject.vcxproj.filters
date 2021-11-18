@@ -3,7 +3,11 @@
   <ItemGroup>
     <None Include="..\..\NierProject.uproject" />
     <Filter Include="Source">
+<<<<<<< HEAD
       <UniqueIdentifier>{CAE9B769-71C4-45CA-B462-FB9E2C8BAE13}</UniqueIdentifier>
+=======
+      <UniqueIdentifier>{1959865B-FA94-4C04-A670-C270CDECB37E}</UniqueIdentifier>
+>>>>>>> 11.08
     </Filter>
     <None Include="..\..\Source\NierProject.Target.cs">
       <Filter>Source</Filter>
@@ -11,6 +15,7 @@
     <None Include="..\..\Source\NierProjectEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+<<<<<<< HEAD
     <Filter Include="Config">
       <UniqueIdentifier>{BA0A5B8E-DF9D-4074-812D-78D27EC34CF8}</UniqueIdentifier>
     </Filter>
@@ -31,6 +36,10 @@
     </None>
     <Filter Include="Source\NierProject">
       <UniqueIdentifier>{7981A0AA-4BE2-4202-ABC5-F53FC6B96913}</UniqueIdentifier>
+=======
+    <Filter Include="Source\NierProject">
+      <UniqueIdentifier>{A190A8FB-7053-4716-B379-769C23C392B9}</UniqueIdentifier>
+>>>>>>> 11.08
     </Filter>
     <ClCompile Include="..\..\Source\NierProject\Enemy.cpp">
       <Filter>Source\NierProject</Filter>
