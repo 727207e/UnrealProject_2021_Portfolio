@@ -14,8 +14,10 @@
 #include "Enemy.h"
 #include "Kismet/KismetSystemLibrary.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Kismet/GameplayStatics.h"
 #include "Math/Vector.h"
 #include "Components/MeshComponent.h"
+#include "AvoidAfterImage.h"
 
 //////////////////////////////////////////////////////////////////////////
 // ANierProjectCharacter
@@ -152,6 +154,24 @@ void AMyMainCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 
 void AMyMainCharacter::AvoidDown()
 {
+	//GetCharacterMovement()->SetMovementMode(MOVE_Flying);
+	//Avoid 애니메이션의 RootMotion을 사용하기위해서 몽타주로 진행
+	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+	if (AnimInstance)
+	{
+		MovementStatus = EMovementStatus::EMS_Avoid;
+
+		NextComboOnOffTrigger = false;
+
+		AnimInstance->Montage_Play(MoveUtilityMontage, 1.5f);
+		AnimInstance->Montage_JumpToSection(FName("Avoid"), MoveUtilityMontage);
+
+		GetCharacterMovement()->MaxWalkSpeed = RunningSpeed;
+
+
+		///슬로우 모션
+		SlowMotion();
+	}
 }
 
 void AMyMainCharacter::AvoidUp()
@@ -465,37 +485,52 @@ void AMyMainCharacter::NextComboOff()
 	
 }
 
-void AMyMainCharacter::FixAnimation()
+
+void AMyMainCharacter::SlowMotion()
 {
-	//BP의 Delay 원리
-	float WaitTime = GetWorld()->GetDeltaSeconds();
+	//잔상 만들기
+	GenAfterImage();
 
-
-	GetWorld()->GetTimerManager().SetTimer(waitHandle, FTimerDelegate::CreateLambda([&]()
+	TimeCheck = GetWorld()->GetDeltaSeconds(); //델타타임 가져옴
+	
+	GetWorld()->GetTimerManager().SetTimer(SlowTimeFloatDelayHandle, FTimerDelegate::CreateLambda([&]()
 	{
-		WaitTime = GetWorld()->GetDeltaSeconds();
+		TimeCheck = GetWorld()->GetDeltaSeconds(); //델타타임 가져옴
+		TotalTimeCheck += TimeCheck; //누적시간
+		SlowTime = UKismetMathLibrary::FInterpTo(SlowTime, 0.1f, TimeCheck, 25.f); //보간
 
-		if (WaitTime < 0.01)
+		//0.075초 이후 초기화(이때, 시간이 변경되어있다는 것을 감안할 것)
+		if (TotalTimeCheck > 0.075f)
 		{
-			deltaCount += WaitTime;
-
-			//캐릭터 애니메이션 버그를 강제 조정(회전 애니메이션 자체 버그 수정)
-			FRotator CharacterRotation = GetActorRotation();
-			CharacterRotation.Pitch = 0.f;
-			CharacterRotation.Roll = 0.f;
-
-			FRotator RInterp = UKismetMathLibrary::RInterpTo(GetActorRotation(), CharacterRotation, WaitTime, 5.f);
-
-			SetActorRotation(RInterp);
+			//초기화
+			TotalTimeCheck = 0;
+			SlowTime = 1;
+			GetWorld()->GetTimerManager().ClearTimer(SlowTimeFloatDelayHandle);
+			UE_LOG(LogTemp, Warning, TEXT("Time in"));
 		}
 
-		//1초 뒤 삭제
-		if (deltaCount >= 1.0f)
-		{
-			deltaCount = 0.f;
-			GetWorld()->GetTimerManager().ClearTimer(waitHandle);
-		}
+		UE_LOG(LogTemp, Warning, TEXT("%f"), SlowTime);
+		UGameplayStatics::SetGlobalTimeDilation(GetWorld(), SlowTime);
 
-	}), WaitTime, true, 0.f);
+	}), TimeCheck, true, 0.f);
 }
 
+void AMyMainCharacter::GenAfterImage()
+{
+	//위치 각도 조절
+	FVector Loc = GetActorLocation();
+	Loc.Z -= 100.0f;
+
+	FRotator Rot = GetActorRotation();
+	Rot.Yaw -= 90.f;
+
+	//생성
+	for(int i = 0 ; i < 4; i++)
+	{
+		//생성
+		AAvoidAfterImage* AfterImage = GetWorld()->SpawnActor<AAvoidAfterImage>(AvoidAfterImage_Spawn, Loc, Rot);
+
+		//활성화(포즈 변경, 이동 방향)
+		AfterImage->InitAvoidAfterImage(GetMesh(), i);
+	}
+}

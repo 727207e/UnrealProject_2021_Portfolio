@@ -25,6 +25,7 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	NIERPROJECT_API UClass* Z_Construct_UClass_AWeapon_NoRegister();
 	NIERPROJECT_API UClass* Z_Construct_UClass_AEnemy_NoRegister();
+	NIERPROJECT_API UClass* Z_Construct_UClass_AAvoidAfterImage_NoRegister();
 // End Cross Module References
 	static UEnum* EMovementStatus_StaticEnum()
 	{
@@ -40,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		return EMovementStatus_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EMovementStatus(EMovementStatus_StaticEnum, TEXT("/Script/NierProject"), TEXT("EMovementStatus"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_NierProject_EMovementStatus_Hash() { return 2499456585U; }
+	uint32 Get_Z_Construct_UEnum_NierProject_EMovementStatus_Hash() { return 1591400159U; }
 	UEnum* Z_Construct_UEnum_NierProject_EMovementStatus()
 	{
 #if WITH_HOT_RELOAD
@@ -55,6 +56,7 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 				{ "EMovementStatus::EMS_Normal", (int64)EMovementStatus::EMS_Normal },
 				{ "EMovementStatus::EMS_Sprinting", (int64)EMovementStatus::EMS_Sprinting },
 				{ "EMovementStatus::EMS_Attacking", (int64)EMovementStatus::EMS_Attacking },
+				{ "EMovementStatus::EMS_Avoid", (int64)EMovementStatus::EMS_Avoid },
 				{ "EMovementStatus::EMS_Dead", (int64)EMovementStatus::EMS_Dead },
 				{ "EMovementStatus::EMS_MAX", (int64)EMovementStatus::EMS_MAX },
 			};
@@ -63,6 +65,8 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 				{ "BlueprintType", "true" },
 				{ "EMS_Attacking.DisplayName", "Attacking" },
 				{ "EMS_Attacking.Name", "EMovementStatus::EMS_Attacking" },
+				{ "EMS_Avoid.DisplayName", "Avoid" },
+				{ "EMS_Avoid.Name", "EMovementStatus::EMS_Avoid" },
 				{ "EMS_Dead.DisplayName", "Dead" },
 				{ "EMS_Dead.Name", "EMovementStatus::EMS_Dead" },
 				{ "EMS_MAX.DisplayName", "DefaultMax" },
@@ -91,11 +95,18 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		}
 		return ReturnEnum;
 	}
-	DEFINE_FUNCTION(AMyMainCharacter::execFixAnimation)
+	DEFINE_FUNCTION(AMyMainCharacter::execGenAfterImage)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->FixAnimation();
+		P_THIS->GenAfterImage();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AMyMainCharacter::execSlowMotion)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SlowMotion();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AMyMainCharacter::execLookAtTargetWhenAttacking)
@@ -135,18 +146,51 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		P_THIS->LookattheLockOnTarget(Z_Param_DeltaTime);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(AMyMainCharacter::execAvoidDown)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AvoidDown();
+		P_NATIVE_END;
+	}
 	void AMyMainCharacter::StaticRegisterNativesAMyMainCharacter()
 	{
 		UClass* Class = AMyMainCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "AvoidDown", &AMyMainCharacter::execAvoidDown },
 			{ "EquipWeapon", &AMyMainCharacter::execEquipWeapon },
-			{ "FixAnimation", &AMyMainCharacter::execFixAnimation },
+			{ "GenAfterImage", &AMyMainCharacter::execGenAfterImage },
 			{ "LookAtTargetWhenAttacking", &AMyMainCharacter::execLookAtTargetWhenAttacking },
 			{ "LookattheLockOnTarget", &AMyMainCharacter::execLookattheLockOnTarget },
 			{ "NextComboOff", &AMyMainCharacter::execNextComboOff },
 			{ "NextComboOn", &AMyMainCharacter::execNextComboOn },
+			{ "SlowMotion", &AMyMainCharacter::execSlowMotion },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AMyMainCharacter_AvoidDown_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMyMainCharacter_AvoidDown_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "/** Action Keys*/" },
+		{ "ModuleRelativePath", "MyMainCharacter.h" },
+		{ "ToolTip", "Action Keys" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMyMainCharacter_AvoidDown_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMyMainCharacter, nullptr, "AvoidDown", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMyMainCharacter_AvoidDown_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMyMainCharacter_AvoidDown_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMyMainCharacter_AvoidDown()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMyMainCharacter_AvoidDown_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AMyMainCharacter_EquipWeapon_Statics
 	{
@@ -170,7 +214,7 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AMyMainCharacter_FixAnimation_Statics
+	struct Z_Construct_UFunction_AMyMainCharacter_GenAfterImage_Statics
 	{
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -178,17 +222,17 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMyMainCharacter_FixAnimation_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMyMainCharacter_GenAfterImage_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "MyMainCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMyMainCharacter_FixAnimation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMyMainCharacter, nullptr, "FixAnimation", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMyMainCharacter_FixAnimation_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMyMainCharacter_FixAnimation_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AMyMainCharacter_FixAnimation()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMyMainCharacter_GenAfterImage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMyMainCharacter, nullptr, "GenAfterImage", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMyMainCharacter_GenAfterImage_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMyMainCharacter_GenAfterImage_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMyMainCharacter_GenAfterImage()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMyMainCharacter_FixAnimation_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMyMainCharacter_GenAfterImage_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -302,6 +346,28 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AMyMainCharacter_SlowMotion_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMyMainCharacter_SlowMotion_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "MyMainCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMyMainCharacter_SlowMotion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMyMainCharacter, nullptr, "SlowMotion", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMyMainCharacter_SlowMotion_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMyMainCharacter_SlowMotion_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMyMainCharacter_SlowMotion()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMyMainCharacter_SlowMotion_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AMyMainCharacter_NoRegister()
 	{
 		return AMyMainCharacter::StaticClass();
@@ -351,6 +417,10 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CombatMontage;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MoveUtilityMontage_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MoveUtilityMontage;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EquippedWeapon_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_EquippedWeapon;
@@ -366,6 +436,10 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LookSpeed_TargetAttacking_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_LookSpeed_TargetAttacking;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AvoidAfterImage_Spawn_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_AvoidAfterImage_Spawn;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -375,12 +449,14 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_NierProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMyMainCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AMyMainCharacter_AvoidDown, "AvoidDown" }, // 3029802249
 		{ &Z_Construct_UFunction_AMyMainCharacter_EquipWeapon, "EquipWeapon" }, // 3442641567
-		{ &Z_Construct_UFunction_AMyMainCharacter_FixAnimation, "FixAnimation" }, // 2089801807
+		{ &Z_Construct_UFunction_AMyMainCharacter_GenAfterImage, "GenAfterImage" }, // 605315125
 		{ &Z_Construct_UFunction_AMyMainCharacter_LookAtTargetWhenAttacking, "LookAtTargetWhenAttacking" }, // 2250715990
 		{ &Z_Construct_UFunction_AMyMainCharacter_LookattheLockOnTarget, "LookattheLockOnTarget" }, // 3023245554
 		{ &Z_Construct_UFunction_AMyMainCharacter_NextComboOff, "NextComboOff" }, // 2483084321
 		{ &Z_Construct_UFunction_AMyMainCharacter_NextComboOn, "NextComboOn" }, // 2202226550
+		{ &Z_Construct_UFunction_AMyMainCharacter_SlowMotion, "SlowMotion" }, // 3067538861
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyMainCharacter_Statics::Class_MetaDataParams[] = {
@@ -470,6 +546,15 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_CombatMontage = { "CombatMontage", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyMainCharacter, CombatMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_CombatMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_CombatMontage_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MoveUtilityMontage_MetaData[] = {
+		{ "Category", "Anims" },
+		{ "Comment", "//GreatSword ???? ??\xc5\xb8??\n" },
+		{ "ModuleRelativePath", "MyMainCharacter.h" },
+		{ "ToolTip", "GreatSword ???? ??\xc5\xb8??" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MoveUtilityMontage = { "MoveUtilityMontage", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyMainCharacter, MoveUtilityMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MoveUtilityMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MoveUtilityMontage_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_EquippedWeapon_MetaData[] = {
 		{ "Category", "Weapon" },
 		{ "Comment", "///////////////// ???? ////////////////////\n" },
@@ -500,6 +585,15 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_LookSpeed_TargetAttacking = { "LookSpeed_TargetAttacking", nullptr, (EPropertyFlags)0x0010000000010005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyMainCharacter, LookSpeed_TargetAttacking), METADATA_PARAMS(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_LookSpeed_TargetAttacking_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_LookSpeed_TargetAttacking_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_AvoidAfterImage_Spawn_MetaData[] = {
+		{ "Category", "AvoidAfterImageBP" },
+		{ "Comment", "//?????\xc3\xb0?(??\xc5\xb8\xc5\xb8?? ????)\n" },
+		{ "ModuleRelativePath", "MyMainCharacter.h" },
+		{ "ToolTip", "?????\xc3\xb0?(??\xc5\xb8\xc5\xb8?? ????)" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_AvoidAfterImage_Spawn = { "AvoidAfterImage_Spawn", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyMainCharacter, AvoidAfterImage_Spawn), Z_Construct_UClass_AAvoidAfterImage_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_AvoidAfterImage_Spawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_AvoidAfterImage_Spawn_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyMainCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_FollowCamera,
@@ -511,10 +605,12 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_RunningSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_SprintingSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_CombatMontage,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MoveUtilityMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_EquippedWeapon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_weapon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_theTarget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_LookSpeed_TargetAttacking,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_AvoidAfterImage_Spawn,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMyMainCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMyMainCharacter>::IsAbstract,
@@ -543,7 +639,7 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyMainCharacter, 2608703905);
+	IMPLEMENT_CLASS(AMyMainCharacter, 2314547357);
 	template<> NIERPROJECT_API UClass* StaticClass<AMyMainCharacter>()
 	{
 		return AMyMainCharacter::StaticClass();

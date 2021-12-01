@@ -11,6 +11,7 @@ enum class EMovementStatus : uint8 {
 	EMS_Normal UMETA(DisplayName = "Normal"),
 	EMS_Sprinting UMETA(DisplayName = "Sprinting"),
 	EMS_Attacking UMETA(DisplayName = "Attacking"),
+	EMS_Avoid UMETA(DisplayName = "Avoid"),
 	EMS_Dead UMETA(DisplayName = "Dead"),
 
 	EMS_MAX UMETA(DisplayName = "DefaultMax")
@@ -57,7 +58,10 @@ public:
 	float SprintingSpeed;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Anims")
-	class UAnimMontage* CombatMontage;
+	class UAnimMontage* CombatMontage; //GreatSword 공격 몽타주
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Anims")
+	class UAnimMontage* MoveUtilityMontage; //회피, 피격, 죽음 몽타주
 
 protected:
 
@@ -74,6 +78,7 @@ protected:
 	void LookUp(float Value);
 
 	/** Action Keys*/
+	UFUNCTION(BlueprintCallable)
 	void AvoidDown();
 	void AvoidUp();
 	void RunDown();
@@ -170,10 +175,21 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Attack")
 	float LookSpeed_TargetAttacking;
 
-	UFUNCTION(BlueprintCallable)
-	void FixAnimation();
 	///////////////////////////////////////////
 
+	///////////////// 회피 ////////////////////
+	FTimerHandle SlowTimeFloatDelayHandle;
+	float SlowTime = 1;	//월드 시간
+	float TimeCheck = 0; //델타 타임
+	float TotalTimeCheck = 0; //지난시간(델타타임 누적)
+	
+	UPROPERTY(EditAnywhere, Category = "AvoidAfterImageBP")
+	TSubclassOf<class AAvoidAfterImage> AvoidAfterImage_Spawn;
 
+	UFUNCTION(BlueprintCallable)
+	void SlowMotion();
+
+	UFUNCTION(BlueprintCallable)
+	void GenAfterImage();
 
 };

@@ -2,6 +2,8 @@
 
 
 #include "Enemy.h"
+#include "MyMainCharacter.h"
+#include "Components/BoxComponent.h"
 
 // Sets default values
 AEnemy::AEnemy()
@@ -11,18 +13,6 @@ AEnemy::AEnemy()
 
 	LifeEntityinitialize();
 
-	Health = 100.f;
-	MaxHealth = 100.f;
-
-	Damage = 5.f;
-
-}
-
-// Called when the game starts or when spawned
-void AEnemy::BeginPlay()
-{
-	Super::BeginPlay();
-	
 }
 
 // Called every frame

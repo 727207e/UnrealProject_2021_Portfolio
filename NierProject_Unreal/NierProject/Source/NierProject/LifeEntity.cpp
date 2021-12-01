@@ -42,7 +42,7 @@ void ALifeEntity::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 }
 void ALifeEntity::TaketheDamage(float _Damage)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Red, "Enemy : Im hit!");
+	GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Red, "Im hit!");
 	if (Health - _Damage <= .0f)
 	{
 		Die();
