@@ -11,7 +11,7 @@ AMinionMeleeCoreDawn_Enemy::AMinionMeleeCoreDawn_Enemy()
 	MaxHealth = 100.f;
 
 	CombatCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("CombatCollision"));
-	CombatCollision->SetupAttachment(GetMesh(), FName("EnemySocket")); //무기에 콜리더 
+	CombatCollision->SetupAttachment(GetMesh(), FName("weapon_sword_r")); //무기에 콜리더 
 
 
 	//Pawn과 상호작용하게 설정 , 콜리전 끄기(이후 특정상황에만 활성화)
