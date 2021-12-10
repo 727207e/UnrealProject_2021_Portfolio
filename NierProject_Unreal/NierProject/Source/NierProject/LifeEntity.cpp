@@ -15,8 +15,10 @@ ALifeEntity::ALifeEntity()
 
 void ALifeEntity::LifeEntityinitialize()
 {
-	HitBoxCapsule = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CombatSphere"));
+	HitBoxCapsule = CreateDefaultSubobject<UCapsuleComponent>(TEXT("HitBoxCapsule"));
 	HitBoxCapsule->SetupAttachment(GetRootComponent());
+
+	GetMesh()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
 }
 
 

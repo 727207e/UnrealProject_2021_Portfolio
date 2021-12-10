@@ -70,14 +70,12 @@ void AWeapon::CombatOnOnverlapEnd(UPrimitiveComponent* OverlappedComponent, AAct
 
 void AWeapon::ActivateCollison()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Red, "Activate");
 	CombatCollision->SetCollisionEnabled(ECollisionEnabled::QueryOnly); //콜리전 키기
 }
 
 
 void AWeapon::DeActivateCollison()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Red, "DeActivate");
 	CombatCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision); //콜리전 끄기
 }
 

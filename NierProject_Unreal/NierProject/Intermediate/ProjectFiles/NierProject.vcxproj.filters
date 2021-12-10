@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\NierProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{C7FCB858-AD5C-4F74-8495-78E6F8D7D371}</UniqueIdentifier>
+      <UniqueIdentifier>{1AC8E037-24FE-42F0-A7B7-8D98CE1793F1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\NierProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{FE068653-7438-449E-8D66-6C34F10E90D4}</UniqueIdentifier>
+      <UniqueIdentifier>{F9D17A7E-C2F4-42A8-A14F-274B4C91083D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\NierProject">
-      <UniqueIdentifier>{08460A56-484B-49B5-821A-57BDCDAD01B5}</UniqueIdentifier>
+      <UniqueIdentifier>{F910A13E-EC10-4935-827E-34C55CDC35D3}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\NierProject\AvoidAfterImage.cpp">
       <Filter>Source\NierProject</Filter>
@@ -54,6 +54,12 @@
       <Filter>Source\NierProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NierProject\MainCharAnimInstance.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NierProject\MinionMeleeCoreDawn_AnimInstance.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\MinionMeleeCoreDawn_AnimInstance.h">
       <Filter>Source\NierProject</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\NierProject\MinionMeleeCoreDawn_Enemy.cpp">
