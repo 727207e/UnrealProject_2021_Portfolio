@@ -12,6 +12,7 @@ enum class EMovementStatus : uint8 {
 	EMS_Sprinting UMETA(DisplayName = "Sprinting"),
 	EMS_Attacking UMETA(DisplayName = "Attacking"),
 	EMS_Avoid UMETA(DisplayName = "Avoid"),
+	EMS_Hit UMETA(DisplayName = "Hit"),
 	EMS_Dead UMETA(DisplayName = "Dead"),
 
 	EMS_MAX UMETA(DisplayName = "DefaultMax")
@@ -124,7 +125,6 @@ public:
 
 
 
-
 	///////////////// 무기 ////////////////////
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon")
@@ -191,5 +191,11 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void GenAfterImage();
+	///////////////////////////////////////////
 
+	///////////////// 피격 ////////////////////
+	virtual void TaketheDamage(float _Damage) override;
+
+	UFUNCTION(BlueprintCallable)
+	void HitReactEnd();
 };

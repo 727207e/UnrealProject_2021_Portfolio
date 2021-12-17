@@ -20,6 +20,7 @@ struct FHitResult;
 #define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_SPARSE_DATA
 #define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execHitReactEnd); \
 	DECLARE_FUNCTION(execDeActivateCollison); \
 	DECLARE_FUNCTION(execActivateCollison); \
 	DECLARE_FUNCTION(execAttackEnd); \
@@ -34,6 +35,7 @@ struct FHitResult;
 
 #define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execHitReactEnd); \
 	DECLARE_FUNCTION(execDeActivateCollison); \
 	DECLARE_FUNCTION(execActivateCollison); \
 	DECLARE_FUNCTION(execAttackEnd); \
@@ -127,7 +129,8 @@ template<> NIERPROJECT_API UClass* StaticClass<class AMinionMeleeCoreDawn_Enemy>
 	op(EEnemyMovementStatus::EMS_Idle) \
 	op(EEnemyMovementStatus::EMS_MoveToTarget) \
 	op(EEnemyMovementStatus::EMS_Attacking) \
-	op(EEnemyMovementStatus::EMS_Dead) 
+	op(EEnemyMovementStatus::EMS_Dead) \
+	op(EEnemyMovementStatus::EMS_Hit) 
 
 enum class EEnemyMovementStatus : uint8;
 template<> NIERPROJECT_API UEnum* StaticEnum<EEnemyMovementStatus>();

@@ -169,9 +169,36 @@ void AMyMainCharacter::AvoidDown()
 		GetCharacterMovement()->MaxWalkSpeed = RunningSpeed;
 
 
-		///슬로우 모션
+	}
+}
+
+void AMyMainCharacter::TaketheDamage(float _Damage)
+{
+	//회피 도중이였다면
+	if (MovementStatus == EMovementStatus::EMS_Avoid)
+	{
+		///슬로우 모션과 회피모션
 		SlowMotion();
 	}
+
+	else
+	{
+		Super::TaketheDamage(_Damage);
+
+		UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+		if (AnimInstance)
+		{
+			AnimInstance->Montage_Play(CombatMontage, 1.5f);
+			AnimInstance->Montage_JumpToSection(FName("Hit"), CombatMontage);
+
+			Super::TaketheDamage(_Damage);
+		}
+	}
+}
+
+void AMyMainCharacter::HitReactEnd()
+{
+	MovementStatus = EMovementStatus::EMS_Normal;
 }
 
 void AMyMainCharacter::AvoidUp()
@@ -506,10 +533,8 @@ void AMyMainCharacter::SlowMotion()
 			TotalTimeCheck = 0;
 			SlowTime = 1;
 			GetWorld()->GetTimerManager().ClearTimer(SlowTimeFloatDelayHandle);
-			UE_LOG(LogTemp, Warning, TEXT("Time in"));
 		}
 
-		UE_LOG(LogTemp, Warning, TEXT("%f"), SlowTime);
 		UGameplayStatics::SetGlobalTimeDilation(GetWorld(), SlowTime);
 
 	}), TimeCheck, true, 0.f);
@@ -525,7 +550,7 @@ void AMyMainCharacter::GenAfterImage()
 	Rot.Yaw -= 90.f;
 
 	//생성
-	for(int i = 0 ; i < 4; i++)
+	for(int i = 0 ; i < 2; i++)
 	{
 		//생성
 		AAvoidAfterImage* AfterImage = GetWorld()->SpawnActor<AAvoidAfterImage>(AvoidAfterImage_Spawn, Loc, Rot);

@@ -36,7 +36,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "LifeEntity")
 	USoundCue* SwingSound;
 
-	void TaketheDamage(float Damage);
+	virtual void TaketheDamage(float Damage);
 
 	void Die();
 

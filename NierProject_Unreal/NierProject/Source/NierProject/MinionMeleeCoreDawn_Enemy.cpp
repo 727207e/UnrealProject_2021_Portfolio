@@ -7,6 +7,7 @@
 #include "MyMainCharacter.h"
 #include "AIController.h"
 #include "Kismet/KismetSystemLibrary.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
 AMinionMeleeCoreDawn_Enemy::AMinionMeleeCoreDawn_Enemy()
@@ -33,7 +34,7 @@ AMinionMeleeCoreDawn_Enemy::AMinionMeleeCoreDawn_Enemy()
 	Damage = 25.f;
 
 	AttackMinTime = 0.1f;
-	AttackMaxTime = 0.3f;
+	AttackMaxTime = 1.0f;
 
 	EnemyMovementStatus = EEnemyMovementStatus::EMS_Idle;
 
@@ -126,7 +127,6 @@ void AMinionMeleeCoreDawn_Enemy::MoveToTarget(class AMyMainCharacter* Target) {
 
 void AMinionMeleeCoreDawn_Enemy::AgroSphereOnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) {
 
-	UE_LOG(LogTemp, Warning, TEXT("isAgroEnd"));
 	if (OtherActor)
 	{
 		AMyMainCharacter* Main = Cast<AMyMainCharacter>(OtherActor);
@@ -162,7 +162,7 @@ void AMinionMeleeCoreDawn_Enemy::CombatSphereOnOverlapBegin(UPrimitiveComponent*
 			CombatTarget = Main;
 
 			//적군 랜덤 시간에 공격
-			float AttackTime = FMath::FRandRange(AttackMinTime, AttackMaxTime);
+			AttackTime = FMath::FRandRange(AttackMinTime, AttackMaxTime);
 			GetWorldTimerManager().SetTimer(AttackTimer, this, &AMinionMeleeCoreDawn_Enemy::Attack, AttackTime);
 		}
 	}
@@ -170,7 +170,6 @@ void AMinionMeleeCoreDawn_Enemy::CombatSphereOnOverlapBegin(UPrimitiveComponent*
 
 void AMinionMeleeCoreDawn_Enemy::CombatSphereOnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	UE_LOG(LogTemp, Warning, TEXT("isCombatEnd"));
 	if (OtherActor && OtherComp)
 	{
 		AMyMainCharacter* Main = Cast<AMyMainCharacter>(OtherActor);
@@ -220,6 +219,7 @@ void AMinionMeleeCoreDawn_Enemy::Attack()
 			UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
 			if (AnimInstance)
 			{
+				//공격 몽타주 실행
 				AnimInstance->Montage_Play(CombatMontage, 0.8f);
 				AnimInstance->Montage_JumpToSection(FName("Attack"), CombatMontage);
 			}
@@ -240,7 +240,35 @@ void AMinionMeleeCoreDawn_Enemy::AttackEnd()
 	//도망간게 아니면 다음 공격 준비
 	else
 	{
-		float AttackTime = FMath::FRandRange(AttackMinTime, AttackMaxTime);
+
+		AttackTime = FMath::FRandRange(AttackMinTime, AttackMaxTime);
+
+		float TimeCheck = GetWorld()->GetDeltaSeconds(); //델타타임 가져옴
+		TotalTimeCheck = 0;
+
+		GetWorld()->GetTimerManager().SetTimer(LookAtHandle, FTimerDelegate::CreateLambda([&]()
+		{
+			TimeCheck = GetWorld()->GetDeltaSeconds(); //델타타임 가져옴
+			TotalTimeCheck += TimeCheck; //누적시간
+
+			/////공격이 끝나고 플레이어(Target)을 처다보기
+			FVector TargetLot = CombatTarget->GetActorLocation();
+			TargetLot.Z = GetActorLocation().Z;
+
+			FRotator Rot = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), TargetLot);
+
+			SetActorRotation(Rot);
+			/////
+
+			//AttackTime(다음 공격 시간) 이후 초기화
+			if (TotalTimeCheck >= AttackTime)
+			{
+				//초기화
+				GetWorld()->GetTimerManager().ClearTimer(LookAtHandle); 
+			}
+		}), TimeCheck, true, 0.f);
+
+
 		GetWorldTimerManager().SetTimer(AttackTimer, this, &AMinionMeleeCoreDawn_Enemy::Attack, AttackTime);
 	}
 }
@@ -254,4 +282,26 @@ void AMinionMeleeCoreDawn_Enemy::ActivateCollison()
 void AMinionMeleeCoreDawn_Enemy::DeActivateCollison()
 {
 	CombatCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision); //콜리전 끄기
+}
+
+void AMinionMeleeCoreDawn_Enemy::TaketheDamage(float _Damage)
+{
+	EnemyMovementStatus = EEnemyMovementStatus::EMS_Hit;
+
+	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+	if (AnimInstance)
+	{
+		//공격 몽타주 실행
+		AnimInstance->Montage_Play(CombatMontage, 0.5f);
+		AnimInstance->Montage_JumpToSection(FName("Hit"), CombatMontage);
+	}
+
+	UE_LOG(LogTemp, Warning, TEXT("its Minion"));
+	Super::TaketheDamage(_Damage);
+}
+
+void AMinionMeleeCoreDawn_Enemy::HitReactEnd()
+{
+	EnemyMovementStatus = EEnemyMovementStatus::EMS_Idle;
+	AttackEnd();
 }

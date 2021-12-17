@@ -29,3 +29,9 @@ void AEnemy::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 }
 
+void AEnemy::TaketheDamage(float _Damage)
+{
+	UE_LOG(LogTemp, Warning, TEXT("its Enemy"));
+	Super::TaketheDamage(_Damage);
+}
+

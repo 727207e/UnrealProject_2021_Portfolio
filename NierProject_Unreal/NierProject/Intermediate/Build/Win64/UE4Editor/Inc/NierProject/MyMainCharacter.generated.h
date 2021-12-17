@@ -13,9 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define NIERPROJECT_MyMainCharacter_generated_h
 
-#define NierProject_Source_NierProject_MyMainCharacter_h_23_SPARSE_DATA
-#define NierProject_Source_NierProject_MyMainCharacter_h_23_RPC_WRAPPERS \
+#define NierProject_Source_NierProject_MyMainCharacter_h_24_SPARSE_DATA
+#define NierProject_Source_NierProject_MyMainCharacter_h_24_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execHitReactEnd); \
 	DECLARE_FUNCTION(execGenAfterImage); \
 	DECLARE_FUNCTION(execSlowMotion); \
 	DECLARE_FUNCTION(execLookAtTargetWhenAttacking); \
@@ -26,8 +27,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execAvoidDown);
 
 
-#define NierProject_Source_NierProject_MyMainCharacter_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+#define NierProject_Source_NierProject_MyMainCharacter_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execHitReactEnd); \
 	DECLARE_FUNCTION(execGenAfterImage); \
 	DECLARE_FUNCTION(execSlowMotion); \
 	DECLARE_FUNCTION(execLookAtTargetWhenAttacking); \
@@ -38,7 +40,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execAvoidDown);
 
 
-#define NierProject_Source_NierProject_MyMainCharacter_h_23_INCLASS_NO_PURE_DECLS \
+#define NierProject_Source_NierProject_MyMainCharacter_h_24_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMyMainCharacter(); \
 	friend struct Z_Construct_UClass_AMyMainCharacter_Statics; \
@@ -47,7 +49,7 @@ public: \
 	DECLARE_SERIALIZER(AMyMainCharacter)
 
 
-#define NierProject_Source_NierProject_MyMainCharacter_h_23_INCLASS \
+#define NierProject_Source_NierProject_MyMainCharacter_h_24_INCLASS \
 private: \
 	static void StaticRegisterNativesAMyMainCharacter(); \
 	friend struct Z_Construct_UClass_AMyMainCharacter_Statics; \
@@ -56,7 +58,7 @@ public: \
 	DECLARE_SERIALIZER(AMyMainCharacter)
 
 
-#define NierProject_Source_NierProject_MyMainCharacter_h_23_STANDARD_CONSTRUCTORS \
+#define NierProject_Source_NierProject_MyMainCharacter_h_24_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMyMainCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMyMainCharacter) \
@@ -69,7 +71,7 @@ private: \
 public:
 
 
-#define NierProject_Source_NierProject_MyMainCharacter_h_23_ENHANCED_CONSTRUCTORS \
+#define NierProject_Source_NierProject_MyMainCharacter_h_24_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMyMainCharacter(AMyMainCharacter&&); \
@@ -80,33 +82,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMyMainCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMyMainCharacter)
 
 
-#define NierProject_Source_NierProject_MyMainCharacter_h_23_PRIVATE_PROPERTY_OFFSET \
+#define NierProject_Source_NierProject_MyMainCharacter_h_24_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(AMyMainCharacter, CameraBoom); } \
 	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(AMyMainCharacter, FollowCamera); } \
 	FORCEINLINE static uint32 __PPO__FollowCameraEndPoint() { return STRUCT_OFFSET(AMyMainCharacter, FollowCameraEndPoint); }
 
 
-#define NierProject_Source_NierProject_MyMainCharacter_h_20_PROLOG
-#define NierProject_Source_NierProject_MyMainCharacter_h_23_GENERATED_BODY_LEGACY \
+#define NierProject_Source_NierProject_MyMainCharacter_h_21_PROLOG
+#define NierProject_Source_NierProject_MyMainCharacter_h_24_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	NierProject_Source_NierProject_MyMainCharacter_h_23_PRIVATE_PROPERTY_OFFSET \
-	NierProject_Source_NierProject_MyMainCharacter_h_23_SPARSE_DATA \
-	NierProject_Source_NierProject_MyMainCharacter_h_23_RPC_WRAPPERS \
-	NierProject_Source_NierProject_MyMainCharacter_h_23_INCLASS \
-	NierProject_Source_NierProject_MyMainCharacter_h_23_STANDARD_CONSTRUCTORS \
+	NierProject_Source_NierProject_MyMainCharacter_h_24_PRIVATE_PROPERTY_OFFSET \
+	NierProject_Source_NierProject_MyMainCharacter_h_24_SPARSE_DATA \
+	NierProject_Source_NierProject_MyMainCharacter_h_24_RPC_WRAPPERS \
+	NierProject_Source_NierProject_MyMainCharacter_h_24_INCLASS \
+	NierProject_Source_NierProject_MyMainCharacter_h_24_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define NierProject_Source_NierProject_MyMainCharacter_h_23_GENERATED_BODY \
+#define NierProject_Source_NierProject_MyMainCharacter_h_24_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	NierProject_Source_NierProject_MyMainCharacter_h_23_PRIVATE_PROPERTY_OFFSET \
-	NierProject_Source_NierProject_MyMainCharacter_h_23_SPARSE_DATA \
-	NierProject_Source_NierProject_MyMainCharacter_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
-	NierProject_Source_NierProject_MyMainCharacter_h_23_INCLASS_NO_PURE_DECLS \
-	NierProject_Source_NierProject_MyMainCharacter_h_23_ENHANCED_CONSTRUCTORS \
+	NierProject_Source_NierProject_MyMainCharacter_h_24_PRIVATE_PROPERTY_OFFSET \
+	NierProject_Source_NierProject_MyMainCharacter_h_24_SPARSE_DATA \
+	NierProject_Source_NierProject_MyMainCharacter_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+	NierProject_Source_NierProject_MyMainCharacter_h_24_INCLASS_NO_PURE_DECLS \
+	NierProject_Source_NierProject_MyMainCharacter_h_24_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -122,6 +124,7 @@ template<> NIERPROJECT_API UClass* StaticClass<class AMyMainCharacter>();
 	op(EMovementStatus::EMS_Sprinting) \
 	op(EMovementStatus::EMS_Attacking) \
 	op(EMovementStatus::EMS_Avoid) \
+	op(EMovementStatus::EMS_Hit) \
 	op(EMovementStatus::EMS_Dead) 
 
 enum class EMovementStatus : uint8;

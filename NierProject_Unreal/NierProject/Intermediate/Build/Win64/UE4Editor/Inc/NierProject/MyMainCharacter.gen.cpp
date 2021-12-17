@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		return EMovementStatus_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EMovementStatus(EMovementStatus_StaticEnum, TEXT("/Script/NierProject"), TEXT("EMovementStatus"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_NierProject_EMovementStatus_Hash() { return 1591400159U; }
+	uint32 Get_Z_Construct_UEnum_NierProject_EMovementStatus_Hash() { return 2778671054U; }
 	UEnum* Z_Construct_UEnum_NierProject_EMovementStatus()
 	{
 #if WITH_HOT_RELOAD
@@ -57,6 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 				{ "EMovementStatus::EMS_Sprinting", (int64)EMovementStatus::EMS_Sprinting },
 				{ "EMovementStatus::EMS_Attacking", (int64)EMovementStatus::EMS_Attacking },
 				{ "EMovementStatus::EMS_Avoid", (int64)EMovementStatus::EMS_Avoid },
+				{ "EMovementStatus::EMS_Hit", (int64)EMovementStatus::EMS_Hit },
 				{ "EMovementStatus::EMS_Dead", (int64)EMovementStatus::EMS_Dead },
 				{ "EMovementStatus::EMS_MAX", (int64)EMovementStatus::EMS_MAX },
 			};
@@ -69,6 +70,8 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 				{ "EMS_Avoid.Name", "EMovementStatus::EMS_Avoid" },
 				{ "EMS_Dead.DisplayName", "Dead" },
 				{ "EMS_Dead.Name", "EMovementStatus::EMS_Dead" },
+				{ "EMS_Hit.DisplayName", "Hit" },
+				{ "EMS_Hit.Name", "EMovementStatus::EMS_Hit" },
 				{ "EMS_MAX.DisplayName", "DefaultMax" },
 				{ "EMS_MAX.Name", "EMovementStatus::EMS_MAX" },
 				{ "EMS_Normal.DisplayName", "Normal" },
@@ -94,6 +97,13 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
 		}
 		return ReturnEnum;
+	}
+	DEFINE_FUNCTION(AMyMainCharacter::execHitReactEnd)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->HitReactEnd();
+		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AMyMainCharacter::execGenAfterImage)
 	{
@@ -160,6 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 			{ "AvoidDown", &AMyMainCharacter::execAvoidDown },
 			{ "EquipWeapon", &AMyMainCharacter::execEquipWeapon },
 			{ "GenAfterImage", &AMyMainCharacter::execGenAfterImage },
+			{ "HitReactEnd", &AMyMainCharacter::execHitReactEnd },
 			{ "LookAtTargetWhenAttacking", &AMyMainCharacter::execLookAtTargetWhenAttacking },
 			{ "LookattheLockOnTarget", &AMyMainCharacter::execLookattheLockOnTarget },
 			{ "NextComboOff", &AMyMainCharacter::execNextComboOff },
@@ -233,6 +244,28 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMyMainCharacter_GenAfterImage_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AMyMainCharacter_HitReactEnd_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMyMainCharacter_HitReactEnd_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "MyMainCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMyMainCharacter_HitReactEnd_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMyMainCharacter, nullptr, "HitReactEnd", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMyMainCharacter_HitReactEnd_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMyMainCharacter_HitReactEnd_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMyMainCharacter_HitReactEnd()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMyMainCharacter_HitReactEnd_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -452,6 +485,7 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		{ &Z_Construct_UFunction_AMyMainCharacter_AvoidDown, "AvoidDown" }, // 3029802249
 		{ &Z_Construct_UFunction_AMyMainCharacter_EquipWeapon, "EquipWeapon" }, // 3442641567
 		{ &Z_Construct_UFunction_AMyMainCharacter_GenAfterImage, "GenAfterImage" }, // 605315125
+		{ &Z_Construct_UFunction_AMyMainCharacter_HitReactEnd, "HitReactEnd" }, // 2919230952
 		{ &Z_Construct_UFunction_AMyMainCharacter_LookAtTargetWhenAttacking, "LookAtTargetWhenAttacking" }, // 2250715990
 		{ &Z_Construct_UFunction_AMyMainCharacter_LookattheLockOnTarget, "LookattheLockOnTarget" }, // 3023245554
 		{ &Z_Construct_UFunction_AMyMainCharacter_NextComboOff, "NextComboOff" }, // 2483084321
@@ -639,7 +673,7 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyMainCharacter, 2314547357);
+	IMPLEMENT_CLASS(AMyMainCharacter, 2327798039);
 	template<> NIERPROJECT_API UClass* StaticClass<AMyMainCharacter>()
 	{
 		return AMyMainCharacter::StaticClass();

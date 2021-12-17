@@ -17,7 +17,7 @@ enum class EEnemyMovementStatus :uint8 {
 	EMS_MoveToTarget	UMETA(DisplayName = "MoveToTarget"),
 	EMS_Attacking		UMETA(DisplayName = "Attacking"),
 	EMS_Dead			UMETA(DisplayName = "Dead"),
-
+	EMS_Hit				UMETA(DisplayName = "Hit"),
 
 	EMS_MAX				UMETA(DisplayName = "DefaultMax")
 
@@ -90,6 +90,7 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "AI")
 	AMyMainCharacter* CombatTarget;
 
+	///////////////// 공격 ////////////////////
 	void Attack();
 
 	UFUNCTION(BlueprintCallable)
@@ -97,10 +98,22 @@ protected:
 
 	bool bAttacking = false;
 	bool bOverlappingCombatSphere = false;
-	
+
+	FTimerHandle LookAtHandle;	//공격이후 쳐다보기 위한 타이머
+	float TotalTimeCheck;		//타이머 시간
+
+	float AttackTime;			//다음 공격 딜레이 시간
+
 	UFUNCTION(BlueprintCallable)
-	void ActivateCollison();
+	void ActivateCollison();	//무기 콜리전 On , Off
 
 	UFUNCTION(BlueprintCallable)
 	void DeActivateCollison();
+
+	virtual void TaketheDamage(float _Damage) override;
+
+	UFUNCTION(BlueprintCallable)
+	void HitReactEnd();
+	///////////////////////////////////////////
+
 };

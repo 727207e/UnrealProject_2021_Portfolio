@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeNierProject_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x906D216B,
+				0xC7E1EBF5,
 				0xF14155E9,
 				METADATA_PARAMS(nullptr, 0)
 			};

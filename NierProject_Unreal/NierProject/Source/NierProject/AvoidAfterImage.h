@@ -25,6 +25,8 @@ protected:
 	int myDirect; //이 분신의 방향. <0 : 상> , <1 : 하> , <2 : 좌> , <3 : 우>
 	float Speed; 
 	float DestroyTImer;
+	float DestroyTimeLimit = 0.2f; //파괴될 시간 지정
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

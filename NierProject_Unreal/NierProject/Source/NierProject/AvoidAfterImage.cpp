@@ -44,18 +44,20 @@ void AAvoidAfterImage::Tick(float DeltaTime)
 		case 1: //ÇÏ
 			Location += GetActorForwardVector() * -Speed * DeltaTime;
 			break;
+
+				/*
 		case 2: //ÁÂ
 			Location += GetActorRightVector() * -Speed * DeltaTime;
 			break;
 		case 3: //¿ì
 			Location += GetActorRightVector() * Speed * DeltaTime;
-			break;
+			break;*/
 
 		default:
 			break;
 		}
 
-		if (DestroyTImer >= 0.5f) //0.5ÃÊµÚ ÆÄ±«
+		if (DestroyTImer >= DestroyTimeLimit) //ÆÄ±«
 		{
 			Destroy();
 		}
