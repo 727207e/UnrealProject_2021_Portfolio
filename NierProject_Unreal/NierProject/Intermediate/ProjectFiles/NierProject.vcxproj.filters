@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\NierProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{69F76983-29B8-4D43-A8DB-45F4BA69B041}</UniqueIdentifier>
+      <UniqueIdentifier>{BEC135BE-60B4-4C03-9CE2-75FC21CBFEA4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\NierProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{0FEA2B7D-523B-4587-9E6B-C8D643DD8243}</UniqueIdentifier>
+      <UniqueIdentifier>{04AFB757-495D-4044-978C-01FA5EBE560F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\NierProject">
-      <UniqueIdentifier>{86E7602B-51DD-414F-A938-8EFAF2F66A9D}</UniqueIdentifier>
+      <UniqueIdentifier>{4964FF0F-7AA5-4895-82B4-6ED41025FC5F}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\NierProject\AvoidAfterImage.cpp">
       <Filter>Source\NierProject</Filter>
@@ -38,10 +38,28 @@
     <ClInclude Include="..\..\Source\NierProject\AvoidAfterImage.h">
       <Filter>Source\NierProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\NierProject\Drone.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\Drone.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\NierProject\Enemy.cpp">
       <Filter>Source\NierProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NierProject\Enemy.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NierProject\EnemyHealthBar.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\EnemyHealthBar.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NierProject\EnemyHealthBarWidget.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\EnemyHealthBarWidget.h">
       <Filter>Source\NierProject</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\NierProject\LifeEntity.cpp">
@@ -93,6 +111,12 @@
       <Filter>Source\NierProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NierProject\NierProjectGameMode.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NierProject\theDamageText.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\theDamageText.h">
       <Filter>Source\NierProject</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\NierProject\Weapon.cpp">

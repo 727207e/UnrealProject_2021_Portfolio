@@ -20,6 +20,7 @@ struct FHitResult;
 #define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_SPARSE_DATA
 #define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execDisappear); \
 	DECLARE_FUNCTION(execHitReactEnd); \
 	DECLARE_FUNCTION(execDeActivateCollison); \
 	DECLARE_FUNCTION(execActivateCollison); \
@@ -35,6 +36,7 @@ struct FHitResult;
 
 #define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execDisappear); \
 	DECLARE_FUNCTION(execHitReactEnd); \
 	DECLARE_FUNCTION(execDeActivateCollison); \
 	DECLARE_FUNCTION(execActivateCollison); \

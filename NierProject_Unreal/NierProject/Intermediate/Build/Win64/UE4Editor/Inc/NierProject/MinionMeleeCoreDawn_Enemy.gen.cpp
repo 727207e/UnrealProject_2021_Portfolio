@@ -102,6 +102,13 @@ void EmptyLinkFunctionForGeneratedCodeMinionMeleeCoreDawn_Enemy() {}
 		}
 		return ReturnEnum;
 	}
+	DEFINE_FUNCTION(AMinionMeleeCoreDawn_Enemy::execDisappear)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Disappear();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AMinionMeleeCoreDawn_Enemy::execHitReactEnd)
 	{
 		P_FINISH;
@@ -223,6 +230,7 @@ void EmptyLinkFunctionForGeneratedCodeMinionMeleeCoreDawn_Enemy() {}
 			{ "CombatSphereOnOverlapBegin", &AMinionMeleeCoreDawn_Enemy::execCombatSphereOnOverlapBegin },
 			{ "CombatSphereOnOverlapEnd", &AMinionMeleeCoreDawn_Enemy::execCombatSphereOnOverlapEnd },
 			{ "DeActivateCollison", &AMinionMeleeCoreDawn_Enemy::execDeActivateCollison },
+			{ "Disappear", &AMinionMeleeCoreDawn_Enemy::execDisappear },
 			{ "HitReactEnd", &AMinionMeleeCoreDawn_Enemy::execHitReactEnd },
 			{ "MoveToTarget", &AMinionMeleeCoreDawn_Enemy::execMoveToTarget },
 		};
@@ -721,6 +729,28 @@ void EmptyLinkFunctionForGeneratedCodeMinionMeleeCoreDawn_Enemy() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AMinionMeleeCoreDawn_Enemy_Disappear_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMinionMeleeCoreDawn_Enemy_Disappear_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "MinionMeleeCoreDawn_Enemy.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMinionMeleeCoreDawn_Enemy_Disappear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMinionMeleeCoreDawn_Enemy, nullptr, "Disappear", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMinionMeleeCoreDawn_Enemy_Disappear_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMinionMeleeCoreDawn_Enemy_Disappear_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMinionMeleeCoreDawn_Enemy_Disappear()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMinionMeleeCoreDawn_Enemy_Disappear_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AMinionMeleeCoreDawn_Enemy_HitReactEnd_Statics
 	{
 #if WITH_METADATA
@@ -841,6 +871,7 @@ void EmptyLinkFunctionForGeneratedCodeMinionMeleeCoreDawn_Enemy() {}
 		{ &Z_Construct_UFunction_AMinionMeleeCoreDawn_Enemy_CombatSphereOnOverlapBegin, "CombatSphereOnOverlapBegin" }, // 991256346
 		{ &Z_Construct_UFunction_AMinionMeleeCoreDawn_Enemy_CombatSphereOnOverlapEnd, "CombatSphereOnOverlapEnd" }, // 940260689
 		{ &Z_Construct_UFunction_AMinionMeleeCoreDawn_Enemy_DeActivateCollison, "DeActivateCollison" }, // 3459880100
+		{ &Z_Construct_UFunction_AMinionMeleeCoreDawn_Enemy_Disappear, "Disappear" }, // 2555005197
 		{ &Z_Construct_UFunction_AMinionMeleeCoreDawn_Enemy_HitReactEnd, "HitReactEnd" }, // 1562451810
 		{ &Z_Construct_UFunction_AMinionMeleeCoreDawn_Enemy_MoveToTarget, "MoveToTarget" }, // 2256728415
 	};
@@ -961,7 +992,7 @@ void EmptyLinkFunctionForGeneratedCodeMinionMeleeCoreDawn_Enemy() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMinionMeleeCoreDawn_Enemy, 3684300653);
+	IMPLEMENT_CLASS(AMinionMeleeCoreDawn_Enemy, 587892501);
 	template<> NIERPROJECT_API UClass* StaticClass<AMinionMeleeCoreDawn_Enemy>()
 	{
 		return AMinionMeleeCoreDawn_Enemy::StaticClass();

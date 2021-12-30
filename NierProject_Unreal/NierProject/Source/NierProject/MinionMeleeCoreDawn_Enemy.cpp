@@ -29,7 +29,6 @@ AMinionMeleeCoreDawn_Enemy::AMinionMeleeCoreDawn_Enemy()
 
 	Health = 75.f;
 	MaxHealth = 100.f;
-	Damage = 10.f;
 
 	Damage = 25.f;
 
@@ -77,6 +76,9 @@ void AMinionMeleeCoreDawn_Enemy::CombatOnOverlapBegin(UPrimitiveComponent* Overl
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, "Enemy : Player_Hit!");
 			Player->TaketheDamage(Damage);
+
+			//플레이어 후퇴 및 무적
+			Player->HitReact_goBack(GetActorLocation());
 		}
 	}
 }
@@ -286,22 +288,50 @@ void AMinionMeleeCoreDawn_Enemy::DeActivateCollison()
 
 void AMinionMeleeCoreDawn_Enemy::TaketheDamage(float _Damage)
 {
-	EnemyMovementStatus = EEnemyMovementStatus::EMS_Hit;
-
-	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
-	if (AnimInstance)
+	if (!bItsDead)	//살아있을 때만 적용
 	{
-		//공격 몽타주 실행
-		AnimInstance->Montage_Play(CombatMontage, 0.5f);
-		AnimInstance->Montage_JumpToSection(FName("Hit"), CombatMontage);
-	}
+		EnemyMovementStatus = EEnemyMovementStatus::EMS_Hit;
 
-	UE_LOG(LogTemp, Warning, TEXT("its Minion"));
-	Super::TaketheDamage(_Damage);
+		Super::TaketheDamage(_Damage);	//죽은 걸로 바뀔수 있기때문에 if문 한번 더 적용
+
+		if (!bItsDead)	//살아있을 때만 적용
+		{
+			UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+			if (AnimInstance)
+			{
+				//공격 몽타주 실행
+				AnimInstance->Montage_Play(CombatMontage, 0.5f);
+				AnimInstance->Montage_JumpToSection(FName("Hit"), CombatMontage);
+			}
+			DeActivateCollison(); //활성화된 콜라이더 비활성화 할것.
+		}
+	}
 }
 
 void AMinionMeleeCoreDawn_Enemy::HitReactEnd()
 {
 	EnemyMovementStatus = EEnemyMovementStatus::EMS_Idle;
 	AttackEnd();
+}
+
+void AMinionMeleeCoreDawn_Enemy::Die()
+{
+	Super::Die();
+
+	EnemyMovementStatus = EEnemyMovementStatus::EMS_Dead;
+
+	DeActivateCollison(); //활성화된 콜라이더 비활성화 할것.
+
+	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+	if (AnimInstance)
+	{
+		//공격 몽타주 실행
+		AnimInstance->Montage_Play(CombatMontage, 0.5f);
+		AnimInstance->Montage_JumpToSection(FName("Dead"), CombatMontage);
+	}
+}
+
+void AMinionMeleeCoreDawn_Enemy::Disappear()
+{
+	Destroy();
 }

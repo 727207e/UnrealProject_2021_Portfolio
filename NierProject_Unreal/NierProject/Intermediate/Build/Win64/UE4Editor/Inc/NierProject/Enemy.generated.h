@@ -14,8 +14,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define NIERPROJECT_Enemy_generated_h
 
 #define NierProject_Source_NierProject_Enemy_h_12_SPARSE_DATA
-#define NierProject_Source_NierProject_Enemy_h_12_RPC_WRAPPERS
-#define NierProject_Source_NierProject_Enemy_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define NierProject_Source_NierProject_Enemy_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execTargetShowInfo); \
+	DECLARE_FUNCTION(execBPTaketheDamage);
+
+
+#define NierProject_Source_NierProject_Enemy_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execTargetShowInfo); \
+	DECLARE_FUNCTION(execBPTaketheDamage);
+
+
 #define NierProject_Source_NierProject_Enemy_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAEnemy(); \

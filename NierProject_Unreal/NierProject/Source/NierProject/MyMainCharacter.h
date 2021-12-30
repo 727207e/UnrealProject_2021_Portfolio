@@ -123,6 +123,10 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
+	//현재 메터리얼(텍스쳐)
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Material")
+	class UMaterial* MaterialOrigin;
+
 
 
 	///////////////// 무기 ////////////////////
@@ -138,18 +142,28 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void EquipWeapon();
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Drone")
+	TSubclassOf<class ADrone> EquippedDrone;	// 들고있는 드론 정보
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Drone")
+	ADrone* NowMyDrone;	// 현재 사용중인 드론
+
+	void EquipDrone();
 	///////////////////////////////////////////
 
 
 
 	///////////////// 공격 ////////////////////
 
-	void Attack();
+	void Attack(bool bIsStrongAttack, float _ComboNumber); //true->강공격, false->약공격  / -1 : 없음, 0 : 0번 ...
 
 	bool NextComboOnOffTrigger; //다음 콤보를 이어가기를 입력해둔 상태(On / Off)
 	uint8 AttackCount; //번째 공격 넘버
 
-	TArray<FName> AttackComboNumber;
+	TArray<FName> AttackComboNumber;	//기본공격
+	TArray<FName> AttackStrongComboNumber; //강공격
+	TArray<FName> SpecialAttackNumber;	//콤보공격, 슬라이드공격 등의 특수공격
+
 
 	UFUNCTION(BlueprintCallable)
 	void NextComboOn();
@@ -159,6 +173,9 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Target")
 	class AEnemy* theTarget;
+
+	UFUNCTION(BlueprintCallable)
+	bool hasTarget();
 
 	float LookAtDeltaCount = 0.f;
 	float LookAtDeltaCountLimit = 0.f;
@@ -177,6 +194,8 @@ public:
 
 	///////////////////////////////////////////
 
+
+
 	///////////////// 회피 ////////////////////
 	FTimerHandle SlowTimeFloatDelayHandle;
 	float SlowTime = 1;	//월드 시간
@@ -193,9 +212,39 @@ public:
 	void GenAfterImage();
 	///////////////////////////////////////////
 
+
+
 	///////////////// 피격 ////////////////////
+	float goBackTimeCheck;
+	float goBackTotalTimeCheck;
+	FTimerHandle goBackReact;
+
 	virtual void TaketheDamage(float _Damage) override;
+
+	//UFUNCTION(BlueprintCallable)
+	void HitReact_goBack(FVector EnemyVec);	//뒤로 뒷걸음질 
+
+	FVector EnemyVecToNormal;
+	bool NoHitStance = false; // 무적판정
+	float NoHitStanceTime = 0.5f; //무적 판정 시간
+	
+	float HitReactSpeed = 200.f; //피격시 뒤로 물러날때 속도값
 
 	UFUNCTION(BlueprintCallable)
 	void HitReactEnd();
+
+	//피격 메터리얼(텍스쳐)
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Material")
+	UMaterial* MaterialHit;
+
+	virtual void Die() override;
+
+	UFUNCTION(BlueprintCallable)
+	void DeadEnd();
+	///////////////////////////////////////////
+
+
+
+	///////////////// HUD ////////////////////
+
 };

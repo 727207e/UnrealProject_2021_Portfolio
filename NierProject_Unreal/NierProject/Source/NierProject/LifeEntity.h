@@ -36,9 +36,13 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "LifeEntity")
 	USoundCue* SwingSound;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "LifeEntity")
+	TSubclassOf<class AtheDamageText> theDamageText;
+
 	virtual void TaketheDamage(float Damage);
 
-	void Die();
+	virtual void Die();
+	bool bItsDead = false;
 
 protected:
 	// Called when the game starts or when spawned

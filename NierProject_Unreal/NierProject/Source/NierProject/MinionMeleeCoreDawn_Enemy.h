@@ -109,11 +109,18 @@ protected:
 
 	UFUNCTION(BlueprintCallable)
 	void DeActivateCollison();
+	///////////////////////////////////////////
 
+
+	///////////////// ÇÇ°Ý ////////////////////
 	virtual void TaketheDamage(float _Damage) override;
 
 	UFUNCTION(BlueprintCallable)
 	void HitReactEnd();
-	///////////////////////////////////////////
 
+	virtual void Die() override;
+
+	UFUNCTION(BlueprintCallable)
+	void Disappear();
+	///////////////////////////////////////////
 };

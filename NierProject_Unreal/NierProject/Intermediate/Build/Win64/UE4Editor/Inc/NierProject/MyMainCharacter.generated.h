@@ -16,10 +16,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define NierProject_Source_NierProject_MyMainCharacter_h_24_SPARSE_DATA
 #define NierProject_Source_NierProject_MyMainCharacter_h_24_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execDeadEnd); \
 	DECLARE_FUNCTION(execHitReactEnd); \
 	DECLARE_FUNCTION(execGenAfterImage); \
 	DECLARE_FUNCTION(execSlowMotion); \
 	DECLARE_FUNCTION(execLookAtTargetWhenAttacking); \
+	DECLARE_FUNCTION(exechasTarget); \
 	DECLARE_FUNCTION(execNextComboOff); \
 	DECLARE_FUNCTION(execNextComboOn); \
 	DECLARE_FUNCTION(execEquipWeapon); \
@@ -29,10 +31,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define NierProject_Source_NierProject_MyMainCharacter_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execDeadEnd); \
 	DECLARE_FUNCTION(execHitReactEnd); \
 	DECLARE_FUNCTION(execGenAfterImage); \
 	DECLARE_FUNCTION(execSlowMotion); \
 	DECLARE_FUNCTION(execLookAtTargetWhenAttacking); \
+	DECLARE_FUNCTION(exechasTarget); \
 	DECLARE_FUNCTION(execNextComboOff); \
 	DECLARE_FUNCTION(execNextComboOn); \
 	DECLARE_FUNCTION(execEquipWeapon); \

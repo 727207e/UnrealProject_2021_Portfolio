@@ -18,6 +18,7 @@
 #include "Math/Vector.h"
 #include "Components/MeshComponent.h"
 #include "AvoidAfterImage.h"
+#include "Drone.h"
 
 //////////////////////////////////////////////////////////////////////////
 // ANierProjectCharacter
@@ -66,17 +67,26 @@ AMyMainCharacter::AMyMainCharacter()
 	/********************  Class LifeEntity 정의  */
 	LifeEntityinitialize();
 
-	Health = 100.f;
+	Health = 75.f;
 	MaxHealth = 100.f;
 	Damage = 0.f; // 공격력은 무기에 있다.
 
 	NextComboOnOffTrigger = false;
 	AttackCount = 0;
-	AttackComboNumber = {"Attack_1", "Attack_2"};
+	AttackComboNumber = {"Attack_1", "Attack_2", "Attack_3"};
+	AttackStrongComboNumber = {"Attack_Strong_1"};
+	SpecialAttackNumber = {"combo_1", "SlideAttack" };
 
 	LookSpeed_TargetAttacking = 15.0f;
 	LookAtDeltaCountLimit = 1.f;
 	//theTarget_Position = FVector.ZeroVector;
+
+	//////////////////////히트 리엑트 텍스쳐 정의
+	MaterialOrigin = CreateDefaultSubobject<UMaterial>(TEXT("M_Origin"));
+	MaterialHit = CreateDefaultSubobject<UMaterial>(TEXT("M_Hit"));
+
+
+
 }
 
 // Called when the game starts or when spawned
@@ -85,6 +95,7 @@ void AMyMainCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	EquipWeapon();
+	EquipDrone();
 }
 
 // Called every frame
@@ -174,25 +185,74 @@ void AMyMainCharacter::AvoidDown()
 
 void AMyMainCharacter::TaketheDamage(float _Damage)
 {
-	//회피 도중이였다면
-	if (MovementStatus == EMovementStatus::EMS_Avoid)
+	if (!bItsDead)
 	{
-		///슬로우 모션과 회피모션
-		SlowMotion();
-	}
-
-	else
-	{
-		Super::TaketheDamage(_Damage);
-
-		UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
-		if (AnimInstance)
+		//회피 도중이였다면
+		if (MovementStatus == EMovementStatus::EMS_Avoid)
 		{
-			AnimInstance->Montage_Play(CombatMontage, 1.5f);
-			AnimInstance->Montage_JumpToSection(FName("Hit"), CombatMontage);
-
-			Super::TaketheDamage(_Damage);
+			//슬로우 모션과 회피모션
+			SlowMotion();
 		}
+
+		else if (NoHitStance)
+		{
+			//피격 무적상태일땐 데미지 없음
+		}
+
+		else
+		{
+			UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+			if (AnimInstance)
+			{
+				//데미지 받기
+				Super::TaketheDamage(_Damage);
+
+				//죽은 상태가 아니면 피격 모션
+				if (MovementStatus != EMovementStatus::EMS_Dead)
+				{
+					//히트 애니메이션
+					AnimInstance->Montage_Play(CombatMontage, 1.5f);
+					AnimInstance->Montage_JumpToSection(FName("Hit"), CombatMontage);
+				}
+			}
+		}
+	}
+}
+
+void AMyMainCharacter::HitReact_goBack(FVector EnemyVec)	//때린 적군이 해당 함수 호출
+{
+	if (!bItsDead)	//죽지 않았다면
+	{
+		//무적타임 지정
+		NoHitStance = true;
+
+		goBackTimeCheck = GetWorld()->GetDeltaSeconds(); //델타타임 가져옴
+
+		EnemyVecToNormal = (GetActorLocation() - EnemyVec);	//적-플레이어 방향벡터 가져옴
+		EnemyVecToNormal.Normalize();
+
+		//피격 메터리얼 변경
+		GetMesh()->SetMaterial(0, MaterialHit);
+
+		GetWorld()->GetTimerManager().SetTimer(goBackReact, FTimerDelegate::CreateLambda([&]()
+		{
+			goBackTimeCheck = GetWorld()->GetDeltaSeconds(); //델타타임 가져옴
+			goBackTotalTimeCheck += goBackTimeCheck; //누적시간
+
+			FVector lot = GetActorLocation();
+			lot += EnemyVecToNormal * HitReactSpeed * goBackTimeCheck;
+
+			SetActorLocation(lot);
+
+			//초기화
+			if (goBackTotalTimeCheck > NoHitStanceTime)
+			{
+				NoHitStance = false;
+				goBackTotalTimeCheck = 0;
+				GetWorld()->GetTimerManager().ClearTimer(goBackReact);
+				GetMesh()->SetMaterial(0, MaterialOrigin);
+			}
+		}), goBackTimeCheck, true, 0.f);
 	}
 }
 
@@ -201,14 +261,38 @@ void AMyMainCharacter::HitReactEnd()
 	MovementStatus = EMovementStatus::EMS_Normal;
 }
 
+void AMyMainCharacter::Die()
+{
+	Super::Die();
+
+	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+	if (AnimInstance)
+	{
+		MovementStatus = EMovementStatus::EMS_Dead;
+
+		AnimInstance->Montage_Play(MoveUtilityMontage, 1.5f);
+		AnimInstance->Montage_JumpToSection(FName("Death"), MoveUtilityMontage);
+	}
+}
+
+void AMyMainCharacter::DeadEnd()
+{
+	//애니메이션 정지
+	GetMesh()->bPauseAnims = true;
+	GetMesh()->bNoSkeletonUpdate = true;
+}
+
 void AMyMainCharacter::AvoidUp()
 {
 }
 
 void AMyMainCharacter::RunDown()
 {
-	MovementStatus = EMovementStatus::EMS_Sprinting;
-	GetCharacterMovement()->MaxWalkSpeed = SprintingSpeed;
+	if (MovementStatus == EMovementStatus::EMS_Normal)
+	{
+		MovementStatus = EMovementStatus::EMS_Sprinting;
+		GetCharacterMovement()->MaxWalkSpeed = SprintingSpeed;
+	}
 }
 
 void AMyMainCharacter::RunUp()
@@ -222,7 +306,7 @@ void AMyMainCharacter::AttackDown()
 	//공격중이 아닐때만 공격가능
 	if (MovementStatus == EMovementStatus::EMS_Normal)
 	{
-		Attack();
+		Attack(false,-1);
 	}
 
 	//공격중일 때라도 "다음 공격 콤보 타이밍" 이라면 다음 콤보 공격 가능
@@ -231,8 +315,14 @@ void AMyMainCharacter::AttackDown()
 		if (NextComboOnOffTrigger && AttackCount < AttackComboNumber.Num() - 1)
 		{
 			AttackCount++;
-			Attack();
+			Attack(false,-1);
 		}
+	}
+
+	//달리는 도중일 경우 특수 공격
+	else if (MovementStatus == EMovementStatus::EMS_Sprinting)
+	{
+		Attack(true,1);
 	}
 }
 
@@ -242,8 +332,21 @@ void AMyMainCharacter::AttackUp()
 }
 
 void AMyMainCharacter::AttackStrongDonw()
-{
+{	
+	//공격중이 아닐때만 공격가능
+	if (MovementStatus == EMovementStatus::EMS_Normal)
+	{
+		Attack(true,-1);
+	}
 
+	//단, 공격중일 때, 콤보공격의 조건을 달성하면 다른 공격이 나간다.
+	else if (MovementStatus == EMovementStatus::EMS_Attacking)
+	{
+		if (NextComboOnOffTrigger && AttackCount == 1)
+		{
+			Attack(true,0);
+		}
+	}
 }
 
 void AMyMainCharacter::AttackStrongUp()
@@ -253,7 +356,11 @@ void AMyMainCharacter::AttackStrongUp()
 
 void AMyMainCharacter::GunShotDonw()
 {
-
+	if (theTarget != nullptr)
+	{
+		NowMyDrone->LookForward(theTarget->GetActorLocation());
+	}
+	NowMyDrone->Fire();
 }
 
 void AMyMainCharacter::GunShotUp()
@@ -286,6 +393,7 @@ void AMyMainCharacter::LockDown()
 	if (theTarget != nullptr) //락온이 된 상태일 경우 락온 해제
 	{
 		LookattheLockOnTargetOff();
+		NowMyDrone->SetTheTargetIsLock(false);
 	}
 
 	else //락온이 안되어있는 경우
@@ -327,6 +435,10 @@ void AMyMainCharacter::LockDown()
 				theTarget = Cast<AEnemy>(i.Actor);
 				if (theTarget)
 				{
+					theTarget->TargetShowInfo(true);
+
+					//드론지정
+					NowMyDrone->SetTheTargetIsLock(true);
 					break;
 				}
 			}
@@ -336,7 +448,9 @@ void AMyMainCharacter::LockDown()
 
 void AMyMainCharacter::LookattheLockOnTarget(float _DeltaTime)
 {
-	FVector TargetLocation = theTarget->GetActorLocation();
+	//FVector TargetLocation = theTarget->GetActorLocation();
+	FVector TargetLocation = theTarget->TargetLookPos->GetComponentLocation();
+
 	FVector CameraLocation = FollowCamera->GetComponentLocation();
 
 	FRotator findLookatRot = UKismetMathLibrary::FindLookAtRotation(CameraLocation,TargetLocation);
@@ -348,10 +462,23 @@ void AMyMainCharacter::LookattheLockOnTarget(float _DeltaTime)
 
 void AMyMainCharacter::LookattheLockOnTargetOff()
 {
+	theTarget->TargetShowInfo(false);
 	theTarget = nullptr;
 	CameraBoom->TargetArmLength = 500.0f; // The camera follows at this distance behind the character	
 
 	FollowCamera->SetWorldRotation(UKismetMathLibrary::FindLookAtRotation(FollowCamera->GetComponentLocation(), GetActorLocation()));
+}
+
+bool AMyMainCharacter::hasTarget()
+{
+	if (theTarget)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 void AMyMainCharacter::LockUp()
@@ -408,8 +535,6 @@ void AMyMainCharacter::MoveForward(float Value)
 		const FRotator Rotation = Controller->GetControlRotation(); 
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
 
-
-
 		// get forward vector
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 		AddMovementInput(Direction, Value);
@@ -455,7 +580,15 @@ void AMyMainCharacter::EquipWeapon()
 	}
 }
 
-void AMyMainCharacter::Attack()
+void AMyMainCharacter::EquipDrone()
+{
+	FVector SpawnLoc = GetActorLocation() + FVector(-45.f,-45.f, 95.f);
+	FRotator rot = GetActorRotation();
+	NowMyDrone = GetWorld()->SpawnActor<ADrone>(EquippedDrone,SpawnLoc,rot);
+	NowMyDrone->EquipDrone();
+}
+
+void AMyMainCharacter::Attack(bool bIsStrongAttack, float _ComboNumber)
 {
 	//이후, Status를 Normal로 변경해주는 부분은 
 	//AttackMong 에서 전투 끝나는 부분의 
@@ -472,7 +605,21 @@ void AMyMainCharacter::Attack()
 			NextComboOnOffTrigger = false;
 			
 			AnimInstance->Montage_Play(CombatMontage, 1.5f);
-			AnimInstance->Montage_JumpToSection(AttackComboNumber[AttackCount], CombatMontage);
+
+			if (!bIsStrongAttack)	//약공격
+			{
+				AnimInstance->Montage_JumpToSection(AttackComboNumber[AttackCount], CombatMontage);
+			}
+
+			else if(bIsStrongAttack && _ComboNumber == -1.f)	//강공격
+			{
+				AnimInstance->Montage_JumpToSection(AttackStrongComboNumber[AttackCount], CombatMontage);
+			}
+
+			else		//콤보공격, 특수공격
+			{
+				AnimInstance->Montage_JumpToSection(SpecialAttackNumber[_ComboNumber], CombatMontage);
+			}
 
 		}
 	}
