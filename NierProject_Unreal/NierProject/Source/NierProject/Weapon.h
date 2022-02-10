@@ -31,8 +31,16 @@ public:
 	class UBoxComponent* CombatCollision;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	class USoundCue* SwingSound;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "BloodPoint")
+	class USceneComponent* BloodPoint;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	float Damage;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	int WeaponAttackPoseStatus; //0 - КѓМе / 1 - Great / 2 - OnehandSword
 
 protected:
 	// Called when the game starts or when spawned
@@ -54,6 +62,11 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void DeActivateCollison();
 
-	void EquipWeapon(class AMyMainCharacter* Char);
+	int EquipWeaponAndSetAttackPose(class AMyMainCharacter* Char);
 
+	///////////////// Sound ////////////////////
+
+	void SwingSoundPlay();
+
+	///////////////////////////////////////////
 };

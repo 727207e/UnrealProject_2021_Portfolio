@@ -7,7 +7,9 @@
 #include "Components/SceneComponent.h"
 #include "Components/WidgetComponent.h"
 #include "EnemyHealthBarWidget.h"
+#include "Sound/SoundCue.h"
 #include "MyMainCharacter.h"
+#include "AIController.h"
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -24,6 +26,8 @@ AEnemy::AEnemy()
 	TargetLookPos = CreateDefaultSubobject< USceneComponent>(TEXT("TargetLookPosition"));
 	TargetLookPos->SetupAttachment(GetRootComponent());
 
+	BloodPoint = CreateDefaultSubobject<USceneComponent>(TEXT("BloodPoint"));
+	BloodPoint->SetupAttachment(GetMesh(), FName("weapon_sword_r"));
 }
 
 void AEnemy::BeginPlay()
@@ -32,7 +36,10 @@ void AEnemy::BeginPlay()
 
 	//위젯 불러오기 및 비활성화(플레이어가 타겟으로 지정하면 활성화)
 	EnemyHealthBarWidget = Cast<UEnemyHealthBarWidget>(EnemyHealthBarWidgetComp->GetUserWidgetObject());
-	EnemyHealthBarWidget->Show(false);
+	if (EnemyHealthBarWidget)
+	{
+		EnemyHealthBarWidget->Show(false);
+	}
 }
 
 // Called every frame
@@ -40,13 +47,20 @@ void AEnemy::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (itsTarget)
+	if (itsTarget && EnemyHealthBarWidget)
 	{
 		//체력바 정보 갱신
 		EnemyHealthBarWidget->MaxHealth = MaxHealth;
 		EnemyHealthBarWidget->NowHealth = Health;
 
 	}
+	
+	if (EnemyHealthBarWidget)
+	{
+		//타겟 텍스트 지정
+		EnemyHealthBarWidget->theTarget = itsTarget;
+	}
+
 }
 
 // Called to bind functionality to input
@@ -64,6 +78,31 @@ void AEnemy::TaketheDamage(float _Damage)
 void AEnemy::BPTaketheDamage(float _Damage)
 {
 	TaketheDamage(_Damage);
+}
+
+void AEnemy::MoveToTarget(class AMyMainCharacter* Target) {
+
+	if (aiController) {
+
+		FAIMoveRequest MoveRequest;
+		MoveRequest.SetGoalActor(Target);
+		MoveRequest.SetAcceptanceRadius(10.0f);
+
+		FNavPathSharedPtr NavPath;
+
+		aiController->MoveTo(MoveRequest, &NavPath);
+
+		////* 적이 쫓아오는 경로 디버깅
+		////auto PathPoints = NavPath->GetPathPoints();
+		//TArray<FNavPathPoint> PathPoints = NavPath->GetPathPoints();
+		//for (auto Point : PathPoints) {
+
+		//	FVector Location = Point.Location;
+
+		//	UKismetSystemLibrary::DrawDebugSphere(this, Location, 25.f, 8, FLinearColor::Green,
+		//		10.f, 1.5f);
+		//}
+	}
 }
 
 void AEnemy::TargetShowInfo(bool bShowInfo)
@@ -84,7 +123,7 @@ void AEnemy::TargetShowInfo(bool bShowInfo)
 		}
 	}
 
-	//2. 아닐경우 진행
+	//2. 아닐경우 진행 (활성화)
 	else
 	{
 		//내가 타겟일 경우 체력바가 보인다.
@@ -104,19 +143,28 @@ void AEnemy::TargetShowInfo(bool bShowInfo)
 
 void AEnemy::HealthBarOn()
 {
-	EnemyHealthBarWidget->Show(true);
+	if (EnemyHealthBarWidget)
+	{
+		EnemyHealthBarWidget->Show(true);
+	}
 }
 
 void AEnemy::HealthBarOff()
 {
-	EnemyHealthBarWidget->Show(false);
+	if (EnemyHealthBarWidget)
+	{
+		EnemyHealthBarWidget->Show(false);
+	}
 }
 
 void AEnemy::Die()
 {
 	Super::Die();
 
-	EnemyHealthBarWidget->NowHealth = 0;
+	if (EnemyHealthBarWidget)
+	{
+		EnemyHealthBarWidget->NowHealth = 0;
+	}
 
 	//내가 타겟으로 지정되어있고, 내가 죽는다면 플레이어 LockOn기능 해제
 	ACharacter* WorldPlayer = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
@@ -124,5 +172,14 @@ void AEnemy::Die()
 	if (itsTarget && Player != nullptr)
 	{
 		Player->LookattheLockOnTargetOff();
+	}
+}
+
+
+void AEnemy::SwingSoundPlay()
+{
+	if (SwingSound)
+	{
+		UGameplayStatics::PlaySound2D(this, SwingSound);
 	}
 }

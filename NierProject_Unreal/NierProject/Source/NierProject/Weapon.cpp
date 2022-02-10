@@ -7,8 +7,10 @@
 #include "Kismet/GameplayStatics.h"
 #include "Components/BoxComponent.h"
 #include "Enemy.h"
+#include "Sound/SoundCue.h"
 #include "MyMainCharacter.h"
 #include "Engine/SkeletalMeshSocket.h"
+#include "Components/SceneComponent.h"
 
 // Sets default values
 AWeapon::AWeapon()
@@ -25,6 +27,8 @@ AWeapon::AWeapon()
 	CombatCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("CombatCollision"));
 	CombatCollision->SetupAttachment(GetRootComponent());
 
+	BloodPoint = CreateDefaultSubobject<USceneComponent>(TEXT("BloodPoint"));
+	BloodPoint->SetupAttachment(GetRootComponent());
 
 	//Pawn과 상호작용하게 설정 , 콜리전 끄기(이후 특정상황에만 활성화)
 	CombatCollision->SetCollisionObjectType(ECollisionChannel::ECC_WorldDynamic);
@@ -55,11 +59,13 @@ void AWeapon::CombatOnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AAc
 {
 	if (OtherActor)
 	{
-		AEnemy* Enemy = Cast<AEnemy>(OtherActor);
+		IInterfaceLifeEntity* Enemy = Cast<IInterfaceLifeEntity>(OtherActor);
 		if (Enemy)
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, "Weapon : Enemy_Hit!");
-			Enemy->TaketheDamage(Damage);
+			if (Enemy->InterfaceGetMyID() == DDEnemy)	//적군인 경우 체크
+			{
+				Enemy->InterfaceTakeDamage(Damage, { 0,0,0 }, BloodPoint->GetComponentLocation());
+			}
 		}
 	}
 }
@@ -79,7 +85,7 @@ void AWeapon::DeActivateCollison()
 	CombatCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision); //콜리전 끄기
 }
 
-void AWeapon::EquipWeapon(AMyMainCharacter* Char)
+int AWeapon::EquipWeaponAndSetAttackPose(AMyMainCharacter* Char)
 {
 	//카메라 콜리전 무시
 	skeletalMesh->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
@@ -92,5 +98,15 @@ void AWeapon::EquipWeapon(AMyMainCharacter* Char)
 	if (RightHandSocket)
 	{
 		RightHandSocket->AttachActor(this, Char->GetMesh());
+	}
+
+	return WeaponAttackPoseStatus;
+}
+
+void AWeapon::SwingSoundPlay()
+{
+	if (SwingSound)
+	{
+		UGameplayStatics::PlaySound2D(this, SwingSound);
 	}
 }

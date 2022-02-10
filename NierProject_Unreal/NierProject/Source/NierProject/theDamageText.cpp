@@ -5,6 +5,7 @@
 #include "Components/WidgetComponent.h"
 #include "Components/SceneComponent.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Math/Color.h"
 
 // Sets default values
 AtheDamageText::AtheDamageText()
@@ -18,6 +19,8 @@ AtheDamageText::AtheDamageText()
 	theDamageText = CreateDefaultSubobject<UWidgetComponent>(TEXT("DamageText"));
 	theDamageText->SetupAttachment(RootComponent);
 
+	damageTextColor = FLinearColor::White; //색상 지정
+	damageTextColor.A = 1.f;
 }
 
 // Called when the game starts or when spawned
@@ -25,13 +28,36 @@ void AtheDamageText::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	GetWorldTimerManager().SetTimer(Timer, this, &AtheDamageText::DestroyThis, 2.f);
-
+	//알파값 변화 및 파괴
+	DestroyThis();
 }
 
 void AtheDamageText::DestroyThis()
 {
-	Destroy();
+	TimeCheck = GetWorld()->GetDeltaSeconds(); //델타타임 가져옴
+
+	GetWorld()->GetTimerManager().SetTimer(Timer, FTimerDelegate::CreateLambda([&]()
+	{
+		TimeCheck = GetWorld()->GetDeltaSeconds(); //델타타임 가져옴
+		TotalTimeCheck += TimeCheck; //누적시간
+
+		//서서히 없어짐(알파값 변화)
+		if (TotalTimeCheck >= AlphaChangeTime)
+		{
+			damageTextColor.A -= 0.02f;
+		}
+
+		//파괴
+		if (TotalTimeCheck >= DistroyTime)
+		{
+			//초기화
+			GetWorld()->GetTimerManager().ClearTimer(Timer);
+
+			Destroy();
+		}
+	}), TimeCheck, true, 0.f);
+
+
 }
 
 // Called every frame

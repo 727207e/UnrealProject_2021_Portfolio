@@ -31,10 +31,20 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void BPTaketheDamage(float _Damage); //BP 호출용
 
+	UFUNCTION(BlueprintCallable)
+	void MoveToTarget(class AMyMainCharacter* Target);
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Root")
 	class USceneComponent* TargetLookPos;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
+	class AAIController* aiController;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "BloodPoint")
+	USceneComponent* BloodPoint;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Sound")
+	USoundCue* SwingSound;
 
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "Target")
 	class UWidgetComponent* EnemyHealthBarWidgetComp;	//체력바 컴포넌트(정보 보유)
@@ -55,5 +65,30 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void TargetShowInfo(bool bShowInfo);	//MyMainCharacter 클래스에서 호출되는 적군의 체력바 활성화 함수
 
+	///////////////// Sound ////////////////////
+
+	void SwingSoundPlay();
+
+	///////////////////////////////////////////
+
+
+
+
+	///////////////// 피격 ////////////////////
+
 	virtual void Die() override;
+
+	///////////////////////////////////////////
+
+
+
+
+	///////////////// 공격 ////////////////////
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "AI")
+	AMyMainCharacter* CombatTarget;
+
+
+
+	///////////////////////////////////////////
 };

@@ -67,18 +67,29 @@ void AMinionMeleeCoreDawn_Enemy::BeginPlay()
 	CombatSphere->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Overlap);
 }
 
+void AMinionMeleeCoreDawn_Enemy::InterfaceTakeDamage(float _Damage, FVector EnemyVec, FVector HitReactVec)
+{
+	TaketheDamage(_Damage);
+	HitReact(HitReactVec);	//피흘리기
+	HitReact_Sound();		//피격 소리
+}
+
+int AMinionMeleeCoreDawn_Enemy::InterfaceGetMyID()
+{
+	return DDEnemy;
+}
+
 void AMinionMeleeCoreDawn_Enemy::CombatOnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
 	if (OtherActor)
 	{
-		AMyMainCharacter* Player = Cast<AMyMainCharacter>(OtherActor);
-		if (Player)
+		IInterfaceLifeEntity* theP = Cast<IInterfaceLifeEntity>(OtherActor);
+		if (theP)
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, "Enemy : Player_Hit!");
-			Player->TaketheDamage(Damage);
-
-			//플레이어 후퇴 및 무적
-			Player->HitReact_goBack(GetActorLocation());
+			if (theP->InterfaceGetMyID() == DDPlayer)	//플레이어 인 경우 체크
+			{
+				theP->InterfaceTakeDamage(Damage, GetActorLocation(), BloodPoint->GetComponentLocation());
+			}
 		}
 	}
 }
@@ -102,30 +113,6 @@ void AMinionMeleeCoreDawn_Enemy::AgroSphereOnOverlapBegin(UPrimitiveComponent* O
 	}
 }
 
-void AMinionMeleeCoreDawn_Enemy::MoveToTarget(class AMyMainCharacter* Target) {
-
-	if (aiController) {
-
-		FAIMoveRequest MoveRequest;
-		MoveRequest.SetGoalActor(Target);
-		MoveRequest.SetAcceptanceRadius(10.0f);
-
-		FNavPathSharedPtr NavPath;
-
-		aiController->MoveTo(MoveRequest, &NavPath);
-
-		////* 적이 쫓아오는 경로 디버깅
-		////auto PathPoints = NavPath->GetPathPoints();
-		//TArray<FNavPathPoint> PathPoints = NavPath->GetPathPoints();
-		//for (auto Point : PathPoints) {
-
-		//	FVector Location = Point.Location;
-
-		//	UKismetSystemLibrary::DrawDebugSphere(this, Location, 25.f, 8, FLinearColor::Green,
-		//		10.f, 1.5f);
-		//}
-	}
-}
 
 void AMinionMeleeCoreDawn_Enemy::AgroSphereOnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) {
 
@@ -211,12 +198,12 @@ void AMinionMeleeCoreDawn_Enemy::Attack()
 {
 	if (Alive())
 	{
-		if (aiController)
+		if (!bAttacking && EnemyMovementStatus != EEnemyMovementStatus::EMS_Hit)
 		{
-			SetEnemyMovementStatus(EEnemyMovementStatus::EMS_Attacking);
-		}
-		if (!bAttacking)
-		{
+			if (aiController)
+			{
+				SetEnemyMovementStatus(EEnemyMovementStatus::EMS_Attacking);
+			}
 			bAttacking = true;
 			UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
 			if (AnimInstance)
@@ -224,6 +211,9 @@ void AMinionMeleeCoreDawn_Enemy::Attack()
 				//공격 몽타주 실행
 				AnimInstance->Montage_Play(CombatMontage, 0.8f);
 				AnimInstance->Montage_JumpToSection(FName("Attack"), CombatMontage);
+				
+				//공격소리
+				SwingSoundPlay();
 			}
 		}
 	}
@@ -299,8 +289,8 @@ void AMinionMeleeCoreDawn_Enemy::TaketheDamage(float _Damage)
 			UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
 			if (AnimInstance)
 			{
-				//공격 몽타주 실행
-				AnimInstance->Montage_Play(CombatMontage, 0.5f);
+				//몽타주 실행
+				AnimInstance->Montage_Play(CombatMontage, 0.3f);
 				AnimInstance->Montage_JumpToSection(FName("Hit"), CombatMontage);
 			}
 			DeActivateCollison(); //활성화된 콜라이더 비활성화 할것.

@@ -19,6 +19,9 @@
 #include "Components/MeshComponent.h"
 #include "AvoidAfterImage.h"
 #include "Drone.h"
+#include "MainCharAnimInstance.h"
+
+#include "MainCharacterWeaponMovement.h"
 
 //////////////////////////////////////////////////////////////////////////
 // ANierProjectCharacter
@@ -71,21 +74,15 @@ AMyMainCharacter::AMyMainCharacter()
 	MaxHealth = 100.f;
 	Damage = 0.f; // 공격력은 무기에 있다.
 
-	NextComboOnOffTrigger = false;
-	AttackCount = 0;
-	AttackComboNumber = {"Attack_1", "Attack_2", "Attack_3"};
-	AttackStrongComboNumber = {"Attack_Strong_1"};
-	SpecialAttackNumber = {"combo_1", "SlideAttack" };
-
-	LookSpeed_TargetAttacking = 15.0f;
-	LookAtDeltaCountLimit = 1.f;
 	//theTarget_Position = FVector.ZeroVector;
 
 	//////////////////////히트 리엑트 텍스쳐 정의
 	MaterialOrigin = CreateDefaultSubobject<UMaterial>(TEXT("M_Origin"));
 	MaterialHit = CreateDefaultSubobject<UMaterial>(TEXT("M_Hit"));
 
-
+	//클래스 생성(Construct)
+	AttackMotionTSub = AMainCharacterWeaponMovement::StaticClass();
+	AttackMotion = NewObject<AMainCharacterWeaponMovement>(AttackMotionTSub);
 
 }
 
@@ -96,6 +93,13 @@ void AMyMainCharacter::BeginPlay()
 
 	EquipWeapon();
 	EquipDrone();
+
+	//애님 인스턴스 넘겨주기
+	AnimInstance = GetMesh()->GetAnimInstance();
+	if (AnimInstance)
+	{
+		AttackMotion->AnimInstance = AnimInstance;
+	}
 }
 
 // Called every frame
@@ -109,11 +113,31 @@ void AMyMainCharacter::Tick(float DeltaTime)
 		LookattheLockOnTarget(DeltaTime);
 
 		//공격을 처음으로 시작하는 순간(콤보 카운트 x)
-		if(MovementStatus == EMovementStatus::EMS_Attacking && !NextComboOnOffTrigger && AttackCount == 0)
+		if(MovementStatus == EMovementStatus::EMS_Attacking && 
+			!AttackMotion->GetNowNextComboOnOffTrigger() && 
+			AttackMotion->GetNowAttackCount() == 0)
 		{
-			LookAtTargetWhenAttacking(DeltaTime);
-		}
+			SetActorRotation(AttackMotion->LookAtTargetWhenAttacking(DeltaTime, 
+														theTarget->GetActorLocation(),
+														GetActorLocation(),
+														GetActorRotation()));
+		}//
 	}
+
+}
+
+void AMyMainCharacter::InterfaceTakeDamage(float _Damage, FVector EnemyVec, FVector HitReactVec)
+{
+	TaketheDamage(_Damage);	//데미지 입기
+	HitReact(HitReactVec);	//피 흘리기
+	HitReact_Sound();		//피격 소리
+	HitReact_goBack(EnemyVec);	//뒤로 물러나며 경직되기
+	HitReact_ChangeColor();	//번쩍임
+}
+
+int AMyMainCharacter::InterfaceGetMyID()
+{
+	return DDPlayer;
 }
 
 void AMyMainCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -167,12 +191,12 @@ void AMyMainCharacter::AvoidDown()
 {
 	//GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 	//Avoid 애니메이션의 RootMotion을 사용하기위해서 몽타주로 진행
-	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+	//UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
 	if (AnimInstance)
 	{
 		MovementStatus = EMovementStatus::EMS_Avoid;
 
-		NextComboOnOffTrigger = false;
+		AttackMotion->ResetNowAttack();	//초기화
 
 		AnimInstance->Montage_Play(MoveUtilityMontage, 1.5f);
 		AnimInstance->Montage_JumpToSection(FName("Avoid"), MoveUtilityMontage);
@@ -201,7 +225,7 @@ void AMyMainCharacter::TaketheDamage(float _Damage)
 
 		else
 		{
-			UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+			//UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
 			if (AnimInstance)
 			{
 				//데미지 받기
@@ -211,8 +235,8 @@ void AMyMainCharacter::TaketheDamage(float _Damage)
 				if (MovementStatus != EMovementStatus::EMS_Dead)
 				{
 					//히트 애니메이션
-					AnimInstance->Montage_Play(CombatMontage, 1.5f);
-					AnimInstance->Montage_JumpToSection(FName("Hit"), CombatMontage);
+					AnimInstance->Montage_Play(MoveUtilityMontage, 1.5f);
+					AnimInstance->Montage_JumpToSection(FName("Hit"), MoveUtilityMontage);
 				}
 			}
 		}
@@ -231,9 +255,6 @@ void AMyMainCharacter::HitReact_goBack(FVector EnemyVec)	//때린 적군이 해�
 		EnemyVecToNormal = (GetActorLocation() - EnemyVec);	//적-플레이어 방향벡터 가져옴
 		EnemyVecToNormal.Normalize();
 
-		//피격 메터리얼 변경
-		GetMesh()->SetMaterial(0, MaterialHit);
-
 		GetWorld()->GetTimerManager().SetTimer(goBackReact, FTimerDelegate::CreateLambda([&]()
 		{
 			goBackTimeCheck = GetWorld()->GetDeltaSeconds(); //델타타임 가져옴
@@ -250,10 +271,28 @@ void AMyMainCharacter::HitReact_goBack(FVector EnemyVec)	//때린 적군이 해�
 				NoHitStance = false;
 				goBackTotalTimeCheck = 0;
 				GetWorld()->GetTimerManager().ClearTimer(goBackReact);
-				GetMesh()->SetMaterial(0, MaterialOrigin);
 			}
 		}), goBackTimeCheck, true, 0.f);
 	}
+}
+
+void AMyMainCharacter::HitReact_ChangeColor()
+{
+	//피격 메터리얼 변경
+	GetMesh()->SetMaterial(0, MaterialHit);
+
+	//타이머가 이미 진행중이라면 삭제
+	if (GetWorldTimerManager().IsTimerActive(changeColorTimerHandle))
+	{
+		GetWorld()->GetTimerManager().ClearTimer(changeColorTimerHandle);
+	}
+
+	//타이머 시작 -> 2초후에 초기화(색)
+	GetWorld()->GetTimerManager().SetTimer(changeColorTimerHandle, FTimerDelegate::CreateLambda([&]()
+	{
+		GetWorld()->GetTimerManager().ClearTimer(changeColorTimerHandle);
+		GetMesh()->SetMaterial(0, MaterialOrigin);
+	}), GetWorld()->GetDeltaSeconds(), false, 0.5f);
 }
 
 void AMyMainCharacter::HitReactEnd()
@@ -265,7 +304,7 @@ void AMyMainCharacter::Die()
 {
 	Super::Die();
 
-	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+	//UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
 	if (AnimInstance)
 	{
 		MovementStatus = EMovementStatus::EMS_Dead;
@@ -297,32 +336,41 @@ void AMyMainCharacter::RunDown()
 
 void AMyMainCharacter::RunUp()
 {
-	MovementStatus = EMovementStatus::EMS_Normal;
+	if (MovementStatus == EMovementStatus::EMS_Sprinting)
+	{
+		MovementStatus = EMovementStatus::EMS_Normal;
+	}
 	GetCharacterMovement()->MaxWalkSpeed = RunningSpeed;
 }
 
 void AMyMainCharacter::AttackDown()
 {
+
 	//공격중이 아닐때만 공격가능
 	if (MovementStatus == EMovementStatus::EMS_Normal)
 	{
-		Attack(false,-1);
+		MovementStatus = EMovementStatus::EMS_Attacking;
+		weapon->SwingSoundPlay();
+		AttackMotion->Attack(false,-1);
 	}
 
 	//공격중일 때라도 "다음 공격 콤보 타이밍" 이라면 다음 콤보 공격 가능
 	else if (MovementStatus == EMovementStatus::EMS_Attacking)
 	{
-		if (NextComboOnOffTrigger && AttackCount < AttackComboNumber.Num() - 1)
+		if (AttackMotion->NextAttackPosibile())
 		{
-			AttackCount++;
-			Attack(false,-1);
+			weapon->SwingSoundPlay();
+			AttackMotion->ComboAttackOn();
+			AttackMotion->Attack(false,-1);
 		}
 	}
 
 	//달리는 도중일 경우 특수 공격
 	else if (MovementStatus == EMovementStatus::EMS_Sprinting)
 	{
-		Attack(true,1);
+		MovementStatus = EMovementStatus::EMS_Attacking;
+		AttackMotion->Attack(true,1);
+
 	}
 }
 
@@ -336,15 +384,17 @@ void AMyMainCharacter::AttackStrongDonw()
 	//공격중이 아닐때만 공격가능
 	if (MovementStatus == EMovementStatus::EMS_Normal)
 	{
-		Attack(true,-1);
+		MovementStatus = EMovementStatus::EMS_Attacking;
+		AttackMotion->Attack(true,-1);
 	}
 
 	//단, 공격중일 때, 콤보공격의 조건을 달성하면 다른 공격이 나간다.
 	else if (MovementStatus == EMovementStatus::EMS_Attacking)
 	{
-		if (NextComboOnOffTrigger && AttackCount == 1)
+		if (AttackMotion->NextStrongAttackComboPosibile())
 		{
-			Attack(true,0);
+			AttackMotion->ComboAttackOn();
+			AttackMotion->Attack(true,0);
 		}
 	}
 }
@@ -529,7 +579,7 @@ void AMyMainCharacter::LookUp(float Value)
 
 void AMyMainCharacter::MoveForward(float Value)
 {
-	if ((Controller != nullptr) && (Value != 0.0f))
+	if ((Controller != nullptr) && (Value != 0.0f) && MovementStatus != EMovementStatus::EMS_Attacking)
 	{
 		// find out which way is forward
 		const FRotator Rotation = Controller->GetControlRotation(); 
@@ -537,13 +587,14 @@ void AMyMainCharacter::MoveForward(float Value)
 
 		// get forward vector
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+
 		AddMovementInput(Direction, Value);
 	}
 }
 
 void AMyMainCharacter::MoveRight(float Value)
 {
-	if ((Controller != nullptr) && (Value != 0.0f))
+	if ((Controller != nullptr) && (Value != 0.0f) && MovementStatus != EMovementStatus::EMS_Attacking)
 	{
 		// find out which way is right
 		const FRotator Rotation = Controller->GetControlRotation(); 
@@ -570,7 +621,8 @@ void AMyMainCharacter::EquipWeapon()
 	{
 		//생성후 장착
 		weapon = GetWorld()->SpawnActor<AWeapon>(EquippedWeapon);
-		weapon->EquipWeapon(this);
+		AnimAttackPose = weapon->EquipWeaponAndSetAttackPose(this);	// 애니메이션 공격 폼 지정
+		AttackMotion->NowMyAttackType = AnimAttackPose;	// 공격 폼 수정
 	}
 
 	//빈송상태 ( 초기설정 - 2 )
@@ -588,76 +640,6 @@ void AMyMainCharacter::EquipDrone()
 	NowMyDrone->EquipDrone();
 }
 
-void AMyMainCharacter::Attack(bool bIsStrongAttack, float _ComboNumber)
-{
-	//이후, Status를 Normal로 변경해주는 부분은 
-	//AttackMong 에서 전투 끝나는 부분의 
-	//EndAttack 노티파이에서 Normal로 변경되도록 정의함 (BP내용)
-
-	if (CombatMontage)
-	{
-		UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
-
-		if (AnimInstance)
-		{
-			MovementStatus = EMovementStatus::EMS_Attacking;
-
-			NextComboOnOffTrigger = false;
-			
-			AnimInstance->Montage_Play(CombatMontage, 1.5f);
-
-			if (!bIsStrongAttack)	//약공격
-			{
-				AnimInstance->Montage_JumpToSection(AttackComboNumber[AttackCount], CombatMontage);
-			}
-
-			else if(bIsStrongAttack && _ComboNumber == -1.f)	//강공격
-			{
-				AnimInstance->Montage_JumpToSection(AttackStrongComboNumber[AttackCount], CombatMontage);
-			}
-
-			else		//콤보공격, 특수공격
-			{
-				AnimInstance->Montage_JumpToSection(SpecialAttackNumber[_ComboNumber], CombatMontage);
-			}
-
-		}
-	}
-}
-
-void AMyMainCharacter::LookAtTargetWhenAttacking(float _DeltaTime)
-{
-	//회전시간 일부를 허용(애니메이션 버그, 과한 Following 등등의 이유)
-	//초기화는 NextComboOn 함수안에서
-	if (LookAtDeltaCount <= LookAtDeltaCountLimit)
-	{
-		LookAtDeltaCount += _DeltaTime;
-
-		FVector MyActorLocation = GetActorLocation();
-		FVector theTargetLoc = theTarget->GetActorLocation();
-		theTargetLoc.Z = MyActorLocation.Z; // Target이 위나 아래에 있어도 정면을 공격한다
-
-		FRotator LookAt = UKismetMathLibrary::FindLookAtRotation(MyActorLocation, theTargetLoc);
-
-		FRotator InterpRotation = UKismetMathLibrary::RInterpTo(GetActorRotation(), LookAt, GetWorld()->GetDeltaSeconds(), LookSpeed_TargetAttacking);
-
-		SetActorRotation(InterpRotation);
-	}
-}
-
-void AMyMainCharacter::NextComboOn()
-{
-	NextComboOnOffTrigger = true;
-	LookAtDeltaCount = 0.f;
-}
-
-void AMyMainCharacter::NextComboOff()
-{
-	MovementStatus = EMovementStatus::EMS_Normal;
-	NextComboOnOffTrigger = false;
-	AttackCount = 0;
-	
-}
 
 
 void AMyMainCharacter::SlowMotion()

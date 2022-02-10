@@ -75,6 +75,10 @@ void EmptyLinkFunctionForGeneratedCodeMainCharAnimInstance() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MovementSpeed;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MyCharAttackPose_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_MyCharAttackPose;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Pawn_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Pawn;
@@ -109,9 +113,18 @@ void EmptyLinkFunctionForGeneratedCodeMainCharAnimInstance() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_MovementSpeed = { "MovementSpeed", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMainCharAnimInstance, MovementSpeed), METADATA_PARAMS(Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_MovementSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_MovementSpeed_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_Pawn_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_MyCharAttackPose_MetaData[] = {
 		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "MainCharAnimInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_MyCharAttackPose = { "MyCharAttackPose", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMainCharAnimInstance, MyCharAttackPose), METADATA_PARAMS(Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_MyCharAttackPose_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_MyCharAttackPose_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_Pawn_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "Comment", "//0 - ???? / 1 - Great / 2 - OnehandSword\n" },
+		{ "ModuleRelativePath", "MainCharAnimInstance.h" },
+		{ "ToolTip", "0 - ???? / 1 - Great / 2 - OnehandSword" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_Pawn = { "Pawn", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMainCharAnimInstance, Pawn), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_Pawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_Pawn_MetaData)) };
@@ -124,6 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeMainCharAnimInstance() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_Main = { "Main", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMainCharAnimInstance, Main), Z_Construct_UClass_AMyMainCharacter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_Main_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_Main_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMainCharAnimInstance_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_MovementSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_MyCharAttackPose,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_Pawn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainCharAnimInstance_Statics::NewProp_Main,
 	};
@@ -154,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeMainCharAnimInstance() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMainCharAnimInstance, 3414532389);
+	IMPLEMENT_CLASS(UMainCharAnimInstance, 1996198889);
 	template<> NIERPROJECT_API UClass* StaticClass<UMainCharAnimInstance>()
 	{
 		return UMainCharAnimInstance::StaticClass();

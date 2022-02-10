@@ -25,6 +25,8 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USoundCue_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(AWeapon::execDeActivateCollison)
 	{
@@ -292,9 +294,21 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CombatCollision;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SwingSound_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SwingSound;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BloodPoint_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BloodPoint;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Damage_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Damage;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponAttackPoseStatus_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_WeaponAttackPoseStatus;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -355,19 +369,44 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp_CombatCollision = { "CombatCollision", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, CombatCollision), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp_CombatCollision_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp_CombatCollision_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Statics::NewProp_SwingSound_MetaData[] = {
+		{ "Category", "Combat" },
+		{ "ModuleRelativePath", "Weapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp_SwingSound = { "SwingSound", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, SwingSound), Z_Construct_UClass_USoundCue_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp_SwingSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp_SwingSound_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Statics::NewProp_BloodPoint_MetaData[] = {
+		{ "Category", "BloodPoint" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Weapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp_BloodPoint = { "BloodPoint", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, BloodPoint), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp_BloodPoint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp_BloodPoint_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Statics::NewProp_Damage_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "Weapon.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp_Damage = { "Damage", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, Damage), METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp_Damage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp_Damage_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Statics::NewProp_WeaponAttackPoseStatus_MetaData[] = {
+		{ "Category", "Combat" },
+		{ "ModuleRelativePath", "Weapon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AWeapon_Statics::NewProp_WeaponAttackPoseStatus = { "WeaponAttackPoseStatus", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon, WeaponAttackPoseStatus), METADATA_PARAMS(Z_Construct_UClass_AWeapon_Statics::NewProp_WeaponAttackPoseStatus_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Statics::NewProp_WeaponAttackPoseStatus_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWeapon_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_Mesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_ParticlesComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_Particles,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_skeletalMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_CombatCollision,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_SwingSound,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_BloodPoint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_Damage,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Statics::NewProp_WeaponAttackPoseStatus,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AWeapon_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AWeapon>::IsAbstract,
@@ -396,7 +435,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon, 2644110484);
+	IMPLEMENT_CLASS(AWeapon, 3579913536);
 	template<> NIERPROJECT_API UClass* StaticClass<AWeapon>()
 	{
 		return AWeapon::StaticClass();

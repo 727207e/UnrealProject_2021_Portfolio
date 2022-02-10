@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AMyMainCharacter;
 #ifdef NIERPROJECT_Enemy_generated_h
 #error "Enemy.generated.h already included, missing '#pragma once' in Enemy.h"
 #endif
@@ -17,12 +18,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define NierProject_Source_NierProject_Enemy_h_12_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execTargetShowInfo); \
+	DECLARE_FUNCTION(execMoveToTarget); \
 	DECLARE_FUNCTION(execBPTaketheDamage);
 
 
 #define NierProject_Source_NierProject_Enemy_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execTargetShowInfo); \
+	DECLARE_FUNCTION(execMoveToTarget); \
 	DECLARE_FUNCTION(execBPTaketheDamage);
 
 

@@ -8,7 +8,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class AMyMainCharacter;
 class UPrimitiveComponent;
 class AActor;
 struct FHitResult;
@@ -17,15 +16,14 @@ struct FHitResult;
 #endif
 #define NIERPROJECT_MinionMeleeCoreDawn_Enemy_generated_h
 
-#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_SPARSE_DATA
-#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_RPC_WRAPPERS \
+#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_SPARSE_DATA
+#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execDisappear); \
 	DECLARE_FUNCTION(execHitReactEnd); \
 	DECLARE_FUNCTION(execDeActivateCollison); \
 	DECLARE_FUNCTION(execActivateCollison); \
 	DECLARE_FUNCTION(execAttackEnd); \
-	DECLARE_FUNCTION(execMoveToTarget); \
 	DECLARE_FUNCTION(execCombatOnOnverlapEnd); \
 	DECLARE_FUNCTION(execCombatOnOverlapBegin); \
 	DECLARE_FUNCTION(execCombatSphereOnOverlapEnd); \
@@ -34,14 +32,13 @@ struct FHitResult;
 	DECLARE_FUNCTION(execAgroSphereOnOverlapBegin);
 
 
-#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execDisappear); \
 	DECLARE_FUNCTION(execHitReactEnd); \
 	DECLARE_FUNCTION(execDeActivateCollison); \
 	DECLARE_FUNCTION(execActivateCollison); \
 	DECLARE_FUNCTION(execAttackEnd); \
-	DECLARE_FUNCTION(execMoveToTarget); \
 	DECLARE_FUNCTION(execCombatOnOnverlapEnd); \
 	DECLARE_FUNCTION(execCombatOnOverlapBegin); \
 	DECLARE_FUNCTION(execCombatSphereOnOverlapEnd); \
@@ -50,25 +47,27 @@ struct FHitResult;
 	DECLARE_FUNCTION(execAgroSphereOnOverlapBegin);
 
 
-#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_INCLASS_NO_PURE_DECLS \
+#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMinionMeleeCoreDawn_Enemy(); \
 	friend struct Z_Construct_UClass_AMinionMeleeCoreDawn_Enemy_Statics; \
 public: \
 	DECLARE_CLASS(AMinionMeleeCoreDawn_Enemy, AEnemy, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/NierProject"), NO_API) \
-	DECLARE_SERIALIZER(AMinionMeleeCoreDawn_Enemy)
+	DECLARE_SERIALIZER(AMinionMeleeCoreDawn_Enemy) \
+	virtual UObject* _getUObject() const override { return const_cast<AMinionMeleeCoreDawn_Enemy*>(this); }
 
 
-#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_INCLASS \
+#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_INCLASS \
 private: \
 	static void StaticRegisterNativesAMinionMeleeCoreDawn_Enemy(); \
 	friend struct Z_Construct_UClass_AMinionMeleeCoreDawn_Enemy_Statics; \
 public: \
 	DECLARE_CLASS(AMinionMeleeCoreDawn_Enemy, AEnemy, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/NierProject"), NO_API) \
-	DECLARE_SERIALIZER(AMinionMeleeCoreDawn_Enemy)
+	DECLARE_SERIALIZER(AMinionMeleeCoreDawn_Enemy) \
+	virtual UObject* _getUObject() const override { return const_cast<AMinionMeleeCoreDawn_Enemy*>(this); }
 
 
-#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_STANDARD_CONSTRUCTORS \
+#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMinionMeleeCoreDawn_Enemy(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMinionMeleeCoreDawn_Enemy) \
@@ -81,7 +80,7 @@ private: \
 public:
 
 
-#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_ENHANCED_CONSTRUCTORS \
+#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMinionMeleeCoreDawn_Enemy(AMinionMeleeCoreDawn_Enemy&&); \
@@ -92,31 +91,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMinionMeleeCoreDawn_Enemy); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMinionMeleeCoreDawn_Enemy)
 
 
-#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__CombatTarget() { return STRUCT_OFFSET(AMinionMeleeCoreDawn_Enemy, CombatTarget); }
-
-
-#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_26_PROLOG
-#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_GENERATED_BODY_LEGACY \
+#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_PRIVATE_PROPERTY_OFFSET
+#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_27_PROLOG
+#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_PRIVATE_PROPERTY_OFFSET \
-	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_SPARSE_DATA \
-	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_RPC_WRAPPERS \
-	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_INCLASS \
-	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_STANDARD_CONSTRUCTORS \
+	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_PRIVATE_PROPERTY_OFFSET \
+	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_SPARSE_DATA \
+	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_RPC_WRAPPERS \
+	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_INCLASS \
+	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_GENERATED_BODY \
+#define NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_PRIVATE_PROPERTY_OFFSET \
-	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_SPARSE_DATA \
-	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
-	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_INCLASS_NO_PURE_DECLS \
-	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_29_ENHANCED_CONSTRUCTORS \
+	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_PRIVATE_PROPERTY_OFFSET \
+	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_SPARSE_DATA \
+	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
+	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_INCLASS_NO_PURE_DECLS \
+	NierProject_Source_NierProject_MinionMeleeCoreDawn_Enemy_h_30_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

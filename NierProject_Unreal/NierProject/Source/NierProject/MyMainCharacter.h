@@ -3,6 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+//#include "MainCharacterWeaponMovement.h"
+#include "NierProject/InterfaceLifeEntity.h"
 #include "LifeEntity.h"
 #include "MyMainCharacter.generated.h"
 
@@ -19,7 +21,7 @@ enum class EMovementStatus : uint8 {
 };
 
 UCLASS()
-class NIERPROJECT_API AMyMainCharacter : public ALifeEntity
+class NIERPROJECT_API AMyMainCharacter : public ALifeEntity, public IInterfaceLifeEntity
 {
 	GENERATED_BODY()
 
@@ -34,8 +36,6 @@ class NIERPROJECT_API AMyMainCharacter : public ALifeEntity
 	/** Follow camera 끝 위치 **/
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* FollowCameraEndPoint;
-
-
 
 public:
 	AMyMainCharacter();
@@ -57,9 +57,6 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Running")
 	float SprintingSpeed;
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Anims")
-	class UAnimMontage* CombatMontage; //GreatSword 공격 몽타주
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Anims")
 	class UAnimMontage* MoveUtilityMontage; //회피, 피격, 죽음 몽타주
@@ -114,9 +111,9 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UFUNCTION(BlueprintCallable)
 	void LookattheLockOnTarget(float DeltaTime);
 	void LookattheLockOnTargetOff();
+
 
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
@@ -126,6 +123,16 @@ public:
 	//현재 메터리얼(텍스쳐)
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Material")
 	class UMaterial* MaterialOrigin;
+
+
+	///////////////// 인터페이스 ////////////////////
+
+	virtual void InterfaceTakeDamage(float _Damage, FVector EnemyVec, FVector HitReactVec) override;
+	
+	virtual int InterfaceGetMyID() override;
+
+	///////////////////////////////////////////
+
 
 
 
@@ -153,23 +160,15 @@ public:
 
 
 
-	///////////////// 공격 ////////////////////
+	///////////////// 공격 ////////////////////	AMainCharacterWeaponMovement에서 진행됨
 
-	void Attack(bool bIsStrongAttack, float _ComboNumber); //true->강공격, false->약공격  / -1 : 없음, 0 : 0번 ...
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Motion")
+	TSubclassOf<class AMainCharacterWeaponMovement> AttackMotionTSub;
 
-	bool NextComboOnOffTrigger; //다음 콤보를 이어가기를 입력해둔 상태(On / Off)
-	uint8 AttackCount; //번째 공격 넘버
-
-	TArray<FName> AttackComboNumber;	//기본공격
-	TArray<FName> AttackStrongComboNumber; //강공격
-	TArray<FName> SpecialAttackNumber;	//콤보공격, 슬라이드공격 등의 특수공격
-
+	AMainCharacterWeaponMovement* AttackMotion;
 
 	UFUNCTION(BlueprintCallable)
-	void NextComboOn();
-
-	UFUNCTION(BlueprintCallable)
-	void NextComboOff();
+	FORCEINLINE AMainCharacterWeaponMovement* GetAttackMotion() {return AttackMotion; }
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Target")
 	class AEnemy* theTarget;
@@ -177,21 +176,12 @@ public:
 	UFUNCTION(BlueprintCallable)
 	bool hasTarget();
 
-	float LookAtDeltaCount = 0.f;
-	float LookAtDeltaCountLimit = 0.f;
-
 	float deltaCount = 0.f; //캐릭터 Attack Rotation 초기화 시간
 	FTimerHandle waitHandle; //Rotation 타이머 핸들러
 
-	UFUNCTION(BlueprintCallable)
-	void LookAtTargetWhenAttacking(float _DeltaTime); // 공격하는 순간 적을 처다봄
+	UAnimInstance* AnimInstance;
 
-	FORCEINLINE AEnemy* GettheTarget() { return theTarget; }
-	FORCEINLINE void SettheTarget(AEnemy* enemy) { theTarget = enemy; }
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Attack")
-	float LookSpeed_TargetAttacking;
-
+	int AnimAttackPose;
 	///////////////////////////////////////////
 
 
@@ -224,6 +214,9 @@ public:
 	//UFUNCTION(BlueprintCallable)
 	void HitReact_goBack(FVector EnemyVec);	//뒤로 뒷걸음질 
 
+	FTimerHandle changeColorTimerHandle;
+	void HitReact_ChangeColor();	//번쩍임
+
 	FVector EnemyVecToNormal;
 	bool NoHitStance = false; // 무적판정
 	float NoHitStanceTime = 0.5f; //무적 판정 시간
@@ -247,4 +240,11 @@ public:
 
 	///////////////// HUD ////////////////////
 
+
+	///////////////////////////////////////////
+
+
+	///////////////// Sound ////////////////////
+
+	///////////////////////////////////////////
 };

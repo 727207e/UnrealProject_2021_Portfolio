@@ -4,6 +4,7 @@
 #include "LifeEntity.h"
 #include "Components/CapsuleComponent.h"
 #include "Sound/SoundCue.h"
+#include "Kismet/GameplayStatics.h"
 #include "theDamageText.h"
 
 // Sets default values
@@ -22,7 +23,6 @@ void ALifeEntity::LifeEntityinitialize()
 
 	GetMesh()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
 }
-
 
 // Called when the game starts or when spawned
 void ALifeEntity::BeginPlay()
@@ -64,4 +64,20 @@ void ALifeEntity::Die()
 	bItsDead = true; //데미지 입지 않음
 
 	GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, "Die");
+}
+
+void ALifeEntity::HitReact(FVector Vec)
+{
+	if (HitParticles)
+	{
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitParticles, Vec, FRotator(0.f), false);
+	}
+}
+
+void ALifeEntity::HitReact_Sound()
+{
+	if (HitSound)
+	{
+		UGameplayStatics::PlaySound2D(this, HitSound);
+	}
 }

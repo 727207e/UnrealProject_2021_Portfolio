@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Enemy.h"
+#include "NierProject/InterfaceLifeEntity.h"
 #include "MinionMeleeCoreDawn_Enemy.generated.h"
 
 /**
@@ -24,7 +25,7 @@ enum class EEnemyMovementStatus :uint8 {
 };
 
 UCLASS()
-class NIERPROJECT_API AMinionMeleeCoreDawn_Enemy : public AEnemy
+class NIERPROJECT_API AMinionMeleeCoreDawn_Enemy : public AEnemy, public IInterfaceLifeEntity
 {
 	GENERATED_BODY()
 
@@ -44,9 +45,6 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combat")
 	class UBoxComponent* CombatCollision;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
-	class AAIController* aiController;
 
 	FTimerHandle AttackTimer;
 
@@ -82,13 +80,17 @@ protected:
 	UFUNCTION(BlueprintCallable)
 	void CombatOnOnverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	
-	UFUNCTION(BlueprintCallable)
-	void MoveToTarget(class AMyMainCharacter* Target);
-
 	bool Alive();
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "AI")
-	AMyMainCharacter* CombatTarget;
+
+	///////////////// 인터페이스 ////////////////////
+
+	virtual void InterfaceTakeDamage(float _Damage, FVector EnemyVec, FVector HitReactVec) override;
+
+	virtual int InterfaceGetMyID() override;
+
+	///////////////////////////////////////////
+
 
 	///////////////// 공격 ////////////////////
 	void Attack();
@@ -122,5 +124,9 @@ protected:
 
 	UFUNCTION(BlueprintCallable)
 	void Disappear();
+
+	
 	///////////////////////////////////////////
+
+
 };

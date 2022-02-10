@@ -25,6 +25,14 @@ void EmptyLinkFunctionForGeneratedCodeEnemyHealthBarWidget() {}
 		*(float*)Z_Param__Result=P_THIS->HealthPercent();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UEnemyHealthBarWidget::execSetTargetText)
+	{
+		P_GET_UBOOL(Z_Param_bOnOff);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FName*)Z_Param__Result=P_THIS->SetTargetText(Z_Param_bOnOff);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UEnemyHealthBarWidget::execShow)
 	{
 		P_GET_UBOOL(Z_Param_bOnOff);
@@ -38,6 +46,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyHealthBarWidget() {}
 		UClass* Class = UEnemyHealthBarWidget::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "HealthPercent", &UEnemyHealthBarWidget::execHealthPercent },
+			{ "SetTargetText", &UEnemyHealthBarWidget::execSetTargetText },
 			{ "Show", &UEnemyHealthBarWidget::execShow },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -61,9 +70,9 @@ void EmptyLinkFunctionForGeneratedCodeEnemyHealthBarWidget() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UEnemyHealthBarWidget_HealthPercent_Statics::Function_MetaDataParams[] = {
-		{ "Comment", "//\xc3\xbc?\xc2\xb9? ???\xcc\xb1?\n" },
+		{ "Comment", "//\xc5\xb8?? ?????? ?\xd8\xbd?\xc6\xae ????\n" },
 		{ "ModuleRelativePath", "EnemyHealthBarWidget.h" },
-		{ "ToolTip", "\xc3\xbc?\xc2\xb9? ???\xcc\xb1?" },
+		{ "ToolTip", "\xc5\xb8?? ?????? ?\xd8\xbd?\xc6\xae ????" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEnemyHealthBarWidget_HealthPercent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEnemyHealthBarWidget, nullptr, "HealthPercent", nullptr, nullptr, sizeof(EnemyHealthBarWidget_eventHealthPercent_Parms), Z_Construct_UFunction_UEnemyHealthBarWidget_HealthPercent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemyHealthBarWidget_HealthPercent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEnemyHealthBarWidget_HealthPercent_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemyHealthBarWidget_HealthPercent_Statics::Function_MetaDataParams)) };
@@ -73,6 +82,49 @@ void EmptyLinkFunctionForGeneratedCodeEnemyHealthBarWidget() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UEnemyHealthBarWidget_HealthPercent_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics
+	{
+		struct EnemyHealthBarWidget_eventSetTargetText_Parms
+		{
+			bool bOnOff;
+			FName ReturnValue;
+		};
+		static void NewProp_bOnOff_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bOnOff;
+		static const UE4CodeGen_Private::FNamePropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics::NewProp_bOnOff_SetBit(void* Obj)
+	{
+		((EnemyHealthBarWidget_eventSetTargetText_Parms*)Obj)->bOnOff = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics::NewProp_bOnOff = { "bOnOff", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EnemyHealthBarWidget_eventSetTargetText_Parms), &Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics::NewProp_bOnOff_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EnemyHealthBarWidget_eventSetTargetText_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics::NewProp_bOnOff,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//\xc3\xbc?\xc2\xb9? ???\xcc\xb1?\n" },
+		{ "ModuleRelativePath", "EnemyHealthBarWidget.h" },
+		{ "ToolTip", "\xc3\xbc?\xc2\xb9? ???\xcc\xb1?" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEnemyHealthBarWidget, nullptr, "SetTargetText", nullptr, nullptr, sizeof(EnemyHealthBarWidget_eventSetTargetText_Parms), Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -132,6 +184,11 @@ void EmptyLinkFunctionForGeneratedCodeEnemyHealthBarWidget() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NowHealth_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_NowHealth;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_theTarget_MetaData[];
+#endif
+		static void NewProp_theTarget_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_theTarget;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -141,7 +198,8 @@ void EmptyLinkFunctionForGeneratedCodeEnemyHealthBarWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_NierProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UEnemyHealthBarWidget_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UEnemyHealthBarWidget_HealthPercent, "HealthPercent" }, // 1641597794
+		{ &Z_Construct_UFunction_UEnemyHealthBarWidget_HealthPercent, "HealthPercent" }, // 3882258307
+		{ &Z_Construct_UFunction_UEnemyHealthBarWidget_SetTargetText, "SetTargetText" }, // 3245026644
 		{ &Z_Construct_UFunction_UEnemyHealthBarWidget_Show, "Show" }, // 1639363561
 	};
 #if WITH_METADATA
@@ -167,9 +225,21 @@ void EmptyLinkFunctionForGeneratedCodeEnemyHealthBarWidget() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UEnemyHealthBarWidget_Statics::NewProp_NowHealth = { "NowHealth", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UEnemyHealthBarWidget, NowHealth), METADATA_PARAMS(Z_Construct_UClass_UEnemyHealthBarWidget_Statics::NewProp_NowHealth_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyHealthBarWidget_Statics::NewProp_NowHealth_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyHealthBarWidget_Statics::NewProp_theTarget_MetaData[] = {
+		{ "Category", "TargetText" },
+		{ "ModuleRelativePath", "EnemyHealthBarWidget.h" },
+	};
+#endif
+	void Z_Construct_UClass_UEnemyHealthBarWidget_Statics::NewProp_theTarget_SetBit(void* Obj)
+	{
+		((UEnemyHealthBarWidget*)Obj)->theTarget = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UEnemyHealthBarWidget_Statics::NewProp_theTarget = { "theTarget", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UEnemyHealthBarWidget), &Z_Construct_UClass_UEnemyHealthBarWidget_Statics::NewProp_theTarget_SetBit, METADATA_PARAMS(Z_Construct_UClass_UEnemyHealthBarWidget_Statics::NewProp_theTarget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyHealthBarWidget_Statics::NewProp_theTarget_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEnemyHealthBarWidget_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyHealthBarWidget_Statics::NewProp_MaxHealth,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyHealthBarWidget_Statics::NewProp_NowHealth,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyHealthBarWidget_Statics::NewProp_theTarget,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UEnemyHealthBarWidget_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UEnemyHealthBarWidget>::IsAbstract,
@@ -198,7 +268,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyHealthBarWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEnemyHealthBarWidget, 2865580547);
+	IMPLEMENT_CLASS(UEnemyHealthBarWidget, 3009387444);
 	template<> NIERPROJECT_API UClass* StaticClass<UEnemyHealthBarWidget>()
 	{
 		return UEnemyHealthBarWidget::StaticClass();

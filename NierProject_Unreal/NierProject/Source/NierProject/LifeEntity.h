@@ -34,9 +34,6 @@ public:
 	class USoundCue* HitSound;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "LifeEntity")
-	USoundCue* SwingSound;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "LifeEntity")
 	TSubclassOf<class AtheDamageText> theDamageText;
 
 	virtual void TaketheDamage(float Damage);
@@ -57,4 +54,7 @@ public:
 
 	void LifeEntityinitialize();
 
+	void HitReact(FVector Vec);
+
+	void HitReact_Sound();
 };

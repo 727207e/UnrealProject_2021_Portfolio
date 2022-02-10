@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodetheDamageText() {}
 	UPackage* Z_Construct_UPackage__Script_NierProject();
 	UMG_API UClass* Z_Construct_UClass_UWidgetComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FLinearColor();
 // End Cross Module References
 	DEFINE_FUNCTION(AtheDamageText::execSetText)
 	{
@@ -87,6 +88,10 @@ void EmptyLinkFunctionForGeneratedCodetheDamageText() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_theFloatText_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_theFloatText;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_damageTextColor_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_damageTextColor;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -127,10 +132,20 @@ void EmptyLinkFunctionForGeneratedCodetheDamageText() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AtheDamageText_Statics::NewProp_theFloatText = { "theFloatText", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AtheDamageText, theFloatText), METADATA_PARAMS(Z_Construct_UClass_AtheDamageText_Statics::NewProp_theFloatText_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AtheDamageText_Statics::NewProp_theFloatText_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AtheDamageText_Statics::NewProp_damageTextColor_MetaData[] = {
+		{ "Category", "damageText_Color" },
+		{ "Comment", "//???? ?\xd8\xbd?\xc6\xae?? ???\xee\xb0\xa5 ????(BP?? ????)\n" },
+		{ "ModuleRelativePath", "theDamageText.h" },
+		{ "ToolTip", "???? ?\xd8\xbd?\xc6\xae?? ???\xee\xb0\xa5 ????(BP?? ????)" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AtheDamageText_Statics::NewProp_damageTextColor = { "damageTextColor", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AtheDamageText, damageTextColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UClass_AtheDamageText_Statics::NewProp_damageTextColor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AtheDamageText_Statics::NewProp_damageTextColor_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AtheDamageText_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AtheDamageText_Statics::NewProp_theDamageText,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AtheDamageText_Statics::NewProp_theRootComp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AtheDamageText_Statics::NewProp_theFloatText,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AtheDamageText_Statics::NewProp_damageTextColor,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AtheDamageText_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AtheDamageText>::IsAbstract,
@@ -159,7 +174,7 @@ void EmptyLinkFunctionForGeneratedCodetheDamageText() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AtheDamageText, 143160541);
+	IMPLEMENT_CLASS(AtheDamageText, 3764523872);
 	template<> NIERPROJECT_API UClass* StaticClass<AtheDamageText>()
 	{
 		return AtheDamageText::StaticClass();

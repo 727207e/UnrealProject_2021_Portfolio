@@ -28,5 +28,10 @@ void UMainCharAnimInstance::UpdateAnimationProperties() {
 		if (Main == nullptr) {
 			Main = Cast<AMyMainCharacter>(Pawn);
 		}
+
+		if (Main)
+		{
+			MyCharAttackPose = Main->AnimAttackPose;
+		}
 	}
 }

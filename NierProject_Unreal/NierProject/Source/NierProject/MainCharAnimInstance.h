@@ -24,10 +24,13 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
 	float MovementSpeed;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
+	int MyCharAttackPose;	//0 - КѓМе / 1 - Great / 2 - OnehandSword
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
 	class APawn* Pawn;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Movement)
 	class AMyMainCharacter* Main;
+
 };
