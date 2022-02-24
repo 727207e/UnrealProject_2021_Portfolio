@@ -791,7 +791,7 @@ void EmptyLinkFunctionForGeneratedCodeBoss_Mutant() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABoss_Mutant, 3145808389);
+	IMPLEMENT_CLASS(ABoss_Mutant, 3723826011);
 	template<> NIERPROJECT_API UClass* StaticClass<ABoss_Mutant>()
 	{
 		return ABoss_Mutant::StaticClass();

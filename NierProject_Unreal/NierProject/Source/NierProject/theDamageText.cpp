@@ -21,6 +21,8 @@ AtheDamageText::AtheDamageText()
 
 	damageTextColor = FLinearColor::White; //색상 지정
 	damageTextColor.A = 1.f;
+	theTextScaleVector = { 1.0f, 1.0f };	//크기 초기화
+
 }
 
 // Called when the game starts or when spawned
@@ -34,6 +36,7 @@ void AtheDamageText::BeginPlay()
 
 void AtheDamageText::DestroyThis()
 {
+
 	TimeCheck = GetWorld()->GetDeltaSeconds(); //델타타임 가져옴
 
 	GetWorld()->GetTimerManager().SetTimer(Timer, FTimerDelegate::CreateLambda([&]()
@@ -42,9 +45,12 @@ void AtheDamageText::DestroyThis()
 		TotalTimeCheck += TimeCheck; //누적시간
 
 		//서서히 없어짐(알파값 변화)
+		//서서히 작아짐(스케일 변화)
 		if (TotalTimeCheck >= AlphaChangeTime)
 		{
 			damageTextColor.A -= 0.02f;
+			theTextScaleVector.X -= 0.01f;
+			theTextScaleVector.Y -= 0.01f;
 		}
 
 		//파괴

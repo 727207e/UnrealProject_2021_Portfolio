@@ -123,7 +123,7 @@ void AMyMainCharacter::Tick(float DeltaTime)
 														GetActorRotation()));
 		}//
 	}
-
+	
 }
 
 void AMyMainCharacter::InterfaceTakeDamage(float _Damage, FVector EnemyVec, FVector HitReactVec)

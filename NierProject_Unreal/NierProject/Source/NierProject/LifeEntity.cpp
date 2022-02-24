@@ -6,6 +6,7 @@
 #include "Sound/SoundCue.h"
 #include "Kismet/GameplayStatics.h"
 #include "theDamageText.h"
+#include "Components/SceneComponent.h"
 
 // Sets default values
 ALifeEntity::ALifeEntity()
@@ -20,6 +21,8 @@ void ALifeEntity::LifeEntityinitialize()
 	HitBoxCapsule = CreateDefaultSubobject<UCapsuleComponent>(TEXT("HitBoxCapsule"));
 	HitBoxCapsule->SetupAttachment(GetRootComponent());
 
+	HitTextPos = CreateDefaultSubobject<USceneComponent>(TEXT("HitTextPosition"));
+	HitTextPos->SetupAttachment(GetRootComponent());
 
 	GetMesh()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
 }
@@ -48,7 +51,7 @@ void ALifeEntity::TaketheDamage(float _Damage)
 {
 	AtheDamageText* Text = GetWorld()->SpawnActor<AtheDamageText>(theDamageText);
 	Text->theFloatText = _Damage;
-	Text->SetActorLocation(GetActorLocation());
+	Text->SetActorLocation(HitTextPos->GetComponentLocation());
 	Text->SetText();
 
 	Health -= _Damage;

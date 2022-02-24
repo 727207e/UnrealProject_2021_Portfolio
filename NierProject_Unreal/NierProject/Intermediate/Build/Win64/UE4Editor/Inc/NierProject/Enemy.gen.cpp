@@ -331,7 +331,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy, 1676792178);
+	IMPLEMENT_CLASS(AEnemy, 2532808822);
 	template<> NIERPROJECT_API UClass* StaticClass<AEnemy>()
 	{
 		return AEnemy::StaticClass();

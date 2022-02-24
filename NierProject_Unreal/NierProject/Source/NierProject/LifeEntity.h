@@ -33,6 +33,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "LifeEntity")
 	class USoundCue* HitSound;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
+	class USceneComponent* HitTextPos;	// 데미지 텍스트 위치
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "LifeEntity")
 	TSubclassOf<class AtheDamageText> theDamageText;
 

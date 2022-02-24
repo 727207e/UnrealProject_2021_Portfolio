@@ -24,7 +24,6 @@ float UEnemyHealthBarWidget::HealthPercent()
 
 FName UEnemyHealthBarWidget::SetTargetText(bool bOnOff)
 {
-	UE_LOG(LogTemp,Warning,TEXT("tt"));
 	if (bOnOff)
 	{
 		return "Target";

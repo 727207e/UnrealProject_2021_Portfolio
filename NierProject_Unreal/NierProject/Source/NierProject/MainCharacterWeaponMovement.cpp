@@ -35,7 +35,6 @@ AMainCharacterWeaponMovement::AMainCharacterWeaponMovement()
 
 	///////////////////////////////
 
-	UE_LOG(LogTemp, Warning, TEXT("Weapon init done"))
 }
 
 void AMainCharacterWeaponMovement::Attack(bool bIsStrongAttack, float _ComboNumber)

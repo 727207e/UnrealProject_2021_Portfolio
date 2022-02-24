@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeLifeEntity() {}
 	ENGINE_API UClass* Z_Construct_UClass_UCapsuleComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundCue_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	NIERPROJECT_API UClass* Z_Construct_UClass_AtheDamageText_NoRegister();
 // End Cross Module References
@@ -60,6 +61,10 @@ void EmptyLinkFunctionForGeneratedCodeLifeEntity() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HitSound_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HitSound;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HitTextPos_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HitTextPos;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_theDamageText_MetaData[];
 #endif
@@ -123,9 +128,19 @@ void EmptyLinkFunctionForGeneratedCodeLifeEntity() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALifeEntity_Statics::NewProp_HitSound = { "HitSound", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALifeEntity, HitSound), Z_Construct_UClass_USoundCue_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ALifeEntity_Statics::NewProp_HitSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALifeEntity_Statics::NewProp_HitSound_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALifeEntity_Statics::NewProp_HitTextPos_MetaData[] = {
+		{ "Category", "Combat" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "LifeEntity.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALifeEntity_Statics::NewProp_HitTextPos = { "HitTextPos", nullptr, (EPropertyFlags)0x001000000008001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALifeEntity, HitTextPos), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ALifeEntity_Statics::NewProp_HitTextPos_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALifeEntity_Statics::NewProp_HitTextPos_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALifeEntity_Statics::NewProp_theDamageText_MetaData[] = {
 		{ "Category", "LifeEntity" },
+		{ "Comment", "// ?????? ?\xd8\xbd?\xc6\xae ??\xc4\xa1\n" },
 		{ "ModuleRelativePath", "LifeEntity.h" },
+		{ "ToolTip", "?????? ?\xd8\xbd?\xc6\xae ??\xc4\xa1" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ALifeEntity_Statics::NewProp_theDamageText = { "theDamageText", nullptr, (EPropertyFlags)0x0014000000000005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALifeEntity, theDamageText), Z_Construct_UClass_AtheDamageText_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ALifeEntity_Statics::NewProp_theDamageText_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALifeEntity_Statics::NewProp_theDamageText_MetaData)) };
@@ -136,6 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeLifeEntity() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALifeEntity_Statics::NewProp_HitBoxCapsule,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALifeEntity_Statics::NewProp_HitParticles,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALifeEntity_Statics::NewProp_HitSound,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALifeEntity_Statics::NewProp_HitTextPos,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALifeEntity_Statics::NewProp_theDamageText,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ALifeEntity_Statics::StaticCppClassTypeInfo = {
@@ -165,7 +181,7 @@ void EmptyLinkFunctionForGeneratedCodeLifeEntity() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ALifeEntity, 2332666104);
+	IMPLEMENT_CLASS(ALifeEntity, 3518761384);
 	template<> NIERPROJECT_API UClass* StaticClass<ALifeEntity>()
 	{
 		return ALifeEntity::StaticClass();

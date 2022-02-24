@@ -1,12 +1,14 @@
-﻿  Invalidating makefile for NierProjectEditor (EnemyHealthBarWidget.cpp modified)
-  Building NierProjectEditor...
+﻿  Building NierProjectEditor...
   Using Visual Studio 2017 14.16.27045 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 24 processes...
-    [1/4] EnemyHealthBarWidget.cpp
-    [2/4] UE4Editor-NierProject-0003.lib
-       D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject-0003.lib 라이브러리 및 D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject-0003.exp 개체를 생성하고 있습니다.
-    [3/4] UE4Editor-NierProject-0003.dll
-       D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject-0003.suppressed.lib 라이브러리 및 D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject-0003.suppressed.exp 개체를 생성하고 있습니다.
-    [4/4] NierProjectEditor.target
-  Total time in Parallel executor: 17.81 seconds
-  Total execution time: 20.78 seconds
+  Building 7 actions with 24 processes...
+    [1/7] Boss_Mutant_AttackCollision.gen.cpp
+    [2/7] LevelPortal.gen.cpp
+    [3/7] Drone.gen.cpp
+    [4/7] MyMainCharacter.cpp
+    [5/7] UE4Editor-NierProject.lib
+       D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject.lib 라이브러리 및 D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject.exp 개체를 생성하고 있습니다.
+    [6/7] UE4Editor-NierProject.dll
+       D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject.suppressed.lib 라이브러리 및 D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Intermediate\Build\Win64\UE4Editor\Development\NierProject\UE4Editor-NierProject.suppressed.exp 개체를 생성하고 있습니다.
+    [7/7] NierProjectEditor.target
+  Total time in Parallel executor: 2.83 seconds
+  Total execution time: 3.17 seconds

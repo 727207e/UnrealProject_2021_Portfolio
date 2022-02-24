@@ -32,6 +32,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "damageText")
 	float theFloatText;	//최종 텍스트에 들어갈 숫자(BP에 구현)
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "damageText")
+	FVector2D theTextScaleVector;	//데미지 텍스트 크기
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "damageText_Color")
 	FLinearColor damageTextColor;	//데미지 텍스트 칼러
 	

@@ -929,7 +929,7 @@ void EmptyLinkFunctionForGeneratedCodeMinionMeleeCoreDawn_Enemy() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMinionMeleeCoreDawn_Enemy, 3995173063);
+	IMPLEMENT_CLASS(AMinionMeleeCoreDawn_Enemy, 286633838);
 	template<> NIERPROJECT_API UClass* StaticClass<AMinionMeleeCoreDawn_Enemy>()
 	{
 		return AMinionMeleeCoreDawn_Enemy::StaticClass();
