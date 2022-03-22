@@ -105,6 +105,13 @@ void EmptyLinkFunctionForGeneratedCodeBoss_Mutant() {}
 		}
 		return ReturnEnum;
 	}
+	DEFINE_FUNCTION(ABoss_Mutant::execBossHealthBarShowUp)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->BossHealthBarShowUp();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABoss_Mutant::execAttackEnd)
 	{
 		P_FINISH;
@@ -186,6 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeBoss_Mutant() {}
 			{ "AttackEnd", &ABoss_Mutant::execAttackEnd },
 			{ "AttackRange_OnOverlapBegin", &ABoss_Mutant::execAttackRange_OnOverlapBegin },
 			{ "AttackRange_OnOverlapEnd", &ABoss_Mutant::execAttackRange_OnOverlapEnd },
+			{ "BossHealthBarShowUp", &ABoss_Mutant::execBossHealthBarShowUp },
 			{ "DeActiveCollision", &ABoss_Mutant::execDeActiveCollision },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -530,6 +538,30 @@ void EmptyLinkFunctionForGeneratedCodeBoss_Mutant() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ABoss_Mutant_BossHealthBarShowUp_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABoss_Mutant_BossHealthBarShowUp_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "///////////////// HUD ////////////////////\n" },
+		{ "ModuleRelativePath", "Boss_Mutant.h" },
+		{ "ToolTip", "HUD" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABoss_Mutant_BossHealthBarShowUp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABoss_Mutant, nullptr, "BossHealthBarShowUp", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABoss_Mutant_BossHealthBarShowUp_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABoss_Mutant_BossHealthBarShowUp_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABoss_Mutant_BossHealthBarShowUp()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABoss_Mutant_BossHealthBarShowUp_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ABoss_Mutant_DeActiveCollision_Statics
 	{
 		struct Boss_Mutant_eventDeActiveCollision_Parms
@@ -639,6 +671,7 @@ void EmptyLinkFunctionForGeneratedCodeBoss_Mutant() {}
 		{ &Z_Construct_UFunction_ABoss_Mutant_AttackEnd, "AttackEnd" }, // 1547303876
 		{ &Z_Construct_UFunction_ABoss_Mutant_AttackRange_OnOverlapBegin, "AttackRange_OnOverlapBegin" }, // 2962917505
 		{ &Z_Construct_UFunction_ABoss_Mutant_AttackRange_OnOverlapEnd, "AttackRange_OnOverlapEnd" }, // 2233147238
+		{ &Z_Construct_UFunction_ABoss_Mutant_BossHealthBarShowUp, "BossHealthBarShowUp" }, // 190529530
 		{ &Z_Construct_UFunction_ABoss_Mutant_DeActiveCollision, "DeActiveCollision" }, // 627663452
 	};
 #if WITH_METADATA
@@ -791,7 +824,7 @@ void EmptyLinkFunctionForGeneratedCodeBoss_Mutant() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABoss_Mutant, 3723826011);
+	IMPLEMENT_CLASS(ABoss_Mutant, 4025579657);
 	template<> NIERPROJECT_API UClass* StaticClass<ABoss_Mutant>()
 	{
 		return ABoss_Mutant::StaticClass();

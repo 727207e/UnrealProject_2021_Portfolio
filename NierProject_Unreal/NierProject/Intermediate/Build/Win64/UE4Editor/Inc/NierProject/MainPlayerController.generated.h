@@ -15,17 +15,37 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define NierProject_Source_NierProject_MainPlayerController_h_15_SPARSE_DATA
 #define NierProject_Source_NierProject_MainPlayerController_h_15_RPC_WRAPPERS \
+	virtual void BossHealthBarShowUp_Implementation(); \
+	virtual void InteractNPC_Implementation(); \
 	virtual void RemovePauseMenu_Implementation(); \
 	virtual void DisplayPauseMenu_Implementation(); \
  \
+	DECLARE_FUNCTION(execBossHealthBarShowUp); \
+	DECLARE_FUNCTION(execRemoveBossHealthBar); \
+	DECLARE_FUNCTION(execDisplayBossHealthBar); \
+	DECLARE_FUNCTION(execInteractNPC); \
+	DECLARE_FUNCTION(execRemoveNPCTalkTable); \
+	DECLARE_FUNCTION(execDisplayNPCTalkTable); \
+	DECLARE_FUNCTION(execRemoveNPCInteractMenu); \
+	DECLARE_FUNCTION(execDisplayNPCInteractMenu); \
 	DECLARE_FUNCTION(execRemovePauseMenu); \
 	DECLARE_FUNCTION(execDisplayPauseMenu);
 
 
 #define NierProject_Source_NierProject_MainPlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void BossHealthBarShowUp_Implementation(); \
+	virtual void InteractNPC_Implementation(); \
 	virtual void RemovePauseMenu_Implementation(); \
 	virtual void DisplayPauseMenu_Implementation(); \
  \
+	DECLARE_FUNCTION(execBossHealthBarShowUp); \
+	DECLARE_FUNCTION(execRemoveBossHealthBar); \
+	DECLARE_FUNCTION(execDisplayBossHealthBar); \
+	DECLARE_FUNCTION(execInteractNPC); \
+	DECLARE_FUNCTION(execRemoveNPCTalkTable); \
+	DECLARE_FUNCTION(execDisplayNPCTalkTable); \
+	DECLARE_FUNCTION(execRemoveNPCInteractMenu); \
+	DECLARE_FUNCTION(execDisplayNPCInteractMenu); \
 	DECLARE_FUNCTION(execRemovePauseMenu); \
 	DECLARE_FUNCTION(execDisplayPauseMenu);
 

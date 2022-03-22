@@ -1,0 +1,1633 @@
+﻿Log file open, 03/02/22 17:28:06
+LogInit: LLM is enabled
+LogInit: LLM CsvWriter: off TraceWriter: off
+LogInit: Display: Running engine for game: NierProject
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 71 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.374761
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin XGEController
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin CascadeToNiagaraConverter
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessNode
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin LuminPlatformFeatures
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting plugin ContentBrowserFileDataSource
+LogPluginManager: Mounting plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin SteamVR
+LogXGEController: Cleaning working directory: C:/Users/potap/AppData/Local/Temp/UnrealXGEWorkingDir/
+LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogOculusPluginWrapper: OculusPlugin initialized successfully
+LogHMD: Failed initializing OVRPlugin 1.51.0
+LogInit: Build: ++UE4+Release-4.26-CL-14830424
+LogInit: Engine Version: 4.26.0-14830424+++UE4+Release-4.26
+LogInit: Compatible Engine Version: 4.26.0-14830424+++UE4+Release-4.26
+LogInit: Net CL: 14830424
+LogInit: OS: Windows 10 (Release 2009) (), CPU: AMD Ryzen 9 3900X 12-Core Processor            , GPU: NVIDIA GeForce RTX 2080 SUPER
+LogInit: Compiled (64-bit): Dec  1 2020 15:13:26
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.26
+LogInit: Command Line: 
+LogInit: Base Directory: D:/UE_4.26/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 44
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 43
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 40
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[r.AllowStaticLighting:1]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.02-08.28.08:553][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2022.03.02-08.28.08:553][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.02-08.28.08:553][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.02-08.28.08:571][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:571][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.03.02-08.28.08:571][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.03.02-08.28.08:571][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:571][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.03.02-08.28.08:571][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:571][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.03.02-08.28.08:571][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.03.02-08.28.08:571][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.03.02-08.28.08:571][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.03.02-08.28.08:571][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.03.02-08.28.08:571][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.03.02-08.28.08:572][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.03.02-08.28.08:572][  0]LogInit: Selected Device Profile: [Windows]
+[2022.03.02-08.28.08:581][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2022.03.02-08.28.08:581][  0]LogHAL: Display: Platform has ~ 16 GB [17099456512 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2022.03.02-08.28.08:581][  0]LogInit: Going up to parent DeviceProfile []
+[2022.03.02-08.28.08:581][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.03.02-08.28.08:581][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.03.02-08.28.08:582][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2022.03.02-08.28.08:583][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2022.03.02-08.28.08:583][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2022.03.02-08.28.08:583][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2022.03.02-08.28.08:583][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.02-08.28.08:583][  0]LogInit: Computer: DESKTOP-OD807TG
+[2022.03.02-08.28.08:583][  0]LogInit: User: potap
+[2022.03.02-08.28.08:583][  0]LogInit: CPU Page size=4096, Cores=12
+[2022.03.02-08.28.08:583][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2022.03.02-08.28.08:583][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2022.03.02-08.28.08:583][  0]LogMemory: Platform Memory Stats for Windows
+[2022.03.02-08.28.08:583][  0]LogMemory: Process Physical Memory: 152.24 MB used, 152.80 MB peak
+[2022.03.02-08.28.08:583][  0]LogMemory: Process Virtual Memory: 130.93 MB used, 130.93 MB peak
+[2022.03.02-08.28.08:583][  0]LogMemory: Physical Memory: 7884.05 MB used,  8423.27 MB free, 16307.31 MB total
+[2022.03.02-08.28.08:583][  0]LogMemory: Virtual Memory: 134203632.00 MB used,  14093.96 MB free, 134217728.00 MB total
+[2022.03.02-08.28.08:588][  0]LogWindows: WindowsPlatformFeatures enabled
+[2022.03.02-08.28.08:755][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2022.03.02-08.28.08:771][  0]LogInit: Using OS detected language (ko-KR).
+[2022.03.02-08.28.08:771][  0]LogInit: Using OS detected locale (ko-KR).
+[2022.03.02-08.28.08:964][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2022.03.02-08.28.09:212][  0]LogInit: Setting process to per monitor DPI aware
+[2022.03.02-08.28.09:251][  0]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2022.03.02-08.28.09:360][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2022.03.02-08.28.09:360][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2022.03.02-08.28.15:985][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2022.03.02-08.28.15:985][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2022.03.02-08.28.15:985][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2022.03.02-08.28.15:985][  0]LogD3D11RHI: D3D11 adapters:
+[2022.03.02-08.28.16:117][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2080 SUPER' (Feature Level 11_0)
+[2022.03.02-08.28.16:117][  0]LogD3D11RHI:       8010/0/8153 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2022.03.02-08.28.16:125][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2022.03.02-08.28.16:125][  0]LogD3D11RHI:       0/0/8153 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2022.03.02-08.28.16:125][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2022.03.02-08.28.16:392][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2022.03.02-08.28.16:392][  0]LogD3D11RHI:     GPU DeviceId: 0x1e81 (for the marketing name, search the web for "GPU Device Id")
+[2022.03.02-08.28.16:392][  0]LogWindows: EnumDisplayDevices:
+[2022.03.02-08.28.16:393][  0]LogWindows:    0. 'NVIDIA GeForce RTX 2080 SUPER' (P:1 D:1)
+[2022.03.02-08.28.16:393][  0]LogWindows:    1. 'NVIDIA GeForce RTX 2080 SUPER' (P:0 D:1)
+[2022.03.02-08.28.16:393][  0]LogWindows:    2. 'NVIDIA GeForce RTX 2080 SUPER' (P:0 D:1)
+[2022.03.02-08.28.16:393][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2080 SUPER' (P:0 D:0)
+[2022.03.02-08.28.16:393][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2022.03.02-08.28.16:393][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2080 SUPER
+[2022.03.02-08.28.16:393][  0]LogD3D11RHI:   Driver Version: 456.71 (internal:27.21.14.5671, unified:456.71)
+[2022.03.02-08.28.16:393][  0]LogD3D11RHI:      Driver Date: 9-30-2020
+[2022.03.02-08.28.16:393][  0]LogRHI: Texture pool is 5607 MB (70% of 8010 MB)
+[2022.03.02-08.28.16:737][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2022.03.02-08.28.16:737][  0]LogD3D11RHI: Async texture creation enabled
+[2022.03.02-08.28.16:737][  0]LogD3D11RHI: Array index from any shader is supported
+[2022.03.02-08.28.16:743][  0]LogD3D11RHI: HDR output is supported on display 2 (NvId: 0x80061082).
+[2022.03.02-08.28.17:605][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2022.03.02-08.28.17:817][  0]LogRHI: GeForceNow SDK initialized: 1
+[2022.03.02-08.28.18:182][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2022.03.02-08.28.18:328][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2022.03.02-08.28.18:328][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2022.03.02-08.28.18:329][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2022.03.02-08.28.18:329][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2022.03.02-08.28.18:329][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2022.03.02-08.28.18:329][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2022.03.02-08.28.18:329][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2022.03.02-08.28.18:329][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2022.03.02-08.28.18:329][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2022.03.02-08.28.18:329][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2022.03.02-08.28.18:533][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2022.03.02-08.28.18:533][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2022.03.02-08.28.18:616][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2022.03.02-08.28.18:705][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2022.03.02-08.28.18:726][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2022.03.02-08.28.18:754][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2022.03.02-08.28.18:797][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2022.03.02-08.28.18:815][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2022.03.02-08.28.18:823][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2022.03.02-08.28.18:847][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2022.03.02-08.28.18:847][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2022.03.02-08.28.18:895][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacNoEditor'
+[2022.03.02-08.28.18:991][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
+[2022.03.02-08.28.18:999][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
+[2022.03.02-08.28.19:017][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
+[2022.03.02-08.28.19:064][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2022.03.02-08.28.19:064][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2022.03.02-08.28.19:100][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2022.03.02-08.28.19:146][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2022.03.02-08.28.19:153][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2022.03.02-08.28.19:160][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2022.03.02-08.28.19:160][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2022.03.02-08.28.19:312][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2022.03.02-08.28.22:696][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2022.03.02-08.28.22:737][  0]LogShaderCompilers: Guid format shader working directory is -42 characters bigger than the processId version (../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Intermediate/Shaders/WorkingDirectory/3616/).
+[2022.03.02-08.28.22:737][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/potap/AppData/Local/Temp/UnrealShaderWorkingDir/C86A4D2C495C1A64E5603C9D94B007CE/'.
+[2022.03.02-08.28.22:737][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2022.03.02-08.28.22:737][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2022.03.02-08.28.26:139][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2022.03.02-08.28.26:248][  0]LogDerivedDataCache: Loaded boot cache 0.11s 88MB C:/Users/potap/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2022.03.02-08.28.26:248][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/potap/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc
+[2022.03.02-08.28.26:248][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2022.03.02-08.28.26:248][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2022.03.02-08.28.26:248][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.03.02-08.28.26:248][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2022.03.02-08.28.26:275][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2022.03.02-08.28.26:275][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.03.02-08.28.26:275][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2022.03.02-08.28.26:296][  0]LogDerivedDataCache: Speed tests for C:/Users/potap/AppData/Local/UnrealEngine/Common/DerivedDataCache took 0.01 seconds
+[2022.03.02-08.28.26:297][  0]LogDerivedDataCache: Display: Performance to C:/Users/potap/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.17ms. RandomReadSpeed=121.25MBs, RandomWriteSpeed=179.08MBs. Assigned SpeedClass 'Local'
+[2022.03.02-08.28.26:297][  0]LogDerivedDataCache: Using Local data cache path C:/Users/potap/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2022.03.02-08.28.26:297][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2022.03.02-08.28.26:297][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2022.03.02-08.28.26:350][  0]LogSlate: Using FreeType 2.10.0
+[2022.03.02-08.28.26:360][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2022.03.02-08.28.26:439][  0]LogAssetRegistry: FAssetRegistry took 0.0039 seconds to start up
+[2022.03.02-08.28.30:147][  0]LogInit: Selected Device Profile: [Windows]
+[2022.03.02-08.28.30:147][  0]LogInit: Active device profile: [00000242C45C1E00][00000242C0E05000 49] Windows
+[2022.03.02-08.28.30:147][  0]LogInit: Profiles: [00000242C45C1E00][00000242C0E05000 49] Windows, [00000242C458E500][00000242C0E0D180 49] WindowsNoEditor, [00000242C45C3900][00000242C19B7300 49] WindowsServer, [00000242C458E100][00000242C19BB480 49] WindowsClient, [00000242C45C2D00][00000242C0E095C0 49] IOS, [00000242C458C800][00000242C19BF700 49] iPadAir, [00000242C45C3B00][00000242C19C3840 49] iPadAir2, [00000242C453B200][00000242C19D5AC0 49] IPadPro, [00000242C453B300][00000242C19C7B00 49] iPadAir3, [00000242C45C0200][00000242C19DFC80 49] iPadAir4, [00000242C453B500][00000242C19E2140 49] iPadMini2, [00000242C45C0E00][00000242C19E62C0 49] iPadMini3, [00000242C4539400][00000242C19EA440 49] iPadMini4, [00000242C45C1000][00000242C19EE5C0 49] iPadMini5, [00000242C457EB00][00000242C19F6880 49] iPhone6, [00000242C457EC00][00000242C19F28C0 49] iPodTouch6, [00000242C453BC00][00000242C19FEB80 49] iPhone7, [00000242C453BB00][00000242C19FABC0 49] iPodTouch7, [00000242C457CE00][00000242C1A02D40 49] iPhone5S, [00000242C453BD00][00000242C1A06EC0 49] iPhone6Plus, [00000242C457D200][00000242C1A0B040 49] iPhone6S, [00000242C453A800][00000242C1A0F1C0 49] iPhone6SPlus, [00000242C457ED00][00000242C1A13340 49] iPhone7Plus, [00000242C453B800][00000242C1A174C0 49] iPhoneSE, [00000242C457F200][00000242C1A1B640 49] iPhone8, [00000242C4539600][00000242C19D1780 49] iPhone8Plus, [00000242C457DF00][00000242C1A1F8C0 49] iPhoneX, [00000242C4539D00][00000242C1A23A00 49] iPhoneXS, [00000242C457C300][00000242C1A2BB80 49] iPhoneXSMax, [00000242C4538400][00000242C1A2FD00 49] iPhoneXR, [00000242C457E500][00000242C1A321C0 49] iPhone11, [00000242C453A500][00000242C1A36340 49] iPhone11Pro, [00000242C457C600][00000242C1A3A4C0 49] iPhone11ProMax, [00000242C4538E00][00000242C1332640 49] iPhoneSE2, [00000242C457D400][00000242C13367C0 49] iPhone12Mini, [00000242C4539E00][00000242C133A940 49] iPhone12, [00000242C457F400][00000242C133EAC0 49] iPhone12Pro, [00000242C4538200][00000242C1342C40 49] iPhone12ProMax, [00000242C457DB00][00000242C1346DC0 49] iPadPro105, [00000242C457F600][00000242C134AF40 49] iPadPro129, [00000242C458DD00][00000242C134F0C0 49] iPadPro97, [00000242C457CC00][00000242C1353240 49] iPadPro2_129, [00000242C458E700][00000242C13573C0 49] iPad5, [00000242C457C500][00000242C135B540 49] iPad6, [00000242C458CB00][00000242C135F6C0 49] iPad7, [00000242C457F800][00000242C1A27800 49] iPad8, [00000242C458D200][00000242C1363940 49] iPadPro11, [00000242C457DA00][00000242C1367A80 49] iPadPro2_11, [00000242C458C700][00000242C136FC00 49] iPadPro3_129, [00000242C458E400][00000242C13720C0 49] iPadPro4_129, [00000242C453B700][00000242C1376240 49] AppleTV, [00000242C458C300][00000242C137A3C0 49] AppleTV4K, [00000242C453B400][00000242C137E540 49] TVOS, [00000242C458DF00][00000242C13826C0 49] Mac, [00000242C4538100][00000242C1386840 49] MacClient, [00000242C457F500][00000242C138A9C0 49] MacNoEditor, [00000242C453BE00][00000242C138EB40 49] MacServer, [00000242C457DD00][00000242C1392CC0 49] Linux, [00000242C4539000][00000242C1396E40 49] LinuxNoEditor, [00000242C457C800][00000242C139AFC0 49] LinuxAArch64NoEditor, [00000242C453A100][00000242C139F140 49] LinuxClient, [00000242C457EE00][00000242C13A32C0 49] LinuxAArch64Client, [00000242C4538C00][00000242C13A7440 49] LinuxServer, [00000242C457F900][00000242C13AB5C0 49] LinuxAArch64Server, [00000242C4538300][00000242C13AF740 49] Android, [00000242C457EF00][00000242C136B880 49] Android_Low, [00000242C453A600][00000242C13B39C0 49] Android_Mid, [00000242C457F700][00000242C13B7B00 49] Android_High, [00000242C453A000][00000242C13BBC40 49] Android_Default, [00000242C457F300][00000242C13C2100 49] Android_Adreno4xx, [00000242C4538F00][00000242C13C6280 49] Android_Adreno5xx_Low, [00000242C457FE00][00000242C13CA400 49] Android_Adreno5xx, [00000242C4539500][00000242C13CE580 49] Android_Adreno6xx, [00000242C457E900][00000242C13D2700 49] Android_Adreno6xx_Vulkan, [00000242C453AF00][00000242C13D6880 49] Android_Mali_T6xx, [00000242C457F000][00000242C13DAA00 49] Android_Mali_T7xx, [00000242C453A300][00000242C13DEB80 49] Android_Mali_T8xx, [00000242C457CB00][00000242C13E2D00 49] Android_Mali_G71, [00000242C4538D00][00000242C13E6E80 49] Android_Mali_G72, [00000242C457CD00][00000242C13EB000 49] Android_Mali_G72_Vulkan, [00000242C4539300][00000242C13EF180 49] Android_Mali_G76, [00000242C457D800][00000242C13F3300 49] Android_Mali_G76_Vulkan, [00000242C4538700][00000242C13F7480 49] Android_Mali_G77, [00000242C457D700][00000242C13FB600 49] Android_Mali_G77_Vulkan, [00000242C453A400][00000242C13FF780 49] Android_Vulkan_SM5, [00000242C457D600][00000242C13BF8C0 49] Android_PowerVR_G6xxx, [00000242C4538B00][00000242C1403A00 49] Android_PowerVR_GT7xxx, [00000242C457EA00][00000242C1407B40 49] Android_PowerVR_GE8xxx, [00000242C4538900][00000242C140BC80 49] Android_PowerVR_GM9xxx, [00000242C457C100][00000242C1412140 49] Android_PowerVR_GM9xxx_Vulkan, [00000242C453B900][00000242C14162C0 49] Android_TegraK1, [00000242C457E600][00000242C141A440 49] Android_Unknown_Vulkan, [00000242C458F900][00000242C141E5C0 49] Lumin, [00000242C45C3700][00000242C1422740 49] Lumin_Desktop, [00000242C458E200][00000242C14268C0 49] HoloLens, 
+[2022.03.02-08.28.30:394][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2022.03.02-08.28.30:394][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2022.03.02-08.28.30:394][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2022.03.02-08.28.30:394][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2022.03.02-08.28.30:395][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2022.03.02-08.28.30:529][  0]LogNetVersion: NierProject 1.0.0, NetCL: 14830424, EngineNetVer: 16, GameNetVer: 0 (Checksum: 2231531239)
+[2022.03.02-08.28.33:540][  0]LogHMD: PokeAHoleMaterial loaded successfully
+[2022.03.02-08.28.33:666][  0]LogPackageLocalizationCache: Processed 24 localized package path(s) for 1 prioritized culture(s) in 0.075746 seconds
+[2022.03.02-08.28.33:671][  0]LogUObjectArray: 16830 objects as part of root set at end of initial load.
+[2022.03.02-08.28.33:682][  0]LogUObjectAllocator: 4209472 out of 0 bytes used by permanent object pool.
+[2022.03.02-08.28.33:682][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2022.03.02-08.28.35:572][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2022.03.02-08.28.35:578][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2022.03.02-08.28.35:666][  0]LogPython: Using Python 3.7.7
+[2022.03.02-08.28.37:273][  0]LogLinker: Warning: '{FileName}': 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2022.03.02-08.28.37:273][  0]LogLinker: Warning: '{FileName}': 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2022.03.02-08.28.37:273][  0]LogUObjectGlobals: Warning: 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C' 오브젝트를 찾는 데 실패했습니다.
+[2022.03.02-08.28.37:533][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.02-08.28.37:533][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.02-08.28.37:607][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.02-08.28.37:616][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.02-08.28.37:700][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.02-08.28.37:795][  0]LogUProjectInfo: Found projects:
+[2022.03.02-08.28.38:015][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2022.03.02-08.28.38:050][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.03.02-08.28.38:050][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.03.02-08.28.38:551][  0]LogCollectionManager: Loaded 0 collections in 0.001114 seconds
+[2022.03.02-08.28.38:598][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Collections/' took 0.00s
+[2022.03.02-08.28.38:598][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Developers/potap/Collections/' took 0.00s
+[2022.03.02-08.28.38:598][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Collections/' took 0.00s
+[2022.03.02-08.28.38:598][  0]LogOcInput: OculusInput pre-init called
+[2022.03.02-08.28.39:269][  0]LogEngine: Initializing Engine...
+[2022.03.02-08.28.44:592][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2022.03.02-08.28.44:593][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2022.03.02-08.28.44:608][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.014 s
+[2022.03.02-08.28.44:778][  0]LogInit: Initializing FReadOnlyCVARCache
+[2022.03.02-08.28.44:819][  0]LogAIModule: Creating AISystem for world Untitled
+[2022.03.02-08.28.44:820][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2022.03.02-08.28.44:824][  0]LogAudio: Display: Audio Device Manager Initialized
+[2022.03.02-08.28.44:824][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2022.03.02-08.28.44:824][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.02-08.28.44:824][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.02-08.28.44:824][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.02-08.28.44:824][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.02-08.28.44:824][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.02-08.28.44:824][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.02-08.28.44:824][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.02-08.28.44:824][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.02-08.28.44:825][  0]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.02-08.28.44:825][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.02-08.28.44:843][  0]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.02-08.28.44:843][  0]LogAudioMixer: Display: 1: FrontRight
+[2022.03.02-08.28.44:863][  0]LogAudioMixer: Display: Using Audio Device 2D FHD LG TV(NVIDIA High Definition Audio)
+[2022.03.02-08.28.44:864][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.02-08.28.44:867][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.02-08.28.44:867][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.02-08.28.44:869][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.02-08.28.44:869][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.02-08.28.44:869][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.02-08.28.44:870][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.02-08.28.44:870][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.02-08.28.44:870][  0]LogInit: FAudioDevice initialized.
+[2022.03.02-08.28.44:870][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2022.03.02-08.28.44:871][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2022.03.02-08.28.44:927][  0]LogDerivedDataCache: Saved boot cache 0.06s 88MB C:/Users/potap/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2022.03.02-08.28.44:928][  0]LogInit: Texture streaming: Enabled
+[2022.03.02-08.28.44:951][  0]LogAnalytics: Display: [UEEditor.Rocket.Release] APIServer = https://datarouter.ol.epicgames.com/. AppVersion = 4.26.0-14830424+++UE4+Release-4.26
+[2022.03.02-08.28.44:961][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2022.03.02-08.28.44:961][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={16850469-4B93-7F08-F528-5D842A7B7318}
+[2022.03.02-08.28.44:961][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2022.03.02-08.28.44:964][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2022.03.02-08.28.45:020][  0]LogInit: Transaction tracking system initialized
+[2022.03.02-08.28.45:207][  0]BlueprintLog: New page: 에디터 로드
+[2022.03.02-08.28.45:640][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
+[2022.03.02-08.28.45:740][  0]TimingProfiler: Initialize
+[2022.03.02-08.28.45:742][  0]TimingProfiler: OnSessionChanged
+[2022.03.02-08.28.45:743][  0]LoadingProfiler: Initialize
+[2022.03.02-08.28.45:743][  0]LoadingProfiler: OnSessionChanged
+[2022.03.02-08.28.45:744][  0]NetworkingProfiler: Initialize
+[2022.03.02-08.28.45:744][  0]NetworkingProfiler: OnSessionChanged
+[2022.03.02-08.28.45:744][  0]MemoryProfiler: Initialize
+[2022.03.02-08.28.45:744][  0]MemoryProfiler: OnSessionChanged
+[2022.03.02-08.28.46:286][  0]LogCook: Display: CookSettings for Memory: MemoryMaxUsedVirtual 0MiB, MemoryMaxUsedPhysical 16384MiB, MemoryMinFreeVirtual 0MiB, MemoryMinFreePhysical 1024MiB
+[2022.03.02-08.28.46:286][  0]LogCook: Display: Mobile HDR setting 1
+[2022.03.02-08.28.46:659][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/' took 0.02s
+[2022.03.02-08.28.46:833][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.02-08.28.46:847][  0]LogUnrealEdMisc: Loading editor; pre map load, took 41.637
+[2022.03.02-08.28.46:850][  0]Cmd: MAP LOAD FILE="../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/GameMode/PersistentLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2022.03.02-08.28.46:850][  0]LightingResults: New page: 라이팅 빌드
+[2022.03.02-08.28.46:864][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2022.03.02-08.28.46:864][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-08.28.46:864][  0]MapCheck: New page: 맵 체크
+[2022.03.02-08.28.46:864][  0]LightingResults: New page: 라이팅 빌드
+[2022.03.02-08.28.46:905][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.96ms
+[2022.03.02-08.28.46:976][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'PersistentLevel'.
+[2022.03.02-08.28.46:978][  0]LogAIModule: Creating AISystem for world PersistentLevel
+[2022.03.02-08.28.46:979][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/GameMode/BossMap) is flushing async loading
+[2022.03.02-08.28.46:979][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2022.03.02-08.28.48:198][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/GameMode/FieldMap) is flushing async loading
+[2022.03.02-08.28.49:081][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.02-08.28.49:082][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.02-08.28.49:082][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.02-08.28.49:082][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.02-08.28.49:082][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.02-08.28.49:083][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.02-08.28.49:083][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.02-08.28.49:209][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.03.02-08.28.49:212][  0]LogNavigation: Warning: Recreating dtNavMesh instance due mismatch in number of bytes required to store serialized maxTiles (800, 10 bits) vs calculated maxtiles (1192, 11 bits)
+[2022.03.02-08.28.49:219][  0]LogNavigation: Warning: NavData RegistrationFailed_AgentAlreadySupported, specified agent type already has its navmesh implemented.
+[2022.03.02-08.28.49:271][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2022.03.02-08.28.49:283][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.03.02-08.28.49:283][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.497ms.
+[2022.03.02-08.28.49:284][  0]LogFileHelpers: Loading map 'PersistentLevel' took 2.434
+[2022.03.02-08.28.49:295][  0]LogUnrealEdMisc: Total Editor Startup Time, took 44.092
+[2022.03.02-08.28.49:446][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-08.28.49:459][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-08.28.49:464][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-08.28.49:469][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-08.28.49:551][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0096 seconds. Added 3653 classes and 873 folders.
+[2022.03.02-08.28.49:570][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2022.03.02-08.28.49:663][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.03.02-08.28.49:663][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:663][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.02-08.28.49:663][  0]LogPakFile: OnPakFileMounted2Time == 0.000009
+[2022.03.02-08.28.49:684][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2022.03.02-08.28.49:684][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:684][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2022.03.02-08.28.49:684][  0]LogPakFile: OnPakFileMounted2Time == 0.000011
+[2022.03.02-08.28.49:692][  0]LogPakFile: PakFile PrimaryIndexSize=191
+[2022.03.02-08.28.49:693][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:693][  0]LogPakFile: PakFile FullDirectoryIndexSize=160
+[2022.03.02-08.28.49:693][  0]LogPakFile: OnPakFileMounted2Time == 0.000013
+[2022.03.02-08.28.49:694][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.02-08.28.49:694][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:694][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.02-08.28.49:694][  0]LogPakFile: OnPakFileMounted2Time == 0.000014
+[2022.03.02-08.28.49:703][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2022.03.02-08.28.49:703][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:703][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2022.03.02-08.28.49:703][  0]LogPakFile: OnPakFileMounted2Time == 0.000015
+[2022.03.02-08.28.49:713][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2022.03.02-08.28.49:713][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:713][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2022.03.02-08.28.49:713][  0]LogPakFile: OnPakFileMounted2Time == 0.000017
+[2022.03.02-08.28.49:714][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2022.03.02-08.28.49:714][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:714][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2022.03.02-08.28.49:714][  0]LogPakFile: OnPakFileMounted2Time == 0.000018
+[2022.03.02-08.28.49:716][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2022.03.02-08.28.49:716][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:717][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2022.03.02-08.28.49:717][  0]LogPakFile: OnPakFileMounted2Time == 0.000019
+[2022.03.02-08.28.49:724][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.03.02-08.28.49:724][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:724][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.03.02-08.28.49:724][  0]LogPakFile: OnPakFileMounted2Time == 0.000021
+[2022.03.02-08.28.49:733][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2022.03.02-08.28.49:733][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:733][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2022.03.02-08.28.49:733][  0]LogPakFile: OnPakFileMounted2Time == 0.000022
+[2022.03.02-08.28.49:735][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2022.03.02-08.28.49:735][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:735][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2022.03.02-08.28.49:735][  0]LogPakFile: OnPakFileMounted2Time == 0.000023
+[2022.03.02-08.28.49:737][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.03.02-08.28.49:737][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:737][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.03.02-08.28.49:737][  0]LogPakFile: OnPakFileMounted2Time == 0.000024
+[2022.03.02-08.28.49:747][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.02-08.28.49:747][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:747][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.02-08.28.49:747][  0]LogPakFile: OnPakFileMounted2Time == 0.000025
+[2022.03.02-08.28.49:749][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.03.02-08.28.49:749][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:749][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.03.02-08.28.49:749][  0]LogPakFile: OnPakFileMounted2Time == 0.000026
+[2022.03.02-08.28.49:751][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2022.03.02-08.28.49:751][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:751][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2022.03.02-08.28.49:751][  0]LogPakFile: OnPakFileMounted2Time == 0.000027
+[2022.03.02-08.28.49:753][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.03.02-08.28.49:753][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:753][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.02-08.28.49:753][  0]LogPakFile: OnPakFileMounted2Time == 0.000028
+[2022.03.02-08.28.49:758][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2022.03.02-08.28.49:758][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:758][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2022.03.02-08.28.49:758][  0]LogPakFile: OnPakFileMounted2Time == 0.000029
+[2022.03.02-08.28.49:768][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.03.02-08.28.49:768][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:769][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.03.02-08.28.49:769][  0]LogPakFile: OnPakFileMounted2Time == 0.000030
+[2022.03.02-08.28.49:770][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.02-08.28.49:770][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:770][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.02-08.28.49:770][  0]LogPakFile: OnPakFileMounted2Time == 0.000031
+[2022.03.02-08.28.49:772][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.02-08.28.49:772][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:772][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.02-08.28.49:772][  0]LogPakFile: OnPakFileMounted2Time == 0.000032
+[2022.03.02-08.28.49:782][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.03.02-08.28.49:782][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:782][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.02-08.28.49:782][  0]LogPakFile: OnPakFileMounted2Time == 0.000034
+[2022.03.02-08.28.49:791][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.03.02-08.28.49:791][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:791][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.03.02-08.28.49:791][  0]LogPakFile: OnPakFileMounted2Time == 0.000035
+[2022.03.02-08.28.49:793][  0]LogPakFile: PakFile PrimaryIndexSize=186
+[2022.03.02-08.28.49:793][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:793][  0]LogPakFile: PakFile FullDirectoryIndexSize=146
+[2022.03.02-08.28.49:793][  0]LogPakFile: OnPakFileMounted2Time == 0.000035
+[2022.03.02-08.28.49:795][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.03.02-08.28.49:795][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:795][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.03.02-08.28.49:796][  0]LogPakFile: OnPakFileMounted2Time == 0.000038
+[2022.03.02-08.28.49:798][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.02-08.28.49:798][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:798][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.02-08.28.49:798][  0]LogPakFile: OnPakFileMounted2Time == 0.000038
+[2022.03.02-08.28.49:800][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2022.03.02-08.28.49:800][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.02-08.28.49:800][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2022.03.02-08.28.49:800][  0]LogPakFile: OnPakFileMounted2Time == 0.000039
+[2022.03.02-08.28.51:079][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2022.03.02-08.28.51:087][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 2 classes and 0 folders.
+[2022.03.02-08.28.51:193][  0]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.28.51:221][  0]LogSlate: Took 0.000222 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2022.03.02-08.28.51:256][  0]LogSlate: Took 0.033652 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2022.03.02-08.28.51:298][  0]LogSlate: Took 0.042246 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
+[2022.03.02-08.28.51:298][  0]LogSlate: Took 0.000107 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2022.03.02-08.28.51:303][  0]LogSlate: Took 0.001341 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2022.03.02-08.28.51:466][  0]LogRenderer: Reallocating scene render targets to support 1196x572 Format 10 NumSamples 1 (Frame:1).
+[2022.03.02-08.28.51:549][  0]LogSlate: Took 0.001522 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.03.02-08.28.51:642][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2022.03.02-08.28.51:642][  0]LogLoad: (Engine Initialization) Total time: 46.44 seconds
+[2022.03.02-08.28.51:642][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2022.03.02-08.28.51:642][  0]LogInit: First time updating LLM stats...
+[2022.03.02-08.28.51:763][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2022.03.02-08.28.51:795][  1]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.28.51:812][  1]LogAssetRegistry: Asset discovery search completed in 25.3749 seconds
+[2022.03.02-08.28.51:815][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000004 seconds (updated 0 objects)
+[2022.03.02-08.28.52:633][ 25]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.28.52:756][ 26]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.28.53:067][ 26]LogSlate: Took 0.000161 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.03.02-08.28.57:113][440]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.28.57:128][440]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP
+[2022.03.02-08.28.57:173][440]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.28.57:248][440]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 126 classes and 0 folders.
+[2022.03.02-08.28.59:490][575]LogSlate: Window 'NPCParentScripts_BP' being destroyed
+[2022.03.02-08.28.59:499][575]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2022.03.02-08.28.59:499][575]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-08.28.59:540][575]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.28.59:559][575]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP
+[2022.03.02-08.28.59:606][575]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.29.00:025][575]LogSlate: Took 0.001521 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2022.03.02-08.29.00:473][618]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.29.00:707][641]LogSlate: Window 'NPCParentScripts_BP' being destroyed
+[2022.03.02-08.29.04:353][ 51]LogRenderer: Reallocating scene render targets to support 1196x708 Format 10 NumSamples 1 (Frame:1).
+[2022.03.02-08.29.05:758][217]LogSlate: Took 0.000369 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2022.03.02-08.29.15:932][380]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.02-08.29.15:984][380]LogUObjectHash: Compacting FUObjectHashTables data took   2.45ms
+[2022.03.02-08.29.16:012][380]LogSlate: Took 0.000163 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2022.03.02-08.29.16:013][380]LogSlate: Took 0.001271 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicExtraBold.ttf' (4074K)
+[2022.03.02-08.29.17:335][524]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.29.17:380][524]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BPDFA03574447452B34B010B8392EC0DE3.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.02-08.29.17:394][524]AssetCheck: New page: 애셋 저장: NPCParentScripts_BP
+[2022.03.02-08.29.17:394][524]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.02-08.29.18:494][645]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.02-08.29.18:500][645]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.02-08.29.18:500][645]PIE: New page: PIE 세션: PersistentLevel (2022. 3. 3. 오전 2:29:18)
+[2022.03.02-08.29.18:501][645]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2022.03.02-08.29.18:502][645]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2022.03.02-08.29.18:502][645]LogPlayLevel: Creating play world package: /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-08.29.18:504][645]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001733s)
+[2022.03.02-08.29.18:505][645]LogAIModule: Creating AISystem for world PersistentLevel
+[2022.03.02-08.29.18:505][645]LogPlayLevel: PIE: World Init took: (0.000852s)
+[2022.03.02-08.29.18:505][645]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameMode/PersistentLevel.PersistentLevel to /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel (0.002674s)
+[2022.03.02-08.29.18:520][645]LogUObjectHash: Compacting FUObjectHashTables data took   2.09ms
+[2022.03.02-08.29.18:521][645]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2022.03.02-08.29.18:521][645]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.02-08.29.18:522][645]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.02-08.29.18:522][645]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.02-08.29.18:522][645]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.02-08.29.18:522][645]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.02-08.29.18:522][645]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.02-08.29.18:522][645]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.02-08.29.18:522][645]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.02-08.29.18:522][645]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.02-08.29.18:522][645]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.02-08.29.18:525][645]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.02-08.29.18:525][645]LogAudioMixer: Display: 1: FrontRight
+[2022.03.02-08.29.18:533][645]LogAudioMixer: Display: Using Audio Device 2D FHD LG TV(NVIDIA High Definition Audio)
+[2022.03.02-08.29.18:533][645]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.02-08.29.18:533][645]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.02-08.29.18:533][645]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.02-08.29.18:533][645]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.02-08.29.18:533][645]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.02-08.29.18:533][645]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.02-08.29.18:545][645]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.02-08.29.18:545][645]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.02-08.29.18:545][645]LogInit: FAudioDevice initialized.
+[2022.03.02-08.29.18:546][645]LogAudio: Display: Audio Device (ID: 2) registered with world 'PersistentLevel'.
+[2022.03.02-08.29.18:554][645]LogLoad: Game class is 'MyGameMode_BP_C'
+[2022.03.02-08.29.18:555][645]LogWorld: Bringing World /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel up for play (max tick rate 0) at 2022.03.02-17.29.18
+[2022.03.02-08.29.18:555][645]LogWorld: Bringing up level for play took: 0.000290
+[2022.03.02-08.29.18:555][645]LogOnline: OSS: Creating online subsystem instance for: :Context_8
+[2022.03.02-08.29.18:557][645]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 20 classes and 0 folders.
+[2022.03.02-08.29.18:560][645]PIE: 서버가 로그인했습니다.
+[2022.03.02-08.29.18:561][645]PIE: 에디터에서 플레이 총 시작 시간 0.062초입니다.
+[2022.03.02-08.29.19:135][678]LogLevel: Warning: Failed to find streaming level object associated with 'None'
+[2022.03.02-08.29.19:143][679]LogLevel: ActivateLevel /Game/GameMode/UEDPIE_0_FieldMap 1 1 0
+[2022.03.02-08.29.23:204][145]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-08.29.23:205][145]LogWorld: BeginTearingDown for /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-08.29.23:205][145]LogWorld: UWorld::CleanupWorld for PersistentLevel, bSessionEnded=true, bCleanupResources=true
+[2022.03.02-08.29.23:205][145]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-08.29.23:213][145]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.02-08.29.23:218][145]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-08.29.23:237][145]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.02-08.29.23:237][145]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-08.29.23:238][145]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-08.29.23:250][145]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-08.29.23:275][145]LogUObjectHash: Compacting FUObjectHashTables data took   3.70ms
+[2022.03.02-08.29.23:297][146]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2022.03.02-08.29.23:322][146]LogUObjectHash: Compacting FUObjectHashTables data took   2.65ms
+[2022.03.02-08.29.23:875][204]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.02-08.29.23:881][204]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.02-08.29.23:881][204]PIE: New page: PIE 세션: PersistentLevel (2022. 3. 3. 오전 2:29:23)
+[2022.03.02-08.29.23:903][204]LogPlayLevel: Creating play world package: /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-08.29.23:905][204]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001836s)
+[2022.03.02-08.29.23:906][204]LogAIModule: Creating AISystem for world PersistentLevel
+[2022.03.02-08.29.23:906][204]LogPlayLevel: PIE: World Init took: (0.000833s)
+[2022.03.02-08.29.23:906][204]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameMode/PersistentLevel.PersistentLevel to /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel (0.002795s)
+[2022.03.02-08.29.23:924][204]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2022.03.02-08.29.23:924][204]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2022.03.02-08.29.23:924][204]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.02-08.29.23:924][204]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.02-08.29.23:925][204]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.02-08.29.23:925][204]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.02-08.29.23:925][204]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.02-08.29.23:925][204]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.02-08.29.23:925][204]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.02-08.29.23:925][204]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.02-08.29.23:925][204]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.02-08.29.23:925][204]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.02-08.29.23:928][204]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.02-08.29.23:928][204]LogAudioMixer: Display: 1: FrontRight
+[2022.03.02-08.29.23:935][204]LogAudioMixer: Display: Using Audio Device 2D FHD LG TV(NVIDIA High Definition Audio)
+[2022.03.02-08.29.23:935][204]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.02-08.29.23:935][204]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.02-08.29.23:935][204]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.02-08.29.23:935][204]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.02-08.29.23:935][204]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.02-08.29.23:935][204]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.02-08.29.23:947][204]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.02-08.29.23:947][204]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.02-08.29.23:947][204]LogInit: FAudioDevice initialized.
+[2022.03.02-08.29.23:947][204]LogAudio: Display: Audio Device (ID: 3) registered with world 'PersistentLevel'.
+[2022.03.02-08.29.23:958][204]LogLoad: Game class is 'MyGameMode_BP_C'
+[2022.03.02-08.29.23:958][204]LogWorld: Bringing World /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel up for play (max tick rate 0) at 2022.03.02-17.29.23
+[2022.03.02-08.29.23:959][204]LogWorld: Bringing up level for play took: 0.000266
+[2022.03.02-08.29.23:959][204]LogOnline: OSS: Creating online subsystem instance for: :Context_9
+[2022.03.02-08.29.23:961][204]PIE: 서버가 로그인했습니다.
+[2022.03.02-08.29.23:962][204]PIE: 에디터에서 플레이 총 시작 시간 0.082초입니다.
+[2022.03.02-08.29.24:376][252]LogLevel: Warning: Failed to find streaming level object associated with 'None'
+[2022.03.02-08.29.24:384][253]LogLevel: ActivateLevel /Game/GameMode/UEDPIE_0_FieldMap 1 1 0
+[2022.03.02-08.29.28:867][788]LogTemp: Warning: in
+[2022.03.02-08.29.28:909][793]LogTemp: Warning: in
+[2022.03.02-08.29.30:134][936]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-08.29.30:134][936]LogWorld: BeginTearingDown for /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-08.29.30:135][936]LogWorld: UWorld::CleanupWorld for PersistentLevel, bSessionEnded=true, bCleanupResources=true
+[2022.03.02-08.29.30:135][936]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-08.29.30:145][936]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.02-08.29.30:150][936]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-08.29.30:166][936]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-08.29.30:167][936]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-08.29.30:168][936]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-08.29.30:184][936]LogUObjectHash: Compacting FUObjectHashTables data took   2.81ms
+[2022.03.02-08.29.30:206][937]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2022.03.02-08.29.30:227][937]LogUObjectHash: Compacting FUObjectHashTables data took   2.42ms
+[2022.03.02-08.38.53:586][178]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.39.02:651][205]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.39.02:737][205]LogUObjectHash: Compacting FUObjectHashTables data took   1.04ms
+[2022.03.02-08.39.02:816][205]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/BossMap_Auto191718F0C4C4432CBE34D049E5BD9E052.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Autosaves/Game/GameMode/BossMap_Auto1.umap'
+[2022.03.02-08.39.02:831][205]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/FieldMap_Auto1405546AD435FAD41EA9F93BC142292AF.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Autosaves/Game/GameMode/FieldMap_Auto1.umap'
+[2022.03.02-08.39.02:844][205]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/GameMode/PersistentLevel' took 0.126
+[2022.03.02-08.39.02:844][205]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.126
+[2022.03.02-08.40.57:584][549]LogHotReload: New module detected: UE4Editor-NierProject-0012.dll
+[2022.03.02-08.40.58:932][554]LogHotReload: Starting Hot-Reload from IDE
+[2022.03.02-08.40.58:934][554]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.40.59:016][554]LogClass: Could not find existing class MainPlayerController in package /Script/NierProject for HotReload, assuming new class
+[2022.03.02-08.40.59:016][554]LogClass: Function DisplayNPCInteractMenu is new.
+[2022.03.02-08.40.59:016][554]LogClass: Function DisplayPauseMenu is new.
+[2022.03.02-08.40.59:016][554]LogClass: Function RemoveNPCInteractMenu is new.
+[2022.03.02-08.40.59:016][554]LogClass: Function RemovePauseMenu is new.
+[2022.03.02-08.40.59:030][554]LogClass: EBossMutantMovementStatus HotReload.
+[2022.03.02-08.40.59:030][554]LogClass: EEnemyMovementStatus HotReload.
+[2022.03.02-08.40.59:031][554]LogClass: EMovementStatus HotReload.
+[2022.03.02-08.40.59:031][554]LogClass: AttackTypeStruct HotReload.
+[2022.03.02-08.40.59:055][554]LogHotReload: Re-instancing MainPlayerController after hot-reload.
+[2022.03.02-08.40.59:084][554]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'NierProject' in 0.0003 seconds. Added 24 classes and 2 folders.
+[2022.03.02-08.40.59:097][554]Display: HotReload successful (57 functions remapped  1 scriptstructs remapped)
+[2022.03.02-08.40.59:175][554]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0087 seconds. Added 3653 classes and 873 folders.
+[2022.03.02-08.40.59:177][554]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.40.59:210][554]Display: HotReload took  0.3s.
+[2022.03.02-08.41.09:190][158]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.41.11:061][376]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.41.11:544][431]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.41.12:040][486]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.41.13:137][611]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.41.15:153][848]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.41.15:423][880]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.41.29:920][604]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.41.33:572][ 42]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.41.42:513][109]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.41.42:526][109]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/HUD/PlayerHud/wNPCInteractMenu.wNPCInteractMenu
+[2022.03.02-08.41.53:902][385]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.42.04:781][662]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.42.05:665][757]LogSlate: Took 0.039513 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2022.03.02-08.44.09:205][846]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.44.24:376][272]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.44.24:747][315]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.44.24:822][322]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.44.42:888][145]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.44.42:912][145]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\potap\Desktop\HalfCircle.png)
+[2022.03.02-08.44.42:925][145]LogTexture: Display: 텍스처 빌드: HalfCircle (AutoDXT, 1080X1080)
+[2022.03.02-08.44.45:101][288]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.44.45:123][288]LogAssetEditorSubsystem: Opening Asset editor for Texture2D /Game/Asset/Image/HalfCircle.HalfCircle
+[2022.03.02-08.44.45:194][288]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'TextureEditor' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2022.03.02-08.44.52:244][ 70]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.44.52:803][137]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.45.09:984][162]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.45.26:296][908]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.03.02-08.45.26:328][908]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.45.26:975][941]Cmd: TRANSACTION UNDO
+[2022.03.02-08.45.26:975][941]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.03.02-08.45.52:851][ 34]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.46.03:902][348]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.46.20:279][300]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.46.21:598][449]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.46.35:911][152]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.03.02-08.46.35:929][152]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.47.12:519][477]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.03.02-08.47.12:537][477]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.47.17:112][980]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.03.02-08.47.17:130][980]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.47.19:680][241]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.03.02-08.48.21:323][784]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.48.22:152][848]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.48.33:851][200]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.48.36:754][536]LogSlate: Window '색상 선택 툴' being destroyed
+[2022.03.02-08.48.37:351][598]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.48.39:704][866]LogSlate: Window '색상 선택 툴' being destroyed
+[2022.03.02-08.48.40:865][  5]LogEditorTransaction: Undo Color and Opacity 편집
+[2022.03.02-08.48.40:883][  5]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.48.41:322][ 18]Cmd: TRANSACTION UNDO
+[2022.03.02-08.48.41:322][ 18]LogEditorTransaction: Undo Specified Color 편집
+[2022.03.02-08.48.49:484][986]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.48.51:354][199]LogSlate: Window '색상 선택 툴' being destroyed
+[2022.03.02-08.49.08:161][459]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.49.16:828][485]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.49.16:991][485]LogUObjectHash: Compacting FUObjectHashTables data took   7.50ms
+[2022.03.02-08.49.16:993][485]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/GameMode/PersistentLevel' took 0.151
+[2022.03.02-08.49.16:994][485]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Asset/Image/HalfCircle] ([1] browsable assets)...
+[2022.03.02-08.49.16:997][485]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Asset/Image/HalfCircle.HalfCircle]
+[2022.03.02-08.49.16:997][485]OBJ SavePackage: Finished generating thumbnails for package [/Game/Asset/Image/HalfCircle]
+[2022.03.02-08.49.17:000][485]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/HalfCircle_Auto2756B464A4C9D48EB87880C97562A3FAA.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Autosaves/Game/Asset/Image/HalfCircle_Auto2.uasset'
+[2022.03.02-08.49.17:001][485]LogFileHelpers: Auto-saving content packages took 0.007
+[2022.03.02-08.51.28:555][374]LogUObjectHash: Compacting FUObjectHashTables data took   5.00ms
+[2022.03.02-08.51.28:618][374]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.51.29:440][374]LogSlate: Window 'Delete Assets' being destroyed
+[2022.03.02-08.51.29:682][374]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2022.03.02-08.51.29:682][374]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-08.51.29:691][374]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2022.03.02-08.51.29:691][374]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-08.51.29:727][374]LogUObjectGlobals: Force Deleting 1 Package(s):
+	Asset Name: /Game/Asset/Image/HalfCircle.HalfCircle
+[2022.03.02-08.51.29:729][374]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.51.36:443][374]LogUObjectHash: Compacting FUObjectHashTables data took   5.77ms
+[2022.03.02-08.51.38:531][403]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.51.38:540][403]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\potap\Desktop\HalfCircle.png)
+[2022.03.02-08.51.38:541][403]LogTexture: Display: 텍스처 빌드: HalfCircle (BGRA8, 186X125)
+[2022.03.02-08.51.53:066][ 26]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.51.53:089][ 26]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/HUD/PlayerHud/wNPCInteractMenu.wNPCInteractMenu
+[2022.03.02-08.51.55:906][313]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.52.03:667][181]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.52.08:251][680]LogSlate: Window '색상 선택 툴' being destroyed
+[2022.03.02-08.52.43:119][842]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.52.47:878][399]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.52.49:051][531]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.53.12:079][270]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.53.53:349][  6]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.54.01:887][ 13]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.54.10:803][ 56]LogEditorTransaction: Undo 앵커 이동
+[2022.03.02-08.54.10:822][ 56]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.54.15:344][545]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.54.18:870][966]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.54.20:686][182]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.55.11:245][192]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.55.46:435][387]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.56.25:021][938]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.56.27:486][229]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.58.08:456][290]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.03.02-08.58.08:474][290]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.58.09:068][316]LogEditorTransaction: Undo Y 편집
+[2022.03.02-08.58.09:403][352]LogEditorTransaction: Undo X 편집
+[2022.03.02-08.58.09:808][398]LogEditorTransaction: Undo Y 편집
+[2022.03.02-08.58.10:205][443]LogEditorTransaction: Undo X 편집
+[2022.03.02-08.58.10:579][485]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.03.02-08.58.11:110][544]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.03.02-08.58.11:532][592]LogEditorTransaction: Undo Draw As 편집
+[2022.03.02-08.58.11:953][638]LogEditorTransaction: Undo Draw As 편집
+[2022.03.02-08.58.12:310][678]LogEditorTransaction: Undo Size Rule 편집
+[2022.03.02-08.58.21:295][724]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.58.22:784][892]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.58.33:287][130]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.58.34:632][284]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.58.36:741][533]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.58.40:380][957]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.58.41:560][ 85]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.58.54:229][555]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.58.56:062][760]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.58.57:621][932]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.59.21:857][808]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.59.29:436][703]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.59.30:500][824]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.59.38:477][755]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.59.40:345][968]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-08.59.41:763][126]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.00.19:927][635]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.00.22:737][954]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.00.24:285][120]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.00.58:003][116]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.00.58:020][116]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/HUD/PlayerHud/HudOverlay.HudOverlay
+[2022.03.02-09.01.21:317][859]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.01.25:194][314]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.01.33:662][307]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.01.49:167][ 83]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.03.02-09.01.49:184][ 83]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.02.19:748][677]BlueprintLog: New page: wNPCInteractMenu 컴파일
+[2022.03.02-09.02.19:808][677]LogUObjectHash: Compacting FUObjectHashTables data took   4.40ms
+[2022.03.02-09.02.20:271][728]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.02.20:294][728]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/wNPCInteractMenuC1CDB76446FD61243AA1CBA04DDB8D91.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/HUD/PlayerHud/wNPCInteractMenu.uasset'
+[2022.03.02-09.02.20:316][728]AssetCheck: New page: 애셋 저장: wNPCInteractMenu
+[2022.03.02-09.02.20:316][728]LogContentValidation: Display: WidgetBlueprint /Game/HUD/PlayerHud/wNPCInteractMenu.wNPCInteractMenu 유효성 검사
+[2022.03.02-09.02.44:373][564]BlueprintLog: New page: wNPCInteractMenu 컴파일
+[2022.03.02-09.02.44:413][564]LogUObjectHash: Compacting FUObjectHashTables data took   3.46ms
+[2022.03.02-09.02.44:735][600]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.02.44:756][600]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/wNPCInteractMenu3329226747EA2DF9A11EA7815E1D7B31.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/HUD/PlayerHud/wNPCInteractMenu.uasset'
+[2022.03.02-09.02.44:769][600]AssetCheck: New page: 애셋 저장: wNPCInteractMenu
+[2022.03.02-09.02.44:769][600]LogContentValidation: Display: WidgetBlueprint /Game/HUD/PlayerHud/wNPCInteractMenu.wNPCInteractMenu 유효성 검사
+[2022.03.02-09.02.53:203][478]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.02.53:220][478]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/HUD/PlayerHud/MainPlayerComtroller_BP.MainPlayerComtroller_BP
+[2022.03.02-09.02.54:830][633]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2022.03.02-09.02.54:830][633]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.02.54:877][633]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.02.54:885][633]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/HUD/PlayerHud/MainPlayerComtroller_BP.MainPlayerComtroller_BP
+[2022.03.02-09.03.00:068][219]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.03.00:115][219]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.03.06:808][  4]BlueprintLog: New page: MainPlayerComtroller_BP 컴파일
+[2022.03.02-09.03.06:855][  4]LogUObjectHash: Compacting FUObjectHashTables data took   3.53ms
+[2022.03.02-09.03.07:269][ 48]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.03.07:289][ 48]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/MainPlayerComtroller_BP41FE267648211D32AD64E39835B8E841.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/HUD/PlayerHud/MainPlayerComtroller_BP.uasset'
+[2022.03.02-09.03.07:312][ 48]AssetCheck: New page: 애셋 저장: MainPlayerComtroller_BP
+[2022.03.02-09.03.07:312][ 48]LogContentValidation: Display: Blueprint /Game/HUD/PlayerHud/MainPlayerComtroller_BP.MainPlayerComtroller_BP 유효성 검사
+[2022.03.02-09.03.08:717][204]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.02-09.03.08:725][204]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.02-09.03.08:725][204]PIE: New page: PIE 세션: PersistentLevel (2022. 3. 3. 오전 3:03:08)
+[2022.03.02-09.03.08:755][204]LogPlayLevel: Creating play world package: /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.03.08:757][204]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001904s)
+[2022.03.02-09.03.08:758][204]LogAIModule: Creating AISystem for world PersistentLevel
+[2022.03.02-09.03.08:758][204]LogPlayLevel: PIE: World Init took: (0.000891s)
+[2022.03.02-09.03.08:758][204]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameMode/PersistentLevel.PersistentLevel to /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel (0.002936s)
+[2022.03.02-09.03.08:785][204]LogUObjectHash: Compacting FUObjectHashTables data took   3.25ms
+[2022.03.02-09.03.08:786][204]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2022.03.02-09.03.08:786][204]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.02-09.03.08:786][204]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.02-09.03.08:786][204]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.02-09.03.08:786][204]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.02-09.03.08:786][204]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.02-09.03.08:786][204]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.02-09.03.08:786][204]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.02-09.03.08:786][204]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.02-09.03.08:787][204]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.02-09.03.08:787][204]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.02-09.03.08:790][204]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.02-09.03.08:790][204]LogAudioMixer: Display: 1: FrontRight
+[2022.03.02-09.03.08:798][204]LogAudioMixer: Display: Using Audio Device 2D FHD LG TV(NVIDIA High Definition Audio)
+[2022.03.02-09.03.08:798][204]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.02-09.03.08:798][204]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.02-09.03.08:798][204]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.02-09.03.08:798][204]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.02-09.03.08:798][204]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.02-09.03.08:798][204]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.02-09.03.08:811][204]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.02-09.03.08:811][204]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.02-09.03.08:811][204]LogInit: FAudioDevice initialized.
+[2022.03.02-09.03.08:811][204]LogAudio: Display: Audio Device (ID: 4) registered with world 'PersistentLevel'.
+[2022.03.02-09.03.08:820][204]LogLoad: Game class is 'MyGameMode_BP_C'
+[2022.03.02-09.03.08:821][204]LogWorld: Bringing World /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel up for play (max tick rate 0) at 2022.03.02-18.03.08
+[2022.03.02-09.03.08:821][204]LogWorld: Bringing up level for play took: 0.000270
+[2022.03.02-09.03.08:821][204]LogOnline: OSS: Creating online subsystem instance for: :Context_18
+[2022.03.02-09.03.08:824][204]PIE: 서버가 로그인했습니다.
+[2022.03.02-09.03.08:825][204]PIE: 에디터에서 플레이 총 시작 시간 0.102초입니다.
+[2022.03.02-09.03.09:219][247]LogLevel: Warning: Failed to find streaming level object associated with 'None'
+[2022.03.02-09.03.09:224][248]LogLevel: ActivateLevel /Game/GameMode/UEDPIE_0_FieldMap 1 1 0
+[2022.03.02-09.03.24:066][893]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.03.24:066][893]LogWorld: BeginTearingDown for /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.03.24:066][893]LogWorld: UWorld::CleanupWorld for PersistentLevel, bSessionEnded=true, bCleanupResources=true
+[2022.03.02-09.03.24:067][893]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.03.24:072][893]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.02-09.03.24:078][893]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.03.24:102][893]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.02-09.03.24:103][893]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-09.03.24:104][893]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-09.03.24:117][893]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.03.24:121][893]LogUObjectHash: Compacting FUObjectHashTables data took   2.80ms
+[2022.03.02-09.03.24:150][894]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2022.03.02-09.03.24:178][894]LogUObjectHash: Compacting FUObjectHashTables data took   2.72ms
+[2022.03.02-09.03.41:448][940]BlueprintLog: New page: wNPCInteractMenu 컴파일
+[2022.03.02-09.03.41:477][940]LogUObjectHash: Compacting FUObjectHashTables data took   2.91ms
+[2022.03.02-09.03.41:818][977]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.03.41:840][977]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/wNPCInteractMenuD701261742D0F60546E492844E079CFC.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/HUD/PlayerHud/wNPCInteractMenu.uasset'
+[2022.03.02-09.03.41:850][977]AssetCheck: New page: 애셋 저장: wNPCInteractMenu
+[2022.03.02-09.03.41:850][977]LogContentValidation: Display: WidgetBlueprint /Game/HUD/PlayerHud/wNPCInteractMenu.wNPCInteractMenu 유효성 검사
+[2022.03.02-09.03.42:817][ 86]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.02-09.03.42:823][ 86]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.02-09.03.42:823][ 86]PIE: New page: PIE 세션: PersistentLevel (2022. 3. 3. 오전 3:03:42)
+[2022.03.02-09.03.42:845][ 86]LogPlayLevel: Creating play world package: /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.03.42:847][ 86]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001841s)
+[2022.03.02-09.03.42:848][ 86]LogAIModule: Creating AISystem for world PersistentLevel
+[2022.03.02-09.03.42:848][ 86]LogPlayLevel: PIE: World Init took: (0.000850s)
+[2022.03.02-09.03.42:848][ 86]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameMode/PersistentLevel.PersistentLevel to /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel (0.002785s)
+[2022.03.02-09.03.42:877][ 86]LogUObjectHash: Compacting FUObjectHashTables data took   3.32ms
+[2022.03.02-09.03.42:877][ 86]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2022.03.02-09.03.42:877][ 86]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.02-09.03.42:877][ 86]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.02-09.03.42:877][ 86]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.02-09.03.42:877][ 86]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.02-09.03.42:877][ 86]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.02-09.03.42:877][ 86]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.02-09.03.42:877][ 86]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.02-09.03.42:877][ 86]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.02-09.03.42:878][ 86]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.02-09.03.42:878][ 86]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.02-09.03.42:881][ 86]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.02-09.03.42:881][ 86]LogAudioMixer: Display: 1: FrontRight
+[2022.03.02-09.03.42:889][ 86]LogAudioMixer: Display: Using Audio Device 2D FHD LG TV(NVIDIA High Definition Audio)
+[2022.03.02-09.03.42:889][ 86]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.02-09.03.42:889][ 86]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.02-09.03.42:889][ 86]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.02-09.03.42:889][ 86]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.02-09.03.42:889][ 86]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.02-09.03.42:890][ 86]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.02-09.03.42:901][ 86]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.02-09.03.42:901][ 86]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.02-09.03.42:901][ 86]LogInit: FAudioDevice initialized.
+[2022.03.02-09.03.42:901][ 86]LogAudio: Display: Audio Device (ID: 5) registered with world 'PersistentLevel'.
+[2022.03.02-09.03.42:910][ 86]LogLoad: Game class is 'MyGameMode_BP_C'
+[2022.03.02-09.03.42:911][ 86]LogWorld: Bringing World /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel up for play (max tick rate 0) at 2022.03.02-18.03.42
+[2022.03.02-09.03.42:911][ 86]LogWorld: Bringing up level for play took: 0.000287
+[2022.03.02-09.03.42:911][ 86]LogOnline: OSS: Creating online subsystem instance for: :Context_19
+[2022.03.02-09.03.42:914][ 86]PIE: 서버가 로그인했습니다.
+[2022.03.02-09.03.42:915][ 86]PIE: 에디터에서 플레이 총 시작 시간 0.093초입니다.
+[2022.03.02-09.03.43:313][129]LogLevel: Warning: Failed to find streaming level object associated with 'None'
+[2022.03.02-09.03.43:318][130]LogLevel: ActivateLevel /Game/GameMode/UEDPIE_0_FieldMap 1 1 0
+[2022.03.02-09.04.15:535][578]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.04.15:536][578]LogWorld: BeginTearingDown for /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.04.15:536][578]LogWorld: UWorld::CleanupWorld for PersistentLevel, bSessionEnded=true, bCleanupResources=true
+[2022.03.02-09.04.15:536][578]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.04.15:546][578]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.02-09.04.15:553][578]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.04.15:578][578]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.02-09.04.15:578][578]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-09.04.15:579][578]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-09.04.15:592][578]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.04.15:597][578]LogUObjectHash: Compacting FUObjectHashTables data took   2.91ms
+[2022.03.02-09.04.15:624][579]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2022.03.02-09.04.15:654][579]LogUObjectHash: Compacting FUObjectHashTables data took   2.74ms
+[2022.03.02-09.04.31:855][481]BlueprintLog: New page: wNPCInteractMenu 컴파일
+[2022.03.02-09.04.31:886][481]LogUObjectHash: Compacting FUObjectHashTables data took   3.05ms
+[2022.03.02-09.04.32:176][512]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.04.32:189][512]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/wNPCInteractMenuEA1B686B4D0A5CF0091CC6A45BEE7652.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/HUD/PlayerHud/wNPCInteractMenu.uasset'
+[2022.03.02-09.04.32:202][512]AssetCheck: New page: 애셋 저장: wNPCInteractMenu
+[2022.03.02-09.04.32:202][512]LogContentValidation: Display: WidgetBlueprint /Game/HUD/PlayerHud/wNPCInteractMenu.wNPCInteractMenu 유효성 검사
+[2022.03.02-09.04.33:033][606]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.02-09.04.33:039][606]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.02-09.04.33:039][606]PIE: New page: PIE 세션: PersistentLevel (2022. 3. 3. 오전 3:04:33)
+[2022.03.02-09.04.33:065][606]LogPlayLevel: Creating play world package: /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.04.33:066][606]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001649s)
+[2022.03.02-09.04.33:067][606]LogAIModule: Creating AISystem for world PersistentLevel
+[2022.03.02-09.04.33:067][606]LogPlayLevel: PIE: World Init took: (0.000799s)
+[2022.03.02-09.04.33:067][606]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameMode/PersistentLevel.PersistentLevel to /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel (0.002542s)
+[2022.03.02-09.04.33:096][606]LogUObjectHash: Compacting FUObjectHashTables data took   3.40ms
+[2022.03.02-09.04.33:097][606]LogAudio: Display: Creating Audio Device:                 Id: 6, Scope: Unique, Realtime: True
+[2022.03.02-09.04.33:097][606]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.02-09.04.33:097][606]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.02-09.04.33:097][606]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.02-09.04.33:097][606]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.02-09.04.33:097][606]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.02-09.04.33:097][606]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.02-09.04.33:097][606]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.02-09.04.33:097][606]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.02-09.04.33:097][606]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.02-09.04.33:097][606]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.02-09.04.33:100][606]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.02-09.04.33:100][606]LogAudioMixer: Display: 1: FrontRight
+[2022.03.02-09.04.33:107][606]LogAudioMixer: Display: Using Audio Device 2D FHD LG TV(NVIDIA High Definition Audio)
+[2022.03.02-09.04.33:107][606]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.02-09.04.33:107][606]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.02-09.04.33:107][606]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.02-09.04.33:108][606]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.02-09.04.33:108][606]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.02-09.04.33:108][606]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.02-09.04.33:119][606]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.02-09.04.33:119][606]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.02-09.04.33:119][606]LogInit: FAudioDevice initialized.
+[2022.03.02-09.04.33:120][606]LogAudio: Display: Audio Device (ID: 6) registered with world 'PersistentLevel'.
+[2022.03.02-09.04.33:126][606]LogLoad: Game class is 'MyGameMode_BP_C'
+[2022.03.02-09.04.33:127][606]LogWorld: Bringing World /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel up for play (max tick rate 0) at 2022.03.02-18.04.33
+[2022.03.02-09.04.33:127][606]LogWorld: Bringing up level for play took: 0.000265
+[2022.03.02-09.04.33:127][606]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2022.03.02-09.04.33:130][606]PIE: 서버가 로그인했습니다.
+[2022.03.02-09.04.33:131][606]PIE: 에디터에서 플레이 총 시작 시간 0.092초입니다.
+[2022.03.02-09.04.33:534][650]LogLevel: Warning: Failed to find streaming level object associated with 'None'
+[2022.03.02-09.04.33:541][651]LogLevel: ActivateLevel /Game/GameMode/UEDPIE_0_FieldMap 1 1 0
+[2022.03.02-09.04.40:106][369]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.04.40:106][369]LogWorld: BeginTearingDown for /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.04.40:107][369]LogWorld: UWorld::CleanupWorld for PersistentLevel, bSessionEnded=true, bCleanupResources=true
+[2022.03.02-09.04.40:107][369]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.04.40:113][369]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.02-09.04.40:119][369]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.04.40:143][369]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.02-09.04.40:143][369]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-09.04.40:145][369]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-09.04.40:157][369]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.04.40:161][369]LogUObjectHash: Compacting FUObjectHashTables data took   2.88ms
+[2022.03.02-09.04.40:185][370]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2022.03.02-09.04.40:213][370]LogUObjectHash: Compacting FUObjectHashTables data took   2.75ms
+[2022.03.02-09.04.52:757][853]BlueprintLog: New page: wNPCInteractMenu 컴파일
+[2022.03.02-09.04.52:787][853]LogUObjectHash: Compacting FUObjectHashTables data took   2.95ms
+[2022.03.02-09.04.53:385][921]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.04.53:406][921]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/wNPCInteractMenu7EEE0B564A437D4B6A860AA7280B5B23.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/HUD/PlayerHud/wNPCInteractMenu.uasset'
+[2022.03.02-09.04.53:418][921]AssetCheck: New page: 애셋 저장: wNPCInteractMenu
+[2022.03.02-09.04.53:418][921]LogContentValidation: Display: WidgetBlueprint /Game/HUD/PlayerHud/wNPCInteractMenu.wNPCInteractMenu 유효성 검사
+[2022.03.02-09.04.54:441][ 28]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.02-09.04.54:448][ 28]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.02-09.04.54:448][ 28]PIE: New page: PIE 세션: PersistentLevel (2022. 3. 3. 오전 3:04:54)
+[2022.03.02-09.04.54:485][ 28]LogPlayLevel: Creating play world package: /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.04.54:487][ 28]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001966s)
+[2022.03.02-09.04.54:488][ 28]LogAIModule: Creating AISystem for world PersistentLevel
+[2022.03.02-09.04.54:488][ 28]LogPlayLevel: PIE: World Init took: (0.001039s)
+[2022.03.02-09.04.54:488][ 28]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameMode/PersistentLevel.PersistentLevel to /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel (0.003165s)
+[2022.03.02-09.04.54:519][ 28]LogUObjectHash: Compacting FUObjectHashTables data took   3.58ms
+[2022.03.02-09.04.54:520][ 28]LogAudio: Display: Creating Audio Device:                 Id: 7, Scope: Unique, Realtime: True
+[2022.03.02-09.04.54:520][ 28]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.02-09.04.54:520][ 28]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.02-09.04.54:520][ 28]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.02-09.04.54:520][ 28]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.02-09.04.54:520][ 28]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.02-09.04.54:520][ 28]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.02-09.04.54:520][ 28]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.02-09.04.54:520][ 28]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.02-09.04.54:520][ 28]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.02-09.04.54:520][ 28]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.02-09.04.54:523][ 28]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.02-09.04.54:523][ 28]LogAudioMixer: Display: 1: FrontRight
+[2022.03.02-09.04.54:530][ 28]LogAudioMixer: Display: Using Audio Device 2D FHD LG TV(NVIDIA High Definition Audio)
+[2022.03.02-09.04.54:531][ 28]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.02-09.04.54:531][ 28]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.02-09.04.54:531][ 28]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.02-09.04.54:531][ 28]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.02-09.04.54:531][ 28]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.02-09.04.54:531][ 28]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.02-09.04.54:543][ 28]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.02-09.04.54:543][ 28]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.02-09.04.54:543][ 28]LogInit: FAudioDevice initialized.
+[2022.03.02-09.04.54:543][ 28]LogAudio: Display: Audio Device (ID: 7) registered with world 'PersistentLevel'.
+[2022.03.02-09.04.54:552][ 28]LogLoad: Game class is 'MyGameMode_BP_C'
+[2022.03.02-09.04.54:553][ 28]LogWorld: Bringing World /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel up for play (max tick rate 0) at 2022.03.02-18.04.54
+[2022.03.02-09.04.54:553][ 28]LogWorld: Bringing up level for play took: 0.000275
+[2022.03.02-09.04.54:553][ 28]LogOnline: OSS: Creating online subsystem instance for: :Context_21
+[2022.03.02-09.04.54:556][ 28]PIE: 서버가 로그인했습니다.
+[2022.03.02-09.04.54:557][ 28]PIE: 에디터에서 플레이 총 시작 시간 0.109초입니다.
+[2022.03.02-09.04.54:943][ 71]LogLevel: Warning: Failed to find streaming level object associated with 'None'
+[2022.03.02-09.04.54:948][ 72]LogLevel: ActivateLevel /Game/GameMode/UEDPIE_0_FieldMap 1 1 0
+[2022.03.02-09.05.12:206][760]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.05.12:206][760]LogWorld: BeginTearingDown for /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.05.12:207][760]LogWorld: UWorld::CleanupWorld for PersistentLevel, bSessionEnded=true, bCleanupResources=true
+[2022.03.02-09.05.12:207][760]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.05.12:215][760]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.02-09.05.12:221][760]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.05.12:245][760]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.02-09.05.12:245][760]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-09.05.12:247][760]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-09.05.12:259][760]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.05.12:263][760]LogUObjectHash: Compacting FUObjectHashTables data took   2.78ms
+[2022.03.02-09.05.12:286][761]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2022.03.02-09.05.12:314][761]LogUObjectHash: Compacting FUObjectHashTables data took   2.93ms
+[2022.03.02-09.05.24:597][204]BlueprintLog: New page: wNPCInteractMenu 컴파일
+[2022.03.02-09.05.24:626][204]LogUObjectHash: Compacting FUObjectHashTables data took   2.92ms
+[2022.03.02-09.05.24:927][236]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.05.24:940][236]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/wNPCInteractMenuF3F3519841097739B6FD78B1A8E4343E.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/HUD/PlayerHud/wNPCInteractMenu.uasset'
+[2022.03.02-09.05.24:954][236]AssetCheck: New page: 애셋 저장: wNPCInteractMenu
+[2022.03.02-09.05.24:954][236]LogContentValidation: Display: WidgetBlueprint /Game/HUD/PlayerHud/wNPCInteractMenu.wNPCInteractMenu 유효성 검사
+[2022.03.02-09.05.30:049][820]BlueprintLog: New page: wNPCInteractMenu 컴파일
+[2022.03.02-09.05.30:091][820]LogUObjectHash: Compacting FUObjectHashTables data took   3.48ms
+[2022.03.02-09.05.30:667][886]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.05.30:688][886]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/wNPCInteractMenuA95FC0E1487732D2164828A8F3CCDFAE.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/HUD/PlayerHud/wNPCInteractMenu.uasset'
+[2022.03.02-09.05.30:700][886]AssetCheck: New page: 애셋 저장: wNPCInteractMenu
+[2022.03.02-09.05.30:700][886]LogContentValidation: Display: WidgetBlueprint /Game/HUD/PlayerHud/wNPCInteractMenu.wNPCInteractMenu 유효성 검사
+[2022.03.02-09.05.31:416][960]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.02-09.05.31:422][960]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.02-09.05.31:422][960]PIE: New page: PIE 세션: PersistentLevel (2022. 3. 3. 오전 3:05:31)
+[2022.03.02-09.05.31:455][960]LogPlayLevel: Creating play world package: /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.05.31:456][960]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001713s)
+[2022.03.02-09.05.31:457][960]LogAIModule: Creating AISystem for world PersistentLevel
+[2022.03.02-09.05.31:457][960]LogPlayLevel: PIE: World Init took: (0.000819s)
+[2022.03.02-09.05.31:457][960]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameMode/PersistentLevel.PersistentLevel to /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel (0.002635s)
+[2022.03.02-09.05.31:486][960]LogUObjectHash: Compacting FUObjectHashTables data took   3.38ms
+[2022.03.02-09.05.31:487][960]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2022.03.02-09.05.31:487][960]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.02-09.05.31:487][960]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.02-09.05.31:487][960]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.02-09.05.31:487][960]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.02-09.05.31:487][960]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.02-09.05.31:487][960]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.02-09.05.31:487][960]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.02-09.05.31:487][960]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.02-09.05.31:487][960]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.02-09.05.31:488][960]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.02-09.05.31:490][960]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.02-09.05.31:490][960]LogAudioMixer: Display: 1: FrontRight
+[2022.03.02-09.05.31:497][960]LogAudioMixer: Display: Using Audio Device 2D FHD LG TV(NVIDIA High Definition Audio)
+[2022.03.02-09.05.31:498][960]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.02-09.05.31:498][960]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.02-09.05.31:498][960]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.02-09.05.31:498][960]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.02-09.05.31:498][960]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.02-09.05.31:498][960]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.02-09.05.31:510][960]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.02-09.05.31:510][960]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.02-09.05.31:510][960]LogInit: FAudioDevice initialized.
+[2022.03.02-09.05.31:510][960]LogAudio: Display: Audio Device (ID: 8) registered with world 'PersistentLevel'.
+[2022.03.02-09.05.31:519][960]LogLoad: Game class is 'MyGameMode_BP_C'
+[2022.03.02-09.05.31:520][960]LogWorld: Bringing World /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel up for play (max tick rate 0) at 2022.03.02-18.05.31
+[2022.03.02-09.05.31:520][960]LogWorld: Bringing up level for play took: 0.000262
+[2022.03.02-09.05.31:520][960]LogOnline: OSS: Creating online subsystem instance for: :Context_22
+[2022.03.02-09.05.31:523][960]PIE: 서버가 로그인했습니다.
+[2022.03.02-09.05.31:524][960]PIE: 에디터에서 플레이 총 시작 시간 0.103초입니다.
+[2022.03.02-09.05.31:915][  2]LogLevel: Warning: Failed to find streaming level object associated with 'None'
+[2022.03.02-09.05.31:920][  3]LogLevel: ActivateLevel /Game/GameMode/UEDPIE_0_FieldMap 1 1 0
+[2022.03.02-09.05.40:466][948]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.05.40:466][948]LogWorld: BeginTearingDown for /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.05.40:467][948]LogWorld: UWorld::CleanupWorld for PersistentLevel, bSessionEnded=true, bCleanupResources=true
+[2022.03.02-09.05.40:467][948]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.05.40:472][948]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.02-09.05.40:478][948]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.05.40:502][948]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.02-09.05.40:503][948]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-09.05.40:504][948]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-09.05.40:516][948]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.05.40:520][948]LogUObjectHash: Compacting FUObjectHashTables data took   2.79ms
+[2022.03.02-09.05.40:543][949]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2022.03.02-09.05.40:571][949]LogUObjectHash: Compacting FUObjectHashTables data took   2.70ms
+[2022.03.02-09.06.14:273][889]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.06.22:958][915]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.06.23:163][915]LogUObjectHash: Compacting FUObjectHashTables data took   2.69ms
+[2022.03.02-09.06.23:164][915]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/GameMode/PersistentLevel' took 0.030
+[2022.03.02-09.06.23:165][915]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Asset/Image/HalfCircle] ([1] browsable assets)...
+[2022.03.02-09.06.23:167][915]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Asset/Image/HalfCircle.HalfCircle]
+[2022.03.02-09.06.23:167][915]OBJ SavePackage: Finished generating thumbnails for package [/Game/Asset/Image/HalfCircle]
+[2022.03.02-09.06.23:177][915]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/HalfCircle_Auto356FA2C5849178C28C0FE10833B9B08D7.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Autosaves/Game/Asset/Image/HalfCircle_Auto3.uasset'
+[2022.03.02-09.06.23:243][915]LogFileHelpers: Auto-saving content packages took 0.079
+[2022.03.02-09.06.34:985][951]LogHotReload: New module detected: UE4Editor-NierProject-0013.dll
+[2022.03.02-09.06.35:998][955]LogHotReload: Starting Hot-Reload from IDE
+[2022.03.02-09.06.36:000][955]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.06.36:114][955]LogClass: EBossMutantMovementStatus HotReload.
+[2022.03.02-09.06.36:114][955]LogClass: EEnemyMovementStatus HotReload.
+[2022.03.02-09.06.36:114][955]LogClass: EMovementStatus HotReload.
+[2022.03.02-09.06.36:114][955]LogClass: AttackTypeStruct HotReload.
+[2022.03.02-09.06.36:145][955]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'NierProject' in 0.0003 seconds. Added 24 classes and 2 folders.
+[2022.03.02-09.06.36:159][955]Display: HotReload successful (61 functions remapped  1 scriptstructs remapped)
+[2022.03.02-09.06.36:226][955]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0093 seconds. Added 3654 classes and 875 folders.
+[2022.03.02-09.06.36:229][955]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.06.36:230][955]Display: HotReload took  0.2s.
+[2022.03.02-09.06.41:015][969]LogHotReload: New module detected: UE4Editor-NierProject-0014.dll
+[2022.03.02-09.06.42:028][973]LogHotReload: Starting Hot-Reload from IDE
+[2022.03.02-09.06.42:030][973]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.06.42:149][973]LogClass: EBossMutantMovementStatus HotReload.
+[2022.03.02-09.06.42:150][973]LogClass: EEnemyMovementStatus HotReload.
+[2022.03.02-09.06.42:150][973]LogClass: EMovementStatus HotReload.
+[2022.03.02-09.06.42:150][973]LogClass: AttackTypeStruct HotReload.
+[2022.03.02-09.06.42:182][973]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'NierProject' in 0.0003 seconds. Added 24 classes and 2 folders.
+[2022.03.02-09.06.42:200][973]Display: HotReload successful (61 functions remapped  1 scriptstructs remapped)
+[2022.03.02-09.06.42:272][973]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0096 seconds. Added 3654 classes and 875 folders.
+[2022.03.02-09.06.42:275][973]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.06.42:276][973]Display: HotReload took  0.2s.
+[2022.03.02-09.06.50:775][191]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.02-09.06.50:782][191]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.02-09.06.50:782][191]PIE: New page: PIE 세션: PersistentLevel (2022. 3. 3. 오전 3:06:50)
+[2022.03.02-09.06.50:815][191]LogPlayLevel: Creating play world package: /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.06.50:817][191]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001897s)
+[2022.03.02-09.06.50:818][191]LogAIModule: Creating AISystem for world PersistentLevel
+[2022.03.02-09.06.50:818][191]LogPlayLevel: PIE: World Init took: (0.000864s)
+[2022.03.02-09.06.50:818][191]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameMode/PersistentLevel.PersistentLevel to /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel (0.002903s)
+[2022.03.02-09.06.50:907][191]LogUObjectHash: Compacting FUObjectHashTables data took   5.42ms
+[2022.03.02-09.06.50:907][191]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2022.03.02-09.06.50:907][191]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.02-09.06.50:907][191]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.02-09.06.50:907][191]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.02-09.06.50:907][191]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.02-09.06.50:907][191]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.02-09.06.50:907][191]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.02-09.06.50:907][191]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.02-09.06.50:907][191]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.02-09.06.50:908][191]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.02-09.06.50:908][191]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.02-09.06.50:910][191]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.02-09.06.50:910][191]LogAudioMixer: Display: 1: FrontRight
+[2022.03.02-09.06.50:918][191]LogAudioMixer: Display: Using Audio Device 2D FHD LG TV(NVIDIA High Definition Audio)
+[2022.03.02-09.06.50:918][191]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.02-09.06.50:918][191]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.02-09.06.50:918][191]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.02-09.06.50:919][191]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.02-09.06.50:919][191]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.02-09.06.50:919][191]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.02-09.06.50:931][191]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.02-09.06.50:931][191]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.02-09.06.50:931][191]LogInit: FAudioDevice initialized.
+[2022.03.02-09.06.50:931][191]LogAudio: Display: Audio Device (ID: 9) registered with world 'PersistentLevel'.
+[2022.03.02-09.06.50:942][191]LogLoad: Game class is 'MyGameMode_BP_C'
+[2022.03.02-09.06.50:943][191]LogWorld: Bringing World /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel up for play (max tick rate 0) at 2022.03.02-18.06.50
+[2022.03.02-09.06.50:943][191]LogWorld: Bringing up level for play took: 0.000308
+[2022.03.02-09.06.50:943][191]LogOnline: OSS: Creating online subsystem instance for: :Context_23
+[2022.03.02-09.06.50:947][191]PIE: 서버가 로그인했습니다.
+[2022.03.02-09.06.50:948][191]PIE: 에디터에서 플레이 총 시작 시간 0.167초입니다.
+[2022.03.02-09.06.51:331][233]LogLevel: Warning: Failed to find streaming level object associated with 'None'
+[2022.03.02-09.06.51:336][234]LogLevel: ActivateLevel /Game/GameMode/UEDPIE_0_FieldMap 1 1 0
+[2022.03.02-09.07.03:555][546]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.07.03:555][546]LogWorld: BeginTearingDown for /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.07.03:556][546]LogWorld: UWorld::CleanupWorld for PersistentLevel, bSessionEnded=true, bCleanupResources=true
+[2022.03.02-09.07.03:556][546]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.07.03:561][546]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.02-09.07.03:568][546]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.07.03:595][546]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.02-09.07.03:595][546]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-09.07.03:596][546]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-09.07.03:609][546]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.07.03:619][546]LogUObjectHash: Compacting FUObjectHashTables data took   4.23ms
+[2022.03.02-09.07.03:642][547]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2022.03.02-09.07.03:676][547]LogUObjectHash: Compacting FUObjectHashTables data took   3.36ms
+[2022.03.02-09.10.30:502][896]LogEditorFactories: Performing atomic reimport of [C:/Users/potap/Desktop/HalfCircle.png]
+[2022.03.02-09.10.30:506][896]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 C:/Users/potap/Desktop/HalfCircle.png)
+[2022.03.02-09.10.30:520][896]LogTexture: Display: 텍스처 빌드: HalfCircle (BGRA8, 580X325)
+[2022.03.02-09.10.30:533][896]LogEditorFactories: -- imported successfully
+[2022.03.02-09.10.30:536][896]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.10.43:498][176]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.02-09.10.43:505][176]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.02-09.10.43:505][176]PIE: New page: PIE 세션: PersistentLevel (2022. 3. 3. 오전 3:10:43)
+[2022.03.02-09.10.43:534][176]LogPlayLevel: Creating play world package: /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.10.43:536][176]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001981s)
+[2022.03.02-09.10.43:537][176]LogAIModule: Creating AISystem for world PersistentLevel
+[2022.03.02-09.10.43:537][176]LogPlayLevel: PIE: World Init took: (0.000947s)
+[2022.03.02-09.10.43:537][176]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameMode/PersistentLevel.PersistentLevel to /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel (0.003072s)
+[2022.03.02-09.10.43:570][176]LogUObjectHash: Compacting FUObjectHashTables data took   3.93ms
+[2022.03.02-09.10.43:572][176]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2022.03.02-09.10.43:572][176]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.02-09.10.43:572][176]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.02-09.10.43:572][176]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.02-09.10.43:572][176]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.02-09.10.43:572][176]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.02-09.10.43:572][176]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.02-09.10.43:572][176]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.02-09.10.43:572][176]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.02-09.10.43:572][176]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.02-09.10.43:572][176]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.02-09.10.43:575][176]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.02-09.10.43:575][176]LogAudioMixer: Display: 1: FrontRight
+[2022.03.02-09.10.43:582][176]LogAudioMixer: Display: Using Audio Device 2D FHD LG TV(NVIDIA High Definition Audio)
+[2022.03.02-09.10.43:582][176]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.02-09.10.43:583][176]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.02-09.10.43:583][176]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.02-09.10.43:583][176]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.02-09.10.43:583][176]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.02-09.10.43:583][176]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.02-09.10.43:595][176]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.02-09.10.43:595][176]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.02-09.10.43:595][176]LogInit: FAudioDevice initialized.
+[2022.03.02-09.10.43:595][176]LogAudio: Display: Audio Device (ID: 10) registered with world 'PersistentLevel'.
+[2022.03.02-09.10.43:605][176]LogLoad: Game class is 'MyGameMode_BP_C'
+[2022.03.02-09.10.43:606][176]LogWorld: Bringing World /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel up for play (max tick rate 0) at 2022.03.02-18.10.43
+[2022.03.02-09.10.43:606][176]LogWorld: Bringing up level for play took: 0.000274
+[2022.03.02-09.10.43:606][176]LogOnline: OSS: Creating online subsystem instance for: :Context_24
+[2022.03.02-09.10.43:609][176]PIE: 서버가 로그인했습니다.
+[2022.03.02-09.10.43:610][176]PIE: 에디터에서 플레이 총 시작 시간 0.106초입니다.
+[2022.03.02-09.10.43:997][213]LogLevel: Warning: Failed to find streaming level object associated with 'None'
+[2022.03.02-09.10.44:002][214]LogLevel: ActivateLevel /Game/GameMode/UEDPIE_0_FieldMap 1 1 0
+[2022.03.02-09.10.51:495][ 26]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.10.51:495][ 26]LogWorld: BeginTearingDown for /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.10.51:496][ 26]LogWorld: UWorld::CleanupWorld for PersistentLevel, bSessionEnded=true, bCleanupResources=true
+[2022.03.02-09.10.51:496][ 26]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.10.51:503][ 26]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.02-09.10.51:510][ 26]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.02-09.10.51:537][ 26]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.02-09.10.51:537][ 26]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-09.10.51:538][ 26]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.02-09.10.51:551][ 26]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.10.51:556][ 26]LogUObjectHash: Compacting FUObjectHashTables data took   3.42ms
+[2022.03.02-09.10.51:584][ 27]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2022.03.02-09.10.51:616][ 27]LogUObjectHash: Compacting FUObjectHashTables data took   3.33ms
+[2022.03.02-09.10.56:496][584]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.11.10:424][232]LogSlate: Window '색상 선택 툴' being destroyed
+[2022.03.02-09.11.13:662][615]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.11.15:256][796]LogSlate: Window '색상 선택 툴' being destroyed
+[2022.03.02-09.11.28:155][329]BlueprintLog: New page: wNPCInteractMenu 컴파일
+[2022.03.02-09.11.28:193][329]LogUObjectHash: Compacting FUObjectHashTables data took   3.49ms
+[2022.03.02-09.11.28:701][383]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.02-09.11.28:722][383]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/wNPCInteractMenuDCA36B074A0B6FD8312442A7453718FD.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/HUD/PlayerHud/wNPCInteractMenu.uasset'
+[2022.03.02-09.11.28:735][383]AssetCheck: New page: 애셋 저장: wNPCInteractMenu
+[2022.03.02-09.11.28:735][383]LogContentValidation: Display: WidgetBlueprint /Game/HUD/PlayerHud/wNPCInteractMenu.wNPCInteractMenu 유효성 검사
+[2022.03.02-09.11.30:882][624]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.02-09.11.30:888][624]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.02-09.11.30:888][624]PIE: New page: PIE 세션: PersistentLevel (2022. 3. 3. 오전 3:11:30)
+[2022.03.02-09.11.30:914][624]LogPlayLevel: Creating play world package: /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.02-09.11.30:915][624]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001732s)
+[2022.03.02-09.11.30:916][624]LogAIModule: Creating AISystem for world PersistentLevel
+[2022.03.02-09.11.30:916][624]LogPlayLevel: PIE: World Init took: (0.000845s)
+[2022.03.02-09.11.30:916][624]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameMode/PersistentLevel.PersistentLevel to /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel (0.002695s)
+[2022.03.02-09.11.30:951][624]LogUObjectHash: Compacting FUObjectHashTables data took   4.15ms
+[2022.03.02-09.11.30:952][624]LogAudio: Display: Creating Audio Device:                 Id: 11, Scope: Unique, Realtime: True
+[2022.03.02-09.11.30:952][624]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.02-09.11.30:952][624]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.02-09.11.30:952][624]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.02-09.11.30:952][624]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.02-09.11.30:952][624]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.02-09.11.30:952][624]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.02-09.11.30:952][624]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.02-09.11.30:952][624]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.02-09.11.30:952][624]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.02-09.11.30:952][624]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.02-09.11.30:955][624]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.02-09.11.30:955][624]LogAudioMixer: Display: 1: FrontRight
+[2022.03.02-09.11.30:962][624]LogAudioMixer: Display: Using Audio Device 2D FHD LG TV(NVIDIA High Definition Audio)
+[2022.03.02-09.11.30:963][624]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.02-09.11.30:963][624]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.02-09.11.30:963][624]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.02-09.11.30:963][624]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.02-09.11.30:963][624]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.02-09.11.30:963][624]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.02-09.11.30:975][624]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.02-09.11.30:975][624]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.02-09.11.30:975][624]LogInit: FAudioDevice initialized.
+[2022.03.02-09.11.30:975][624]LogAudio: Display: Audio Device (ID: 11) registered with world 'PersistentLevel'.
+[2022.03.02-09.11.30:982][624]LogLoad: Game class is 'MyGameMode_BP_C'
+[2022.03.02-09.11.30:983][624]LogWorld: Bringing World /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel up for play (max tick rate 0) at 2022.03.02-18.11.30
+[2022.03.02-09.11.30:983][624]LogWorld: Bringing up level for play took: 0.000265
+[2022.03.02-09.11.30:983][624]LogOnline: OSS: Creating online subsystem instance for: :Context_25
+[2022.03.02-09.11.30:986][624]PIE: 서버가 로그인했습니다.
+[2022.03.02-09.11.30:987][624]PIE: 에디터에서 플레이 총 시작 시간 0.1초입니다.
+[2022.03.02-09.11.31:377][665]LogLevel: Warning: Failed to find streaming level object associated with 'None'
+[2022.03.02-09.11.31:382][666]LogLevel: ActivateLevel /Game/GameMode/UEDPIE_0_FieldMap 1 1 0
+[2022.03.02-09.11.38:275][403]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.02-09.11.38:275][403]LogWorld: BeginTearingDown for /Game/GameMode/UEDPIE_0_PersistentLevel

@@ -192,6 +192,16 @@ static struct FScriptStruct_NierProject_StaticRegisterNativesFAttackTypeStruct
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LookSpeed_TargetAttacking_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_LookSpeed_TargetAttacking;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_VAttackTypeStruct_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_VAttackTypeStruct_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_VAttackTypeStruct;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MontageArray_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MontageArray_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_MontageArray;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -218,8 +228,32 @@ static struct FScriptStruct_NierProject_StaticRegisterNativesFAttackTypeStruct
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_LookSpeed_TargetAttacking = { "LookSpeed_TargetAttacking", nullptr, (EPropertyFlags)0x0010000000010005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMainCharacterWeaponMovement, LookSpeed_TargetAttacking), METADATA_PARAMS(Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_LookSpeed_TargetAttacking_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_LookSpeed_TargetAttacking_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_VAttackTypeStruct_Inner = { "VAttackTypeStruct", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FAttackTypeStruct, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_VAttackTypeStruct_MetaData[] = {
+		{ "Category", "Montage" },
+		{ "Comment", "//?\xca\xb1?\xc8\xad(MyMainCharacter.cpp???? ????)\n" },
+		{ "ModuleRelativePath", "MainCharacterWeaponMovement.h" },
+		{ "ToolTip", "?\xca\xb1?\xc8\xad(MyMainCharacter.cpp???? ????)" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_VAttackTypeStruct = { "VAttackTypeStruct", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMainCharacterWeaponMovement, VAttackTypeStruct), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_VAttackTypeStruct_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_VAttackTypeStruct_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_MontageArray_Inner = { "MontageArray", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_MontageArray_MetaData[] = {
+		{ "Category", "Montage" },
+		{ "Comment", "//?? ?????? ???? ?\xd3\xb5?\n" },
+		{ "ModuleRelativePath", "MainCharacterWeaponMovement.h" },
+		{ "ToolTip", "?? ?????? ???? ?\xd3\xb5?" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_MontageArray = { "MontageArray", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMainCharacterWeaponMovement, MontageArray), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_MontageArray_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_MontageArray_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_LookSpeed_TargetAttacking,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_VAttackTypeStruct_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_VAttackTypeStruct,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_MontageArray_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::NewProp_MontageArray,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMainCharacterWeaponMovement_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMainCharacterWeaponMovement>::IsAbstract,
@@ -248,7 +282,7 @@ static struct FScriptStruct_NierProject_StaticRegisterNativesFAttackTypeStruct
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMainCharacterWeaponMovement, 807178839);
+	IMPLEMENT_CLASS(AMainCharacterWeaponMovement, 2560157345);
 	template<> NIERPROJECT_API UClass* StaticClass<AMainCharacterWeaponMovement>()
 	{
 		return AMainCharacterWeaponMovement::StaticClass();

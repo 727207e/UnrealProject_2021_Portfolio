@@ -19,6 +19,7 @@ struct FHitResult;
 #define NierProject_Source_NierProject_Boss_Mutant_h_39_SPARSE_DATA
 #define NierProject_Source_NierProject_Boss_Mutant_h_39_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execBossHealthBarShowUp); \
 	DECLARE_FUNCTION(execAttackEnd); \
 	DECLARE_FUNCTION(execDeActiveCollision); \
 	DECLARE_FUNCTION(execActiveCollision); \
@@ -30,6 +31,7 @@ struct FHitResult;
 
 #define NierProject_Source_NierProject_Boss_Mutant_h_39_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execBossHealthBarShowUp); \
 	DECLARE_FUNCTION(execAttackEnd); \
 	DECLARE_FUNCTION(execDeActiveCollision); \
 	DECLARE_FUNCTION(execActiveCollision); \

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\NierProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{7FFDB614-C7AF-41E4-BE54-DF2F0B9B29FB}</UniqueIdentifier>
+      <UniqueIdentifier>{A5E8E264-544E-45B6-A9AB-73BA20D056F8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\NierProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{0459FA03-1D99-4649-9B34-60BC55402B25}</UniqueIdentifier>
+      <UniqueIdentifier>{4FC15F4A-E6BC-4DAE-9A36-78E53F2022A4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\NierProject">
-      <UniqueIdentifier>{7E39A4D8-63CF-45F9-94CA-66843A14CDDB}</UniqueIdentifier>
+      <UniqueIdentifier>{2DF5C126-718C-4B9E-ADCA-B6E46AA35078}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\NierProject\AvoidAfterImage.cpp">
       <Filter>Source\NierProject</Filter>
@@ -165,6 +165,18 @@
       <Filter>Source\NierProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NierProject\NierProjectGameMode.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NierProject\NPCParentScripts.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\NPCParentScripts.h">
+      <Filter>Source\NierProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NierProject\NPC_DataTable.cpp">
+      <Filter>Source\NierProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NierProject\NPC_DataTable.h">
       <Filter>Source\NierProject</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\NierProject\theDamageText.cpp">

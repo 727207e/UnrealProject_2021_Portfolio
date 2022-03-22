@@ -55,12 +55,6 @@ void AEnemy::Tick(float DeltaTime)
 
 	}
 	
-	if (EnemyHealthBarWidget)
-	{
-		//타겟 텍스트 지정
-		EnemyHealthBarWidget->theTarget = itsTarget;
-	}
-
 }
 
 // Called to bind functionality to input

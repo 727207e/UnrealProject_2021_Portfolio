@@ -23,12 +23,16 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
+	NIERPROJECT_API UClass* Z_Construct_UClass_AMainPlayerController_NoRegister();
+	NIERPROJECT_API UClass* Z_Construct_UClass_ANPCParentScripts_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterial_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	NIERPROJECT_API UClass* Z_Construct_UClass_AWeapon_NoRegister();
 	NIERPROJECT_API UClass* Z_Construct_UClass_ADrone_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UChildActorComponent_NoRegister();
 	NIERPROJECT_API UClass* Z_Construct_UClass_AEnemy_NoRegister();
 	NIERPROJECT_API UClass* Z_Construct_UClass_AAvoidAfterImage_NoRegister();
+	UMG_API UClass* Z_Construct_UClass_UWidgetComponent_NoRegister();
 	NIERPROJECT_API UClass* Z_Construct_UClass_UInterfaceLifeEntity_NoRegister();
 // End Cross Module References
 	static UEnum* EMovementStatus_StaticEnum()
@@ -282,7 +286,9 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMyMainCharacter_GetAttackMotion_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//???? ??\xc5\xb8?? ?? ?? ???? ????\n" },
 		{ "ModuleRelativePath", "MyMainCharacter.h" },
+		{ "ToolTip", "???? ??\xc5\xb8?? ?? ?? ???? ????" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMyMainCharacter_GetAttackMotion_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMyMainCharacter, nullptr, "GetAttackMotion", nullptr, nullptr, sizeof(MyMainCharacter_eventGetAttackMotion_Parms), Z_Construct_UFunction_AMyMainCharacter_GetAttackMotion_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMyMainCharacter_GetAttackMotion_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMyMainCharacter_GetAttackMotion_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMyMainCharacter_GetAttackMotion_Statics::Function_MetaDataParams)) };
@@ -427,6 +433,14 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MoveUtilityMontage;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MainPlayerController_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MainPlayerController;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NPCTarget_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_NPCTarget;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaterialOrigin_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MaterialOrigin;
@@ -447,9 +461,9 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_NowMyDrone;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AttackMotionTSub_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MovementClass_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_AttackMotionTSub;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MovementClass;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_theTarget_MetaData[];
 #endif
@@ -462,6 +476,10 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaterialHit_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MaterialHit;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LockOnTargetCheckComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_LockOnTargetCheckComponent;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
@@ -476,7 +494,7 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		{ &Z_Construct_UFunction_AMyMainCharacter_DeadEnd, "DeadEnd" }, // 1246432038
 		{ &Z_Construct_UFunction_AMyMainCharacter_EquipWeapon, "EquipWeapon" }, // 3442641567
 		{ &Z_Construct_UFunction_AMyMainCharacter_GenAfterImage, "GenAfterImage" }, // 605315125
-		{ &Z_Construct_UFunction_AMyMainCharacter_GetAttackMotion, "GetAttackMotion" }, // 1681837013
+		{ &Z_Construct_UFunction_AMyMainCharacter_GetAttackMotion, "GetAttackMotion" }, // 2526688270
 		{ &Z_Construct_UFunction_AMyMainCharacter_hasTarget, "hasTarget" }, // 4023766651
 		{ &Z_Construct_UFunction_AMyMainCharacter_HitReactEnd, "HitReactEnd" }, // 1465613957
 		{ &Z_Construct_UFunction_AMyMainCharacter_SlowMotion, "SlowMotion" }, // 3067538861
@@ -569,6 +587,22 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MoveUtilityMontage = { "MoveUtilityMontage", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyMainCharacter, MoveUtilityMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MoveUtilityMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MoveUtilityMontage_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MainPlayerController_MetaData[] = {
+		{ "Category", "Controller" },
+		{ "Comment", "//\xc8\xb8??, ?\xc7\xb0?, ???? ??\xc5\xb8??\n" },
+		{ "ModuleRelativePath", "MyMainCharacter.h" },
+		{ "ToolTip", "\xc8\xb8??, ?\xc7\xb0?, ???? ??\xc5\xb8??" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MainPlayerController = { "MainPlayerController", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyMainCharacter, MainPlayerController), Z_Construct_UClass_AMainPlayerController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MainPlayerController_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MainPlayerController_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_NPCTarget_MetaData[] = {
+		{ "Category", "NPC" },
+		{ "ModuleRelativePath", "MyMainCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_NPCTarget = { "NPCTarget", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyMainCharacter, NPCTarget), Z_Construct_UClass_ANPCParentScripts_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_NPCTarget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_NPCTarget_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MaterialOrigin_MetaData[] = {
 		{ "Category", "Material" },
 		{ "Comment", "//???? ???\xcd\xb8???(?\xd8\xbd???)\n" },
@@ -611,14 +645,15 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_NowMyDrone = { "NowMyDrone", nullptr, (EPropertyFlags)0x0010000000010005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyMainCharacter, NowMyDrone), Z_Construct_UClass_ADrone_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_NowMyDrone_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_NowMyDrone_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_AttackMotionTSub_MetaData[] = {
-		{ "Category", "Motion" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MovementClass_MetaData[] = {
+		{ "Category", "MainCharacterWeaponMovement" },
 		{ "Comment", "///////////////// ???? ////////////////////\x09""AMainCharacterWeaponMovement???? ??????\n" },
+		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "MyMainCharacter.h" },
 		{ "ToolTip", "????   AMainCharacterWeaponMovement???? ??????" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_AttackMotionTSub = { "AttackMotionTSub", nullptr, (EPropertyFlags)0x0014000000000005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyMainCharacter, AttackMotionTSub), Z_Construct_UClass_AMainCharacterWeaponMovement_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_AttackMotionTSub_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_AttackMotionTSub_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MovementClass = { "MovementClass", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyMainCharacter, MovementClass), Z_Construct_UClass_UChildActorComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MovementClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MovementClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_theTarget_MetaData[] = {
 		{ "Category", "Target" },
@@ -644,6 +679,16 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MaterialHit = { "MaterialHit", nullptr, (EPropertyFlags)0x0010000000010005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyMainCharacter, MaterialHit), Z_Construct_UClass_UMaterial_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MaterialHit_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MaterialHit_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_LockOnTargetCheckComponent_MetaData[] = {
+		{ "Category", "LockOnTargetCheck" },
+		{ "Comment", "///////////////// HUD ////////////////////\n" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "MyMainCharacter.h" },
+		{ "ToolTip", "HUD" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_LockOnTargetCheckComponent = { "LockOnTargetCheckComponent", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyMainCharacter, LockOnTargetCheckComponent), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_LockOnTargetCheckComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_LockOnTargetCheckComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyMainCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_FollowCamera,
@@ -655,15 +700,18 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_RunningSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_SprintingSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MoveUtilityMontage,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MainPlayerController,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_NPCTarget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MaterialOrigin,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_EquippedWeapon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_weapon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_EquippedDrone,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_NowMyDrone,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_AttackMotionTSub,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MovementClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_theTarget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_AvoidAfterImage_Spawn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_MaterialHit,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyMainCharacter_Statics::NewProp_LockOnTargetCheckComponent,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AMyMainCharacter_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UInterfaceLifeEntity_NoRegister, (int32)VTABLE_OFFSET(AMyMainCharacter, IInterfaceLifeEntity), false },
@@ -695,7 +743,7 @@ void EmptyLinkFunctionForGeneratedCodeMyMainCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyMainCharacter, 2821889295);
+	IMPLEMENT_CLASS(AMyMainCharacter, 2281542369);
 	template<> NIERPROJECT_API UClass* StaticClass<AMyMainCharacter>()
 	{
 		return AMyMainCharacter::StaticClass();

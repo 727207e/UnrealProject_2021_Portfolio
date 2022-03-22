@@ -4,41 +4,57 @@
 #include "MainCharacterWeaponMovement.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Kismet/GameplayStatics.h"
+#include "Containers/Array.h"
 
 // Sets default values for this component's properties
 AMainCharacterWeaponMovement::AMainCharacterWeaponMovement()
 {
 
-	LookSpeed_TargetAttacking = 45.0f;
-	LookAtDeltaCountLimit = 1.f;
+}
 
-	//각 무기당 공격 속도
-	VAttackSpeed.Add(0.f);
-	VAttackSpeed.Add(1.5f);
-	VAttackSpeed.Add(2.2f);
+// Called when the game starts or when spawned
+void AMainCharacterWeaponMovement::BeginPlay()
+{
+	Init();
+}
 
-	////////빈손 초기화////////
+void AMainCharacterWeaponMovement::Init()
+{
+	//공격 몽타지랑 비교해서 작으면 진행
+	if (VAttackTypeStruct.Num() < MontageArray.Num())
+	{
+		LookSpeed_TargetAttacking = 45.0f;
+		LookAtDeltaCountLimit = 1.f;
 
-	InitNoWeaponMovement();
+		//각 무기당 공격 속도
+		VAttackSpeed.Add(0.f);
+		VAttackSpeed.Add(1.5f);
+		VAttackSpeed.Add(2.2f);
 
-	///////////////////////////////
+		////////빈손 초기화////////
 
-	////////두손 대검 초기화////////
+		InitNoWeaponMovement();
 
-	InitGreatSwordAttackMovement();
+		///////////////////////////////
 
-	///////////////////////////////
+		////////두손 대검 초기화////////
 
-	////////한손 검 초기화//////// 
+		InitGreatSwordAttackMovement();
 
-	InitOneHandSwordAttackMovement();
+		///////////////////////////////
 
-	///////////////////////////////
+		////////한손 검 초기화//////// 
 
+		InitOneHandSwordAttackMovement();
+
+		///////////////////////////////
+
+
+	}
 }
 
 void AMainCharacterWeaponMovement::Attack(bool bIsStrongAttack, float _ComboNumber)
-{	
+{
 	//이후, Status를 Normal로 변경해주는 부분은 
 	//AttackMong 에서 전투 끝나는 부분의 
 	//EndAttack 노티파이에서 Normal로 변경되도록 정의함 (BP내용)
@@ -52,7 +68,7 @@ void AMainCharacterWeaponMovement::Attack(bool bIsStrongAttack, float _ComboNumb
 
 			if (!bIsStrongAttack)	//약공격
 			{
-				AnimInstance->Montage_JumpToSection(VAttackTypeStruct[NowMyAttackType].AttackComboNumber[VAttackTypeStruct[NowMyAttackType].AttackCount], 
+				AnimInstance->Montage_JumpToSection(VAttackTypeStruct[NowMyAttackType].AttackComboNumber[VAttackTypeStruct[NowMyAttackType].AttackCount],
 					VAttackTypeStruct[NowMyAttackType].CombatMontage);
 			}
 
@@ -115,12 +131,18 @@ void AMainCharacterWeaponMovement::InitNoWeaponMovement()
 	attackType_0.AttackStrongComboNumber = {};
 	attackType_0.SpecialAttackNumber = {};
 
-	static ConstructorHelpers::FObjectFinder<UAnimMontage> ATTACK_MONTAGE
-	(TEXT("/Game/Character/MyMainChar/Animation/GreatSword/GreatAttackMong.GreatAttackMong"));
+	//하드 로드
 
-	if (ATTACK_MONTAGE.Succeeded())
+	//static ConstructorHelpers::FObjectFinder<UAnimMontage> ATTACK_MONTAGE
+	//(TEXT("/Game/Character/MyMainChar/Animation/GreatSword/GreatAttackMong.GreatAttackMong"));
+	//if (ATTACK_MONTAGE.Succeeded())
+	//{
+	//	attackType_0.CombatMontage = ATTACK_MONTAGE.Object;
+	//}
+
+	if (MontageArray.Num() != 0)
 	{
-		attackType_0.CombatMontage = ATTACK_MONTAGE.Object;
+		attackType_0.CombatMontage = MontageArray[0]; // 몽타주 저장
 	}
 
 	VAttackTypeStruct.Add(attackType_0);
@@ -131,16 +153,13 @@ void AMainCharacterWeaponMovement::InitGreatSwordAttackMovement()
 	FAttackTypeStruct attackType_1;	//두손 대검(Great sword)
 	attackType_1.NextComboOnOffTrigger = false;
 	attackType_1.AttackCount = 0;
-	attackType_1.AttackComboNumber = { "Attack_1", "Attack_2", "Attack_3" };
-	attackType_1.AttackStrongComboNumber = { "Attack_Strong_1" };
-	attackType_1.SpecialAttackNumber = { "combo_1", "SlideAttack" };
+	attackType_1.AttackComboNumber = { "Attack_1", "Attack_2", "Attack_3" };	//공격 애니메이션 이름 
+	attackType_1.AttackStrongComboNumber = { "Attack_Strong_1" };				//공격 애니메이션 이름(강공격)
+	attackType_1.SpecialAttackNumber = { "combo_1", "SlideAttack" };			//공격 애니메이션 이름(콤보)
 
-	static ConstructorHelpers::FObjectFinder<UAnimMontage> ATTACK_MONTAGE
-	(TEXT("/Game/Character/MyMainChar/Animation/GreatSword/GreatAttackMong.GreatAttackMong"));
-
-	if (ATTACK_MONTAGE.Succeeded())
+	if (MontageArray.Num() != 0)
 	{
-		attackType_1.CombatMontage = ATTACK_MONTAGE.Object;
+		attackType_1.CombatMontage = MontageArray[1]; // 몽타주 저장
 	}
 
 	VAttackTypeStruct.Add(attackType_1);
@@ -155,12 +174,9 @@ void AMainCharacterWeaponMovement::InitOneHandSwordAttackMovement()
 	attackType_2.AttackStrongComboNumber = { "StrongAttack" };
 	attackType_2.SpecialAttackNumber = { "combo_1"};
 
-	static ConstructorHelpers::FObjectFinder<UAnimMontage> ATTACK_MONTAGE
-	(TEXT("/Game/Character/MyMainChar/Animation/OneHandSword/OneHandSwordAttackMon.OneHandSwordAttackMon"));
-
-	if (ATTACK_MONTAGE.Succeeded())
+	if (MontageArray.Num() != 0)
 	{
-		attackType_2.CombatMontage = ATTACK_MONTAGE.Object;
+		attackType_2.CombatMontage = MontageArray[2]; // 몽타주 저장
 	}
 
 	VAttackTypeStruct.Add(attackType_2);

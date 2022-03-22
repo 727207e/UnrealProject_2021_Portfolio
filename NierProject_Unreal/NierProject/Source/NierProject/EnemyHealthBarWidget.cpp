@@ -21,15 +21,3 @@ float UEnemyHealthBarWidget::HealthPercent()
 {
 	return (NowHealth / MaxHealth);
 }
-
-FName UEnemyHealthBarWidget::SetTargetText(bool bOnOff)
-{
-	if (bOnOff)
-	{
-		return "Target";
-	}
-	else
-	{
-		return " ";
-	}
-}

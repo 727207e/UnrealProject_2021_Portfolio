@@ -44,6 +44,11 @@ public:
 
 	class UAnimInstance* AnimInstance;	//캐릭터 애니메이션 인스턴스
 
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+
+
 
 	///////////////// 공격 중에 처다보기 ////////////////////
 	FRotator LookAtTargetWhenAttacking(float _DeltaTime, FVector theTargetLoc,FVector MyActorLocation, FRotator MyActorRotation); // 공격하는 순간 적을 처다봄
@@ -54,7 +59,6 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Attack")
 	float LookSpeed_TargetAttacking;
 	///////////////////////////////////////////
-
 
 
 
@@ -71,7 +75,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void NextComboOff();	//콤보 불가능 부분
 
+	void Init();	//초기화(MyMainCharacter.cpp에서 진행)
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Montage")
 	TArray<FAttackTypeStruct> VAttackTypeStruct;	//공격타입 구조체 배열
 
 	void InitNoWeaponMovement();			//빈손 폼 초기화
@@ -81,6 +87,9 @@ public:
 	int NowMyAttackType = 1;	//0 - 무기 없음, 1 - 두손 검(greatSword), 2 - 한손 검(oneHandSword)
 	
 	TArray<float> VAttackSpeed;	//각 무기당 공격 속도
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Montage")
+	TArray<class UAnimMontage*> MontageArray;	//공격 몽타주 리스트(MyMainCharacter.cpp에서 값을 부여받음)
 	///////////////////////////////////////////
 
 

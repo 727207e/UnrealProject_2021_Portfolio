@@ -24,6 +24,7 @@ void EmptyLinkFunctionForGeneratedCodeBossMap_Door() {}
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundCue_NoRegister();
+	NIERPROJECT_API UClass* Z_Construct_UClass_ABoss_Mutant_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(ABossMap_Door::execBossViewSequence)
 	{
@@ -98,9 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeBossMap_Door() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABossMap_Door_BossViewSequence_Statics::Function_MetaDataParams[] = {
 		{ "Category", "BossView" },
-		{ "Comment", "//?? ?????? ?????? ???? ???? ?????? \xc6\xae????\n" },
 		{ "ModuleRelativePath", "BossMap_Door.h" },
-		{ "ToolTip", "?? ?????? ?????? ???? ???? ?????? \xc6\xae????" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABossMap_Door_BossViewSequence_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABossMap_Door, nullptr, "BossViewSequence", nullptr, nullptr, sizeof(BossMap_Door_eventBossViewSequence_Parms), Z_Construct_UFunction_ABossMap_Door_BossViewSequence_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABossMap_Door_BossViewSequence_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABossMap_Door_BossViewSequence_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABossMap_Door_BossViewSequence_Statics::Function_MetaDataParams)) };
@@ -282,10 +281,14 @@ void EmptyLinkFunctionForGeneratedCodeBossMap_Door() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DoorSound;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bOpenSequenceFinish_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BossTarget_MetaData[];
 #endif
-		static void NewProp_bOpenSequenceFinish_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bOpenSequenceFinish;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BossTarget;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bIsOpen_MetaData[];
+#endif
+		static void NewProp_bIsOpen_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bIsOpen;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -295,7 +298,7 @@ void EmptyLinkFunctionForGeneratedCodeBossMap_Door() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_NierProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABossMap_Door_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ABossMap_Door_BossViewSequence, "BossViewSequence" }, // 1459858644
+		{ &Z_Construct_UFunction_ABossMap_Door_BossViewSequence, "BossViewSequence" }, // 1103876371
 		{ &Z_Construct_UFunction_ABossMap_Door_DoorTriggerPointBeginOverlap, "DoorTriggerPointBeginOverlap" }, // 3378514781
 		{ &Z_Construct_UFunction_ABossMap_Door_DoorTriggerPointEndOverlap, "DoorTriggerPointEndOverlap" }, // 3791619497
 	};
@@ -337,22 +340,30 @@ void EmptyLinkFunctionForGeneratedCodeBossMap_Door() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABossMap_Door_Statics::NewProp_DoorSound = { "DoorSound", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABossMap_Door, DoorSound), Z_Construct_UClass_USoundCue_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABossMap_Door_Statics::NewProp_DoorSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABossMap_Door_Statics::NewProp_DoorSound_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABossMap_Door_Statics::NewProp_bOpenSequenceFinish_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABossMap_Door_Statics::NewProp_BossTarget_MetaData[] = {
+		{ "Category", "BossTarget" },
+		{ "ModuleRelativePath", "BossMap_Door.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABossMap_Door_Statics::NewProp_BossTarget = { "BossTarget", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABossMap_Door, BossTarget), Z_Construct_UClass_ABoss_Mutant_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABossMap_Door_Statics::NewProp_BossTarget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABossMap_Door_Statics::NewProp_BossTarget_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABossMap_Door_Statics::NewProp_bIsOpen_MetaData[] = {
 		{ "Category", "DoorCloseSequenceFinish" },
 		{ "ModuleRelativePath", "BossMap_Door.h" },
 	};
 #endif
-	void Z_Construct_UClass_ABossMap_Door_Statics::NewProp_bOpenSequenceFinish_SetBit(void* Obj)
+	void Z_Construct_UClass_ABossMap_Door_Statics::NewProp_bIsOpen_SetBit(void* Obj)
 	{
-		((ABossMap_Door*)Obj)->bOpenSequenceFinish = 1;
+		((ABossMap_Door*)Obj)->bIsOpen = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABossMap_Door_Statics::NewProp_bOpenSequenceFinish = { "bOpenSequenceFinish", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ABossMap_Door), &Z_Construct_UClass_ABossMap_Door_Statics::NewProp_bOpenSequenceFinish_SetBit, METADATA_PARAMS(Z_Construct_UClass_ABossMap_Door_Statics::NewProp_bOpenSequenceFinish_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABossMap_Door_Statics::NewProp_bOpenSequenceFinish_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABossMap_Door_Statics::NewProp_bIsOpen = { "bIsOpen", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ABossMap_Door), &Z_Construct_UClass_ABossMap_Door_Statics::NewProp_bIsOpen_SetBit, METADATA_PARAMS(Z_Construct_UClass_ABossMap_Door_Statics::NewProp_bIsOpen_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABossMap_Door_Statics::NewProp_bIsOpen_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABossMap_Door_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABossMap_Door_Statics::NewProp_RootPoint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABossMap_Door_Statics::NewProp_Meshcom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABossMap_Door_Statics::NewProp_DoorTriggerPoint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABossMap_Door_Statics::NewProp_DoorSound,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABossMap_Door_Statics::NewProp_bOpenSequenceFinish,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABossMap_Door_Statics::NewProp_BossTarget,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABossMap_Door_Statics::NewProp_bIsOpen,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABossMap_Door_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABossMap_Door>::IsAbstract,
@@ -381,7 +392,7 @@ void EmptyLinkFunctionForGeneratedCodeBossMap_Door() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABossMap_Door, 3832143488);
+	IMPLEMENT_CLASS(ABossMap_Door, 2821215727);
 	template<> NIERPROJECT_API UClass* StaticClass<ABossMap_Door>()
 	{
 		return ABossMap_Door::StaticClass();

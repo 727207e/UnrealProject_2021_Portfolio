@@ -20,6 +20,10 @@
 #include "AvoidAfterImage.h"
 #include "Drone.h"
 #include "MainCharAnimInstance.h"
+#include "MainPlayerController.h"
+#include "NPCParentScripts.h"
+#include "Components/ChildActorComponent.h"
+#include "Components/WidgetComponent.h"
 
 #include "MainCharacterWeaponMovement.h"
 
@@ -81,9 +85,14 @@ AMyMainCharacter::AMyMainCharacter()
 	MaterialHit = CreateDefaultSubobject<UMaterial>(TEXT("M_Hit"));
 
 	//클래스 생성(Construct)
-	AttackMotionTSub = AMainCharacterWeaponMovement::StaticClass();
-	AttackMotion = NewObject<AMainCharacterWeaponMovement>(AttackMotionTSub);
+	//AttackMotion = NewObject<AMainCharacterWeaponMovement>();
 
+	MovementClass = CreateDefaultSubobject<UChildActorComponent>(TEXT("MainCharacterWeaponMovement"));
+	MovementClass->SetupAttachment(GetMesh());
+	MovementClass->CreateChildActor();
+
+	LockOnTargetCheckComponent = CreateDefaultSubobject<UWidgetComponent>(TEXT("LockOnTargetCheck"));
+	LockOnTargetCheckComponent->SetupAttachment(GetRootComponent());
 }
 
 // Called when the game starts or when spawned
@@ -94,12 +103,11 @@ void AMyMainCharacter::BeginPlay()
 	EquipWeapon();
 	EquipDrone();
 
-	//애님 인스턴스 넘겨주기
-	AnimInstance = GetMesh()->GetAnimInstance();
-	if (AnimInstance)
-	{
-		AttackMotion->AnimInstance = AnimInstance;
-	}
+	//Controller 읽어오기
+	MainPlayerController = Cast<AMainPlayerController>(GetController());
+	
+	//공격 몽타주 정보 초기화
+	AttackMotion = Cast<AMainCharacterWeaponMovement>(MovementClass->GetChildActor());
 }
 
 // Called every frame
@@ -114,7 +122,7 @@ void AMyMainCharacter::Tick(float DeltaTime)
 
 		//공격을 처음으로 시작하는 순간(콤보 카운트 x)
 		if(MovementStatus == EMovementStatus::EMS_Attacking && 
-			!AttackMotion->GetNowNextComboOnOffTrigger() && 
+			!AttackMotion->GetNowNextComboOnOffTrigger() &&
 			AttackMotion->GetNowAttackCount() == 0)
 		{
 			SetActorRotation(AttackMotion->LookAtTargetWhenAttacking(DeltaTime, 
@@ -161,6 +169,9 @@ void AMyMainCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 
 	PlayerInputComponent->BindAction("UsePosion", IE_Pressed, this, &AMyMainCharacter::UsePosionDown);
 	PlayerInputComponent->BindAction("UsePosion", IE_Released, this, &AMyMainCharacter::UsePosionUp);
+	
+	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &AMyMainCharacter::InteractDown);
+	PlayerInputComponent->BindAction("Interact", IE_Released, this, &AMyMainCharacter::InteractUp);
 
 	PlayerInputComponent->BindAction("UseItem", IE_Pressed, this, &AMyMainCharacter::UseItemDown);
 	PlayerInputComponent->BindAction("UseItem", IE_Released, this, &AMyMainCharacter::UseItemUp);
@@ -345,13 +356,19 @@ void AMyMainCharacter::RunUp()
 
 void AMyMainCharacter::AttackDown()
 {
+	//애님 인스턴스 넘겨주기
+	AnimInstance = GetMesh()->GetAnimInstance();
+	if (AnimInstance)
+	{
+		AttackMotion->AnimInstance = AnimInstance;
+	}
 
 	//공격중이 아닐때만 공격가능
 	if (MovementStatus == EMovementStatus::EMS_Normal)
 	{
 		MovementStatus = EMovementStatus::EMS_Attacking;
 		weapon->SwingSoundPlay();
-		AttackMotion->Attack(false,-1);
+		AttackMotion->Attack(false, -1);
 	}
 
 	//공격중일 때라도 "다음 공격 콤보 타이밍" 이라면 다음 콤보 공격 가능
@@ -417,6 +434,27 @@ void AMyMainCharacter::GunShotUp()
 {
 
 }
+
+void AMyMainCharacter::InteractDown()
+{
+	if (MainPlayerController)
+	{
+		//상호작용 활성화가 가능한 상태일 경우
+		if (MainPlayerController->bNPCInteractActive)
+		{
+			//상호작용하기
+			MainPlayerController->InteractNPC();
+
+			NPCTarget->InteractSuccess();
+		}
+	}
+}
+
+void AMyMainCharacter::InteractUp()
+{
+
+}
+
 
 void AMyMainCharacter::UsePosionDown()
 {
@@ -622,7 +660,11 @@ void AMyMainCharacter::EquipWeapon()
 		//생성후 장착
 		weapon = GetWorld()->SpawnActor<AWeapon>(EquippedWeapon);
 		AnimAttackPose = weapon->EquipWeaponAndSetAttackPose(this);	// 애니메이션 공격 폼 지정
-		AttackMotion->NowMyAttackType = AnimAttackPose;	// 공격 폼 수정
+		if (AttackMotion)
+		{
+			AttackMotion->NowMyAttackType = AnimAttackPose;	// 공격 폼 수정
+		}
+		
 	}
 
 	//빈송상태 ( 초기설정 - 2 )

@@ -12,6 +12,7 @@
 #include "Components/BoxComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "MyMainCharacter.h"
+#include "MainPlayerController.h"
 
 // Sets default values
 ABoss_Mutant::ABoss_Mutant()
@@ -368,3 +369,9 @@ void ABoss_Mutant::AttackMotion(FName _name, float _Speed)
 	}
 }
 
+void ABoss_Mutant::BossHealthBarShowUp()
+{
+	AMainPlayerController* myController = Cast<AMainPlayerController>(UGameplayStatics::GetPlayerController(this, 0));
+
+	myController->BossHealthBarShowUp();
+}

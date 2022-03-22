@@ -27,6 +27,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DoorSound")
 	class USoundCue* DoorSound;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BossTarget")
+	class ABoss_Mutant* BossTarget;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -41,16 +44,16 @@ public:
 	UFUNCTION()
 	void DoorTriggerPointEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DoorCloseSequenceFinish")
 	bool bIsOpen;		//문이 열려있는 상태 체크(처음엔 열려있는 상태)
+
 	bool bCloseDoorTrig;//문을 닫게 하는 상태
 	void CloseDoor(float DeltaTime);
 
 	FVector curDoorLoc;
 	float curDoorZ;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DoorCloseSequenceFinish")
-	bool bOpenSequenceFinish;	//문 열리는 시퀀스 도중 문이 닫히는 트리거
-
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BossView")
 	void BossViewSequence(const float DeltaTime);
+
 };

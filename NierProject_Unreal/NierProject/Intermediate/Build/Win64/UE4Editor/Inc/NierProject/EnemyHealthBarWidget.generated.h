@@ -17,14 +17,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define NierProject_Source_NierProject_EnemyHealthBarWidget_h_15_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execHealthPercent); \
-	DECLARE_FUNCTION(execSetTargetText); \
 	DECLARE_FUNCTION(execShow);
 
 
 #define NierProject_Source_NierProject_EnemyHealthBarWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execHealthPercent); \
-	DECLARE_FUNCTION(execSetTargetText); \
 	DECLARE_FUNCTION(execShow);
 
 

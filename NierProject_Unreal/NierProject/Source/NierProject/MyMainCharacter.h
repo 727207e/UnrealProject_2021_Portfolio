@@ -61,6 +61,14 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Anims")
 	class UAnimMontage* MoveUtilityMontage; //회피, 피격, 죽음 몽타주
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Controller")
+	class AMainPlayerController* MainPlayerController;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "NPC")
+	class ANPCParentScripts* NPCTarget;	//현재 활성화된 NPC
+
+
+
 protected:
 
 	// Called when the game starts or when spawned
@@ -89,6 +97,8 @@ protected:
 	void GunShotDonw();
 	void GunShotUp();
 
+	void InteractDown();
+	void InteractUp();
 	void UsePosionDown();
 	void UsePosionUp();
 	void UseItemDown();
@@ -162,10 +172,10 @@ public:
 
 	///////////////// 공격 ////////////////////	AMainCharacterWeaponMovement에서 진행됨
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Motion")
-	TSubclassOf<class AMainCharacterWeaponMovement> AttackMotionTSub;
+	UPROPERTY(EditAnywhere, Category = "MainCharacterWeaponMovement")
+	class UChildActorComponent* MovementClass;		//대상은 BP에서 지정
 
-	AMainCharacterWeaponMovement* AttackMotion;
+	AMainCharacterWeaponMovement* AttackMotion; //공격 몽타주 및 각 정보 저장
 
 	UFUNCTION(BlueprintCallable)
 	FORCEINLINE AMainCharacterWeaponMovement* GetAttackMotion() {return AttackMotion; }
@@ -239,6 +249,9 @@ public:
 
 
 	///////////////// HUD ////////////////////
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "LockOnTargetCheck")
+	class UWidgetComponent* LockOnTargetCheckComponent;	//락온 상태 대상 체크
 
 
 	///////////////////////////////////////////

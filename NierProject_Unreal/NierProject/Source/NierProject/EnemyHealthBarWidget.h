@@ -20,9 +20,6 @@ public:
 	void Show(bool bOnOff);	//체력바 보이기
 
 	UFUNCTION(BlueprintCallable)
-	FName SetTargetText(bool bOnOff); //타겟 지정시 텍스트 지정
-
-	UFUNCTION(BlueprintCallable)
 	float HealthPercent();	//현재 체력 상황
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HealthValue")
@@ -30,7 +27,4 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HealthValue")
 	float NowHealth;
 
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "TargetText")
-	bool theTarget = false;
 };

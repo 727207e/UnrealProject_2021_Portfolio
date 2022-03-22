@@ -1,0 +1,1702 @@
+﻿Log file open, 03/17/22 22:16:03
+LogInit: LLM is enabled
+LogInit: LLM CsvWriter: off TraceWriter: off
+LogInit: Display: Running engine for game: NierProject
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 71 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.348452
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin XGEController
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin PropertyAccessNode
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin CascadeToNiagaraConverter
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin LuminPlatformFeatures
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting plugin ContentBrowserFileDataSource
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin SteamVR
+LogXGEController: Cleaning working directory: C:/Users/potap/AppData/Local/Temp/UnrealXGEWorkingDir/
+LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogOculusPluginWrapper: OculusPlugin initialized successfully
+LogHMD: Failed initializing OVRPlugin 1.51.0
+LogInit: Build: ++UE4+Release-4.26-CL-14830424
+LogInit: Engine Version: 4.26.0-14830424+++UE4+Release-4.26
+LogInit: Compatible Engine Version: 4.26.0-14830424+++UE4+Release-4.26
+LogInit: Net CL: 14830424
+LogInit: OS: Windows 10 (Release 2009) (), CPU: AMD Ryzen 9 3900X 12-Core Processor            , GPU: NVIDIA GeForce RTX 2080 SUPER
+LogInit: Compiled (64-bit): Dec  1 2020 15:13:26
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.26
+LogInit: Command Line: 
+LogInit: Base Directory: D:/UE_4.26/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 44
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 43
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 40
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[r.AllowStaticLighting:1]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.17-13.16.04:803][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2022.03.17-13.16.04:803][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.17-13.16.04:803][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.17-13.16.04:821][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.03.17-13.16.04:821][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.03.17-13.16.04:822][  0]LogInit: Selected Device Profile: [Windows]
+[2022.03.17-13.16.04:822][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2022.03.17-13.16.04:822][  0]LogHAL: Display: Platform has ~ 16 GB [17099456512 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2022.03.17-13.16.04:822][  0]LogInit: Going up to parent DeviceProfile []
+[2022.03.17-13.16.04:822][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.03.17-13.16.04:822][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2022.03.17-13.16.04:823][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.17-13.16.04:823][  0]LogInit: Computer: DESKTOP-OD807TG
+[2022.03.17-13.16.04:823][  0]LogInit: User: potap
+[2022.03.17-13.16.04:823][  0]LogInit: CPU Page size=4096, Cores=12
+[2022.03.17-13.16.04:823][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2022.03.17-13.16.04:823][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2022.03.17-13.16.04:823][  0]LogMemory: Platform Memory Stats for Windows
+[2022.03.17-13.16.04:823][  0]LogMemory: Process Physical Memory: 147.86 MB used, 148.38 MB peak
+[2022.03.17-13.16.04:823][  0]LogMemory: Process Virtual Memory: 130.81 MB used, 130.81 MB peak
+[2022.03.17-13.16.04:823][  0]LogMemory: Physical Memory: 5604.84 MB used,  10702.47 MB free, 16307.31 MB total
+[2022.03.17-13.16.04:823][  0]LogMemory: Virtual Memory: 134201224.00 MB used,  16502.68 MB free, 134217728.00 MB total
+[2022.03.17-13.16.04:826][  0]LogWindows: WindowsPlatformFeatures enabled
+[2022.03.17-13.16.04:881][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2022.03.17-13.16.04:882][  0]LogInit: Using OS detected language (ko-KR).
+[2022.03.17-13.16.04:882][  0]LogInit: Using OS detected locale (ko-KR).
+[2022.03.17-13.16.04:884][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2022.03.17-13.16.04:959][  0]LogInit: Setting process to per monitor DPI aware
+[2022.03.17-13.16.04:974][  0]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2022.03.17-13.16.05:000][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2022.03.17-13.16.05:000][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2022.03.17-13.16.10:445][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2022.03.17-13.16.10:445][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2022.03.17-13.16.10:445][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2022.03.17-13.16.10:445][  0]LogD3D11RHI: D3D11 adapters:
+[2022.03.17-13.16.10:525][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2080 SUPER' (Feature Level 11_0)
+[2022.03.17-13.16.10:525][  0]LogD3D11RHI:       8010/0/8153 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2022.03.17-13.16.10:527][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2022.03.17-13.16.10:528][  0]LogD3D11RHI:       0/0/8153 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2022.03.17-13.16.10:528][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2022.03.17-13.16.10:534][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2022.03.17-13.16.10:534][  0]LogD3D11RHI:     GPU DeviceId: 0x1e81 (for the marketing name, search the web for "GPU Device Id")
+[2022.03.17-13.16.10:534][  0]LogWindows: EnumDisplayDevices:
+[2022.03.17-13.16.10:534][  0]LogWindows:    0. 'NVIDIA GeForce RTX 2080 SUPER' (P:1 D:1)
+[2022.03.17-13.16.10:534][  0]LogWindows:    1. 'NVIDIA GeForce RTX 2080 SUPER' (P:0 D:1)
+[2022.03.17-13.16.10:535][  0]LogWindows:    2. 'NVIDIA GeForce RTX 2080 SUPER' (P:0 D:1)
+[2022.03.17-13.16.10:535][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2080 SUPER' (P:0 D:0)
+[2022.03.17-13.16.10:535][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2022.03.17-13.16.10:535][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2080 SUPER
+[2022.03.17-13.16.10:535][  0]LogD3D11RHI:   Driver Version: 456.71 (internal:27.21.14.5671, unified:456.71)
+[2022.03.17-13.16.10:535][  0]LogD3D11RHI:      Driver Date: 9-30-2020
+[2022.03.17-13.16.10:535][  0]LogRHI: Texture pool is 5607 MB (70% of 8010 MB)
+[2022.03.17-13.16.10:582][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2022.03.17-13.16.10:582][  0]LogD3D11RHI: Async texture creation enabled
+[2022.03.17-13.16.10:582][  0]LogD3D11RHI: Array index from any shader is supported
+[2022.03.17-13.16.10:586][  0]LogD3D11RHI: HDR output is supported on display 2 (NvId: 0x80061082).
+[2022.03.17-13.16.10:610][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2022.03.17-13.16.10:611][  0]LogRHI: GeForceNow SDK initialized: 1
+[2022.03.17-13.16.10:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2022.03.17-13.16.10:926][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2022.03.17-13.16.10:926][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2022.03.17-13.16.10:926][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2022.03.17-13.16.10:926][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2022.03.17-13.16.10:926][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2022.03.17-13.16.10:926][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2022.03.17-13.16.10:926][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2022.03.17-13.16.10:926][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2022.03.17-13.16.10:926][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2022.03.17-13.16.10:926][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2022.03.17-13.16.10:944][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2022.03.17-13.16.10:944][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2022.03.17-13.16.10:951][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2022.03.17-13.16.10:958][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2022.03.17-13.16.10:964][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2022.03.17-13.16.10:971][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2022.03.17-13.16.10:978][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2022.03.17-13.16.10:986][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2022.03.17-13.16.10:993][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2022.03.17-13.16.11:013][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2022.03.17-13.16.11:013][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2022.03.17-13.16.11:020][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacNoEditor'
+[2022.03.17-13.16.11:028][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
+[2022.03.17-13.16.11:034][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
+[2022.03.17-13.16.11:041][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
+[2022.03.17-13.16.11:053][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2022.03.17-13.16.11:053][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2022.03.17-13.16.11:061][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2022.03.17-13.16.11:068][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2022.03.17-13.16.11:075][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2022.03.17-13.16.11:081][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2022.03.17-13.16.11:081][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2022.03.17-13.16.11:087][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2022.03.17-13.16.11:135][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2022.03.17-13.16.11:135][  0]LogShaderCompilers: Guid format shader working directory is -43 characters bigger than the processId version (../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Intermediate/Shaders/WorkingDirectory/15164/).
+[2022.03.17-13.16.11:135][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/potap/AppData/Local/Temp/UnrealShaderWorkingDir/3855901D4CD4239A6B3B5184C285942A/'.
+[2022.03.17-13.16.11:135][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2022.03.17-13.16.11:135][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2022.03.17-13.16.11:732][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2022.03.17-13.16.11:779][  0]LogDerivedDataCache: Loaded boot cache 0.05s 89MB C:/Users/potap/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2022.03.17-13.16.11:779][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/potap/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc
+[2022.03.17-13.16.11:779][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2022.03.17-13.16.11:779][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2022.03.17-13.16.11:779][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.03.17-13.16.11:779][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2022.03.17-13.16.11:792][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2022.03.17-13.16.11:792][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.03.17-13.16.11:792][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2022.03.17-13.16.11:819][  0]LogDerivedDataCache: Speed tests for C:/Users/potap/AppData/Local/UnrealEngine/Common/DerivedDataCache took 0.03 seconds
+[2022.03.17-13.16.11:819][  0]LogDerivedDataCache: Display: Performance to C:/Users/potap/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.03ms. RandomReadSpeed=1226.66MBs, RandomWriteSpeed=35.48MBs. Assigned SpeedClass 'Local'
+[2022.03.17-13.16.11:820][  0]LogDerivedDataCache: Using Local data cache path C:/Users/potap/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2022.03.17-13.16.11:820][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2022.03.17-13.16.11:820][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2022.03.17-13.16.11:859][  0]LogSlate: Using FreeType 2.10.0
+[2022.03.17-13.16.11:859][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2022.03.17-13.16.11:878][  0]LogAssetRegistry: FAssetRegistry took 0.0022 seconds to start up
+[2022.03.17-13.16.12:090][  0]LogInit: Selected Device Profile: [Windows]
+[2022.03.17-13.16.12:090][  0]LogInit: Active device profile: [0000023ED39AE400][0000023ED23BD340 49] Windows
+[2022.03.17-13.16.12:090][  0]LogInit: Profiles: [0000023ED39AE400][0000023ED23BD340 49] Windows, [0000023ED394F600][0000023ED23C54C0 49] WindowsNoEditor, [0000023ED39AE000][0000023ED23C1600 49] WindowsServer, [0000023ED394FA00][0000023ED23C9740 49] WindowsClient, [0000023ED39AC700][0000023ED23CD880 49] IOS, [0000023ED394F000][0000023ED23D19C0 49] iPadAir, [0000023ED39AD100][0000023ED23D9B40 49] iPadAir2, [0000023ED38F7000][0000023ED36CC140 49] IPadPro, [0000023ED38F7100][0000023ED23DC180 49] iPadAir3, [0000023ED39AD600][0000023ED36D0300 49] iPadAir4, [0000023ED38F6800][0000023ED36D4480 49] iPadMini2, [0000023ED39ACC00][0000023ED36D8600 49] iPadMini3, [0000023ED38F5800][0000023ED36DC780 49] iPadMini4, [0000023ED39AEB00][0000023ED36E0900 49] iPadMini5, [0000023ED394A900][0000023ED36E8BC0 49] iPhone6, [0000023ED394AA00][0000023ED36E4C00 49] iPodTouch6, [0000023ED38F7C00][0000023ED36F0EC0 49] iPhone7, [0000023ED38F7B00][0000023ED36ECF00 49] iPodTouch7, [0000023ED3948E00][0000023ED36F5080 49] iPhone5S, [0000023ED38F7D00][0000023ED36F9200 49] iPhone6Plus, [0000023ED3949200][0000023ED36FD380 49] iPhone6S, [0000023ED38F4900][0000023ED3701500 49] iPhone6SPlus, [0000023ED394AB00][0000023ED23D5640 49] iPhone7Plus, [0000023ED38F7A00][0000023ED3705780 49] iPhoneSE, [0000023ED394B000][0000023ED37098C0 49] iPhone8, [0000023ED38F7700][0000023ED370DA00 49] iPhone8Plus, [0000023ED3949F00][0000023ED3715B80 49] iPhoneX, [0000023ED38F5C00][0000023ED3719D00 49] iPhoneXS, [0000023ED3948300][0000023ED371C1C0 49] iPhoneXSMax, [0000023ED38F4B00][0000023ED3720340 49] iPhoneXR, [0000023ED394A500][0000023ED37244C0 49] iPhone11, [0000023ED38F4300][0000023ED3728640 49] iPhone11Pro, [0000023ED3948600][0000023ED372C7C0 49] iPhone11ProMax, [0000023ED38F5600][0000023ED3730940 49] iPhoneSE2, [0000023ED3949400][0000023ED3734AC0 49] iPhone12Mini, [0000023ED38F5D00][0000023ED3738C40 49] iPhone12, [0000023ED394B200][0000023ED373CDC0 49] iPhone12Pro, [0000023ED38F4500][0000023ED3740F40 49] iPhone12ProMax, [0000023ED3949B00][0000023ED37450C0 49] iPadPro105, [0000023ED394B400][0000023ED3749240 49] iPadPro129, [0000023ED394DC00][0000023ED374D3C0 49] iPadPro97, [0000023ED3948C00][0000023ED3751540 49] iPadPro2_129, [0000023ED394F300][0000023ED37556C0 49] iPad5, [0000023ED3948500][0000023ED3711800 49] iPad6, [0000023ED394FF00][0000023ED3759940 49] iPad7, [0000023ED394B600][0000023ED375DA80 49] iPad8, [0000023ED394F800][0000023ED3765C00 49] iPadPro11, [0000023ED3949A00][0000023ED37680C0 49] iPadPro2_11, [0000023ED394D000][0000023ED376C240 49] iPadPro3_129, [0000023ED394E200][0000023ED37703C0 49] iPadPro4_129, [0000023ED38F5500][0000023ED3774540 49] AppleTV, [0000023ED394C200][0000023ED37786C0 49] AppleTV4K, [0000023ED38F4400][0000023ED377C840 49] TVOS, [0000023ED394DB00][0000023ED37809C0 49] Mac, [0000023ED38F6700][0000023ED3784B40 49] MacClient, [0000023ED394B300][0000023ED3788CC0 49] MacNoEditor, [0000023ED38F7E00][0000023ED378CE40 49] MacServer, [0000023ED3949D00][0000023ED3790FC0 49] Linux, [0000023ED38F7300][0000023ED3795140 49] LinuxNoEditor, [0000023ED3948800][0000023ED37992C0 49] LinuxAArch64NoEditor, [0000023ED38F6100][0000023ED379D440 49] LinuxClient, [0000023ED394AC00][0000023ED37A15C0 49] LinuxAArch64Client, [0000023ED38F4E00][0000023ED37A5740 49] LinuxServer, [0000023ED394B700][0000023ED3761880 49] LinuxAArch64Server, [0000023ED38F5400][0000023ED37A99C0 49] Android, [0000023ED394AD00][0000023ED37ADB00 49] Android_Low, [0000023ED38F7900][0000023ED37B1C40 49] Android_Mid, [0000023ED394B500][0000023ED37B8100 49] Android_High, [0000023ED38F6000][0000023ED37BC280 49] Android_Default, [0000023ED394B100][0000023ED37C0400 49] Android_Adreno4xx, [0000023ED38F7500][0000023ED37C4580 49] Android_Adreno5xx_Low, [0000023ED394BC00][0000023ED37C8700 49] Android_Adreno5xx, [0000023ED38F7800][0000023ED37CC880 49] Android_Adreno6xx, [0000023ED394BF00][0000023ED37D0A00 49] Android_Adreno6xx_Vulkan, [0000023ED38F7200][0000023ED37D4B80 49] Android_Mali_T6xx, [0000023ED394AE00][0000023ED37D8D00 49] Android_Mali_T7xx, [0000023ED38F6300][0000023ED37DCE80 49] Android_Mali_T8xx, [0000023ED3948B00][0000023ED37E1000 49] Android_Mali_G71, [0000023ED38F6F00][0000023ED37E5180 49] Android_Mali_G72, [0000023ED3948D00][0000023ED37E9300 49] Android_Mali_G72_Vulkan, [0000023ED38F5700][0000023ED37ED480 49] Android_Mali_G76, [0000023ED3949800][0000023ED4801600 49] Android_Mali_G76_Vulkan, [0000023ED38F4D00][0000023ED4805780 49] Android_Mali_G77, [0000023ED3949700][0000023ED37B58C0 49] Android_Mali_G77_Vulkan, [0000023ED38F6400][0000023ED4809A00 49] Android_Vulkan_SM5, [0000023ED3949600][0000023ED480DB40 49] Android_PowerVR_G6xxx, [0000023ED38F5200][0000023ED4811C80 49] Android_PowerVR_GT7xxx, [0000023ED394BE00][0000023ED4818140 49] Android_PowerVR_GE8xxx, [0000023ED38F5100][0000023ED481C2C0 49] Android_PowerVR_GM9xxx, [0000023ED3948100][0000023ED4820440 49] Android_PowerVR_GM9xxx_Vulkan, [0000023ED38F4600][0000023ED48245C0 49] Android_TegraK1, [0000023ED394A600][0000023ED4828740 49] Android_Unknown_Vulkan, [0000023ED394FC00][0000023ED482C8C0 49] Lumin, [0000023ED39AF900][0000023ED4830A40 49] Lumin_Desktop, [0000023ED394D700][0000023ED4834BC0 49] HoloLens, 
+[2022.03.17-13.16.12:190][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2022.03.17-13.16.12:190][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2022.03.17-13.16.12:190][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2022.03.17-13.16.12:190][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2022.03.17-13.16.12:190][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2022.03.17-13.16.12:220][  0]LogNetVersion: NierProject 1.0.0, NetCL: 14830424, EngineNetVer: 16, GameNetVer: 0 (Checksum: 2231531239)
+[2022.03.17-13.16.12:573][  0]LogHMD: PokeAHoleMaterial loaded successfully
+[2022.03.17-13.16.12:596][  0]LogPackageLocalizationCache: Processed 24 localized package path(s) for 1 prioritized culture(s) in 0.022872 seconds
+[2022.03.17-13.16.12:602][  0]LogUObjectArray: 16830 objects as part of root set at end of initial load.
+[2022.03.17-13.16.12:602][  0]LogUObjectAllocator: 4209472 out of 0 bytes used by permanent object pool.
+[2022.03.17-13.16.12:602][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2022.03.17-13.16.12:893][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2022.03.17-13.16.12:896][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2022.03.17-13.16.12:911][  0]LogPython: Using Python 3.7.7
+[2022.03.17-13.16.13:723][  0]LogLinker: Warning: '{FileName}': 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2022.03.17-13.16.13:723][  0]LogLinker: Warning: '{FileName}': 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2022.03.17-13.16.13:723][  0]LogUObjectGlobals: Warning: 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C' 오브젝트를 찾는 데 실패했습니다.
+[2022.03.17-13.16.13:744][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.17-13.16.13:744][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.17-13.16.13:746][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.17-13.16.13:748][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.17-13.16.13:756][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.17-13.16.13:761][  0]LogUProjectInfo: Found projects:
+[2022.03.17-13.16.13:903][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2022.03.17-13.16.13:958][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.03.17-13.16.13:958][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.03.17-13.16.14:126][  0]LogCollectionManager: Loaded 0 collections in 0.000564 seconds
+[2022.03.17-13.16.14:145][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Collections/' took 0.00s
+[2022.03.17-13.16.14:145][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Developers/potap/Collections/' took 0.00s
+[2022.03.17-13.16.14:145][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Collections/' took 0.00s
+[2022.03.17-13.16.14:145][  0]LogOcInput: OculusInput pre-init called
+[2022.03.17-13.16.14:356][  0]LogEngine: Initializing Engine...
+[2022.03.17-13.16.14:434][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2022.03.17-13.16.14:434][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2022.03.17-13.16.14:435][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2022.03.17-13.16.14:523][  0]LogInit: Initializing FReadOnlyCVARCache
+[2022.03.17-13.16.14:531][  0]LogAIModule: Creating AISystem for world Untitled
+[2022.03.17-13.16.14:541][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2022.03.17-13.16.14:544][  0]LogAudio: Display: Audio Device Manager Initialized
+[2022.03.17-13.16.14:544][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2022.03.17-13.16.14:544][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.17-13.16.14:544][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.17-13.16.14:544][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.17-13.16.14:544][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.17-13.16.14:544][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.17-13.16.14:544][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.17-13.16.14:544][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.17-13.16.14:544][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.17-13.16.14:544][  0]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.17-13.16.14:544][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.17-13.16.14:555][  0]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.17-13.16.14:555][  0]LogAudioMixer: Display: 1: FrontRight
+[2022.03.17-13.16.14:577][  0]LogAudioMixer: Display: Using Audio Device 2D FHD LG TV(NVIDIA High Definition Audio)
+[2022.03.17-13.16.14:580][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.17-13.16.14:581][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.17-13.16.14:581][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.17-13.16.14:582][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.17-13.16.14:582][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.17-13.16.14:582][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.17-13.16.14:584][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.17-13.16.14:584][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.17-13.16.14:584][  0]LogInit: FAudioDevice initialized.
+[2022.03.17-13.16.14:584][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2022.03.17-13.16.14:585][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2022.03.17-13.16.14:836][  0]LogDerivedDataCache: Saved boot cache 0.25s 89MB C:/Users/potap/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2022.03.17-13.16.14:836][  0]LogInit: Texture streaming: Enabled
+[2022.03.17-13.16.14:847][  0]LogAnalytics: Display: [UEEditor.Rocket.Release] APIServer = https://datarouter.ol.epicgames.com/. AppVersion = 4.26.0-14830424+++UE4+Release-4.26
+[2022.03.17-13.16.14:849][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2022.03.17-13.16.14:850][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2022.03.17-13.16.14:851][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2022.03.17-13.16.14:875][  0]LogInit: Transaction tracking system initialized
+[2022.03.17-13.16.14:892][  0]BlueprintLog: New page: 에디터 로드
+[2022.03.17-13.16.14:951][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
+[2022.03.17-13.16.14:970][  0]TimingProfiler: Initialize
+[2022.03.17-13.16.14:970][  0]TimingProfiler: OnSessionChanged
+[2022.03.17-13.16.14:970][  0]LoadingProfiler: Initialize
+[2022.03.17-13.16.14:970][  0]LoadingProfiler: OnSessionChanged
+[2022.03.17-13.16.14:970][  0]NetworkingProfiler: Initialize
+[2022.03.17-13.16.14:970][  0]NetworkingProfiler: OnSessionChanged
+[2022.03.17-13.16.14:970][  0]MemoryProfiler: Initialize
+[2022.03.17-13.16.14:970][  0]MemoryProfiler: OnSessionChanged
+[2022.03.17-13.16.15:074][  0]LogCook: Display: CookSettings for Memory: MemoryMaxUsedVirtual 0MiB, MemoryMaxUsedPhysical 16384MiB, MemoryMinFreeVirtual 0MiB, MemoryMinFreePhysical 1024MiB
+[2022.03.17-13.16.15:074][  0]LogCook: Display: Mobile HDR setting 1
+[2022.03.17-13.16.15:214][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/' took 0.02s
+[2022.03.17-13.16.15:349][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.17-13.16.15:349][  0]LogUnrealEdMisc: Loading editor; pre map load, took 12.006
+[2022.03.17-13.16.15:349][  0]Cmd: MAP LOAD FILE="../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/GameMode/PersistentLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2022.03.17-13.16.15:350][  0]LightingResults: New page: 라이팅 빌드
+[2022.03.17-13.16.15:352][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-13.16.15:352][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.17-13.16.15:352][  0]MapCheck: New page: 맵 체크
+[2022.03.17-13.16.15:353][  0]LightingResults: New page: 라이팅 빌드
+[2022.03.17-13.16.15:395][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2022.03.17-13.16.15:445][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'PersistentLevel'.
+[2022.03.17-13.16.15:446][  0]LogAIModule: Creating AISystem for world PersistentLevel
+[2022.03.17-13.16.15:446][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/GameMode/FieldMap) is flushing async loading
+[2022.03.17-13.16.15:446][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2022.03.17-13.16.15:649][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.17-13.16.15:651][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.17-13.16.15:651][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.17-13.16.15:651][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.17-13.16.15:652][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.17-13.16.15:652][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.17-13.16.15:652][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.17-13.16.15:762][  0]LogBlueprint: Warning: [AssetLog] D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Content\Character\NPC\NPCParentScripts_BP.uasset: [Compiler]  에 대한 '(Value=(X=0.000000,Y=0.000000,Z=0.000000),Name="")' 기본값을 파싱할 수 없습니다. 프로퍼티: NPCTalkDataTable.
+[2022.03.17-13.16.15:790][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/GameMode/BossMap) is flushing async loading
+[2022.03.17-13.16.16:007][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.03.17-13.16.16:060][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.00ms
+[2022.03.17-13.16.16:062][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.03.17-13.16.16:063][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.164ms.
+[2022.03.17-13.16.16:063][  0]LogFileHelpers: Loading map 'PersistentLevel' took 0.714
+[2022.03.17-13.16.16:066][  0]LogUnrealEdMisc: Total Editor Startup Time, took 12.722
+[2022.03.17-13.16.16:192][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.17-13.16.16:196][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.17-13.16.16:201][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.17-13.16.16:205][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.17-13.16.16:218][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0097 seconds. Added 3654 classes and 873 folders.
+[2022.03.17-13.16.16:220][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2022.03.17-13.16.16:221][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.03.17-13.16.16:221][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:221][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.17-13.16.16:221][  0]LogPakFile: OnPakFileMounted2Time == 0.000006
+[2022.03.17-13.16.16:221][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2022.03.17-13.16.16:221][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:222][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2022.03.17-13.16.16:222][  0]LogPakFile: OnPakFileMounted2Time == 0.000007
+[2022.03.17-13.16.16:222][  0]LogPakFile: PakFile PrimaryIndexSize=191
+[2022.03.17-13.16.16:222][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:222][  0]LogPakFile: PakFile FullDirectoryIndexSize=160
+[2022.03.17-13.16.16:222][  0]LogPakFile: OnPakFileMounted2Time == 0.000008
+[2022.03.17-13.16.16:222][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.17-13.16.16:222][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:222][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.17-13.16.16:222][  0]LogPakFile: OnPakFileMounted2Time == 0.000009
+[2022.03.17-13.16.16:223][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2022.03.17-13.16.16:223][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:223][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2022.03.17-13.16.16:223][  0]LogPakFile: OnPakFileMounted2Time == 0.000010
+[2022.03.17-13.16.16:223][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2022.03.17-13.16.16:223][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:223][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2022.03.17-13.16.16:223][  0]LogPakFile: OnPakFileMounted2Time == 0.000010
+[2022.03.17-13.16.16:223][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2022.03.17-13.16.16:223][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:223][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2022.03.17-13.16.16:223][  0]LogPakFile: OnPakFileMounted2Time == 0.000011
+[2022.03.17-13.16.16:224][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2022.03.17-13.16.16:224][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:224][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2022.03.17-13.16.16:224][  0]LogPakFile: OnPakFileMounted2Time == 0.000012
+[2022.03.17-13.16.16:224][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.03.17-13.16.16:224][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:224][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.03.17-13.16.16:224][  0]LogPakFile: OnPakFileMounted2Time == 0.000013
+[2022.03.17-13.16.16:224][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2022.03.17-13.16.16:224][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:224][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2022.03.17-13.16.16:224][  0]LogPakFile: OnPakFileMounted2Time == 0.000014
+[2022.03.17-13.16.16:225][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2022.03.17-13.16.16:225][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:225][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2022.03.17-13.16.16:225][  0]LogPakFile: OnPakFileMounted2Time == 0.000014
+[2022.03.17-13.16.16:225][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.03.17-13.16.16:225][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:225][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.03.17-13.16.16:225][  0]LogPakFile: OnPakFileMounted2Time == 0.000015
+[2022.03.17-13.16.16:226][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.17-13.16.16:226][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:226][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.17-13.16.16:226][  0]LogPakFile: OnPakFileMounted2Time == 0.000016
+[2022.03.17-13.16.16:226][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.03.17-13.16.16:226][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:226][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.03.17-13.16.16:226][  0]LogPakFile: OnPakFileMounted2Time == 0.000017
+[2022.03.17-13.16.16:226][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2022.03.17-13.16.16:226][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:226][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2022.03.17-13.16.16:226][  0]LogPakFile: OnPakFileMounted2Time == 0.000017
+[2022.03.17-13.16.16:227][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.03.17-13.16.16:227][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:227][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.17-13.16.16:227][  0]LogPakFile: OnPakFileMounted2Time == 0.000018
+[2022.03.17-13.16.16:227][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2022.03.17-13.16.16:227][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:227][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2022.03.17-13.16.16:227][  0]LogPakFile: OnPakFileMounted2Time == 0.000019
+[2022.03.17-13.16.16:227][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.03.17-13.16.16:227][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:227][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.03.17-13.16.16:227][  0]LogPakFile: OnPakFileMounted2Time == 0.000020
+[2022.03.17-13.16.16:228][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.17-13.16.16:228][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:228][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.17-13.16.16:228][  0]LogPakFile: OnPakFileMounted2Time == 0.000020
+[2022.03.17-13.16.16:228][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.17-13.16.16:228][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:228][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.17-13.16.16:228][  0]LogPakFile: OnPakFileMounted2Time == 0.000021
+[2022.03.17-13.16.16:228][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.03.17-13.16.16:228][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:229][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.17-13.16.16:229][  0]LogPakFile: OnPakFileMounted2Time == 0.000022
+[2022.03.17-13.16.16:229][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.03.17-13.16.16:229][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:229][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.03.17-13.16.16:229][  0]LogPakFile: OnPakFileMounted2Time == 0.000023
+[2022.03.17-13.16.16:229][  0]LogPakFile: PakFile PrimaryIndexSize=186
+[2022.03.17-13.16.16:229][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:229][  0]LogPakFile: PakFile FullDirectoryIndexSize=146
+[2022.03.17-13.16.16:229][  0]LogPakFile: OnPakFileMounted2Time == 0.000023
+[2022.03.17-13.16.16:230][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.03.17-13.16.16:230][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:230][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.03.17-13.16.16:230][  0]LogPakFile: OnPakFileMounted2Time == 0.000024
+[2022.03.17-13.16.16:230][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.17-13.16.16:230][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:230][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.17-13.16.16:230][  0]LogPakFile: OnPakFileMounted2Time == 0.000025
+[2022.03.17-13.16.16:230][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2022.03.17-13.16.16:230][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-13.16.16:230][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2022.03.17-13.16.16:231][  0]LogPakFile: OnPakFileMounted2Time == 0.000026
+[2022.03.17-13.16.16:262][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2022.03.17-13.16.16:267][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 2 classes and 0 folders.
+[2022.03.17-13.16.16:323][  0]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.16.16:349][  0]LogSlate: Took 0.000418 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2022.03.17-13.16.16:352][  0]LogSlate: Took 0.001713 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2022.03.17-13.16.16:354][  0]LogSlate: Took 0.001328 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
+[2022.03.17-13.16.16:354][  0]LogSlate: Took 0.000088 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2022.03.17-13.16.16:357][  0]LogSlate: Took 0.000095 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2022.03.17-13.16.16:475][  0]LogRenderer: Reallocating scene render targets to support 1196x572 Format 10 NumSamples 1 (Frame:1).
+[2022.03.17-13.16.16:536][  0]LogSlate: Took 0.000337 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.03.17-13.16.16:584][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0011 seconds. Added 0 classes and 0 folders.
+[2022.03.17-13.16.16:584][  0]LogLoad: (Engine Initialization) Total time: 13.24 seconds
+[2022.03.17-13.16.16:584][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2022.03.17-13.16.16:584][  0]LogInit: First time updating LLM stats...
+[2022.03.17-13.16.16:680][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2022.03.17-13.16.16:714][  1]LogAssetRegistry: Asset discovery search completed in 4.8371 seconds
+[2022.03.17-13.16.16:716][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000014 seconds (updated 0 objects)
+[2022.03.17-13.33.57:577][183]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.34.33:578][902]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.34.53:800][976]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2022.03.17-13.42.14:484][298]LogHotReload: New module detected: UE4Editor-NierProject-0053.dll
+[2022.03.17-13.42.17:852][309]LogHotReload: Starting Hot-Reload from IDE
+[2022.03.17-13.42.17:878][309]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.42.17:879][309]LogSlate: Took 0.000123 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.03.17-13.42.17:927][309]LogClass: EBossMutantMovementStatus HotReload.
+[2022.03.17-13.42.17:927][309]LogClass: EEnemyMovementStatus HotReload.
+[2022.03.17-13.42.17:927][309]LogClass: EMovementStatus HotReload.
+[2022.03.17-13.42.17:927][309]LogClass: AttackTypeStruct HotReload.
+[2022.03.17-13.42.17:927][309]LogClass: Could not find existing type NPC_DataTableRow for HotReload. Assuming new
+[2022.03.17-13.42.17:958][309]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'NierProject' in 0.0003 seconds. Added 25 classes and 2 folders.
+[2022.03.17-13.42.17:969][309]Display: HotReload successful (67 functions remapped  2 scriptstructs remapped)
+[2022.03.17-13.42.18:162][309]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0085 seconds. Added 3654 classes and 873 folders.
+[2022.03.17-13.42.18:174][309]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.42.18:284][309]Display: HotReload took  0.4s.
+[2022.03.17-13.49.03:907][202]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.49.03:923][202]LogAssetEditorSubsystem: Opening Asset editor for DataTable /Game/DataTable/NPC_DataTable.NPC_DataTable
+[2022.03.17-13.49.06:456][460]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.49.16:634][641]LogCSVImportFactory: Imported DataTable 'NPC_DataTable' - 0 Problems
+[2022.03.17-13.49.16:649][641]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.49.21:600][656]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.49.21:615][656]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.49.24:753][ 25]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
+[2022.03.17-13.49.24:786][ 25]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.49.30:020][ 25]LogSlate: Window 'Delete Assets' being destroyed
+[2022.03.17-13.49.30:027][ 25]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.49.30:038][ 25]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP
+[2022.03.17-13.49.30:480][ 25]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 126 classes and 0 folders.
+[2022.03.17-13.49.31:556][ 25]LogSlate: Took 0.010607 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2022.03.17-13.49.31:688][ 25]LogSlate: Took 0.020965 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2022.03.17-13.49.31:729][ 25]LogSlate: Took 0.041465 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicExtraBold.ttf' (4074K)
+[2022.03.17-13.49.44:198][442]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.49.45:646][604]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.49.46:246][669]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.49.48:627][946]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.17-13.49.48:646][946]LogBlueprint: Error: [AssetLog] D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Content\Character\NPC\NPCParentScripts_BP.uasset: [Compiler] 데이터 테이블 행 NONE 가져오기  에 데이터 테이블이 없습니다.
+[2022.03.17-13.49.48:653][946]LogBlueprint: Warning: [AssetLog] D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Content\Character\NPC\NPCParentScripts_BP.uasset: [Compiler]  에 대한 '(Value=(X=0.000000,Y=0.000000,Z=0.000000),Name="")' 기본값을 파싱할 수 없습니다. 프로퍼티: NPCTalkDataTable.
+[2022.03.17-13.49.48:688][946]LogUObjectHash: Compacting FUObjectHashTables data took   2.62ms
+[2022.03.17-13.49.49:083][985]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.49.49:206][985]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BP53BDC28A44A96FD2E14BD09A6010D190.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.17-13.49.49:230][985]AssetCheck: New page: 애셋 저장: NPCParentScripts_BP
+[2022.03.17-13.49.49:231][985]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.17-13.49.51:563][248]LogUObjectHash: Compacting FUObjectHashTables data took   2.41ms
+[2022.03.17-13.49.51:585][248]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.49.52:960][248]LogSlate: Window 'Delete Assets' being destroyed
+[2022.03.17-13.50.02:522][347]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.50.02:578][347]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BPEC35CC7143A45C18B91B50AF851EE00E.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.17-13.50.02:590][347]AssetCheck: New page: 애셋 저장: NPCParentScripts_BP
+[2022.03.17-13.50.02:590][347]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.17-13.50.03:591][454]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2022.03.17-13.50.03:635][454]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.50.04:570][454]LogSlate: Window 'Delete Assets' being destroyed
+[2022.03.17-13.50.04:633][454]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-13.50.04:633][454]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.17-13.50.04:697][454]LogUObjectGlobals: Force Deleting 1 Package(s):
+	Asset Name: /Game/DataTable/NPC_DataTable.NPC_DataTable
+[2022.03.17-13.50.04:699][454]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.50.11:169][454]LogUObjectHash: Compacting FUObjectHashTables data took   2.32ms
+[2022.03.17-13.50.11:188][454]LogUObjectHash: Compacting FUObjectHashTables data took   1.96ms
+[2022.03.17-13.50.11:200][454]LogUObjectHash: Compacting FUObjectHashTables data took   0.58ms
+[2022.03.17-13.50.19:903][481]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.50.28:569][507]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.50.28:605][507]LogUObjectHash: Compacting FUObjectHashTables data took   0.58ms
+[2022.03.17-13.50.28:640][507]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/FieldMap_Auto1B6033FEE44C55BF0488C259D79D3D1B3.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Autosaves/Game/GameMode/FieldMap_Auto1.umap'
+[2022.03.17-13.50.28:656][507]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/GameMode/PersistentLevel' took 0.063
+[2022.03.17-13.50.28:656][507]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.063
+[2022.03.17-13.50.28:656][507]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Character/NPC/NPCParentScripts_BP] ([1] browsable assets)...
+[2022.03.17-13.50.28:656][507]OBJ SavePackage: Finished generating thumbnails for package [/Game/Character/NPC/NPCParentScripts_BP]
+[2022.03.17-13.50.28:676][507]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BP_Auto1EB0E298D48E861706FB0EEB9D483BEB0.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Autosaves/Game/Character/NPC/NPCParentScripts_BP_Auto1.uasset'
+[2022.03.17-13.50.28:677][507]LogFileHelpers: Auto-saving content packages took 0.022
+[2022.03.17-13.51.24:319][850]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.51.24:363][850]LogFactory: FactoryCreateFile: CurveBase with ReimportCurveFactory (0 1 D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Content\DataTable\NPC_DataTable.csv)
+[2022.03.17-13.51.24:435][850]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.51.25:314][850]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.51.41:186][850]LogSlate: Window '데이터테이블 옵션' being destroyed
+[2022.03.17-13.51.41:192][850]LogCSVImportFactory: Imported DataTable 'NPC_DataTable' - 9 Problems
+[2022.03.17-13.51.41:192][850]LogCSVImportFactory: 0:Cannot find Property for column '1' in struct 'NPC_DataTableRow'.
+[2022.03.17-13.51.41:192][850]LogCSVImportFactory: 1:Cannot find Property for column '2' in struct 'NPC_DataTableRow'.
+[2022.03.17-13.51.41:192][850]LogCSVImportFactory: 2:Cannot find Property for column '3' in struct 'NPC_DataTableRow'.
+[2022.03.17-13.51.41:192][850]LogCSVImportFactory: 3:Cannot find Property for column '4' in struct 'NPC_DataTableRow'.
+[2022.03.17-13.51.41:192][850]LogCSVImportFactory: 4:Cannot find Property for column '5' in struct 'NPC_DataTableRow'.
+[2022.03.17-13.51.41:192][850]LogCSVImportFactory: 5:Cannot find Property for column '6' in struct 'NPC_DataTableRow'.
+[2022.03.17-13.51.41:192][850]LogCSVImportFactory: 6:Cannot find Property for column '7' in struct 'NPC_DataTableRow'.
+[2022.03.17-13.51.41:192][850]LogCSVImportFactory: 7:Cannot find Property for column '8' in struct 'NPC_DataTableRow'.
+[2022.03.17-13.51.41:192][850]LogCSVImportFactory: 8:Expected column 'List_NPCTalk' not found in input.
+[2022.03.17-13.51.41:234][850]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.51.44:989][850]LogSlate: Window '메시지' being destroyed
+[2022.03.17-13.51.44:992][850]Message dialog closed, result: Ok, title: 메시지, text: Cannot find Property for column '1' in struct 'NPC_DataTableRow'.
+Cannot find Property for column '2' in struct 'NPC_DataTableRow'.
+Cannot find Property for column '3' in struct 'NPC_DataTableRow'.
+Cannot find Property for column '4' in struct 'NPC_DataTableRow'.
+Cannot find Property for column '5' in struct 'NPC_DataTableRow'.
+Cannot find Property for column '6' in struct 'NPC_DataTableRow'.
+Cannot find Property for column '7' in struct 'NPC_DataTableRow'.
+Cannot find Property for column '8' in struct 'NPC_DataTableRow'.
+Expected column 'List_NPCTalk' not found in input.
+
+[2022.03.17-13.51.46:212][966]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.51.46:220][966]LogAssetEditorSubsystem: Opening Asset editor for DataTable /Game/DataTable/NPC_DataTable.NPC_DataTable
+[2022.03.17-13.52.19:403][936]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.52.19:423][936]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPC_DataTable18E24DBE4797711F92C08BBAF0B65B67.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/DataTable/NPC_DataTable.uasset'
+[2022.03.17-13.52.19:434][936]AssetCheck: New page: 애셋 저장: NPC_DataTable
+[2022.03.17-13.52.19:434][936]LogContentValidation: Display: DataTable /Game/DataTable/NPC_DataTable.NPC_DataTable 유효성 검사
+[2022.03.17-13.54.06:488][670]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.06:503][670]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPC_DataTable5DA285284B0CF2C8092EF4A69197F5B8.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/DataTable/NPC_DataTable.uasset'
+[2022.03.17-13.54.06:511][670]AssetCheck: New page: 애셋 저장: NPC_DataTable
+[2022.03.17-13.54.06:511][670]LogContentValidation: Display: DataTable /Game/DataTable/NPC_DataTable.NPC_DataTable 유효성 검사
+[2022.03.17-13.54.15:127][157]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.15:913][247]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.18:639][572]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.19:219][641]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.20:233][762]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.21:870][958]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.22:896][ 80]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.24:086][222]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.24:103][223]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.24:159][229]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.25:716][415]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.27:681][650]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.30:873][ 32]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.32:778][260]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.33:700][364]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.34:718][364]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.34:753][364]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.34:784][364]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.54.41:002][364]LogSlate: Window '행 구조 선택' being destroyed
+[2022.03.17-13.57.40:414][562]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.57.40:771][604]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.58.00:857][240]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.58.01:064][264]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.58.01:827][355]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.58.02:473][432]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.58.09:004][ 95]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.58.29:160][512]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.58.29:183][512]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.58.29:203][512]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPC_Guard_DialogueTree7CA024CC479313E6CF3B8D95DD2A94EE.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPC_Dialogue/NPC_Guard_DialogueTree.uasset'
+[2022.03.17-13.58.29:210][512]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.58.29:230][512]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.58.29:270][512]LogUObjectHash: Compacting FUObjectHashTables data took   2.16ms
+[2022.03.17-13.58.29:301][512]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2022.03.17-13.58.29:313][512]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
+[2022.03.17-13.58.29:361][512]AssetCheck: New page: 애셋 저장: NPC_Guard_DialogueTree
+[2022.03.17-13.58.29:361][512]LogContentValidation: Display: BehaviorTree /Game/Character/NPC/NPC_Dialogue/NPC_Guard_DialogueTree.NPC_Guard_DialogueTree 유효성 검사
+[2022.03.17-13.58.39:294][583]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.58.39:302][583]LogAssetEditorSubsystem: Opening Asset editor for BehaviorTree /Game/Character/NPC/NPC_Dialogue/NPC_Guard_DialogueTree.NPC_Guard_DialogueTree
+[2022.03.17-13.58.39:365][583]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.58.49:973][837]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.58.50:161][845]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.58.52:797][154]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.59.07:537][915]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.59.07:821][948]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.59.28:941][538]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.59.28:950][538]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Character/NPC/NPC_Dialogue/BTTask_BlueprintBase_New.BTTask_BlueprintBase_New
+[2022.03.17-13.59.29:230][538]LogPackageName: SearchForPackageOnDisk took   0.000s, but failed to resolve /Game/Character/NPC/NPC_Dialogue/BTTask_BlueprintBase_New.
+[2022.03.17-13.59.30:483][677]BlueprintLog: New page: BTTask_BlueprintBase_New 컴파일
+[2022.03.17-13.59.30:504][677]LogUObjectHash: Compacting FUObjectHashTables data took   1.96ms
+[2022.03.17-13.59.30:878][718]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.59.30:886][718]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/BTTask_BlueprintBase_New958C028A47D2ACE93281A18DECF2CBBD.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPC_Dialogue/BTTask_BlueprintBase_New.uasset'
+[2022.03.17-13.59.30:893][718]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/Character/NPC/NPC_Dialogue/BTTask_BlueprintBase_New.
+[2022.03.17-13.59.30:898][718]AssetCheck: New page: 애셋 저장: BTTask_BlueprintBase_New
+[2022.03.17-13.59.30:898][718]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPC_Dialogue/BTTask_BlueprintBase_New.BTTask_BlueprintBase_New 유효성 검사
+[2022.03.17-13.59.33:313][998]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.59.33:531][ 15]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.59.33:831][ 45]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.59.34:610][133]LogSlate: Window 'NPC_Guard_DialogueTree' being destroyed
+[2022.03.17-13.59.35:196][202]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.59.35:434][229]LogSlate: Window 'BTTask_BlueprintBase_New' being destroyed
+[2022.03.17-13.59.49:838][277]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.59.49:853][277]LogMetaData: Removing '/Game/Character/NPC/NPC_Dialogue/StartDialuge.SKEL_StartDialuge_C' ref from Metadata '/Game/Character/NPC/NPC_Dialogue/BTTask_BlueprintBase_New.PackageMetaData'
+[2022.03.17-13.59.49:853][277]LogMetaData: Removing '/Game/Character/NPC/NPC_Dialogue/StartDialuge.StartDialuge_C' ref from Metadata '/Game/Character/NPC/NPC_Dialogue/BTTask_BlueprintBase_New.PackageMetaData'
+[2022.03.17-13.59.49:859][277]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.59.49:869][277]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/StartDialugeBCBC28D2416FDA401F5361B7E8290EA6.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPC_Dialogue/StartDialuge.uasset'
+[2022.03.17-13.59.49:875][277]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.59.49:895][277]LogUObjectGlobals: Warning: 'Object /Game/Character/NPC/NPC_Dialogue/BTTask_BlueprintBase_New.BTTask_BlueprintBase_New' 오브젝트를 찾는 데 실패했습니다.
+[2022.03.17-13.59.49:897][277]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-13.59.49:934][277]LogUObjectHash: Compacting FUObjectHashTables data took   2.13ms
+[2022.03.17-13.59.49:956][277]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2022.03.17-13.59.49:970][277]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2022.03.17-13.59.50:013][277]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/Character/NPC/NPC_Dialogue/StartDialuge.
+[2022.03.17-13.59.50:018][277]AssetCheck: New page: 애셋 저장: StartDialuge
+[2022.03.17-13.59.50:018][277]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPC_Dialogue/StartDialuge.StartDialuge 유효성 검사
+[2022.03.17-13.59.57:916][659]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.00.10:275][780]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.00.15:741][411]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.00.16:158][455]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.00.27:366][793]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.00.44:150][934]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.00.44:817][976]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.01.06:158][962]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.01.06:485][996]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.01.40:374][651]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.01.40:414][651]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.01.46:326][349]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.01.46:652][383]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.01.52:189][ 38]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.01.59:057][832]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.01.59:343][856]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.02.29:257][586]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.02.38:235][340]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.02.38:272][340]LogUObjectHash: Compacting FUObjectHashTables data took   2.29ms
+[2022.03.17-14.02.38:288][340]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/FieldMap_Auto2716CDDD44E83C388ED51C78736EA06C1.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Autosaves/Game/GameMode/FieldMap_Auto2.umap'
+[2022.03.17-14.02.38:334][340]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/GameMode/PersistentLevel' took 0.079
+[2022.03.17-14.02.38:334][340]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.079
+[2022.03.17-14.02.38:334][340]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Character/NPC/NPCParentScripts_BP] ([1] browsable assets)...
+[2022.03.17-14.02.38:342][340]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP]
+[2022.03.17-14.02.38:342][340]OBJ SavePackage: Finished generating thumbnails for package [/Game/Character/NPC/NPCParentScripts_BP]
+[2022.03.17-14.02.38:365][340]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BP_Auto2C400E3084942BE75A9A109A41BB49FFB.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Autosaves/Game/Character/NPC/NPCParentScripts_BP_Auto2.uasset'
+[2022.03.17-14.02.38:368][340]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Character/NPC/NPC_Dialogue/NPC_Guard_DialogueTree] ([1] browsable assets)...
+[2022.03.17-14.02.38:368][340]OBJ SavePackage: Finished generating thumbnails for package [/Game/Character/NPC/NPC_Dialogue/NPC_Guard_DialogueTree]
+[2022.03.17-14.02.38:369][340]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPC_Guard_DialogueTree_Auto293DFBC2F48C48D111A91E4B501492F8F.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Autosaves/Game/Character/NPC/NPC_Dialogue/NPC_Guard_DialogueTree_Auto2.uasset'
+[2022.03.17-14.02.38:369][340]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Character/NPC/NPC_Dialogue/StartDialuge] ([1] browsable assets)...
+[2022.03.17-14.02.38:369][340]OBJ SavePackage: Finished generating thumbnails for package [/Game/Character/NPC/NPC_Dialogue/StartDialuge]
+[2022.03.17-14.02.38:372][340]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/StartDialuge_Auto29239526C454647B6E96E479E89756747.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Autosaves/Game/Character/NPC/NPC_Dialogue/StartDialuge_Auto2.uasset'
+[2022.03.17-14.02.38:372][340]LogFileHelpers: Auto-saving content packages took 0.038
+[2022.03.17-14.02.40:564][598]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.02.40:817][621]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.02.52:112][938]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.02.52:796][ 12]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.02.55:973][347]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.03.01:547][  3]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.03.02:146][ 64]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.03.02:150][ 64]LogSlate: Window 'StartDialuge' being destroyed
+[2022.03.17-14.03.10:119][114]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.03.10:136][114]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/HUD/PlayerHud/HudOverlay.HudOverlay
+[2022.03.17-14.03.12:812][293]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.03.13:104][325]LogSlate: Window 'StartDialuge' being destroyed
+[2022.03.17-14.03.33:385][706]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.03.35:669][877]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2022.03.17-14.05.12:224][638]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.05.12:234][638]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/HUD/MainPlayerComtroller_BP.MainPlayerComtroller_BP
+[2022.03.17-14.05.15:036][918]LogRenderer: Reallocating scene render targets to support 1196x708 Format 10 NumSamples 1 (Frame:1).
+[2022.03.17-14.05.17:477][189]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.05.18:101][258]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.05.18:564][280]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.05.18:581][280]LogAssetEditorSubsystem: Opening Asset editor for LevelScriptBlueprint /Game/GameMode/PersistentLevel.PersistentLevel:PersistentLevel.PersistentLevel
+[2022.03.17-14.05.18:911][281]LogSlate: Took 0.011485 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2022.03.17-14.05.55:507][771]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.05.55:821][801]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.06.06:247][ 44]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.06.06:507][ 69]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.07.24:288][470]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.07.24:300][470]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/StartDialuge6256AE7842DE417AF2C9DBAE31777ABF.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPC_Dialogue/StartDialuge.uasset'
+[2022.03.17-14.07.24:314][470]AssetCheck: New page: 애셋 저장: StartDialuge
+[2022.03.17-14.07.24:314][470]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPC_Dialogue/StartDialuge.StartDialuge 유효성 검사
+[2022.03.17-14.07.24:795][527]BlueprintLog: New page: StartDialuge 컴파일
+[2022.03.17-14.07.25:117][527]LogUObjectHash: Compacting FUObjectHashTables data took   5.27ms
+[2022.03.17-14.07.25:559][577]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.07.25:603][577]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/StartDialuge6C43CC3740AAE750E159F488D1DC4A34.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPC_Dialogue/StartDialuge.uasset'
+[2022.03.17-14.07.25:614][577]AssetCheck: New page: 애셋 저장: StartDialuge
+[2022.03.17-14.07.25:614][577]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPC_Dialogue/StartDialuge.StartDialuge 유효성 검사
+[2022.03.17-14.07.28:807][949]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.07.28:815][949]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPC_Guard_DialogueTreeED29D30A435BB3017B4A66959C3A4595.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPC_Dialogue/NPC_Guard_DialogueTree.uasset'
+[2022.03.17-14.07.28:827][949]AssetCheck: New page: 애셋 저장: NPC_Guard_DialogueTree
+[2022.03.17-14.07.28:827][949]LogContentValidation: Display: BehaviorTree /Game/Character/NPC/NPC_Dialogue/NPC_Guard_DialogueTree.NPC_Guard_DialogueTree 유효성 검사
+[2022.03.17-14.07.29:708][ 45]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.07.29:715][ 45]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPC_DataTableD15D11184FB6092AF1A71791C8011317.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/DataTable/NPC_DataTable.uasset'
+[2022.03.17-14.07.29:731][ 45]AssetCheck: New page: 애셋 저장: NPC_DataTable
+[2022.03.17-14.07.29:731][ 45]LogContentValidation: Display: DataTable /Game/DataTable/NPC_DataTable.NPC_DataTable 유효성 검사
+[2022.03.17-14.07.32:164][310]BlueprintLog: New page: PersistentLevel 컴파일
+[2022.03.17-14.07.32:239][310]LogUObjectHash: Compacting FUObjectHashTables data took   4.08ms
+[2022.03.17-14.07.32:515][336]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.07.32:561][336]LogUObjectHash: Compacting FUObjectHashTables data took   3.27ms
+[2022.03.17-14.07.32:574][336]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/PersistentLevel3D49332847366C38FD425895D67AA5AC.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/GameMode/PersistentLevel.umap'
+[2022.03.17-14.07.32:596][336]LogFileHelpers: Saving map 'PersistentLevel' took 0.063
+[2022.03.17-14.07.32:612][336]AssetCheck: New page: 애셋 저장: PersistentLevel
+[2022.03.17-14.07.32:612][336]LogContentValidation: Display: World /Game/GameMode/PersistentLevel.PersistentLevel 유효성 검사
+[2022.03.17-14.07.39:422][112]LogUObjectHash: Compacting FUObjectHashTables data took   2.72ms
+[2022.03.17-14.07.39:477][112]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.07.41:379][112]LogSlate: Window '콘텐츠 저장' being destroyed
+[2022.03.17-14.07.41:387][112]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.07.41:426][112]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2022.03.17-14.07.41:440][112]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/FieldMap044C950E42DB52C716FA19BF1C5E14AF.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/GameMode/FieldMap.umap'
+[2022.03.17-14.07.41:441][112]LogFileHelpers: Saving map 'FieldMap' took 0.040
+[2022.03.17-14.07.41:441][112]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NewDataTable087C166741EB9054F913EC84446A1210.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/DataTable/NewDataTable.uasset'
+[2022.03.17-14.07.41:462][112]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BPB64DBCCF4242C1BC64A77386A21E4E74.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.17-14.07.41:476][112]AssetCheck: New page: 애셋 저장: 애셋이 다수입니다.
+[2022.03.17-14.07.41:476][112]LogContentValidation: Display: DataTable /Game/DataTable/NewDataTable.NewDataTable 유효성 검사
+[2022.03.17-14.07.41:476][112]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.17-14.07.41:476][112]LogContentValidation: Display: World /Game/GameMode/FieldMap.FieldMap 유효성 검사
+[2022.03.17-14.07.53:178][503]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.07.53:198][503]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Character/NPC/NPC_BP/NPC_Name_BP.NPC_Name_BP
+[2022.03.17-14.07.58:021][ 30]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.07.58:022][ 30]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.17-14.07.58:031][ 30]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.07.58:031][ 30]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.17-14.08.01:543][438]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.08.01:543][438]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.17-14.08.12:556][724]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.08.12:565][724]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP
+[2022.03.17-14.08.18:057][341]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.08.19:565][512]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.08.22:138][811]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.08.24:245][ 50]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.17-14.08.24:246][ 50]LogBlueprint: Error: [AssetLog] D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Content\Character\NPC\NPCParentScripts_BP.uasset: [Compiler] 데이터 테이블 행 NONE 가져오기  에 데이터 테이블이 없습니다.
+[2022.03.17-14.08.24:248][ 50]LogBlueprint: Error: [AssetLog] D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Content\Character\NPC\NPCParentScripts_BP.uasset: [Compiler] GetDataTableRow 에는 '데이터 테이블'이 지정되어 있어야 합니다.
+[2022.03.17-14.08.24:253][ 50]LogBlueprint: Warning: [AssetLog] D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Content\Character\NPC\NPCParentScripts_BP.uasset: [Compiler]  에 대한 '(Value=(X=0.000000,Y=0.000000,Z=0.000000),Name="")' 기본값을 파싱할 수 없습니다. 프로퍼티: NPCTalkDataTable.
+[2022.03.17-14.08.24:300][ 50]LogUObjectHash: Compacting FUObjectHashTables data took   3.69ms
+[2022.03.17-14.08.27:997][474]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.08.29:847][690]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.08.32:095][950]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.17-14.08.32:096][950]LogBlueprint: Error: [AssetLog] D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Content\Character\NPC\NPCParentScripts_BP.uasset: [Compiler] 데이터 테이블 행 NONE 가져오기  에 데이터 테이블이 없습니다.
+[2022.03.17-14.08.32:097][950]LogBlueprint: Error: [AssetLog] D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Content\Character\NPC\NPCParentScripts_BP.uasset: [Compiler] GetDataTableRow 에는 '데이터 테이블'이 지정되어 있어야 합니다.
+[2022.03.17-14.08.32:102][950]LogBlueprint: Warning: [AssetLog] D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Content\Character\NPC\NPCParentScripts_BP.uasset: [Compiler]  에 대한 '(Value=(X=0.000000,Y=0.000000,Z=0.000000),Name="")' 기본값을 파싱할 수 없습니다. 프로퍼티: NPCTalkDataTable.
+[2022.03.17-14.08.32:145][950]LogUObjectHash: Compacting FUObjectHashTables data took   3.73ms
+[2022.03.17-14.08.40:477][830]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.08.42:334][830]LogSlate: Window '변수 삭제' being destroyed
+[2022.03.17-14.08.43:439][936]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.09.00:585][957]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.17-14.09.00:587][957]LogBlueprint: Error: [AssetLog] D:\Unreal\UEProject\UnrealProject_2021_Portfolio\NierProject_Unreal\NierProject\Content\Character\NPC\NPCParentScripts_BP.uasset: [Compiler] 데이터 테이블 행 NONE 가져오기  에 데이터 테이블이 없습니다.
+[2022.03.17-14.09.00:636][957]LogUObjectHash: Compacting FUObjectHashTables data took   3.86ms
+[2022.03.17-14.09.01:905][100]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.09.03:630][300]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.09.05:552][520]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.17-14.09.05:602][520]LogUObjectHash: Compacting FUObjectHashTables data took   3.74ms
+[2022.03.17-14.09.06:847][662]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.09.06:897][662]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BPDB0179A54240F3E4A45407B902A931DE.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.17-14.09.06:911][662]AssetCheck: New page: 애셋 저장: NPCParentScripts_BP
+[2022.03.17-14.09.06:911][662]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.17-14.09.08:898][890]LogUObjectHash: Compacting FUObjectHashTables data took   3.31ms
+[2022.03.17-14.09.08:943][890]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.09.10:471][890]LogSlate: Window '콘텐츠 저장' being destroyed
+[2022.03.17-14.09.10:479][890]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-14.09.10:523][890]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2022.03.17-14.09.10:537][890]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/FieldMapAA253837431E7F6A145FAEB1BDF93C6F.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/GameMode/FieldMap.umap'
+[2022.03.17-14.09.10:538][890]LogFileHelpers: Saving map 'FieldMap' took 0.041
+[2022.03.17-14.09.10:578][890]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.10:578][890]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.17-14.09.10:630][890]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.10:630][890]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.17-14.09.10:638][890]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.10:638][890]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.17-14.09.10:679][890]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.10:679][890]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.17-14.09.10:731][890]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2022.03.17-14.09.10:731][890]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.10:731][890]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.17-14.09.10:793][890]LogSlate: Window 'NierProject - 언리얼 에디터' being destroyed
+[2022.03.17-14.09.10:916][890]AssetCheck: New page: 애셋 저장: FieldMap
+[2022.03.17-14.09.10:917][890]LogContentValidation: Display: World /Game/GameMode/FieldMap.FieldMap 유효성 검사
+[2022.03.17-14.09.10:918][891]Cmd: QUIT_EDITOR
+[2022.03.17-14.09.10:918][891]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2022.03.17-14.09.10:922][891]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2022.03.17-14.09.10:953][891]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2022.03.17-14.09.10:953][891]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2022.03.17-14.09.10:954][891]LogAudio: Display: Audio Device unregistered from world 'PersistentLevel'.
+[2022.03.17-14.09.10:955][891]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.17-14.09.10:956][891]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.17-14.09.10:980][891]LogAudio: Display: Audio Device Manager Shutdown
+[2022.03.17-14.09.10:985][891]LogWindowsTextInputMethodSystem: Display: IME system activated using TSF (Microsoft 입력기).
+[2022.03.17-14.09.10:990][891]LogExit: Preparing to exit.
+[2022.03.17-14.09.11:044][891]LogUObjectHash: Compacting FUObjectHashTables data took   4.85ms
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED39AE400] Windows
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED39AE500] Default__DeviceProfile
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394F600] WindowsNoEditor
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED39AE000] WindowsServer
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394FA00] WindowsClient
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED39AC700] IOS
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394F000] iPadAir
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED39AD100] iPadAir2
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F7000] IPadPro
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F7100] iPadAir3
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED39AD600] iPadAir4
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F6800] iPadMini2
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED39ACC00] iPadMini3
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F5800] iPadMini4
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED39AEB00] iPadMini5
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394A900] iPhone6
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394AA00] iPodTouch6
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F7C00] iPhone7
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F7B00] iPodTouch7
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3948E00] iPhone5S
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F7D00] iPhone6Plus
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3949200] iPhone6S
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F4900] iPhone6SPlus
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394AB00] iPhone7Plus
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F7A00] iPhoneSE
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394B000] iPhone8
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F7700] iPhone8Plus
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3949F00] iPhoneX
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F5C00] iPhoneXS
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3948300] iPhoneXSMax
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F4B00] iPhoneXR
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394A500] iPhone11
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F4300] iPhone11Pro
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3948600] iPhone11ProMax
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F5600] iPhoneSE2
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3949400] iPhone12Mini
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F5D00] iPhone12
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394B200] iPhone12Pro
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F4500] iPhone12ProMax
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3949B00] iPadPro105
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394B400] iPadPro129
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394DC00] iPadPro97
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3948C00] iPadPro2_129
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394F300] iPad5
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3948500] iPad6
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394FF00] iPad7
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394B600] iPad8
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394F800] iPadPro11
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3949A00] iPadPro2_11
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394D000] iPadPro3_129
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394E200] iPadPro4_129
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F5500] AppleTV
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394C200] AppleTV4K
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F4400] TVOS
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394DB00] Mac
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F6700] MacClient
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394B300] MacNoEditor
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F7E00] MacServer
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3949D00] Linux
+[2022.03.17-14.09.11:427][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F7300] LinuxNoEditor
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3948800] LinuxAArch64NoEditor
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F6100] LinuxClient
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394AC00] LinuxAArch64Client
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F4E00] LinuxServer
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394B700] LinuxAArch64Server
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F5400] Android
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394AD00] Android_Low
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F7900] Android_Mid
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394B500] Android_High
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F6000] Android_Default
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394B100] Android_Adreno4xx
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F7500] Android_Adreno5xx_Low
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394BC00] Android_Adreno5xx
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F7800] Android_Adreno6xx
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394BF00] Android_Adreno6xx_Vulkan
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F7200] Android_Mali_T6xx
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394AE00] Android_Mali_T7xx
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F6300] Android_Mali_T8xx
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3948B00] Android_Mali_G71
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F6F00] Android_Mali_G72
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3948D00] Android_Mali_G72_Vulkan
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F5700] Android_Mali_G76
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3949800] Android_Mali_G76_Vulkan
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F4D00] Android_Mali_G77
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3949700] Android_Mali_G77_Vulkan
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F6400] Android_Vulkan_SM5
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3949600] Android_PowerVR_G6xxx
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F5200] Android_PowerVR_GT7xxx
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394BE00] Android_PowerVR_GE8xxx
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F5100] Android_PowerVR_GM9xxx
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED3948100] Android_PowerVR_GM9xxx_Vulkan
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED38F4600] Android_TegraK1
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394A600] Android_Unknown_Vulkan
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394FC00] Lumin
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED39AF900] Lumin_Desktop
+[2022.03.17-14.09.11:428][891]LogDeviceProfile: Device profile begin destroy: [0000023ED394D700] HoloLens
+[2022.03.17-14.09.11:451][891]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.11:455][891]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.11:457][891]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.11:459][891]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.11:462][891]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.11:465][891]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.11:467][891]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.11:469][891]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.11:472][891]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.11:474][891]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.11:546][891]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2022.03.17-14.09.11:569][891]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.11:572][891]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.11:572][891]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-14.09.11:574][891]LogExit: Editor shut down
+[2022.03.17-14.09.11:580][891]LogExit: Transaction tracking system shut down
+[2022.03.17-14.09.12:171][891]LogExit: Object subsystem successfully closed.
+[2022.03.17-14.09.12:213][891]LogShaderCompilers: Display: Shaders left to compile 0
+[2022.03.17-14.09.12:228][891]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (835)
+[2022.03.17-14.09.12:228][891]LogModuleManager: Shutting down and abandoning module SequencerWidgets (833)
+[2022.03.17-14.09.12:228][891]LogModuleManager: Shutting down and abandoning module BlueprintGraph (831)
+[2022.03.17-14.09.12:229][891]LogModuleManager: Shutting down and abandoning module DataTableEditor (829)
+[2022.03.17-14.09.12:229][891]LogModuleManager: Shutting down and abandoning module NierProject (827)
+[2022.03.17-14.09.12:229][891]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (826)
+[2022.03.17-14.09.12:229][891]LogModuleManager: Shutting down and abandoning module SceneOutliner (824)
+[2022.03.17-14.09.12:229][891]LogModuleManager: Shutting down and abandoning module AddContentDialog (822)
+[2022.03.17-14.09.12:231][891]LogModuleManager: Shutting down and abandoning module WidgetCarousel (821)
+[2022.03.17-14.09.12:231][891]LogModuleManager: Shutting down and abandoning module EditorWidgets (818)
+[2022.03.17-14.09.12:231][891]LogModuleManager: Shutting down and abandoning module StatsViewer (816)
+[2022.03.17-14.09.12:231][891]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (814)
+[2022.03.17-14.09.12:231][891]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (812)
+[2022.03.17-14.09.12:231][891]LogModuleManager: Shutting down and abandoning module AutomationWorker (810)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module SteamVREditor (808)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module OculusMR (806)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module PlanarCut (804)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module CharacterAI (802)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module GooglePADEditor (800)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (798)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (796)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (794)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (792)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (790)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module WebMMedia (788)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (786)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (784)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (782)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module SequenceRecorder (781)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (778)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (776)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (774)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (772)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (770)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (768)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (766)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (764)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (762)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (760)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (758)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (756)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (754)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module TextureAlignMode (752)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module BspMode (750)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module GeometryMode (748)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (746)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module SmartSnapping (744)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module SessionServices (742)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module MeshPaint (740)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (738)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module FoliageEdit (736)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module LandscapeEditor (734)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module MeshPaintMode (732)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (730)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module ActorPickerMode (728)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module PlacementMode (726)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module ViewportSnapping (724)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module ViewportInteraction (722)
+[2022.03.17-14.09.12:232][891]LogModuleManager: Shutting down and abandoning module ClothPainter (720)
+[2022.03.17-14.09.12:233][891]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (719)
+[2022.03.17-14.09.12:233][891]LogModuleManager: Shutting down and abandoning module LogVisualizer (716)
+[2022.03.17-14.09.12:233][891]LogModuleManager: Shutting down and abandoning module IntroTutorials (714)
+[2022.03.17-14.09.12:233][891]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (713)
+[2022.03.17-14.09.12:233][891]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (710)
+[2022.03.17-14.09.12:233][891]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (708)
+[2022.03.17-14.09.12:233][891]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (706)
+[2022.03.17-14.09.12:233][891]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (705)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (702)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (700)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (698)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (696)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module TraceInsights (694)
+[2022.03.17-14.09.13:386][891]MemoryProfiler: Shutdown
+[2022.03.17-14.09.13:386][891]NetworkingProfiler: Shutdown
+[2022.03.17-14.09.13:386][891]LoadingProfiler: Shutdown
+[2022.03.17-14.09.13:386][891]TimingProfiler: Shutdown
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module TraceServices (693)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module EditorInteractiveToolsFramework (690)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (688)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module InputBindingEditor (686)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module MergeActors (684)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (682)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module LocalizationService (681)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module HardwareTargeting (678)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (676)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module UndoHistory (674)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module XmlParser (672)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module Blutility (670)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (668)
+[2022.03.17-14.09.13:386][891]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (667)
+[2022.03.17-14.09.13:387][891]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (664)
+[2022.03.17-14.09.13:387][891]LogModuleManager: Shutting down and abandoning module InternationalizationSettings (663)
+[2022.03.17-14.09.13:387][891]LogModuleManager: Shutting down and abandoning module SettingsEditor (660)
+[2022.03.17-14.09.13:387][891]LogModuleManager: Shutting down and abandoning module ProjectLauncher (658)
+[2022.03.17-14.09.13:387][891]LogModuleManager: Shutting down and abandoning module SessionFrontend (656)
+[2022.03.17-14.09.13:387][891]LogModuleManager: Shutting down and abandoning module ProfilerClient (654)
+[2022.03.17-14.09.13:387][891]LogModuleManager: Shutting down and abandoning module DeviceManager (652)
+[2022.03.17-14.09.13:387][891]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (651)
+[2022.03.17-14.09.13:419][891]LogModuleManager: Shutting down and abandoning module AutomationController (648)
+[2022.03.17-14.09.13:419][891]LogModuleManager: Shutting down and abandoning module AutomationWindow (646)
+[2022.03.17-14.09.13:419][891]LogModuleManager: Shutting down and abandoning module Layers (644)
+[2022.03.17-14.09.13:419][891]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (642)
+[2022.03.17-14.09.13:419][891]LogModuleManager: Shutting down and abandoning module DetailCustomizations (640)
+[2022.03.17-14.09.13:419][891]LogModuleManager: Shutting down and abandoning module PackagesDialog (638)
+[2022.03.17-14.09.13:419][891]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (636)
+[2022.03.17-14.09.13:419][891]LogModuleManager: Shutting down and abandoning module Persona (634)
+[2022.03.17-14.09.13:419][891]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (633)
+[2022.03.17-14.09.13:419][891]LogModuleManager: Shutting down and abandoning module Kismet (630)
+[2022.03.17-14.09.13:430][891]LogModuleManager: Shutting down and abandoning module KismetWidgets (629)
+[2022.03.17-14.09.13:430][891]LogModuleManager: Shutting down and abandoning module GraphEditor (626)
+[2022.03.17-14.09.13:430][891]LogModuleManager: Shutting down and abandoning module StructViewer (624)
+[2022.03.17-14.09.13:431][891]LogModuleManager: Shutting down and abandoning module ClassViewer (622)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module Toolbox (620)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module ModuleUI (618)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module OutputLog (616)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module GammaUI (614)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module Documentation (612)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module LiveCoding (610)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module LevelSequence (608)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (606)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module MovieScene (604)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (602)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module LauncherPlatform (600)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module AnalyticsET (598)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module PortalServices (596)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module PortalRpc (594)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module MessagingRpc (592)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (590)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module AudioMixerCore (589)
+[2022.03.17-14.09.13:432][891]LogModuleManager: Shutting down and abandoning module AIModule (586)
+[2022.03.17-14.09.13:433][891]LogModuleManager: Shutting down and abandoning module GameplayDebugger (585)
+[2022.03.17-14.09.13:433][891]LogModuleManager: Shutting down and abandoning module AITestSuite (583)
+[2022.03.17-14.09.13:433][891]LogModuleManager: Shutting down and abandoning module NavigationSystem (581)
+[2022.03.17-14.09.13:433][891]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (578)
+[2022.03.17-14.09.13:439][891]LogModuleManager: Shutting down and abandoning module ProfilerService (576)
+[2022.03.17-14.09.13:472][891]LogModuleManager: Shutting down and abandoning module TaskGraph (574)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module AudioSynesthesiaEditor (572)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module OculusEditor (570)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module OculusInput (568)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module ContentBrowserFileDataSource (566)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module ContentBrowserClassDataSource (564)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module ContentBrowserAssetDataSource (562)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module CollectionManager (561)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module VariantManagerContentEditor (558)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (556)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module SynthesisEditor (554)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module Synthesis (552)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (550)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (548)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (546)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module MotoSynthEditor (544)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module MotoSynth (542)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module MeshConversion (540)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module DynamicMesh (538)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (536)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module GeometricObjects (534)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (532)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module GeometryCollectionSequencer (531)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module GeometryCollectionEditor (528)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (526)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module GeometryCacheStreamer (524)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (522)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module GooglePAD (520)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module EditableMesh (518)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (516)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module ChaosSolverEditor (514)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module ChaosNiagara (512)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module CableComponent (510)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module FractureEditor (508)
+[2022.03.17-14.09.13:473][891]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (507)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module ChaosClothEditor (504)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module AudioCapture (502)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module AudioCaptureRtAudio (501)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module AssetTags (498)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (496)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module BackChannel (494)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module AutomationUtilsEditor (492)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module AutomationUtils (490)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (488)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module AppleImageUtils (486)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module AlembicImporter (484)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module AlembicLibrary (483)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module GeometryCache (482)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (481)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module AndroidPermission (476)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module ScreenshotTools (474)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module TemplateSequence (472)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module MediaCompositing (470)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module ImgMedia (468)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (466)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (464)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (462)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module MagicLeapSharedWorld (460)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module MagicLeapLightEstimation (458)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (456)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (454)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (452)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module NiagaraEditorWidgets (450)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module CascadeToNiagaraConverter (448)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (446)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module PluginBrowser (444)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (442)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (440)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module EditorScriptingUtilities (438)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module CurveEditorTools (436)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (434)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module CryptoKeys (432)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (430)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (428)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module UObjectPlugin (426)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (424)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module RiderSourceCodeAccess (422)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module PluginUtils (420)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (418)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module PlasticSourceControl (416)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module GitSourceControl (414)
+[2022.03.17-14.09.13:474][891]LogModuleManager: Shutting down and abandoning module SourceControl (413)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (410)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (408)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (406)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (404)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module Paper2DEditor (402)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module MeshPaintingToolset (400)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module MeshPaintEditorMode (398)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module AnimGraph (395)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module SoundFields (392)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module SignificanceManager (390)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (388)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module PropertyAccessEditor (386)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (384)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (380)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module PythonScriptPlugin (378)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module AudioSynesthesia (376)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module AudioSynesthesiaCore (374)
+[2022.03.17-14.09.13:475][891]LogModuleManager: Shutting down and abandoning module UdpMessaging (372)
+[2022.03.17-14.09.13:576][891]LogModuleManager: Shutting down and abandoning module TcpMessaging (370)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (368)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module ActorSequence (366)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module EnvironmentQueryEditor (364)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module MagicLeapARPin (362)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module MagicLeapHandMeshing (360)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (358)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (356)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module MagicLeapPlanes (354)
+[2022.03.17-14.09.13:677][891]LogMagicLeapPlanes: Planes tracker already destroyed.
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module MagicLeapImageTracker (352)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (350)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (348)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (346)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module MagicLeapController (344)
+[2022.03.17-14.09.13:677][891]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module MagicLeapARPinImpl (342)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module MagicLeapAR (340)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module AugmentedReality (339)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (336)
+[2022.03.17-14.09.13:677][891]LogModuleManager: Shutting down and abandoning module Niagara (334)
+[2022.03.17-14.09.13:678][891]LogModuleManager: Shutting down and abandoning module SignalProcessing (333)
+[2022.03.17-14.09.13:678][891]LogModuleManager: Shutting down and abandoning module NiagaraEditor (331)
+[2022.03.17-14.09.13:678][891]LogModuleManager: Shutting down and abandoning module NiagaraCore (328)
+[2022.03.17-14.09.13:678][891]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (326)
+[2022.03.17-14.09.13:678][891]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (324)
+[2022.03.17-14.09.13:678][891]LogModuleManager: Shutting down and abandoning module FacialAnimation (322)
+[2022.03.17-14.09.13:678][891]LogModuleManager: Shutting down and abandoning module DataValidation (320)
+[2022.03.17-14.09.13:678][891]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (318)
+[2022.03.17-14.09.13:678][891]LogModuleManager: Shutting down and abandoning module LevelEditor (317)
+[2022.03.17-14.09.13:679][891]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (316)
+[2022.03.17-14.09.13:679][891]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (314)
+[2022.03.17-14.09.13:679][891]LogModuleManager: Shutting down and abandoning module MainFrame (312)
+[2022.03.17-14.09.13:680][891]LogModuleManager: Shutting down and abandoning module HotReload (311)
+[2022.03.17-14.09.13:680][891]LogModuleManager: Shutting down and abandoning module ToolMenus (307)
+[2022.03.17-14.09.13:680][891]LogModuleManager: Shutting down and abandoning module ContentBrowser (305)
+[2022.03.17-14.09.13:680][891]LogModuleManager: Shutting down and abandoning module ContentBrowserData (304)
+[2022.03.17-14.09.13:680][891]LogModuleManager: Shutting down and abandoning module TreeMap (301)
+[2022.03.17-14.09.13:680][891]LogModuleManager: Shutting down and abandoning module PropertyAccessNode (298)
+[2022.03.17-14.09.13:680][891]LogModuleManager: Shutting down and abandoning module AnimationSharing (296)
+[2022.03.17-14.09.13:680][891]LogModuleManager: Shutting down and abandoning module Paper2D (294)
+[2022.03.17-14.09.13:680][891]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (292)
+[2022.03.17-14.09.13:686][891]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (290)
+[2022.03.17-14.09.13:686][891]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (288)
+[2022.03.17-14.09.13:686][891]LogModuleManager: Shutting down and abandoning module PacketHandler (286)
+[2022.03.17-14.09.13:686][891]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (284)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (282)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module MediaAssets (280)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module Overlay (278)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module OverlayEditor (277)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module VREditor (274)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module StringTableEditor (272)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (270)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (268)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module FunctionalTesting (266)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (264)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (263)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module UMG (260)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module UMGEditor (259)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module MessageLog (257)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module SlateReflector (252)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module Slate (250)
+[2022.03.17-14.09.13:687][891]LogModuleManager: Shutting down and abandoning module SlateCore (248)
+[2022.03.17-14.09.13:688][891]LogModuleManager: Shutting down and abandoning module LandscapeEditorUtilities (246)
+[2022.03.17-14.09.13:688][891]LogModuleManager: Shutting down and abandoning module UnrealEd (244)
+[2022.03.17-14.09.13:688][891]LogModuleManager: Shutting down and abandoning module MRMesh (242)
+[2022.03.17-14.09.13:688][891]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (240)
+[2022.03.17-14.09.13:688][891]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (238)
+[2022.03.17-14.09.13:688][891]LogModuleManager: Shutting down and abandoning module XAudio2 (236)
+[2022.03.17-14.09.13:688][891]LogModuleManager: Shutting down and abandoning module Networking (234)
+[2022.03.17-14.09.13:688][891]LogModuleManager: Shutting down and abandoning module Core (232)
+[2022.03.17-14.09.13:688][891]LogModuleManager: Shutting down and abandoning module MovieSceneTools (230)
+[2022.03.17-14.09.13:688][891]LogModuleManager: Shutting down and abandoning module CurveEditor (229)
+[2022.03.17-14.09.13:689][891]LogModuleManager: Shutting down and abandoning module Sequencer (227)
+[2022.03.17-14.09.13:689][891]LogModuleManager: Shutting down and abandoning module EditorStyle (226)
+[2022.03.17-14.09.13:690][891]LogModuleManager: Shutting down and abandoning module KismetCompiler (222)
+[2022.03.17-14.09.13:690][891]LogModuleManager: Shutting down and abandoning module MeshBuilder (220)
+[2022.03.17-14.09.13:690][891]LogModuleManager: Shutting down and abandoning module MeshUtilities (218)
+[2022.03.17-14.09.13:690][891]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (217)
+[2022.03.17-14.09.13:690][891]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (216)
+[2022.03.17-14.09.13:690][891]LogModuleManager: Shutting down and abandoning module MeshBoneReduction (215)
+[2022.03.17-14.09.13:690][891]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (213)
+[2022.03.17-14.09.13:690][891]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (211)
+[2022.03.17-14.09.13:690][891]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (209)
+[2022.03.17-14.09.13:690][891]LogModuleManager: Shutting down and abandoning module MaterialBaking (205)
+[2022.03.17-14.09.13:690][891]LogModuleManager: Shutting down and abandoning module NullInstallBundleManager (200)
+[2022.03.17-14.09.13:690][891]LogModuleManager: Shutting down and abandoning module DerivedDataCache (198)
+[2022.03.17-14.09.13:690][891]LogModuleManager: Shutting down and abandoning module TargetPlatform (196)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (195)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (193)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (191)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (189)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (187)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (185)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (183)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module TextureFormatETC2 (181)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (179)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (177)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (175)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module ImageWrapper (174)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (171)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (169)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (167)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (165)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (163)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (161)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (159)
+[2022.03.17-14.09.13:691][891]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (157)
+[2022.03.17-14.09.13:697][891]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (155)
+[2022.03.17-14.09.13:697][891]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (153)
+[2022.03.17-14.09.13:697][891]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (151)
+[2022.03.17-14.09.13:697][891]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (149)
+[2022.03.17-14.09.13:697][891]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (147)
+[2022.03.17-14.09.13:707][891]LogModuleManager: Shutting down and abandoning module LinuxAArch64ServerTargetPlatform (145)
+[2022.03.17-14.09.13:707][891]LogModuleManager: Shutting down and abandoning module LinuxAArch64ClientTargetPlatform (143)
+[2022.03.17-14.09.13:707][891]LogModuleManager: Shutting down and abandoning module LinuxAArch64NoEditorTargetPlatform (141)
+[2022.03.17-14.09.13:707][891]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (139)
+[2022.03.17-14.09.13:707][891]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (137)
+[2022.03.17-14.09.13:707][891]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (135)
+[2022.03.17-14.09.13:707][891]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (133)
+[2022.03.17-14.09.13:707][891]LogModuleManager: Shutting down and abandoning module Messaging (131)
+[2022.03.17-14.09.13:707][891]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (129)
+[2022.03.17-14.09.13:711][891]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (127)
+[2022.03.17-14.09.13:724][891]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (125)
+[2022.03.17-14.09.13:724][891]LogModuleManager: Shutting down and abandoning module InputCore (122)
+[2022.03.17-14.09.13:724][891]LogModuleManager: Shutting down and abandoning module Settings (120)
+[2022.03.17-14.09.13:724][891]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (118)
+[2022.03.17-14.09.13:725][891]LogModuleManager: Shutting down and abandoning module PhysXCooking (116)
+[2022.03.17-14.09.13:725][891]LogModuleManager: Shutting down and abandoning module Chaos (114)
+[2022.03.17-14.09.13:725][891]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (112)
+[2022.03.17-14.09.13:725][891]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (111)
+[2022.03.17-14.09.13:725][891]LogModuleManager: Shutting down and abandoning module AVEncoder (110)
+[2022.03.17-14.09.13:725][891]LogModuleManager: Shutting down and abandoning module SteamVRInputDevice (106)
+[2022.03.17-14.09.13:725][891]LogModuleManager: Shutting down and abandoning module SteamVRInput (104)
+[2022.03.17-14.09.13:725][891]LogModuleManager: Shutting down and abandoning module SteamVR (102)
+[2022.03.17-14.09.13:725][891]LogHMD: Freeing OpenVRDLLHandle.
+[2022.03.17-14.09.13:725][891]LogModuleManager: Shutting down and abandoning module OculusHMD (100)
+[2022.03.17-14.09.13:725][891]LogModuleManager: Shutting down and abandoning module VariantManagerContent (98)
+[2022.03.17-14.09.13:725][891]LogModuleManager: Shutting down and abandoning module DatasmithContent (96)
+[2022.03.17-14.09.13:726][891]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (94)
+[2022.03.17-14.09.13:726][891]LogModuleManager: Shutting down and abandoning module ChunkDownloader (92)
+[2022.03.17-14.09.13:726][891]LogModuleManager: Shutting down and abandoning module ChaosCloth (90)
+[2022.03.17-14.09.13:726][891]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (88)
+[2022.03.17-14.09.13:726][891]LogModuleManager: Shutting down and abandoning module WmfMedia (84)
+[2022.03.17-14.09.13:728][891]LogModuleManager: Shutting down and abandoning module Media (83)
+[2022.03.17-14.09.13:728][891]LogModuleManager: Shutting down and abandoning module MediaInfo (82)
+[2022.03.17-14.09.13:728][891]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (78)
+[2022.03.17-14.09.13:729][891]LogModuleManager: Shutting down and abandoning module XMPP (73)
+[2022.03.17-14.09.13:729][891]LogModuleManager: Shutting down and abandoning module WebSockets (72)
+[2022.03.17-14.09.13:735][891]LogModuleManager: Shutting down and abandoning module HTTP (69)
+[2022.03.17-14.09.13:735][891]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2022.03.17-14.09.13:735][891]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B360DA6A6-4EAC-3C00-227E-92B02D88BDB8%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.0-14830424%2B%2B%2BUE4%2BRelease-4.26&UserID=9e578a2a4704dafa49deb9a5e0d1bfa7%7Cc7d2e8a4180a487eadb1462b716fc6ad%7C8b3a7e98-031f-4c3a-8f3b-52bb16752b3c&AppEnvironment=datacollector-binary&UploadType=eteventstream] refs=[1] status=Processing
+[2022.03.17-14.09.13:735][891]LogHttp: Display: cleaning up 1 outstanding Http requests.
+[2022.03.17-14.09.13:750][891]LogModuleManager: Shutting down and abandoning module SSL (68)
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module ExrReaderGpu (64)
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (62)
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module MLSDK (60)
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module MagicLeap (58)
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (56)
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module NiagaraShader (54)
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module AISupportModule (52)
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module DesktopPlatform (50)
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module PythonScriptPluginPreload (48)
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (46)
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (44)
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module PlatformCrypto (42)
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module XGEController (40)
+[2022.03.17-14.09.13:752][891]LogXGEController: Cleaning working directory: C:/Users/potap/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module AnimationModifiers (38)
+[2022.03.17-14.09.13:752][891]LogModuleManager: Shutting down and abandoning module AudioEditor (36)
+[2022.03.17-14.09.13:753][891]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2022.03.17-14.09.13:753][891]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+[2022.03.17-14.09.13:753][891]LogModuleManager: Shutting down and abandoning module RenderCore (30)
+[2022.03.17-14.09.13:753][891]LogModuleManager: Shutting down and abandoning module Landscape (28)
+[2022.03.17-14.09.13:753][891]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
+[2022.03.17-14.09.13:754][891]LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
+[2022.03.17-14.09.13:754][891]LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
+[2022.03.17-14.09.13:754][891]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2022.03.17-14.09.13:754][891]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2022.03.17-14.09.13:754][891]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2022.03.17-14.09.13:754][891]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2022.03.17-14.09.13:754][891]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2022.03.17-14.09.13:754][891]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2022.03.17-14.09.13:754][891]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2022.03.17-14.09.13:754][891]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2022.03.17-14.09.13:754][891]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2022.03.17-14.09.13:754][891]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2022.03.17-14.09.13:755][891]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
+[2022.03.17-14.09.13:765][891]LogD3D11RHI: Shutdown
+[2022.03.17-14.09.13:765][891]LogD3D11RHI: CleanupD3DDevice
+[2022.03.17-14.09.13:923][891]LogExit: Exiting.
+[2022.03.17-14.09.13:932][891]Log file closed, 03/17/22 23:09:13

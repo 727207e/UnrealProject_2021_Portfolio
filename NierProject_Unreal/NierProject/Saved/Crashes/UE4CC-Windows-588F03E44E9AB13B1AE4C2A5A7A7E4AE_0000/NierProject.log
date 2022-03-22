@@ -1,0 +1,1079 @@
+﻿Log file open, 03/18/22 01:37:16
+LogInit: LLM is enabled
+LogInit: LLM CsvWriter: off TraceWriter: off
+LogInit: Display: Running engine for game: NierProject
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 71 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.413994
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin XGEController
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CascadeToNiagaraConverter
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin LuminPlatformFeatures
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessNode
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting plugin ContentBrowserFileDataSource
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin SteamVR
+LogXGEController: Cleaning working directory: C:/Users/potap/AppData/Local/Temp/UnrealXGEWorkingDir/
+LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogOculusPluginWrapper: OculusPlugin initialized successfully
+LogHMD: Failed initializing OVRPlugin 1.51.0
+LogInit: Build: ++UE4+Release-4.26-CL-14830424
+LogInit: Engine Version: 4.26.0-14830424+++UE4+Release-4.26
+LogInit: Compatible Engine Version: 4.26.0-14830424+++UE4+Release-4.26
+LogInit: Net CL: 14830424
+LogInit: OS: Windows 10 (Release 2009) (), CPU: AMD Ryzen 9 3900X 12-Core Processor            , GPU: NVIDIA GeForce RTX 2080 SUPER
+LogInit: Compiled (64-bit): Dec  1 2020 15:13:26
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.26
+LogInit: Command Line: 
+LogInit: Base Directory: D:/UE_4.26/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 44
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 43
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 40
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[r.AllowStaticLighting:1]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.17-16.37.17:902][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2022.03.17-16.37.17:902][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.17-16.37.17:902][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.17-16.37.17:918][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.03.17-16.37.17:918][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.03.17-16.37.17:919][  0]LogInit: Selected Device Profile: [Windows]
+[2022.03.17-16.37.17:919][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2022.03.17-16.37.17:919][  0]LogHAL: Display: Platform has ~ 16 GB [17099456512 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2022.03.17-16.37.17:919][  0]LogInit: Going up to parent DeviceProfile []
+[2022.03.17-16.37.17:919][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.03.17-16.37.17:919][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Scalability.ini]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2022.03.17-16.37.17:920][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Config/Windows/Engine.ini]
+[2022.03.17-16.37.17:920][  0]LogInit: Computer: DESKTOP-OD807TG
+[2022.03.17-16.37.17:920][  0]LogInit: User: potap
+[2022.03.17-16.37.17:920][  0]LogInit: CPU Page size=4096, Cores=12
+[2022.03.17-16.37.17:920][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2022.03.17-16.37.17:920][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2022.03.17-16.37.17:920][  0]LogMemory: Platform Memory Stats for Windows
+[2022.03.17-16.37.17:920][  0]LogMemory: Process Physical Memory: 147.72 MB used, 148.25 MB peak
+[2022.03.17-16.37.17:920][  0]LogMemory: Process Virtual Memory: 130.79 MB used, 130.79 MB peak
+[2022.03.17-16.37.17:920][  0]LogMemory: Physical Memory: 6327.38 MB used,  9979.94 MB free, 16307.31 MB total
+[2022.03.17-16.37.17:920][  0]LogMemory: Virtual Memory: 134202128.00 MB used,  15597.50 MB free, 134217728.00 MB total
+[2022.03.17-16.37.17:925][  0]LogWindows: WindowsPlatformFeatures enabled
+[2022.03.17-16.37.18:204][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2022.03.17-16.37.18:215][  0]LogInit: Using OS detected language (ko-KR).
+[2022.03.17-16.37.18:215][  0]LogInit: Using OS detected locale (ko-KR).
+[2022.03.17-16.37.18:217][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2022.03.17-16.37.18:415][  0]LogInit: Setting process to per monitor DPI aware
+[2022.03.17-16.37.18:472][  0]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2022.03.17-16.37.18:542][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2022.03.17-16.37.18:542][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2022.03.17-16.37.24:247][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2022.03.17-16.37.24:247][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2022.03.17-16.37.24:247][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2022.03.17-16.37.24:247][  0]LogD3D11RHI: D3D11 adapters:
+[2022.03.17-16.37.24:379][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2080 SUPER' (Feature Level 11_0)
+[2022.03.17-16.37.24:379][  0]LogD3D11RHI:       8010/0/8153 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2022.03.17-16.37.24:381][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2022.03.17-16.37.24:382][  0]LogD3D11RHI:       0/0/8153 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2022.03.17-16.37.24:382][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2022.03.17-16.37.24:387][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2022.03.17-16.37.24:387][  0]LogD3D11RHI:     GPU DeviceId: 0x1e81 (for the marketing name, search the web for "GPU Device Id")
+[2022.03.17-16.37.24:387][  0]LogWindows: EnumDisplayDevices:
+[2022.03.17-16.37.24:387][  0]LogWindows:    0. 'NVIDIA GeForce RTX 2080 SUPER' (P:1 D:1)
+[2022.03.17-16.37.24:388][  0]LogWindows:    1. 'NVIDIA GeForce RTX 2080 SUPER' (P:0 D:1)
+[2022.03.17-16.37.24:388][  0]LogWindows:    2. 'NVIDIA GeForce RTX 2080 SUPER' (P:0 D:1)
+[2022.03.17-16.37.24:388][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2080 SUPER' (P:0 D:0)
+[2022.03.17-16.37.24:388][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2022.03.17-16.37.24:388][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2080 SUPER
+[2022.03.17-16.37.24:388][  0]LogD3D11RHI:   Driver Version: 456.71 (internal:27.21.14.5671, unified:456.71)
+[2022.03.17-16.37.24:388][  0]LogD3D11RHI:      Driver Date: 9-30-2020
+[2022.03.17-16.37.24:388][  0]LogRHI: Texture pool is 5607 MB (70% of 8010 MB)
+[2022.03.17-16.37.24:434][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2022.03.17-16.37.24:434][  0]LogD3D11RHI: Async texture creation enabled
+[2022.03.17-16.37.24:434][  0]LogD3D11RHI: Array index from any shader is supported
+[2022.03.17-16.37.24:439][  0]LogD3D11RHI: HDR output is supported on display 2 (NvId: 0x80061082).
+[2022.03.17-16.37.24:461][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2022.03.17-16.37.24:462][  0]LogRHI: GeForceNow SDK initialized: 1
+[2022.03.17-16.37.24:725][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2022.03.17-16.37.24:754][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2022.03.17-16.37.24:754][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2022.03.17-16.37.24:754][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2022.03.17-16.37.24:754][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2022.03.17-16.37.24:754][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2022.03.17-16.37.24:754][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2022.03.17-16.37.24:754][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2022.03.17-16.37.24:754][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2022.03.17-16.37.24:754][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2022.03.17-16.37.24:754][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2022.03.17-16.37.24:790][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2022.03.17-16.37.24:790][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2022.03.17-16.37.24:810][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2022.03.17-16.37.24:822][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2022.03.17-16.37.24:837][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2022.03.17-16.37.24:843][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2022.03.17-16.37.24:850][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2022.03.17-16.37.24:868][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2022.03.17-16.37.24:876][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2022.03.17-16.37.24:903][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2022.03.17-16.37.24:903][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2022.03.17-16.37.24:915][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacNoEditor'
+[2022.03.17-16.37.24:931][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
+[2022.03.17-16.37.24:947][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
+[2022.03.17-16.37.24:953][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
+[2022.03.17-16.37.24:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2022.03.17-16.37.24:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2022.03.17-16.37.24:976][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2022.03.17-16.37.24:984][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2022.03.17-16.37.24:991][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2022.03.17-16.37.24:998][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2022.03.17-16.37.24:998][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2022.03.17-16.37.25:036][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2022.03.17-16.37.25:276][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2022.03.17-16.37.25:276][  0]LogShaderCompilers: Guid format shader working directory is -42 characters bigger than the processId version (../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Intermediate/Shaders/WorkingDirectory/2304/).
+[2022.03.17-16.37.25:276][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/potap/AppData/Local/Temp/UnrealShaderWorkingDir/1EFA6661486D036D6F16FAB9FFFC1341/'.
+[2022.03.17-16.37.25:276][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2022.03.17-16.37.25:276][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2022.03.17-16.37.26:188][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2022.03.17-16.37.26:327][  0]LogDerivedDataCache: Loaded boot cache 0.14s 89MB C:/Users/potap/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2022.03.17-16.37.26:327][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/potap/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc
+[2022.03.17-16.37.26:327][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2022.03.17-16.37.26:327][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2022.03.17-16.37.26:327][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.03.17-16.37.26:327][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2022.03.17-16.37.26:357][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2022.03.17-16.37.26:357][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.03.17-16.37.26:357][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2022.03.17-16.37.26:370][  0]LogDerivedDataCache: Speed tests for C:/Users/potap/AppData/Local/UnrealEngine/Common/DerivedDataCache took 0.01 seconds
+[2022.03.17-16.37.26:370][  0]LogDerivedDataCache: Display: Performance to C:/Users/potap/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.05ms. RandomReadSpeed=133.15MBs, RandomWriteSpeed=177.08MBs. Assigned SpeedClass 'Local'
+[2022.03.17-16.37.26:371][  0]LogDerivedDataCache: Using Local data cache path C:/Users/potap/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2022.03.17-16.37.26:371][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2022.03.17-16.37.26:371][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2022.03.17-16.37.26:411][  0]LogSlate: Using FreeType 2.10.0
+[2022.03.17-16.37.26:412][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2022.03.17-16.37.26:483][  0]LogAssetRegistry: FAssetRegistry took 0.0026 seconds to start up
+[2022.03.17-16.37.26:697][  0]LogInit: Selected Device Profile: [Windows]
+[2022.03.17-16.37.26:697][  0]LogInit: Active device profile: [000002045AF5E400][0000020459FD3380 49] Windows
+[2022.03.17-16.37.26:697][  0]LogInit: Profiles: [000002045AF5E400][0000020459FD3380 49] Windows, [000002045AF0B600][00000204597D1500 49] WindowsNoEditor, [000002045AF5E000][0000020459FD7640 49] WindowsServer, [000002045AF0BA00][00000204597D5780 49] WindowsClient, [000002045AF5C700][00000204597D98C0 49] IOS, [000002045AF0B000][00000204597DDA00 49] iPadAir, [000002045AF5D100][0000020459821B80 49] iPadAir2, [000002045AEA7000][000002045982E180 49] IPadPro, [000002045AEA7100][00000204598241C0 49] iPadAir3, [000002045AF5D600][0000020459838340 49] iPadAir4, [000002045AEA6800][000002045983C4C0 49] iPadMini2, [000002045AF5CC00][0000020459840640 49] iPadMini3, [000002045AEA5800][00000204598447C0 49] iPadMini4, [000002045AF5EB00][0000020459848940 49] iPadMini5, [000002045AEDE900][0000020459850C00 49] iPhone6, [000002045AEDEA00][000002045984CC40 49] iPodTouch6, [000002045AEA7C00][0000020459858F00 49] iPhone7, [000002045AEA7B00][0000020459854F40 49] iPodTouch7, [000002045AEDCE00][000002045985D0C0 49] iPhone5S, [000002045AEA7D00][0000020459861240 49] iPhone6Plus, [000002045AEDD200][00000204598653C0 49] iPhone6S, [000002045AEA4900][0000020459869540 49] iPhone6SPlus, [000002045AEDEB00][000002045981D680 49] iPhone7Plus, [000002045AEA7A00][000002045986D7C0 49] iPhoneSE, [000002045AEDF000][0000020459871900 49] iPhone8, [000002045AEA7700][0000020459875A40 49] iPhone8Plus, [000002045AEDDF00][000002045987DBC0 49] iPhoneX, [000002045AEA5C00][0000020459881D40 49] iPhoneXS, [000002045AEDC300][0000020459884200 49] iPhoneXSMax, [000002045AEA4B00][0000020459888380 49] iPhoneXR, [000002045AEDE500][000002045988C500 49] iPhone11, [000002045AEA4300][0000020459890680 49] iPhone11Pro, [000002045AEDC600][0000020459894800 49] iPhone11ProMax, [000002045AEA5600][0000020459898980 49] iPhoneSE2, [000002045AEDD400][000002045989CB00 49] iPhone12Mini, [000002045AEA5D00][00000204598A0C80 49] iPhone12, [000002045AEDF200][00000204598F6E00 49] iPhone12Pro, [000002045AEA4500][00000204598FAF80 49] iPhone12ProMax, [000002045AEDDB00][00000204598FF100 49] iPadPro105, [000002045AEDF400][0000020459903280 49] iPadPro129, [000002045AF09C00][0000020459907400 49] iPadPro97, [000002045AEDCC00][000002045990B580 49] iPadPro2_129, [000002045AF0B300][000002045990F700 49] iPad5, [000002045AEDC500][0000020459879840 49] iPad6, [000002045AF0BF00][0000020459913980 49] iPad7, [000002045AEDF600][0000020459917AC0 49] iPad8, [000002045AF0B800][000002045991FC40 49] iPadPro11, [000002045AEDDA00][0000020459922100 49] iPadPro2_11, [000002045AF09000][0000020459926280 49] iPadPro3_129, [000002045AF0A200][000002045992A400 49] iPadPro4_129, [000002045AEA5500][000002045992E580 49] AppleTV, [000002045AF08200][0000020459932700 49] AppleTV4K, [000002045AEA4400][0000020459936880 49] TVOS, [000002045AF09B00][000002045993AA00 49] Mac, [000002045AEA6700][000002045993EB80 49] MacClient, [000002045AEDF300][0000020459942D00 49] MacNoEditor, [000002045AEA7E00][0000020459946E80 49] MacServer, [000002045AEDDD00][000002045994B000 49] Linux, [000002045AEA7300][000002045994F180 49] LinuxNoEditor, [000002045AEDC800][0000020459953300 49] LinuxAArch64NoEditor, [000002045AEA6100][0000020459957480 49] LinuxClient, [000002045AEDEC00][000002045995B600 49] LinuxAArch64Client, [000002045AEA4E00][000002045995F780 49] LinuxServer, [000002045AEDF700][000002045991B8C0 49] LinuxAArch64Server, [000002045AEA5400][0000020459963A00 49] Android, [000002045AEDED00][0000020459967B40 49] Android_Low, [000002045AEA7900][000002045996FCC0 49] Android_Mid, [000002045AEDF500][0000020459972180 49] Android_High, [000002045AEA6000][0000020459976300 49] Android_Default, [000002045AEDF100][000002045997A480 49] Android_Adreno4xx, [000002045AEA7500][000002045997E600 49] Android_Adreno5xx_Low, [000002045AEDFC00][0000020459982780 49] Android_Adreno5xx, [000002045AEA7800][0000020459986900 49] Android_Adreno6xx, [000002045AEDFF00][000002045998AA80 49] Android_Adreno6xx_Vulkan, [000002045AEA7200][000002045998EC00 49] Android_Mali_T6xx, [000002045AEDEE00][0000020459A02D80 49] Android_Mali_T7xx, [000002045AEA6300][0000020459A06F00 49] Android_Mali_T8xx, [000002045AEDCB00][0000020459A0B080 49] Android_Mali_G71, [000002045AEA6F00][0000020459A0F200 49] Android_Mali_G72, [000002045AEDCD00][0000020459A13380 49] Android_Mali_G72_Vulkan, [000002045AEA5700][0000020459A17500 49] Android_Mali_G76, [000002045AEDD800][0000020459A1B680 49] Android_Mali_G76_Vulkan, [000002045AEA4D00][0000020459A1F800 49] Android_Mali_G77, [000002045AEDD700][000002045996B940 49] Android_Mali_G77_Vulkan, [000002045AEA6400][0000020459A23A80 49] Android_Vulkan_SM5, [000002045AEDD600][0000020459A27BC0 49] Android_PowerVR_G6xxx, [000002045AEA5200][0000020459A2BD00 49] Android_PowerVR_GT7xxx, [000002045AEDFE00][0000020459A321C0 49] Android_PowerVR_GE8xxx, [000002045AEA5100][0000020459A36340 49] Android_PowerVR_GM9xxx, [000002045AEDC100][0000020459A3A4C0 49] Android_PowerVR_GM9xxx_Vulkan, [000002045AEA4600][0000020459A3E640 49] Android_TegraK1, [000002045AEDE600][0000020459A427C0 49] Android_Unknown_Vulkan, [000002045AF0BC00][0000020459A46940 49] Lumin, [000002045AF5F900][0000020459A4AAC0 49] Lumin_Desktop, [000002045AF09700][0000020459A4EC40 49] HoloLens, 
+[2022.03.17-16.37.26:843][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2022.03.17-16.37.26:843][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2022.03.17-16.37.26:843][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2022.03.17-16.37.26:843][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2022.03.17-16.37.26:843][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2022.03.17-16.37.26:877][  0]LogNetVersion: NierProject 1.0.0, NetCL: 14830424, EngineNetVer: 16, GameNetVer: 0 (Checksum: 2231531239)
+[2022.03.17-16.37.27:792][  0]LogHMD: PokeAHoleMaterial loaded successfully
+[2022.03.17-16.37.27:814][  0]LogPackageLocalizationCache: Processed 24 localized package path(s) for 1 prioritized culture(s) in 0.022528 seconds
+[2022.03.17-16.37.27:820][  0]LogUObjectArray: 16830 objects as part of root set at end of initial load.
+[2022.03.17-16.37.27:820][  0]LogUObjectAllocator: 4209472 out of 0 bytes used by permanent object pool.
+[2022.03.17-16.37.27:820][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2022.03.17-16.37.28:953][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2022.03.17-16.37.28:960][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2022.03.17-16.37.28:981][  0]LogPython: Using Python 3.7.7
+[2022.03.17-16.37.30:047][  0]LogLinker: Warning: '{FileName}': 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2022.03.17-16.37.30:047][  0]LogLinker: Warning: '{FileName}': 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2022.03.17-16.37.30:047][  0]LogUObjectGlobals: Warning: 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C' 오브젝트를 찾는 데 실패했습니다.
+[2022.03.17-16.37.30:533][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2022.03.17-16.37.30:578][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.03.17-16.37.30:578][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.03.17-16.37.30:674][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.17-16.37.30:674][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.17-16.37.30:678][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.17-16.37.30:687][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.17-16.37.30:699][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.17-16.37.30:705][  0]LogUProjectInfo: Found projects:
+[2022.03.17-16.37.30:731][  0]LogCollectionManager: Loaded 0 collections in 0.000557 seconds
+[2022.03.17-16.37.30:770][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Collections/' took 0.00s
+[2022.03.17-16.37.30:770][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Developers/potap/Collections/' took 0.00s
+[2022.03.17-16.37.30:770][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Collections/' took 0.00s
+[2022.03.17-16.37.30:770][  0]LogOcInput: OculusInput pre-init called
+[2022.03.17-16.37.31:021][  0]LogEngine: Initializing Engine...
+[2022.03.17-16.37.31:081][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2022.03.17-16.37.31:081][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2022.03.17-16.37.31:082][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2022.03.17-16.37.31:160][  0]LogInit: Initializing FReadOnlyCVARCache
+[2022.03.17-16.37.31:182][  0]LogAIModule: Creating AISystem for world Untitled
+[2022.03.17-16.37.31:183][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2022.03.17-16.37.31:188][  0]LogAudio: Display: Audio Device Manager Initialized
+[2022.03.17-16.37.31:188][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2022.03.17-16.37.31:188][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.17-16.37.31:188][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.17-16.37.31:188][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.17-16.37.31:188][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.17-16.37.31:188][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.17-16.37.31:188][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.17-16.37.31:188][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.17-16.37.31:188][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.17-16.37.31:188][  0]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.17-16.37.31:188][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.17-16.37.31:209][  0]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.17-16.37.31:209][  0]LogAudioMixer: Display: 1: FrontRight
+[2022.03.17-16.37.31:232][  0]LogAudioMixer: Display: Using Audio Device 스피커(HS420)
+[2022.03.17-16.37.31:234][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.17-16.37.31:236][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.17-16.37.31:236][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.17-16.37.31:236][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.17-16.37.31:236][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.17-16.37.31:236][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.17-16.37.31:237][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.17-16.37.31:237][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.17-16.37.31:237][  0]LogInit: FAudioDevice initialized.
+[2022.03.17-16.37.31:237][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2022.03.17-16.37.31:237][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2022.03.17-16.37.31:310][  0]LogDerivedDataCache: Saved boot cache 0.07s 89MB C:/Users/potap/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2022.03.17-16.37.31:310][  0]LogInit: Texture streaming: Enabled
+[2022.03.17-16.37.31:332][  0]LogAnalytics: Display: [UEEditor.Rocket.Release] APIServer = https://datarouter.ol.epicgames.com/. AppVersion = 4.26.0-14830424+++UE4+Release-4.26
+[2022.03.17-16.37.31:337][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2022.03.17-16.37.31:337][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2022.03.17-16.37.31:339][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2022.03.17-16.37.31:380][  0]LogInit: Transaction tracking system initialized
+[2022.03.17-16.37.31:438][  0]BlueprintLog: New page: 에디터 로드
+[2022.03.17-16.37.31:603][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
+[2022.03.17-16.37.31:676][  0]TimingProfiler: Initialize
+[2022.03.17-16.37.31:676][  0]TimingProfiler: OnSessionChanged
+[2022.03.17-16.37.31:676][  0]LoadingProfiler: Initialize
+[2022.03.17-16.37.31:676][  0]LoadingProfiler: OnSessionChanged
+[2022.03.17-16.37.31:676][  0]NetworkingProfiler: Initialize
+[2022.03.17-16.37.31:676][  0]NetworkingProfiler: OnSessionChanged
+[2022.03.17-16.37.31:676][  0]MemoryProfiler: Initialize
+[2022.03.17-16.37.31:676][  0]MemoryProfiler: OnSessionChanged
+[2022.03.17-16.37.31:869][  0]LogCook: Display: CookSettings for Memory: MemoryMaxUsedVirtual 0MiB, MemoryMaxUsedPhysical 16384MiB, MemoryMinFreeVirtual 0MiB, MemoryMinFreePhysical 1024MiB
+[2022.03.17-16.37.31:869][  0]LogCook: Display: Mobile HDR setting 1
+[2022.03.17-16.37.32:424][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/' took 0.02s
+[2022.03.17-16.37.32:632][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.17-16.37.32:632][  0]LogUnrealEdMisc: Loading editor; pre map load, took 17.258
+[2022.03.17-16.37.32:633][  0]Cmd: MAP LOAD FILE="../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/GameMode/PersistentLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2022.03.17-16.37.32:635][  0]LightingResults: New page: 라이팅 빌드
+[2022.03.17-16.37.32:641][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2022.03.17-16.37.32:641][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.17-16.37.32:641][  0]MapCheck: New page: 맵 체크
+[2022.03.17-16.37.32:641][  0]LightingResults: New page: 라이팅 빌드
+[2022.03.17-16.37.32:650][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2022.03.17-16.37.32:696][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'PersistentLevel'.
+[2022.03.17-16.37.32:697][  0]LogAIModule: Creating AISystem for world PersistentLevel
+[2022.03.17-16.37.32:698][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/GameMode/FieldMap) is flushing async loading
+[2022.03.17-16.37.32:698][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2022.03.17-16.37.32:970][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.17-16.37.32:971][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.17-16.37.32:971][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.17-16.37.32:972][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.17-16.37.32:972][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.17-16.37.32:972][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.17-16.37.32:972][  0]LogLinker: Error: HOTRELOADED_MinionMeleeCoreDawn_Enemy_3 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/Enemy/1_Minion_Melee_coreDawn/Animation/CoreDawn_AnimInstance_BP.uasset)
+[2022.03.17-16.37.33:115][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/GameMode/BossMap) is flushing async loading
+[2022.03.17-16.37.33:478][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.03.17-16.37.33:527][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.03ms
+[2022.03.17-16.37.33:530][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.03.17-16.37.33:530][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.161ms.
+[2022.03.17-16.37.33:530][  0]LogFileHelpers: Loading map 'PersistentLevel' took 0.897
+[2022.03.17-16.37.33:532][  0]LogUnrealEdMisc: Total Editor Startup Time, took 18.157
+[2022.03.17-16.37.33:669][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.17-16.37.33:674][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.17-16.37.33:678][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.17-16.37.33:683][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.17-16.37.33:755][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0089 seconds. Added 3654 classes and 873 folders.
+[2022.03.17-16.37.33:826][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2022.03.17-16.37.33:847][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.03.17-16.37.33:847][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.33:847][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.17-16.37.33:847][  0]LogPakFile: OnPakFileMounted2Time == 0.000007
+[2022.03.17-16.37.33:865][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2022.03.17-16.37.33:865][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.33:865][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2022.03.17-16.37.33:865][  0]LogPakFile: OnPakFileMounted2Time == 0.000008
+[2022.03.17-16.37.33:877][  0]LogPakFile: PakFile PrimaryIndexSize=191
+[2022.03.17-16.37.33:877][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.33:877][  0]LogPakFile: PakFile FullDirectoryIndexSize=160
+[2022.03.17-16.37.33:877][  0]LogPakFile: OnPakFileMounted2Time == 0.000009
+[2022.03.17-16.37.33:937][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.17-16.37.33:937][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.33:937][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.17-16.37.33:937][  0]LogPakFile: OnPakFileMounted2Time == 0.000013
+[2022.03.17-16.37.34:034][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2022.03.17-16.37.34:034][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:034][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2022.03.17-16.37.34:034][  0]LogPakFile: OnPakFileMounted2Time == 0.000015
+[2022.03.17-16.37.34:038][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2022.03.17-16.37.34:038][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:038][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2022.03.17-16.37.34:038][  0]LogPakFile: OnPakFileMounted2Time == 0.000016
+[2022.03.17-16.37.34:047][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2022.03.17-16.37.34:047][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:047][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2022.03.17-16.37.34:047][  0]LogPakFile: OnPakFileMounted2Time == 0.000017
+[2022.03.17-16.37.34:090][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2022.03.17-16.37.34:090][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:090][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2022.03.17-16.37.34:090][  0]LogPakFile: OnPakFileMounted2Time == 0.000020
+[2022.03.17-16.37.34:097][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.03.17-16.37.34:097][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:097][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.03.17-16.37.34:097][  0]LogPakFile: OnPakFileMounted2Time == 0.000022
+[2022.03.17-16.37.34:106][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2022.03.17-16.37.34:106][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:106][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2022.03.17-16.37.34:106][  0]LogPakFile: OnPakFileMounted2Time == 0.000023
+[2022.03.17-16.37.34:109][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2022.03.17-16.37.34:109][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:109][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2022.03.17-16.37.34:109][  0]LogPakFile: OnPakFileMounted2Time == 0.000024
+[2022.03.17-16.37.34:119][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.03.17-16.37.34:119][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:119][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.03.17-16.37.34:119][  0]LogPakFile: OnPakFileMounted2Time == 0.000025
+[2022.03.17-16.37.34:128][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.17-16.37.34:128][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:128][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.17-16.37.34:128][  0]LogPakFile: OnPakFileMounted2Time == 0.000026
+[2022.03.17-16.37.34:130][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.03.17-16.37.34:130][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:130][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.03.17-16.37.34:130][  0]LogPakFile: OnPakFileMounted2Time == 0.000027
+[2022.03.17-16.37.34:132][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2022.03.17-16.37.34:132][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:132][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2022.03.17-16.37.34:132][  0]LogPakFile: OnPakFileMounted2Time == 0.000028
+[2022.03.17-16.37.34:134][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.03.17-16.37.34:134][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:134][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.17-16.37.34:134][  0]LogPakFile: OnPakFileMounted2Time == 0.000029
+[2022.03.17-16.37.34:140][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2022.03.17-16.37.34:140][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:140][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2022.03.17-16.37.34:140][  0]LogPakFile: OnPakFileMounted2Time == 0.000031
+[2022.03.17-16.37.34:141][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.03.17-16.37.34:141][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:141][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.03.17-16.37.34:141][  0]LogPakFile: OnPakFileMounted2Time == 0.000032
+[2022.03.17-16.37.34:143][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.17-16.37.34:143][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:143][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.17-16.37.34:143][  0]LogPakFile: OnPakFileMounted2Time == 0.000033
+[2022.03.17-16.37.34:145][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.17-16.37.34:145][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:145][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.17-16.37.34:145][  0]LogPakFile: OnPakFileMounted2Time == 0.000034
+[2022.03.17-16.37.34:155][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.03.17-16.37.34:155][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:155][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.17-16.37.34:155][  0]LogPakFile: OnPakFileMounted2Time == 0.000035
+[2022.03.17-16.37.34:164][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.03.17-16.37.34:164][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:164][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.03.17-16.37.34:164][  0]LogPakFile: OnPakFileMounted2Time == 0.000036
+[2022.03.17-16.37.34:166][  0]LogPakFile: PakFile PrimaryIndexSize=186
+[2022.03.17-16.37.34:166][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:166][  0]LogPakFile: PakFile FullDirectoryIndexSize=146
+[2022.03.17-16.37.34:166][  0]LogPakFile: OnPakFileMounted2Time == 0.000037
+[2022.03.17-16.37.34:168][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.03.17-16.37.34:168][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:168][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.03.17-16.37.34:168][  0]LogPakFile: OnPakFileMounted2Time == 0.000038
+[2022.03.17-16.37.34:171][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.17-16.37.34:171][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:171][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.17-16.37.34:171][  0]LogPakFile: OnPakFileMounted2Time == 0.000039
+[2022.03.17-16.37.34:173][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2022.03.17-16.37.34:173][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.17-16.37.34:173][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2022.03.17-16.37.34:173][  0]LogPakFile: OnPakFileMounted2Time == 0.000040
+[2022.03.17-16.37.34:228][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2022.03.17-16.37.34:233][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 2 classes and 0 folders.
+[2022.03.17-16.37.34:287][  0]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-16.37.34:315][  0]LogSlate: Took 0.002508 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2022.03.17-16.37.34:343][  0]LogSlate: Took 0.027052 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2022.03.17-16.37.34:371][  0]LogSlate: Took 0.027787 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
+[2022.03.17-16.37.34:373][  0]LogSlate: Took 0.001467 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2022.03.17-16.37.34:378][  0]LogSlate: Took 0.001277 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2022.03.17-16.37.34:489][  0]LogRenderer: Reallocating scene render targets to support 1196x572 Format 10 NumSamples 1 (Frame:1).
+[2022.03.17-16.37.34:548][  0]LogSlate: Took 0.000162 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.03.17-16.37.34:610][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2022.03.17-16.37.34:610][  0]LogLoad: (Engine Initialization) Total time: 19.24 seconds
+[2022.03.17-16.37.34:610][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2022.03.17-16.37.34:610][  0]LogInit: First time updating LLM stats...
+[2022.03.17-16.37.34:704][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2022.03.17-16.37.34:736][  1]LogAssetRegistry: Asset discovery search completed in 8.2545 seconds
+[2022.03.17-16.37.34:738][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
+[2022.03.17-16.37.35:737][  5]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-16.37.36:061][  5]LogSlate: Took 0.000143 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.03.17-16.37.59:872][ 77]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-16.40.58:048][124]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.01.38:850][822]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.01.38:858][822]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP
+[2022.03.17-17.01.38:968][822]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 126 classes and 0 folders.
+[2022.03.17-17.01.39:694][822]LogSlate: Took 0.000188 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2022.03.17-17.01.42:964][890]LogAudioMixer: Warning: Changing default audio render device to new device: {0.0.0.00000000}.{64a0525f-4aa7-4260-b8a1-a471d9ea0e0e}.
+[2022.03.17-17.01.42:964][890]LogAudioMixer: Resetting audio stream to device id 
+[2022.03.17-17.01.42:979][890]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.17-17.01.42:979][890]LogAudioMixer: Display: 1: FrontRight
+[2022.03.17-17.02.02:451][457]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.02.02:475][457]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Character/NPC/NPC_Dialogue/StartDialuge.StartDialuge
+[2022.03.17-17.02.02:519][457]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.02.04:069][601]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.02.04:722][675]LogSlate: Window 'StartDialuge' being destroyed
+[2022.03.17-17.02.05:800][798]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.02.05:808][798]LogAssetEditorSubsystem: Opening Asset editor for BehaviorTree /Game/Character/NPC/NPC_Dialogue/NPC_Guard_DialogueTree.NPC_Guard_DialogueTree
+[2022.03.17-17.02.17:016][ 98]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.02.18:023][217]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.02.40:932][947]LogSlate: Took 0.000222 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2022.03.17-17.02.43:055][195]LogSlate: Took 0.039859 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2022.03.17-17.02.43:068][195]LogSlate: Last resort fallback font was requested. Font: '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf', Character: ' (U+ec21)'
+[2022.03.17-17.02.43:115][195]LogSlate: Took 0.045551 seconds to synchronously load lazily loaded font '../../../Engine/Content/SlateDebug/Fonts/LastResort.ttf' (5269K)
+[2022.03.17-17.02.43:131][195]LogSlate: Took 0.007485 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/NotoNaskhArabicUI-Regular.ttf' (144K)
+[2022.03.17-17.03.26:863][355]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.03.27:151][376]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.03.37:360][573]BlueprintLog: New page: StartDialuge 컴파일
+[2022.03.17-17.03.37:390][573]LogUObjectHash: Compacting FUObjectHashTables data took   2.29ms
+[2022.03.17-17.03.37:404][573]LogSlate: Took 0.000196 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2022.03.17-17.03.37:406][573]LogSlate: Took 0.001236 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicExtraBold.ttf' (4074K)
+[2022.03.17-17.03.37:697][606]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.03.37:710][606]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/StartDialuge8EA7C6E7409651DC40A07782E8307254.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPC_Dialogue/StartDialuge.uasset'
+[2022.03.17-17.03.37:725][606]AssetCheck: New page: 애셋 저장: StartDialuge
+[2022.03.17-17.03.37:725][606]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPC_Dialogue/StartDialuge.StartDialuge 유효성 검사
+[2022.03.17-17.03.38:865][728]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.03.38:875][728]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPC_Guard_DialogueTree72C0D4A948CE27ABD7975886AD24ACCD.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPC_Dialogue/NPC_Guard_DialogueTree.uasset'
+[2022.03.17-17.03.38:887][728]AssetCheck: New page: 애셋 저장: NPC_Guard_DialogueTree
+[2022.03.17-17.03.38:887][728]LogContentValidation: Display: BehaviorTree /Game/Character/NPC/NPC_Dialogue/NPC_Guard_DialogueTree.NPC_Guard_DialogueTree 유효성 검사
+[2022.03.17-17.05.44:382][448]LogRenderer: Reallocating scene render targets to support 1196x708 Format 10 NumSamples 1 (Frame:1).
+[2022.03.17-17.05.50:183][107]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.06.06:109][389]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.06.06:129][389]LogSlate: Took 0.005145 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2022.03.17-17.06.07:954][606]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.06.08:604][682]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.06.12:352][103]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.17-17.06.12:392][103]LogUObjectHash: Compacting FUObjectHashTables data took   2.52ms
+[2022.03.17-17.06.12:788][143]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.06.12:838][143]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BP6845BFE445EFF77EF13114AE0B94D12F.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.17-17.06.12:852][143]AssetCheck: New page: 애셋 저장: NPCParentScripts_BP
+[2022.03.17-17.06.12:852][143]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.17-17.06.18:190][762]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.06.20:403][ 21]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.17-17.06.20:441][ 21]LogUObjectHash: Compacting FUObjectHashTables data took   2.47ms
+[2022.03.17-17.06.20:771][ 54]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.06.20:818][ 54]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BPFB9C0D1541DBFA4097F1ECAF6D6FFA4E.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.17-17.06.20:829][ 54]AssetCheck: New page: 애셋 저장: NPCParentScripts_BP
+[2022.03.17-17.06.20:829][ 54]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.17-17.06.52:526][425]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.06.57:000][925]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.06.58:294][ 76]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.06.58:599][102]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.07.06:725][ 44]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.07.37:928][390]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.07.37:971][390]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BP638947234CAAF11A8DB88E82F7C586AC.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.17-17.07.37:981][390]AssetCheck: New page: 애셋 저장: NPCParentScripts_BP
+[2022.03.17-17.07.37:981][390]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.17-17.07.42:598][931]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.07.44:450][149]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.07.44:719][180]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.07.47:126][454]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.07.47:200][454]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.07.52:512][454]LogSlate: Window '부모 클래스 선택' being destroyed
+[2022.03.17-17.08.03:018][685]LogPackageName: SearchForPackageOnDisk took   0.000s, but failed to resolve /Game/Character/NPC/NPCParent_AIController.
+[2022.03.17-17.08.12:684][505]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.17-17.08.12:724][505]LogUObjectHash: Compacting FUObjectHashTables data took   2.52ms
+[2022.03.17-17.08.13:386][579]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.08.13:433][579]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BPA2B975F942408376054A59BD23DCD7E1.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.17-17.08.13:445][579]AssetCheck: New page: 애셋 저장: NPCParentScripts_BP
+[2022.03.17-17.08.13:445][579]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.17-17.08.14:438][689]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.08.14:456][689]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Character/NPC/NPCParent_AIController.NPCParent_AIController
+[2022.03.17-17.08.29:052][387]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.08.32:961][856]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.08.41:668][269]BlueprintLog: New page: NPCParent_AIController 컴파일
+[2022.03.17-17.08.41:698][269]LogUObjectHash: Compacting FUObjectHashTables data took   2.32ms
+[2022.03.17-17.08.42:228][328]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.08.42:240][328]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParent_AIControllerA0B9D8F74EC65D4F9AEE86A172126EDE.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParent_AIController.uasset'
+[2022.03.17-17.08.42:244][328]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/Character/NPC/NPCParent_AIController.
+[2022.03.17-17.08.42:248][328]AssetCheck: New page: 애셋 저장: NPCParent_AIController
+[2022.03.17-17.08.42:248][328]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParent_AIController.NPCParent_AIController 유효성 검사
+[2022.03.17-17.08.42:829][396]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.08.44:768][608]BlueprintLog: New page: NPCParent_AIController 컴파일
+[2022.03.17-17.08.44:797][608]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2022.03.17-17.08.45:137][645]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.08.45:158][645]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParent_AIControllerB3FCA5CE4E770046D19CAFBE0C7581F4.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParent_AIController.uasset'
+[2022.03.17-17.08.45:166][645]AssetCheck: New page: 애셋 저장: NPCParent_AIController
+[2022.03.17-17.08.45:166][645]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParent_AIController.NPCParent_AIController 유효성 검사
+[2022.03.17-17.09.14:492][796]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.17-17.09.14:534][796]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
+[2022.03.17-17.09.14:837][827]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.09.14:880][827]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BP703AB703462E4A7ED170198543090AC3.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.17-17.09.14:894][827]AssetCheck: New page: 애셋 저장: NPCParentScripts_BP
+[2022.03.17-17.09.14:894][827]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.17-17.09.18:931][307]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.09.19:249][340]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.09.26:198][869]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.09.31:244][451]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.09.31:480][469]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.09.34:601][816]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.09.34:879][838]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.09.38:717][291]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.09.39:372][357]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.09.49:544][521]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.10.00:904][533]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.10.01:264][548]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.10.04:551][925]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.10.04:893][954]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.10.19:035][  3]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.10.19:479][ 38]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.10.23:910][553]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.10.26:060][803]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.10.32:882][603]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.17-17.10.32:926][603]LogUObjectHash: Compacting FUObjectHashTables data took   2.58ms
+[2022.03.17-17.10.33:211][633]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.10.33:250][633]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BP632B12B24A3BB8628B3CC5BC95F302A2.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.17-17.10.33:263][633]AssetCheck: New page: 애셋 저장: NPCParentScripts_BP
+[2022.03.17-17.10.33:263][633]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.17-17.10.49:858][605]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.17-17.10.49:900][605]LogUObjectHash: Compacting FUObjectHashTables data took   2.69ms
+[2022.03.17-17.10.50:286][648]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.10.50:333][648]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BPE3E55B2E4AF659517AC415A6A1FA9652.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.17-17.10.50:346][648]AssetCheck: New page: 애셋 저장: NPCParentScripts_BP
+[2022.03.17-17.10.50:346][648]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.17-17.11.13:116][780]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.11.21:776][960]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.11.21:812][960]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2022.03.17-17.11.21:829][960]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/FieldMap_Auto1D4AA2D624941467E49E886AE9EB20E27.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/Autosaves/Game/GameMode/FieldMap_Auto1.umap'
+[2022.03.17-17.11.21:830][960]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/GameMode/PersistentLevel' took 0.039
+[2022.03.17-17.11.21:830][960]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.039
+[2022.03.17-17.11.31:086][ 63]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.11.39:270][ 37]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.11.40:466][175]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.12.00:300][175]LogSlate: Window '애셋을 다른 이름으로 저장' being destroyed
+[2022.03.17-17.12.14:759][895]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.12.44:142][675]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.12.44:147][675]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.03.17-17.13.02:163][820]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.13.02:188][820]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPC_Guard_DialogueTree71EF24D04590B84AA49A75AA7901A277.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPC_Dialogue/NPC_Guard_DialogueTree.uasset'
+[2022.03.17-17.13.02:199][820]AssetCheck: New page: 애셋 저장: NPC_Guard_DialogueTree
+[2022.03.17-17.13.02:199][820]LogContentValidation: Display: BehaviorTree /Game/Character/NPC/NPC_Dialogue/NPC_Guard_DialogueTree.NPC_Guard_DialogueTree 유효성 검사
+[2022.03.17-17.14.55:190][ 18]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.15.10:158][655]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.15.10:531][687]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.15.18:424][624]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.15.18:768][663]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.15.20:024][809]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.15.22:955][151]BlueprintLog: New page: NPCParent_AIController 컴파일
+[2022.03.17-17.15.22:990][151]LogUObjectHash: Compacting FUObjectHashTables data took   2.73ms
+[2022.03.17-17.15.23:342][188]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.15.23:356][188]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParent_AIControllerA83EF46A4D1E61A818D697934992EE0A.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParent_AIController.uasset'
+[2022.03.17-17.15.23:368][188]AssetCheck: New page: 애셋 저장: NPCParent_AIController
+[2022.03.17-17.15.23:368][188]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParent_AIController.NPCParent_AIController 유효성 검사
+[2022.03.17-17.15.28:097][752]BlueprintLog: New page: NPCParent_AIController 컴파일
+[2022.03.17-17.15.28:131][752]LogUObjectHash: Compacting FUObjectHashTables data took   2.71ms
+[2022.03.17-17.15.28:418][783]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.15.28:439][783]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParent_AIControllerAFD5E9614E5D30199728B7AB242A8BDC.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParent_AIController.uasset'
+[2022.03.17-17.15.28:449][783]AssetCheck: New page: 애셋 저장: NPCParent_AIController
+[2022.03.17-17.15.28:449][783]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParent_AIController.NPCParent_AIController 유효성 검사
+[2022.03.17-17.16.57:382][151]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.16.57:876][189]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.17.14:369][462]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.17.14:376][462]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.03.17-17.17.23:024][469]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.17-17.17.23:081][469]LogUObjectHash: Compacting FUObjectHashTables data took   2.54ms
+[2022.03.17-17.17.23:317][490]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.17.23:369][490]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BP24CB16D841AD56C71BA9C09A338E34F4.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.17-17.17.23:387][490]AssetCheck: New page: 애셋 저장: NPCParentScripts_BP
+[2022.03.17-17.17.23:387][490]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.17-17.17.24:350][602]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.17.24:739][628]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.17.39:319][312]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.17.44:091][867]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.17.44:381][889]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.17.48:507][377]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.17.57:422][933]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.17.57:911][980]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.18.03:114][595]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.17-17.18.03:156][595]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2022.03.17-17.18.03:457][626]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.18.03:496][626]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BPDB26B3DC445984711565AC8DE646E9E4.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.17-17.18.03:509][626]AssetCheck: New page: 애셋 저장: NPCParentScripts_BP
+[2022.03.17-17.18.03:509][626]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.17-17.18.51:464][686]BlueprintLog: New page: NPCParentScripts_BP 컴파일
+[2022.03.17-17.18.51:506][686]LogUObjectHash: Compacting FUObjectHashTables data took   2.48ms
+[2022.03.17-17.18.51:816][718]LogD3D11RHI: CreateSwapChainForHwnd failed with result 'DXGI_ERROR_INVALID_CALL' (0x887A0001), falling back to legacy CreateSwapChain.
+[2022.03.17-17.18.51:866][718]LogSavePackage: Moving '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Saved/NPCParentScripts_BP36BFABF74F0C856488E08484429CE748.tmp' to '../../../../Unreal/UEProject/UnrealProject_2021_Portfolio/NierProject_Unreal/NierProject/Content/Character/NPC/NPCParentScripts_BP.uasset'
+[2022.03.17-17.18.51:880][718]AssetCheck: New page: 애셋 저장: NPCParentScripts_BP
+[2022.03.17-17.18.51:880][718]LogContentValidation: Display: Blueprint /Game/Character/NPC/NPCParentScripts_BP.NPCParentScripts_BP 유효성 검사
+[2022.03.17-17.18.53:206][869]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.17-17.18.53:267][869]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.17-17.18.53:271][869]PIE: New page: PIE 세션: PersistentLevel (2022. 3. 18. 오전 11:18:53)
+[2022.03.17-17.18.53:284][869]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2022.03.17-17.18.53:293][869]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2022.03.17-17.18.53:296][869]LogPlayLevel: Creating play world package: /Game/GameMode/UEDPIE_0_PersistentLevel
+[2022.03.17-17.18.53:307][869]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011380s)
+[2022.03.17-17.18.53:308][869]LogAIModule: Creating AISystem for world PersistentLevel
+[2022.03.17-17.18.53:309][869]LogPlayLevel: PIE: World Init took: (0.001680s)
+[2022.03.17-17.18.53:310][869]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameMode/PersistentLevel.PersistentLevel to /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel (0.013529s)
+[2022.03.17-17.18.53:330][869]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2022.03.17-17.18.53:333][869]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2022.03.17-17.18.53:333][869]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.17-17.18.53:333][869]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.17-17.18.53:333][869]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.17-17.18.53:333][869]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.17-17.18.53:333][869]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.17-17.18.53:333][869]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.17-17.18.53:333][869]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.17-17.18.53:333][869]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.17-17.18.53:333][869]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.17-17.18.53:333][869]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.17-17.18.53:336][869]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.17-17.18.53:336][869]LogAudioMixer: Display: 1: FrontRight
+[2022.03.17-17.18.53:342][869]LogAudioMixer: Display: Using Audio Device 2D FHD LG TV(NVIDIA High Definition Audio)
+[2022.03.17-17.18.53:343][869]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.17-17.18.53:343][869]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.17-17.18.53:343][869]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.17-17.18.53:343][869]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.17-17.18.53:343][869]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.17-17.18.53:343][869]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.17-17.18.53:355][869]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.17-17.18.53:355][869]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.17-17.18.53:355][869]LogInit: FAudioDevice initialized.
+[2022.03.17-17.18.53:355][869]LogAudio: Display: Audio Device (ID: 2) registered with world 'PersistentLevel'.
+[2022.03.17-17.18.53:365][869]LogLoad: Game class is 'MyGameMode_BP_C'
+[2022.03.17-17.18.53:365][869]LogWorld: Bringing World /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel up for play (max tick rate 0) at 2022.03.18-02.18.53
+[2022.03.17-17.18.53:366][869]LogWorld: Bringing up level for play took: 0.001055
+[2022.03.17-17.18.53:367][869]LogOnline: OSS: Creating online subsystem instance for: :Context_5
+[2022.03.17-17.18.53:454][869]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 20 classes and 0 folders.
+[2022.03.17-17.18.53:541][869]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2022.03.17-17.18.54:757][869]LogStats: FPlatformStackWalk::StackWalkAndDump -  1.217 s
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: === Handled ensure: ===
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: 
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: Ensure condition failed: ActorHasBegunPlay == EActorBeginPlayState::HasNotBegunPlay [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/Engine/Private/Actor.cpp] [Line: 3510]
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: BeginPlay was called on actor /Game/GameMode/UEDPIE_0_PersistentLevel.PersistentLevel:PersistentLevel.MainCharacterWeaponMovement_MainCharacterWeaponMovement_BP_C_CAT_0 which was in state 1
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: Stack: 
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff869f20e10 UE4Editor-Engine.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff8685440c5 UE4Editor-Engine.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff8699176c3 UE4Editor-Engine.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff868c93831 UE4Editor-Engine.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff8698bbf7e UE4Editor-Engine.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff868cb581d UE4Editor-Engine.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff872cd7e55 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff872cfacbf UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff872cd8b8d UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff872d1713d UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff872d1a6c1 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff872d19f88 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff8727789e8 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff873091996 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff640399b6a UE4Editor.exe!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff6403b113c UE4Editor.exe!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff6403b121a UE4Editor.exe!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff6403c527d UE4Editor.exe!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff6403c7faa UE4Editor.exe!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff8f6ed7034 KERNEL32.DLL!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: [Callstack] 0x00007ff8f7b42651 ntdll.dll!UnknownFunction []
+[2022.03.17-17.18.54:765][869]LogOutputDevice: Error: 

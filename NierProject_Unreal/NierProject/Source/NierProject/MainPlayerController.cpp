@@ -26,6 +26,38 @@ void AMainPlayerController::BeginPlay()
 			PauseMenu->SetVisibility(ESlateVisibility::Hidden);
 		}
 	}
+
+	if (WNPCInteractMenu)
+	{
+		NPCInteractMenu = CreateWidget<UUserWidget>(this, WNPCInteractMenu);
+		if (NPCInteractMenu)
+		{
+			NPCInteractMenu->AddToViewport();
+			NPCInteractMenu->SetVisibility(ESlateVisibility::Hidden);
+		}
+	}
+
+	if (WNPCTalkTable)
+	{
+		NPCTalkTable = CreateWidget<UUserWidget>(this, WNPCTalkTable);
+		if (NPCTalkTable)
+		{
+			NPCTalkTable->AddToViewport();
+			NPCTalkTable->SetVisibility(ESlateVisibility::Hidden);
+		}
+	}
+
+	if (WBossHealthBar)
+	{
+		BossHealthBar = CreateWidget<UUserWidget>(this, WBossHealthBar);
+		if (BossHealthBar)
+		{
+			BossHealthBar->AddToViewport();
+			BossHealthBar->SetVisibility(ESlateVisibility::Hidden);
+		}
+	}
+
+	bNPCInteractActive = false;
 }
 
 void AMainPlayerController::Tick(float DeltaTime)
@@ -60,6 +92,71 @@ void AMainPlayerController::RemovePauseMenu_Implementation()
 		bPauseMenuVisible = false;
 	}
 }
+
+void AMainPlayerController::DisplayNPCInteractMenu()
+{
+	if (NPCInteractMenu)
+	{
+		bNPCInteractActive = true;
+
+		NPCInteractMenu->SetVisibility(ESlateVisibility::Visible);
+	}
+}
+
+void AMainPlayerController::RemoveNPCInteractMenu()
+{
+	if (NPCInteractMenu)
+	{
+		bNPCInteractActive = false;
+
+		NPCInteractMenu->SetVisibility(ESlateVisibility::Hidden);
+	}
+}
+
+void AMainPlayerController::DisplayNPCTalkTable()
+{
+	if (NPCTalkTable)
+	{
+		NPCTalkTable->SetVisibility(ESlateVisibility::Visible);
+	}
+}
+
+void AMainPlayerController::RemoveNPCTalkTable()
+{
+	if (NPCTalkTable)
+	{
+		NPCTalkTable->SetVisibility(ESlateVisibility::Hidden);
+	}
+}
+
+void AMainPlayerController::InteractNPC_Implementation()
+{
+	//UE_LOG(LogTemp, Warning, TEXT("MainController IN"));
+}
+
+
+void AMainPlayerController::DisplayBossHealthBar()
+{
+	if (BossHealthBar)
+	{
+		BossHealthBar->SetVisibility(ESlateVisibility::Visible);
+	}
+}
+
+void AMainPlayerController::RemoveBossHealthBar()
+{
+	if (BossHealthBar)
+	{
+		BossHealthBar->SetVisibility(ESlateVisibility::Hidden);
+	}
+}
+
+void AMainPlayerController::BossHealthBarShowUp_Implementation()
+{
+	//보스 체력 보이기
+	DisplayBossHealthBar();
+}
+
 
 void AMainPlayerController::GameModeOnly()
 {

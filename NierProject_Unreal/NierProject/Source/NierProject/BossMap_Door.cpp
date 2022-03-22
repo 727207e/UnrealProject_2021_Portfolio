@@ -8,6 +8,7 @@
 #include "InterfaceLifeEntity.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Kismet/GameplayStatics.h"
+#include "Boss_Mutant.h"
 
 // Sets default values
 ABossMap_Door::ABossMap_Door()
@@ -29,8 +30,6 @@ ABossMap_Door::ABossMap_Door()
 
 	bIsOpen = true;
 	bCloseDoorTrig = false;
-	bOpenSequenceFinish = false;
-
 }
 
 // Called when the game starts or when spawned
@@ -65,6 +64,8 @@ void ABossMap_Door::DoorTriggerPointBeginOverlap(UPrimitiveComponent* Overlapped
 			if(theP->InterfaceGetMyID() == DDPlayer)
 			{
 				bCloseDoorTrig = true;	//문 열도록 활성화
+
+				//보스 체력바 보이기 및 영상 연출은 BP 에서
 			}
 		}
 	}
