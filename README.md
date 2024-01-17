@@ -7,10 +7,10 @@
   
 Trace를 활용하여 플레이어가 바라볼 적군에게 시선 고정 기능
 
-이미지
+https://github.com/727207e/UnrealProject_2021_Portfolio/assets/54798151/bf301fcc-8e13-4b9c-ba66-8c3d0ac6cd10
 
-![image](https://user-images.githubusercontent.com/54798151/159443696-2c73ca01-081d-457b-a96f-e86f06fffc8f.png)
 
+<br></br>
 
 > ### 애니메이션 몽타주 활용
   
@@ -28,7 +28,12 @@ Trace를 활용하여 플레이어가 바라볼 적군에게 시선 고정 기�
 > ### ProgressBar를 추가해서 로딩이 어느 정도까지 진행이 되었는지 시각화 함
 이미지
 
-![image](https://user-images.githubusercontent.com/54798151/159438102-5ea76d49-4049-4f2e-8249-66c1535b3192.png)
+
+https://github.com/727207e/UnrealProject_2021_Portfolio/assets/54798151/e7f6a9fc-f6a3-4215-97c0-436ab4dd5db3
+
+
+
+<br></br>
 
 > ### 보스 등장 맵 
 이미지
@@ -50,6 +55,10 @@ NPC AI는 Behavior Tree를 활용함
 
 G키를 눌러 NPC와 상호작용 가능
 아무키나 눌러서 대화를 진행
+
+https://github.com/727207e/UnrealProject_2021_Portfolio/assets/54798151/8bcf12d3-2943-4b40-b6fc-bc1d4004a113
+
+
 
 
 이미지
