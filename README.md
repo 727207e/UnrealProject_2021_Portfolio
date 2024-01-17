@@ -1,5 +1,11 @@
 # UnrealProject_2021_Portfolio
 
+개발 일지
+
+https://drive.google.com/drive/folders/17hjGYqp5mscAuUk5UmPoWQvU3rKTBE-d?usp=sharing
+
+<br></br>
+
 ## 피격효과, 데미지 텍스트, 사운드 등등의 전투 씬
 
 
@@ -26,8 +32,6 @@ https://github.com/727207e/UnrealProject_2021_Portfolio/assets/54798151/bf301fcc
 ## 맵 로딩과 보스
 
 > ### ProgressBar를 추가해서 로딩이 어느 정도까지 진행이 되었는지 시각화 함
-이미지
-
 
 https://github.com/727207e/UnrealProject_2021_Portfolio/assets/54798151/e7f6a9fc-f6a3-4215-97c0-436ab4dd5db3
 
