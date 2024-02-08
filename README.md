@@ -2,7 +2,7 @@
 
 개발 일지
 
-https://drive.google.com/drive/folders/17hjGYqp5mscAuUk5UmPoWQvU3rKTBE-d?usp=sharing
+https://drive.google.com/drive/folders/1_qRKJkCtbAhANe2SPRafY4HHBIlIDPXJ?usp=sharing
 
 <br></br>
 
